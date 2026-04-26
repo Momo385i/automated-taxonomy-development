@@ -1,0 +1,88 @@
+2026-04-09 17:01:34 | INFO | mas_taxonomy | auto_ingest iter=1: run_22RIGORD
+2026-04-09 17:01:41 | INFO | mas_taxonomy | OK: Goola 2025 - Autonomous Intelligence - A Technical Analysis of Self-Directing AI Systems and Their Enterprise Implementation.pdf | pages: 11
+2026-04-09 17:01:50 | INFO | mas_taxonomy | OK: Huang et al 2022 - Inner Monologue Embodied Reasoning through Planning with Language Models.pdf | pages: 25
+2026-04-09 17:01:57 | INFO | mas_taxonomy | OK: Qian et al 2024 - ChatDev Communicative Agents for Software Development.pdf | pages: 13
+2026-04-09 17:02:16 | INFO | mas_taxonomy | OK: Wang 2024 - Describe, Explain, Plan and Select- Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents.pdf | pages: 37
+2026-04-09 17:02:23 | INFO | mas_taxonomy | OK: Yang et al 2023- Auto-GPT for Online Decision Making Benchmarks and.pdf | pages: 14
+2026-04-09 17:02:24 | INFO | mas_taxonomy.graph.consultation | Skipping consultation - using provided configuration
+2026-04-09 17:02:26 | INFO | mas_taxonomy.graph.empirical | empirical_worker: iteration=1 provider=openai model=gpt-5.4-2026-03-05 sources=5
+2026-04-09 17:03:38 | INFO | mas_taxonomy.graph.empirical | LLM attempt 1/3: response received — this call tokens: prompt=42342, completion=3949, total=46291; cumulative so far: prompt=42342, completion=3949, total=46291
+2026-04-09 17:03:38 | INFO | mas_taxonomy.graph.empirical | LLM attempt 1/3: structured output OK — returning (cumulative tokens: prompt=42342, completion=3949, total=46291)
+2026-04-09 17:03:38 | INFO | mas_taxonomy.graph.empirical | empirical_worker: produced taxonomy dims=7
+2026-04-09 17:03:38 | INFO | mas_taxonomy.graph.empirical | empirical_worker: object mapping - objects=6 dimension_assignments=42
+2026-04-09 17:03:38 | INFO | mas_taxonomy.graph.empirical | empirical_worker: token usage - prompt=42342, completion=3949, total=46291
+2026-04-09 17:03:38 | INFO | mas_taxonomy.graph.consolidator | consolidator: iteration=1 provider=openai model=gpt-5.4-2026-03-05 prev_present=False
+2026-04-09 17:04:31 | INFO | mas_taxonomy.graph.consolidator | LLM attempt 1/3: response received — this call tokens: prompt=4600, completion=3504, total=8104; cumulative so far: prompt=4600, completion=3504, total=8104
+2026-04-09 17:04:31 | INFO | mas_taxonomy.graph.consolidator | LLM attempt 1/3: structured output OK — returning (cumulative tokens: prompt=4600, completion=3504, total=8104)
+2026-04-09 17:04:31 | INFO | mas_taxonomy.graph.consolidator | consolidator: token usage - prompt=4600, completion=3504, total=8104
+2026-04-09 17:04:31 | INFO | mas_taxonomy.graph.consolidator | consolidator: iteration=1 ops=6
+2026-04-09 17:04:31 | INFO | mas_taxonomy.graph.consolidator | consolidator changes_short: ['Normalized dimension and characteristic names to concise noun phrases.', 'Verified all six objects are in scope and retained them.', 'Confirmed no duplicate objects required merging.', 'Checked all mappings for plausibility and kept assignments.', 'Verified one mapping per dimension for every object.', "Retained residual characteristic 'Unspecified' in Memory form to satisfy exhaustiveness."]
+2026-04-09 17:04:31 | INFO | mas_taxonomy.graph.validator | validator: iteration=1 provider=openai model=gpt-5.4-2026-03-05 oecs=9 secs=6
+2026-04-09 17:05:04 | INFO | mas_taxonomy.graph.validator | LLM attempt 1/3: response received — this call tokens: prompt=4190, completion=1558, total=5748; cumulative so far: prompt=4190, completion=1558, total=5748
+2026-04-09 17:05:04 | INFO | mas_taxonomy.graph.validator | LLM attempt 1/3: structured output OK — returning (cumulative tokens: prompt=4190, completion=1558, total=5748)
+2026-04-09 17:05:04 | INFO | mas_taxonomy.graph.validator | validator: token usage - prompt=4190, completion=1558, total=5748
+2026-04-09 17:05:04 | INFO | mas_taxonomy.graph.validator | validator: iteration=1 structure_ok=True ending_conditions_met=False
+2026-04-09 17:05:04 | INFO | mas_taxonomy | auto_ingest iter=2: run_22RIGORD
+2026-04-09 17:05:22 | INFO | mas_taxonomy | OK: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large Language Models.pdf | pages: 45
+2026-04-09 17:05:31 | INFO | mas_taxonomy | OK: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement Learning.pdf | pages: 19
+2026-04-09 17:05:57 | INFO | mas_taxonomy | OK: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large Language Models.pdf | pages: 42
+2026-04-09 17:06:24 | INFO | mas_taxonomy | OK: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent Conversation.pdf | pages: 43
+2026-04-09 17:06:44 | INFO | mas_taxonomy | OK: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language Models.pdf | pages: 33
+2026-04-09 17:06:44 | INFO | mas_taxonomy.graph.empirical | empirical_worker: iteration=2 provider=openai model=gpt-5.4-2026-03-05 sources=5
+2026-04-09 17:07:39 | INFO | mas_taxonomy.graph.empirical | LLM attempt 1/3: response received — this call tokens: prompt=44709, completion=3090, total=47799; cumulative so far: prompt=44709, completion=3090, total=47799
+2026-04-09 17:07:39 | INFO | mas_taxonomy.graph.empirical | LLM attempt 1/3: structured output OK — returning (cumulative tokens: prompt=44709, completion=3090, total=47799)
+2026-04-09 17:07:39 | INFO | mas_taxonomy.graph.empirical | empirical_worker: produced taxonomy dims=6
+2026-04-09 17:07:39 | INFO | mas_taxonomy.graph.empirical | empirical_worker: object mapping - objects=5 dimension_assignments=30
+2026-04-09 17:07:39 | INFO | mas_taxonomy.graph.empirical | empirical_worker: token usage - prompt=44709, completion=3090, total=47799
+2026-04-09 17:07:39 | INFO | mas_taxonomy.graph.consolidator | consolidator: iteration=2 provider=openai model=gpt-5.4-2026-03-05 prev_present=True
+2026-04-09 17:09:16 | INFO | mas_taxonomy.graph.consolidator | LLM attempt 1/3: response received — this call tokens: prompt=6707, completion=6130, total=12837; cumulative so far: prompt=6707, completion=6130, total=12837
+2026-04-09 17:09:16 | INFO | mas_taxonomy.graph.consolidator | LLM attempt 1/3: structured output OK — returning (cumulative tokens: prompt=6707, completion=6130, total=12837)
+2026-04-09 17:09:16 | INFO | mas_taxonomy.graph.consolidator | consolidator: token usage - prompt=6707, completion=6130, total=12837
+2026-04-09 17:09:16 | INFO | mas_taxonomy.graph.consolidator | consolidator: iteration=2 ops=8
+2026-04-09 17:09:16 | INFO | mas_taxonomy.graph.consolidator | consolidator changes_short: ['Synthesized A and B into 8 dimensions, staying below the 9-dimension limit.', "Merged overlapping dimensions by combining Taxonomy A's action/improvement/task/human dimensions with Taxonomy B's control/feedback/memory distinctions.", "Dropped Taxonomy B's binary feedback-closure dimension because it added little explanatory power once adaptation and feedback source were modeled directly.", "Dropped Taxonomy B's action-grounding dimension as a standalone dimension and absorbed its useful distinctions into Primary action form.", 'Normalized dimension and characteristic names to concise noun phrases.', 'Reassigned all objects to exactly one characteristic per final dimension.', 'Normalized object names and renumbered objects sequentially.', 'No duplicate entities across A and B required merging; one variant object was retained as distinct rather than merged with AutoGPT.']
+2026-04-09 17:09:16 | INFO | mas_taxonomy.graph.validator | validator: iteration=2 provider=openai model=gpt-5.4-2026-03-05 oecs=9 secs=6
+2026-04-09 17:09:48 | INFO | mas_taxonomy.graph.validator | LLM attempt 1/3: response received — this call tokens: prompt=6083, completion=1732, total=7815; cumulative so far: prompt=6083, completion=1732, total=7815
+2026-04-09 17:09:48 | INFO | mas_taxonomy.graph.validator | LLM attempt 1/3: structured output OK — returning (cumulative tokens: prompt=6083, completion=1732, total=7815)
+2026-04-09 17:09:48 | INFO | mas_taxonomy.graph.validator | validator: token usage - prompt=6083, completion=1732, total=7815
+2026-04-09 17:09:48 | INFO | mas_taxonomy.graph.validator | validator: iteration=2 structure_ok=True ending_conditions_met=False
+2026-04-09 17:09:49 | INFO | mas_taxonomy | auto_ingest iter=3: run_22RIGORD
+2026-04-09 17:09:59 | INFO | mas_taxonomy | OK: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language in Robotic Affordances.pdf | pages: 34
+2026-04-09 17:10:09 | INFO | mas_taxonomy | OK: bran et al 2023 - ChemCrow - Augmenting large-language models with chemistry tools.pdf | pages: 38
+2026-04-09 17:10:35 | INFO | mas_taxonomy | OK: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration of Large Language Model Society.pdf | pages: 77
+2026-04-09 17:10:47 | INFO | mas_taxonomy | OK: Park et al 2023 - Generative Agents Interactive Simulacra of Human Behavior.pdf | pages: 22
+2026-04-09 17:11:00 | INFO | mas_taxonomy | OK: shen et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and its Friends in Hugging Face.pdf | pages: 27
+2026-04-09 17:11:00 | INFO | mas_taxonomy.graph.empirical | empirical_worker: iteration=3 provider=openai model=gpt-5.4-2026-03-05 sources=5
+2026-04-09 17:11:55 | INFO | mas_taxonomy.graph.empirical | LLM attempt 1/3: response received — this call tokens: prompt=62836, completion=2895, total=65731; cumulative so far: prompt=62836, completion=2895, total=65731
+2026-04-09 17:11:55 | INFO | mas_taxonomy.graph.empirical | LLM attempt 1/3: structured output OK — returning (cumulative tokens: prompt=62836, completion=2895, total=65731)
+2026-04-09 17:11:55 | INFO | mas_taxonomy.graph.empirical | empirical_worker: produced taxonomy dims=5
+2026-04-09 17:11:55 | INFO | mas_taxonomy.graph.empirical | empirical_worker: object mapping - objects=5 dimension_assignments=25
+2026-04-09 17:11:55 | INFO | mas_taxonomy.graph.empirical | empirical_worker: token usage - prompt=62836, completion=2895, total=65731
+2026-04-09 17:11:55 | INFO | mas_taxonomy.graph.consolidator | consolidator: iteration=3 provider=openai model=gpt-5.4-2026-03-05 prev_present=True
+2026-04-09 17:13:57 | INFO | mas_taxonomy.graph.consolidator | LLM attempt 1/3: response received — this call tokens: prompt=8217, completion=8380, total=16597; cumulative so far: prompt=8217, completion=8380, total=16597
+2026-04-09 17:13:57 | INFO | mas_taxonomy.graph.consolidator | LLM attempt 1/3: structured output OK — returning (cumulative tokens: prompt=8217, completion=8380, total=16597)
+2026-04-09 17:13:57 | INFO | mas_taxonomy.graph.consolidator | consolidator: token usage - prompt=8217, completion=8380, total=16597
+2026-04-09 17:13:57 | INFO | mas_taxonomy.graph.consolidator | consolidator: iteration=3 ops=10
+2026-04-09 17:13:57 | INFO | mas_taxonomy.graph.consolidator | consolidator changes_short: ['Normalized dimension and characteristic names to concise noun phrases.', 'Synthesized A and B into 9 dimensions, keeping both shared and uniquely useful aspects.', "Merged A's physical-world actuation as final dimension D9 because it adds architectural discrimination missing in B.", "Kept B's task origin and human involvement because they contribute behavioral differentiation relevant to autonomous agents.", 'Merged overlapping action-generation and control dimensions into a single MECE control-pattern dimension.', 'Merged memory architecture and memory form into a unified memory-form dimension.', 'Retained adaptation mechanism and feedback source from B as distinct dimensions because they explain different aspects.', "Dropped B's primary action form as redundant with control pattern and external integration.", 'Reassigned all objects to exactly one characteristic per dimension and filled coverage gaps without N/A.', 'Renumbered final taxonomy and object IDs sequentially.']
+2026-04-09 17:13:57 | INFO | mas_taxonomy.graph.validator | validator: iteration=3 provider=openai model=gpt-5.4-2026-03-05 oecs=9 secs=6
+2026-04-09 17:14:34 | INFO | mas_taxonomy.graph.validator | LLM attempt 1/3: response received — this call tokens: prompt=8151, completion=1664, total=9815; cumulative so far: prompt=8151, completion=1664, total=9815
+2026-04-09 17:14:34 | INFO | mas_taxonomy.graph.validator | LLM attempt 1/3: structured output OK — returning (cumulative tokens: prompt=8151, completion=1664, total=9815)
+2026-04-09 17:14:34 | INFO | mas_taxonomy.graph.validator | validator: token usage - prompt=8151, completion=1664, total=9815
+2026-04-09 17:14:34 | INFO | mas_taxonomy.graph.validator | validator: iteration=3 structure_ok=True ending_conditions_met=False
+============================================================
+  Run complete: run_22RIGORD
+  Iterations: 3
+  Duration: 730.793s
+  Output: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORD\outputs\graph_state_final.yaml
+
+Total Token Usage (all iterations):
+  Prompt tokens    : 187,835
+  Completion tokens: 32,902
+  Total tokens     : 220,737
+  Model: gpt-5.4-2026-03-05  ($2.5/M in, $15.0/M out)
+  Estimated cost: $0.9631 (prompt: $0.4696, completion: $0.4935)
+
+  Per-agent token usage:
+    empirical: 159,821 tokens
+    consolidator: 37,538 tokens
+    validator: 23,378 tokens
+============================================================

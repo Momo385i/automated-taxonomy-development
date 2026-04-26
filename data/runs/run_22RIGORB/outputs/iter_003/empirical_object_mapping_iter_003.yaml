@@ -1,0 +1,180 @@
+iteration: 3
+objects:
+- id: O1
+  name: AutoGPT
+  source_document: Goola 2025 - Autonomous Intelligence - A Technical Analysis of
+    Self-Directing AI Systems and Their Enterprise Implementation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: AutoGPT is described as one continuously running LLM-based agent architecture
+      rather than a society of agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The source explicitly characterizes AutoGPT as a self-prompting architecture
+      operating through recursive prompting.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The description emphasizes continuous planning and reflection, but
+      not explicit external-feedback-triggered replanning or expert-opinion injection.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: Its memory is described as token-based context retention across extended
+      execution sequences.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The source discusses memory, planning, commands, and reflection, but
+      not a distinct external feedback channel shaping each step.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: AutoGPT acts through a command system spanning action categories such
+      as files, web resources, and computation.
+- id: O2
+  name: BabyAGI
+  source_document: Goola 2025 - Autonomous Intelligence - A Technical Analysis of
+    Self-Directing AI Systems and Their Enterprise Implementation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: BabyAGI is presented as one autonomous framework, not multiple communicating
+      agents.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its defining workflow is a continuous cycle of task creation, prioritization,
+      and execution.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The architecture updates and reprioritizes tasks internally, but the
+      source does not frame it as external-feedback-driven replanning or expert-opinion
+      use.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The source states tasks are stored in a centralized database containing
+      completed, active, and pending tasks.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The described architecture centers on internal task management rather
+      than distinct external feedback channels.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The framework is contrasted with AutoGPT in execution terms, but still
+      operates as an agentic framework issuing actions from its task system rather
+      than robotic skills or code artifacts.
+- id: O3
+  name: Inner Monologue
+  source_document: Huang et al 2022 - Inner Monologue Embodied Reasoning through Planning
+    with Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The system is one embodied agent whose planner incorporates multiple
+      feedback streams, not multiple peer agents.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Its core mechanism is closed-loop planning where language feedback
+      is injected after actions to support retrying and replanning.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The paper explicitly studies incorporating environment and human feedback
+      to revise subsequent actions.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The agent maintains an inner-monologue prompt context by appending
+      textual feedback during execution rather than a separate task database or phase
+      memory.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The system uses success detection, passive scene description, active
+      scene description, and human feedback from the environment.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Actions are chosen from a set of pre-trained robotic skills with textual
+      descriptions and executed by low-level control policies.
+- id: O4
+  name: ChatDev
+  source_document: Qian et al 2024 - ChatDev Communicative Agents for Software Development.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: ChatDev is explicitly a multi-agent framework with specialized software
+      agents in different social roles.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: Its workflow is organized by a chat chain of phases and subtasks guiding
+      inter-agent communication.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Agents iteratively refine outputs through multi-turn communication
+      and communicative dehallucination before finalizing solutions.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The framework explicitly distinguishes short-term memory within a phase
+      and long-term memory across phases.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Its primary feedback mechanism is dialogue among instructor and assistant
+      agents, plus reviewer and tester interactions.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The framework’s outputs are software artifacts such as design text,
+      source code, reviews, and tests.
+- id: O5
+  name: DEPS
+  source_document: Wang 2024 - Describe, Explain, Plan and Select- Interactive Planning
+    with Large Language Models Enables Open-World Multi-Task Agents.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: DEPS is one embodied agent architecture composed of modules, not a
+      multi-agent society.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: The architecture repeatedly describes execution, explains failure,
+      replans, and selects goals in an interactive loop.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Its defining contribution is feedback-driven replanning using descriptor
+      and explainer outputs after failures.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The replanning process is implemented through iterative prompt updates
+      with descriptions and explanations rather than an explicit task database or
+      phase memory scheme.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The system uses environment-derived descriptions and controller outcomes
+      as feedback to the planner.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Plans are executed through goal-conditioned controllers and skill-like
+      sub-goals in embodied environments.
+- id: O6
+  name: Auto-GPT styled agent with Additional Opinions
+  source_document: Yang et al 2023- Auto-GPT for Online Decision Making Benchmarks
+    and.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The paper characterizes Auto-GPT styled agents as autonomous single
+      agents receiving high-level goals.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The agent engages in self-monologue with Thoughts, Reasoning, Plan,
+      and Criticism at each step.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Its distinctive adaptation is injecting additional opinions from external
+      expert models into the decision prompt.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The architecture is described as using long-term self-memory and retrieval
+      mechanisms in the Auto-GPT context rather than task-state or phase-segmented
+      memory.
+  - dimension_id: D5
+    characteristic_id: D5.C4
+    reasoning: The added feedback comes from external expert models such as imitation-learning
+      systems.
+  - dimension_id: D6
+    characteristic_id: D6.C4
+    reasoning: In the benchmarked setting, the agent acts through environment actions
+      in WebShop and ALFWorld represented as tools and choices in the web/text environment.

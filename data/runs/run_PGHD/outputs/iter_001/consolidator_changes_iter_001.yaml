@@ -1,0 +1,8 @@
+iteration: 1
+changes_short:
+- Normalized dimension and characteristic names to concise noun phrases.
+- Verified all 12 objects are within scope; no removals or merges were necessary.
+- Confirmed all object mappings reference valid dimensions and characteristics.
+- Refined several mapping rationales for consistency with final normalized labels.
+- Kept eight dimensions because each captures a distinct design choice and remains
+  within the dimension limit.

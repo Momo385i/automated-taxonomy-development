@@ -1,0 +1,70 @@
+iteration: 3
+object_validation:
+- object_name: AutoGPT
+  action: retained
+  reasoning: In scope as a modern LLM-based autonomous agent system published after
+    2020. Mapping was normalized to the synthesized dimensions; action grounding was
+    revised from command execution to tool use for better fit.
+- object_name: BabyAGI
+  action: retained
+  reasoning: In scope as a modern autonomous single-agent framework. Mapping was retained
+    with normalization to synthesized dimensions.
+- object_name: Inner Monologue
+  action: retained
+  reasoning: In scope as an autonomous embodied LLM-based agent architecture. Mapping
+    was retained and normalized; planning and skill-grounding assignments remain plausible.
+- object_name: ChatDev
+  action: retained
+  reasoning: In scope as a modern multi-agent LLM system with autonomous role coordination.
+    Mapping was retained and normalized.
+- object_name: DEPS
+  action: retained
+  reasoning: In scope as a modern LLM-based autonomous agent architecture. Mapping
+    was retained and normalized.
+- object_name: Auto-GPT styled agent with Additional Opinions
+  action: retained
+  reasoning: Kept despite being less canonical than named frameworks because it is
+    still a distinct autonomous agent variant rather than a pure benchmark. Mapping
+    was normalized.
+- object_name: SayCan
+  action: retained
+  reasoning: In scope as a post-2020 autonomous embodied language agent architecture.
+    Mapping was retained and normalized; memory assignment was revised to skill library
+    because predefined grounded skills are architecturally central.
+- object_name: ChemCrow
+  action: retained
+  reasoning: In scope as a modern LLM-based autonomous tool-using agent. Mapping was
+    retained and normalized.
+- object_name: CAMEL role-playing framework
+  action: retained
+  reasoning: In scope as a multi-agent autonomous framework based on role-playing
+    dialogue. Mapping was retained and normalized.
+- object_name: Generative Agents
+  action: retained
+  reasoning: In scope as a multi-agent autonomous architecture exhibiting persistent
+    memory and reflection in a simulated social world. Mapping was retained and normalized.
+- object_name: HuggingGPT
+  action: retained
+  reasoning: In scope as a controller-based autonomous orchestration framework. Mapping
+    was retained and normalized.
+- object_name: EUREKA
+  action: retained
+  reasoning: Kept as a goal-directed agentic system with iterative autonomous code
+    generation and evaluation, although its agent status is somewhat borderline. It
+    remains within scope under the instruction to keep doubtful cases.
+- object_name: Reflexion
+  action: retained
+  reasoning: In scope as a single-agent architecture with verbal reflection and persistent
+    reflective memory. Mapping was retained and normalized.
+- object_name: Voyager
+  action: retained
+  reasoning: In scope as a modern autonomous embodied LLM agent with self-curriculum
+    and skill library. Mapping was retained and normalized.
+- object_name: AutoGen
+  action: retained
+  reasoning: In scope as a multi-agent conversation framework for autonomous task
+    execution. Mapping was retained and normalized.
+- object_name: ReAct
+  action: retained
+  reasoning: In scope as a foundational single-agent reasoning-acting architecture.
+    Mapping was retained and normalized.

@@ -1,0 +1,149 @@
+iteration: 1
+objects:
+- id: O1
+  name: ReAct
+  source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ReAct is presented as one LLM agent generating thoughts and actions
+      within a single trajectory.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The agent outputs reasoning traces and task-specific actions in text
+      form, including API-style actions.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Its core mechanism is interleaving reasoning traces with actions during
+      task execution.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: Tasks come from benchmarks or user questions rather than being generated
+      by the agent itself.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The paper describes trajectory context but no persistent cross-task
+      memory store or reusable library.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The base method operates autonomously without an integrated human feedback
+      loop.
+- id: O2
+  name: Reflexion
+  source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Despite modular actor/evaluator/self-reflection roles, the framework
+      is described as a single agent learning over trials.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The actor produces text/actions and reflections are verbal; the framework
+      is not centered on code as the action space.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The defining improvement mechanism is verbal self-reflection stored
+      in memory and reused in later trials.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The agent is evaluated on given benchmark tasks rather than self-proposed
+      objectives.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: It explicitly maintains an episodic memory buffer of self-reflections
+      across trials.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The standard Reflexion loop uses environmental or self-generated feedback,
+      not integrated human participation.
+- id: O3
+  name: VOYAGER
+  source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: VOYAGER is described as one embodied agent that learns continually
+      in Minecraft.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: It explicitly uses executable code as the action space for embodied
+      control.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: Programs are improved through iterative prompting with environment
+      feedback, execution errors, and self-verification.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: A central module is the automatic curriculum that proposes new tasks
+      based on state and progress.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: The system stores verified executable skills in an ever-growing skill
+      library for retrieval and reuse.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The paper includes integrated human feedback variants where humans
+      act as critic or curriculum source.
+- id: O4
+  name: AutoGen
+  source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: AutoGen is explicitly a framework for multiple conversable agents cooperating
+      through conversation.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its core coordination mechanism is message passing in natural language,
+      though code may be generated or executed by some agents.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The framework emphasizes conversation programming and agent interaction
+      patterns, not a single built-in iterative self-improvement mechanism like reflection
+      or search.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: Applications start from externally posed tasks or user requests rather
+      than a self-generated curriculum.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The framework maintains conversation context, but the provided description
+      does not define a persistent reflective memory buffer or skill library as a
+      core architectural component.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: A defining feature is configurable human participation through user
+      proxy agents and human input modes.
+- id: O5
+  name: EUREKA
+  source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: EUREKA is presented as one reward-design agent centered on a coding
+      LLM and evaluation loop.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its outputs are executable reward function code generated and revised
+      by the LLM.
+  - dimension_id: D3
+    characteristic_id: D3.C5
+    reasoning: The central improvement mechanism is evolutionary search over reward
+      code, supported by reward reflection.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: It receives externally specified tasks and environments rather than
+      proposing its own goals.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The system iterates through prompts and evaluations but does not maintain
+      a persistent skill library or memory buffer across tasks as a core store.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The paper explicitly incorporates human feedback and human reward initialization
+      as integrated operating modes.

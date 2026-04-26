@@ -1,0 +1,147 @@
+iteration: 2
+objects:
+- id: O1
+  name: SayCan
+  source_document: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language in
+    Robotic Affordances.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The system is described as one robot agent executing instructions rather
+      than multiple autonomous agents coordinating with each other.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Action selection is grounded by pretrained skills and value-function
+      affordances that constrain what the robot can do in the current state.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The agent operates on a mobile manipulator in real kitchen environments
+      and acts in the physical world.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The system repeatedly scores candidate next skills, executes one, appends
+      it to the prompt, and replans until termination.
+  - dimension_id: D5
+    characteristic_id: D5.C4
+    reasoning: Its additional capabilities come from a repertoire of pretrained low-level
+      robotic skills with associated value functions.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The interaction is initiated by a human natural-language instruction
+      to a single agent, which then acts.
+- id: O2
+  name: ChemCrow
+  source_document: bran et al 2023 - ChemCrow - Augmenting large-language models with
+    chemistry tools.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ChemCrow is presented as one LLM-based chemistry agent rather than
+      a set of coordinating autonomous agents.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its behavior is grounded through external chemistry tools, search tools,
+      safety tools, Python, and execution APIs.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: ChemCrow works in digital tooling but can also trigger physical synthesis
+      via a robotic lab platform, making the environment hybrid.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: It follows an iterative Thought-Action-Action Input-Observation loop,
+      choosing one next action at a time.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The architecture augments the LLM primarily with a library of specialized
+      chemistry and general-purpose tools.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The core operational pattern is an agent repeatedly invoking tools,
+      receiving observations, and continuing the loop.
+- id: O3
+  name: CAMEL role-playing framework
+  source_document: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration
+    of Large Language Model Society.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The framework explicitly uses multiple agents, especially an AI assistant
+      and an AI user, and optionally a critic.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The framework relies on prompting and role instructions for autonomous
+      cooperation rather than tool, skill, or memory grounding.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The agents operate through chat-based communication and dataset generation
+      in a digital conversational setting.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: Task progress is driven by role-based conversational exchange between
+      assistant and user under inception prompting.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Beyond the base language models and prompts, no external tools, expert
+      models, or embodied skills are central to the framework.
+  - dimension_id: D6
+    characteristic_id: D6.C4
+    reasoning: The defining interaction pattern is conversation between autonomous
+      agents with assigned complementary roles.
+- id: O4
+  name: Generative Agents
+  source_document: Park et al 2023 - Generative Agents Interactive Simulacra of Human
+    Behavior.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The system instantiates a society of 25 agents that interact with each
+      other autonomously.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: Behavior is grounded in a memory stream with retrieval, reflections,
+      and plans derived from accumulated experiences.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The agents inhabit Smallville, a sandbox simulation of a social world
+      rather than a physical robot setting or tool-only environment.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The architecture creates broad daily plans and recursively decomposes
+      them into finer-grained actions and reactions.
+  - dimension_id: D5
+    characteristic_id: D5.C5
+    reasoning: The key architectural augmentation is an internal memory stream with
+      retrieval, reflection, and planning mechanisms.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Agents interact with one another and with the simulated world, producing
+      social diffusion, relationship formation, and coordination.
+- id: O5
+  name: HuggingGPT
+  source_document: shen et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and its
+    Friends in Hugging Face.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: HuggingGPT is organized around one LLM controller orchestrating task
+      execution rather than multiple peer agents.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: It grounds execution by selecting and invoking external expert AI models
+      from Hugging Face for planned subtasks.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The system operates across digital models, files, and APIs rather than
+      embodied physical or simulated social worlds.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: It parses a request into tasks and executes them through an ordered
+      workflow, handling dependencies step by step.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Its external capability source is a pool of expert models selected
+      according to model descriptions.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The central topology is a controller agent that invokes external models
+      and integrates their outputs.

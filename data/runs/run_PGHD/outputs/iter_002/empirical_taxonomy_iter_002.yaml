@@ -1,0 +1,82 @@
+meta_characteristic: The integration of PGHD within clinical systems
+topic: The integration of Patient-Generated Health Data (PGHD) into clinical systems
+  like Electronic Health Records (EHRs) or Hospital Information Systems (HIS)
+dimensions:
+- id: D1
+  name: PGHD source
+  characteristics:
+  - id: D1.C1
+    name: Wearable sensor
+  - id: D1.C2
+    name: Mobile app entry
+  - id: D1.C3
+    name: Hybrid source
+- id: D2
+  name: Clinical system role
+  characteristics:
+  - id: D2.C1
+    name: Documentation repository
+  - id: D2.C2
+    name: Monitoring workflow
+  - id: D2.C3
+    name: Decision support workflow
+- id: D3
+  name: Integration architecture
+  characteristics:
+  - id: D3.C1
+    name: Direct app-to-clinical system link
+  - id: D3.C2
+    name: Mobile platform bridge
+  - id: D3.C3
+    name: Intermediary platform
+  - id: D3.C4
+    name: Bedside gateway
+- id: D4
+  name: Interoperability basis
+  characteristics:
+  - id: D4.C1
+    name: FHIR
+  - id: D4.C2
+    name: EN/ISO 13606
+  - id: D4.C3
+    name: Vendor API framework
+  - id: D4.C4
+    name: Proprietary or custom link
+- id: D5
+  name: Data transfer direction
+  characteristics:
+  - id: D5.C1
+    name: Unidirectional to clinical system
+  - id: D5.C2
+    name: Bidirectional exchange
+- id: D6
+  name: PGHD processing
+  characteristics:
+  - id: D6.C1
+    name: Raw data transfer
+  - id: D6.C2
+    name: Summary visualization
+  - id: D6.C3
+    name: Automated analytics
+- id: D7
+  name: Workflow trigger
+  characteristics:
+  - id: D7.C1
+    name: Clinician-initiated review
+  - id: D7.C2
+    name: Scheduled monitoring
+  - id: D7.C3
+    name: Threshold or event trigger
+- id: D8
+  name: Primary reviewing actor
+  characteristics:
+  - id: D8.C1
+    name: Physician
+  - id: D8.C2
+    name: Nurse or care manager
+  - id: D8.C3
+    name: Allied health professional
+  - id: D8.C4
+    name: Administrative or technical intermediary
+notes:
+  format: prototype_v1

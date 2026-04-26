@@ -1,0 +1,72 @@
+iteration: 3
+object_validation:
+- object_name: AutoGPT
+  action: retained
+  reasoning: In scope as a modern autonomous LLM-based agent system. Mappings were
+    normalized to the synthesized dimensions; execution environment and task source
+    were added.
+- object_name: BabyAGI
+  action: retained
+  reasoning: In scope as a modern autonomous LLM-based agent framework. Mappings were
+    normalized and extended to synthesized dimensions.
+- object_name: Inner Monologue
+  action: retained
+  reasoning: In scope as a post-2020 autonomous embodied LLM-based agent. Feedback
+    mapping was corrected to human feedback because the paper explicitly includes
+    human feedback streams.
+- object_name: ChatDev
+  action: retained
+  reasoning: In scope as a multi-agent software-development architecture. Mappings
+    were normalized to conversational control and inter-agent feedback.
+- object_name: DEPS
+  action: retained
+  reasoning: In scope as an autonomous LLM-based embodied agent architecture. Execution
+    environment was interpreted as digital embodied environment rather than physical
+    robotics.
+- object_name: Auto-GPT styled agent with Additional Opinions
+  action: retained
+  reasoning: Retained as a distinct architecture variant rather than merged with AutoGPT
+    because the external expert-opinion mechanism materially changes the architecture.
+- object_name: SayCan
+  action: retained
+  reasoning: In scope as a post-2020 autonomous embodied language-grounded agent.
+    Memory mapping was set to none because no distinctive memory organization is central.
+- object_name: ChemCrow
+  action: retained
+  reasoning: In scope as a modern LLM-based agent system. Capability-source elements
+    from Taxonomy B were not preserved as a dimension, so mappings were reassigned
+    to action grounding and residual memory categories.
+- object_name: CAMEL role-playing framework
+  action: retained
+  reasoning: In scope as a multi-agent autonomous framework. Its conversational multi-agent
+    structure contributes to the taxonomy.
+- object_name: Generative Agents
+  action: retained
+  reasoning: Retained despite simulation emphasis because it is an autonomous multi-agent
+    architecture, not a pure benchmark or evaluation tool.
+- object_name: HuggingGPT
+  action: retained
+  reasoning: In scope as a modern LLM-based orchestrator agent. Its planning was reassigned
+    from reactive loop to hierarchical control for better fit.
+- object_name: ReAct
+  action: retained
+  reasoning: In scope as a foundational modern LLM agent architecture. Its feedback
+    mapping was set to environment because observation is integral to the loop.
+- object_name: Reflexion
+  action: retained
+  reasoning: In scope as an autonomous single-agent architecture with reflection memory.
+    Its control pattern was reassigned to closed-loop replanning for better plausibility.
+- object_name: Voyager
+  action: retained
+  reasoning: In scope as a modern autonomous LLM-based embodied agent. Human involvement
+    was corrected from integrated to optional because human guidance is not required
+    in the core design.
+- object_name: AutoGen
+  action: retained
+  reasoning: In scope as a multi-agent conversational framework. It was retained as
+    distinct from CAMEL because the framework design and human-loop affordances differ.
+- object_name: EUREKA
+  action: retained
+  reasoning: Retained as a goal-directed autonomous agentic architecture rather than
+    a pure benchmark, despite its focus on reward design. Its adaptation was represented
+    through closed-loop replanning and code artifacts in the synthesized taxonomy.

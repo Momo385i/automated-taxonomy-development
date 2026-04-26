@@ -1,0 +1,42 @@
+iteration: 2
+object_validation:
+- object_name: SayCan
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based embodied agent system published
+    after 2020; mappings were normalized to the synthesized dimensions.
+- object_name: ChemCrow
+  action: retained
+  reasoning: Within scope as an LLM-based autonomous tool-using agent system; mappings
+    were re-evaluated under the synthesized taxonomy.
+- object_name: CAMEL role-playing framework
+  action: retained
+  reasoning: Within scope as a multi-agent autonomous framework rather than a pure
+    benchmark or evaluation tool.
+- object_name: Generative Agents
+  action: retained
+  reasoning: Within scope as a multi-agent autonomous architecture with explicit memory,
+    planning, and social behavior.
+- object_name: HuggingGPT
+  action: retained
+  reasoning: Within scope as a controller-style autonomous agent architecture orchestrating
+    expert models.
+- object_name: ReAct
+  action: retained
+  reasoning: Within scope as a foundational modern LLM agent architecture exhibiting
+    autonomous goal-directed behavior.
+- object_name: Reflexion
+  action: retained
+  reasoning: Within scope as an autonomous LLM agent architecture with reflective
+    memory across attempts.
+- object_name: VOYAGER
+  action: retained_renamed
+  reasoning: Within scope and normalized to the more standard title-cased name 'Voyager';
+    mappings were re-evaluated under the synthesized taxonomy.
+- object_name: AutoGen
+  action: retained
+  reasoning: Within scope as a multi-agent framework for autonomous conversational
+    coordination.
+- object_name: EUREKA
+  action: retained
+  reasoning: Within scope as an agentic coding system for autonomous reward design;
+    although specialized, it is an architecture rather than an evaluation framework.

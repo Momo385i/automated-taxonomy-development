@@ -1,0 +1,94 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent
+  - id: D1.C2
+    name: Multi-agent
+- id: D2
+  name: Actuation domain
+  characteristics:
+  - id: D2.C1
+    name: Digital
+  - id: D2.C2
+    name: Physical
+  - id: D2.C3
+    name: Hybrid
+- id: D3
+  name: Action interface
+  characteristics:
+  - id: D3.C1
+    name: Skill selection
+  - id: D3.C2
+    name: Tool invocation
+  - id: D3.C3
+    name: Code execution
+  - id: D3.C4
+    name: Language actions
+  - id: D3.C5
+    name: Message exchange
+  - id: D3.C6
+    name: Memory operations
+- id: D4
+  name: Memory architecture
+  characteristics:
+  - id: D4.C1
+    name: None
+  - id: D4.C2
+    name: Reflection memory
+  - id: D4.C3
+    name: Skill library
+  - id: D4.C4
+    name: Conversation history
+  - id: D4.C5
+    name: Memory stream
+  - id: D4.C6
+    name: Hierarchical memory
+- id: D5
+  name: Planning organization
+  characteristics:
+  - id: D5.C1
+    name: Reactive loop
+  - id: D5.C2
+    name: Hierarchical planning
+  - id: D5.C3
+    name: Conversational planning
+- id: D6
+  name: Adaptation mechanism
+  characteristics:
+  - id: D6.C1
+    name: None
+  - id: D6.C2
+    name: Reasoning-action loop
+  - id: D6.C3
+    name: Verbal reflection
+  - id: D6.C4
+    name: Code refinement
+  - id: D6.C5
+    name: Evolutionary search
+- id: D7
+  name: Grounding mechanism
+  characteristics:
+  - id: D7.C1
+    name: Affordance grounding
+  - id: D7.C2
+    name: Tool grounding
+  - id: D7.C3
+    name: Social grounding
+  - id: D7.C4
+    name: Prompt grounding
+  - id: D7.C5
+    name: Memory grounding
+- id: D8
+  name: Task sourcing
+  characteristics:
+  - id: D8.C1
+    name: External task
+  - id: D8.C2
+    name: Self curriculum
+notes:
+  format: prototype_v1

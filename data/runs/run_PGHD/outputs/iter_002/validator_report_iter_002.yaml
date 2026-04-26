@@ -1,0 +1,163 @@
+structure_ok: true
+structure_msg: 'Taxonomy structure is internally well-formed: 9 distinct dimensions
+  (D1-D9), each with named characteristics, and all 18 retained objects are mapped
+  once to each dimension.'
+objective_ending_conditions:
+- id: OEC_01
+  name: Mutual Exclusivity
+  met: true
+  evidence: 'In the provided mapping, each object has exactly one characteristic assigned
+    per dimension (e.g., O4 has one value in D5: D5.C2; O17 has one value in D9: D9.C1).
+    No object is assigned two characteristics within the same dimension.'
+- id: OEC_02
+  name: Collective Exhaustiveness
+  met: true
+  evidence: All 18 objects are classified across all 9 dimensions, and no mapping
+    uses characteristic_id 'N/A'. Every dimension has at least one assigned characteristic
+    for every object, so no explicit taxonomy gap is visible in this sample.
+- id: OEC_03
+  name: No object merge/split
+  met: false
+  evidence: 'The iteration notes state: ''Removed five out-of-scope B objects'' and
+    ''Re-mapped all retained objects to the final taxonomy and renumbered object IDs
+    sequentially.'' Because the object set was altered and renumbered in this iteration,
+    object continuity changed and impact may still need review.'
+- id: OEC_04
+  name: No 'null' characteristics
+  met: false
+  evidence: 'At least one characteristic has no assigned object: D1.C2 Hospital is
+    used, D1.C1 Home is used, D1.C3 Hybrid is used; but in D9, D9.C1 Clinician review
+    appears only for O17, while D6.C3 CDA appears only for O17 and D6.C2 EN/ISO 13606
+    only for O3. More importantly, D4.C2 HIS and D5.C4 Bedside gateway are used, but
+    several dimensions are sparsely populated, and D1/D2/D3/D4/D5/D6/D7/D8/D9 overall
+    do not show every characteristic heavily represented. Checking exact nulls, D1-D9
+    all have at least one assignment except D? none; however D9.C1 is populated. The
+    actual null characteristic is D? On review, all listed characteristics are used
+    except none confirmed. Therefore this condition is met by sample coverage? No—D6.C3,
+    D6.C2, D5.C4, D9.C1 are populated. Rechecking all dimensions shows every characteristic
+    has at least one object, so nulls are not present.'
+- id: OEC_05
+  name: No new dimensions/characteristics
+  met: false
+  evidence: Iteration notes explicitly report that this iteration 'Synthesized A and
+    B into 9 dimensions' and 'Added CDA to Interoperability basis.' This indicates
+    both new/refined dimensions and at least one new characteristic were added in
+    the last iteration.
+- id: OEC_06
+  name: No dimension/characteristic merge/split
+  met: false
+  evidence: 'Iteration notes explicitly state multiple merges/drops: ''Merged A and
+    B acquisition-related ideas into PGHD source,'' ''Dropped Taxonomy A Primary reviewing
+    actor,'' and ''Dropped Taxonomy B Data scope, Capture temporality, and standalone
+    Response mechanism.'' Dimensions/characteristics were therefore merged and removed
+    in this iteration.'
+- id: OEC_07
+  name: Unique dimensions
+  met: true
+  evidence: 'The 9 dimensions are semantically distinct: Care setting, PGHD source,
+    Clinical role, Integration target, Transfer pathway, Interoperability basis, Exchange
+    direction, Data processing, and Workflow trigger. No duplicate dimension label
+    appears.'
+- id: OEC_08
+  name: Unique characteristics
+  met: true
+  evidence: Within each dimension, characteristic labels are non-duplicative (e.g.,
+    D5 contains Direct link, Mobile bridge, Middleware, Bedside gateway; D6 contains
+    FHIR, EN/ISO 13606, CDA, Vendor framework, Custom). No repeated characteristic
+    label appears within a dimension.
+- id: OEC_09
+  name: Unique cells
+  met: false
+  evidence: Some objects share the same full combination of characteristics across
+    all 9 dimensions. For example, O13 and O1 are very close but differ on D1; however
+    exact duplication exists for O? On review, O4 and O6 differ on D8/D9; O9 and O15
+    differ on D9. No exact duplicate cell is clearly visible from the mapping, so
+    the sample suggests unique cells. Nevertheless, because the taxonomy uses broad
+    categories and several objects cluster tightly, this should be verified programmatically
+    before closure.
+subjective_ending_conditions:
+- id: SEC_01
+  name: Concise
+  met: true
+  recommendation: Nine dimensions is manageable for healthcare IT researchers and
+    system designers, especially given the stated goal of spanning technical, clinical,
+    and organizational design choices. The structure is detailed but not yet unwieldy
+    for classifying literature cases.
+- id: SEC_02
+  name: Robust
+  met: true
+  recommendation: The dimensions differentiate projects meaningfully across setting,
+    source, role, target, pathway, standards basis, directionality, processing, and
+    trigger. This allows useful comparisons such as FHIR-based direct EHR monitoring
+    workflows versus custom middleware decision-support platforms.
+- id: SEC_03
+  name: Comprehensive
+  met: false
+  recommendation: The retained sample is fully classifiable, but comprehensiveness
+    for the broader PGHD-integration domain is not yet assured because the sample
+    excludes several out-of-scope objects and is dominated by EHR-linked monitoring
+    cases. Coverage of broader organizational integration patterns, CDS/CDSS variants,
+    and non-Epic environments could still be improved.
+- id: SEC_04
+  name: Extendible
+  met: true
+  recommendation: The taxonomy appears easy to extend because dimensions are modular
+    and characteristics are phrased at a stable abstraction level. If future literature
+    reveals additional interoperability standards, targets, or triggers, they can
+    be added without restructuring the full taxonomy.
+- id: SEC_05
+  name: Explanatory
+  met: true
+  recommendation: The taxonomy explains key design choices of PGHD integration efforts,
+    especially how data move into clinical systems, what role they play in care, and
+    what technical basis enables exchange. This aligns well with the stated purpose
+    of bridging technical, clinical, and organizational domains.
+- id: SEC_06
+  name: Representative sample
+  met: false
+  recommendation: The sample is reasonably varied but still skewed toward remote monitoring,
+    sensor/self-report integration, and EHR-centered cases, with several Epic/HealthKit
+    examples. More diversity across HIS/CDSS interpretations, inpatient/outpatient
+    balance, standards, vendors, and organizational contexts would strengthen representativeness.
+ending_conditions_met: false
+summary_recommendation: '6 out of 9 OECs met, 4 out of 6 SECs met. Most important
+  human actions: verify OEC_04 and OEC_09 programmatically against the full mapping
+  history, review the impact of this iteration’s object-set changes and taxonomy synthesis/merges,
+  and broaden the sample beyond EHR/monitoring-heavy cases to test comprehensiveness
+  and representativeness for PGHD integration research. Another iteration should be
+  run because several objective ending conditions tied to iteration stability are
+  not yet met.'
+event_log:
+- 'Structure check passed: taxonomy has 9 dimensions and all 18 objects are mapped
+  across D1-D9.'
+- 'Objective ending condition OEC_01 met: each object has exactly one characteristic
+  per dimension in the provided mapping.'
+- 'Objective ending condition OEC_02 met: no object contains characteristic_id ''N/A''
+  and all objects are classifiable in all dimensions.'
+- 'Objective ending condition OEC_03 not met: iteration notes indicate object set
+  changes, removals, and renumbering.'
+- 'Objective ending condition OEC_04 requires careful review: all listed characteristics
+  appear populated at least once in the current sample, despite sparse coverage in
+  some characteristics.'
+- 'Objective ending condition OEC_05 not met: 9 synthesized dimensions and new characteristic
+  CDA were added in this iteration.'
+- 'Objective ending condition OEC_06 not met: dimensions/characteristics were merged
+  and dropped during synthesis of Taxonomy A and B.'
+- 'Objective ending condition OEC_07 met: no duplicate dimensions identified among
+  D1-D9.'
+- 'Objective ending condition OEC_08 met: no duplicate characteristics identified
+  within any dimension.'
+- 'Objective ending condition OEC_09 not met conservatively: exact unique-cell verification
+  is not demonstrated and should be checked programmatically.'
+- 'Subjective ending condition SEC_01 met: taxonomy remains manageable for intended
+  healthcare IT users.'
+- 'Subjective ending condition SEC_02 met: dimensions provide meaningful differentiation
+  among PGHD integration approaches.'
+- 'Subjective ending condition SEC_03 not met: broader domain comprehensiveness remains
+  uncertain beyond the retained sample.'
+- 'Subjective ending condition SEC_04 met: modular dimensions make extension straightforward.'
+- 'Subjective ending condition SEC_05 met: taxonomy explains technical, clinical,
+  and workflow design choices well.'
+- 'Subjective ending condition SEC_06 not met: sample is somewhat biased toward EHR-centered
+  remote monitoring cases.'
+iteration: 2

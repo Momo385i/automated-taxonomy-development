@@ -1,0 +1,16 @@
+iteration: 3
+changes_short:
+- Validated Taxonomy A and normalized names to concise noun phrases.
+- Synthesized A and B into 8 dimensions, staying within the dimension limit.
+- Kept Agent cardinality, Execution environment, Task source, and Human involvement
+  from B due to strong explanatory value.
+- Merged A's operational and planning dimensions with B's planning structure into
+  one Control pattern dimension.
+- Removed B's Capability source and Adaptation mechanism as standalone dimensions
+  due to overlap and non-MECE behavior; redistributed their signal into Memory organization,
+  Feedback source, and Action grounding.
+- Refined Memory organization with a residual None characteristic to ensure exhaustiveness.
+- Expanded Feedback source with Human to distinguish human from expert and environment
+  feedback.
+- Merged and remapped all objects into a single consistent object-centric mapping
+  with sequential IDs.

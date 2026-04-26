@@ -1,0 +1,62 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent architecture
+  - id: D1.C2
+    name: Multi-agent architecture
+- id: D2
+  name: Action grounding basis
+  characteristics:
+  - id: D2.C1
+    name: Language-only reasoning
+  - id: D2.C2
+    name: Tool-grounded execution
+  - id: D2.C3
+    name: Affordance-grounded execution
+  - id: D2.C4
+    name: Memory-grounded simulation
+  - id: D2.C5
+    name: Model-grounded orchestration
+- id: D3
+  name: Control organization
+  characteristics:
+  - id: D3.C1
+    name: Centralized controller
+  - id: D3.C2
+    name: Role-based peer interaction
+- id: D4
+  name: External capability integration
+  characteristics:
+  - id: D4.C1
+    name: No external specialist modules
+  - id: D4.C2
+    name: Skill library
+  - id: D4.C3
+    name: Tool library
+  - id: D4.C4
+    name: Model hub
+- id: D5
+  name: Planning horizon structure
+  characteristics:
+  - id: D5.C1
+    name: Stepwise iterative planning
+  - id: D5.C2
+    name: Hierarchical long-horizon planning
+  - id: D5.C3
+    name: Conversational turn-by-turn planning
+- id: D6
+  name: Environment embodiment
+  characteristics:
+  - id: D6.C1
+    name: Physical-world embodiment
+  - id: D6.C2
+    name: Virtual-world embodiment
+  - id: D6.C3
+    name: Digital tool environment
+notes:
+  format: prototype_v1

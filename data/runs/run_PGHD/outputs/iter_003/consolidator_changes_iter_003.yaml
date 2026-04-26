@@ -1,0 +1,18 @@
+iteration: 3
+changes_short:
+- Normalized all dimension and characteristic names to concise noun phrases.
+- Synthesized Taxonomy A and B into 9 dimensions balancing technical, clinical, and
+  organizational design choices.
+- Retained A dimensions on source composition, coupling, transfer mode, presentation,
+  purpose, and standards because they better capture integration design choices.
+- Incorporated B dimensions on exchange direction, processing level, and workflow
+  trigger because they add explanatory power absent in A.
+- Dropped B Care setting and Integration target dimensions as insufficiently relevant
+  to the meta-characteristic compared with coupling and purpose.
+- Merged standards categories into FHIR, EN/ISO 13606, CDA/V2, openEHR, Vendor framework,
+  and Custom.
+- Reclassified several A objects from consultation-oriented purpose to monitoring
+  where decision support was not primary.
+- Renumbered taxonomy IDs and object IDs sequentially and ensured every object has
+  exactly one mapping per dimension.
+- No duplicate objects across A and B were detected.

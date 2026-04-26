@@ -1,0 +1,110 @@
+iteration: 3
+object_validation:
+- object_name: REMORA smartphone-to-EHR rheumatoid arthritis integration
+  action: retained
+  reasoning: In-scope PGHD integration project with plausible mappings; presentation
+    and purpose were normalized to the synthesized dimensions.
+- object_name: PatientDataChain blockchain PHR integration platform
+  action: retained
+  reasoning: In-scope platform integrating PGHD with clinical systems; retained despite
+    broad record-unification emphasis because integration into clinical use is explicit.
+- object_name: eCoach tethered PHR-EHR interoperability prototype
+  action: retained
+  reasoning: Clearly in scope as a PGHD-PHR-EHR interoperability prototype.
+- object_name: SafeHeart multimodal ICD prediction platform
+  action: retained
+  reasoning: Retained because it integrates PGHD into a clinician-facing clinical
+    platform, which is included under the broadened clinical systems scope.
+- object_name: MyHealthKeeper EHR-tethered PHR with wearable integration
+  action: retained
+  reasoning: Clearly in scope as EHR-tethered PGHD integration.
+- object_name: DM-TNG MyChart and Apple HealthKit blood glucose integration
+  action: retained
+  reasoning: Clearly in scope as blood glucose PGHD integration into Epic-linked workflows.
+- object_name: HeartMapp CHF mobile telemedicine and web monitoring system
+  action: retained
+  reasoning: Retained as a clinician-facing PGHD integration system, though not directly
+    EHR-embedded.
+- object_name: ROAMM-EHR smartwatch-to-Epic postoperative monitoring platform
+  action: retained
+  reasoning: Clearly in scope as postoperative PGHD integration into Epic via intermediary
+    infrastructure.
+- object_name: PD_Manager mHealth clinical decision support system for Parkinson’s
+    disease
+  action: retained
+  reasoning: Retained because it is a clinical PGHD integration system with clinician-facing
+    decision support, not merely a clinical outcome evaluation.
+- object_name: iT2DM diabetes PGHD-integrated phenotyping framework
+  action: retained
+  reasoning: Retained as an integration framework with PGHD and clinical-system data;
+    secondary-use orientation is still within the integration focus.
+- object_name: SMART on FHIR PRO integration architecture
+  action: retained
+  reasoning: Clearly in scope as a standards-based PRO integration architecture across
+    EHRs.
+- object_name: Smartwatch anomaly dashboard prototype
+  action: retained
+  reasoning: Retained as a clinician-facing PGHD integration prototype; scope acceptable
+    because it bridges PGHD into clinical review workflows.
+- object_name: OpenEDC next-generation study database with PROM integration
+  action: retained
+  reasoning: Retained as borderline but in-scope because EHR-integrated PROM exchange
+    is explicit; not removed since doubtful cases should be kept.
+- object_name: Xemio Research to OntoCR standardized extract integration
+  action: retained
+  reasoning: Clearly in scope as standardized PGHD integration into an EHR-linked
+    repository.
+- object_name: Asthma Health to Epic via HealthKit and MyChart
+  action: retained
+  reasoning: Clearly in scope as smartphone PGHD integration into Epic.
+- object_name: DH-Convener MPI-based PGHD interoperability framework
+  action: retained
+  reasoning: Clearly in scope as a PGHD interoperability framework targeting EHR integration.
+- object_name: Dexcom CGM to Epic integration via HealthKit and MyChart
+  action: retained
+  reasoning: Clearly in scope as automated CGM integration into Epic.
+- object_name: COVID-19 Tracker integrated into Epic workflow
+  action: retained
+  reasoning: Clearly in scope as FHIR-based app-to-EHR workflow integration.
+- object_name: Smart bed wireless biomonitoring architecture
+  action: retained
+  reasoning: Retained because the user defined EHR broadly to include HIS; this is
+    HIS integration of patient-generated monitoring data.
+- object_name: Wearable-based automated NEWS2 calculation
+  action: retained
+  reasoning: Retained as an inpatient clinical-system integration of wearable PGHD;
+    decision-support processing is explicit.
+- object_name: Sensi-steps post-stroke fall prevention application
+  action: retained
+  reasoning: Retained as an EHR/portal-connected PGHD integration system with risk
+    outputs.
+- object_name: Tidepool-TIDE diabetes population management platform
+  action: retained
+  reasoning: Retained because it is a clinical platform integrating PGHD into operational
+    diabetes management workflows.
+- object_name: P2E2T diabetes coaching with EHR-integrated PGHD
+  action: retained
+  reasoning: Retained because the project includes explicit EHR-integrated PGHD use,
+    not just clinical outcomes.
+- object_name: COVID-19 home quarantine clinical decision support system
+  action: retained
+  reasoning: Retained as a clinician-facing PGHD integration platform with explicit
+    clinical use.
+- object_name: EHR-integrated postpartum HDP monitoring app
+  action: retained
+  reasoning: Clearly in scope as SMART on FHIR-based EHR integration.
+- object_name: MobiCardio clinical-grade CVD management system
+  action: retained
+  reasoning: Retained because it integrates wearable PGHD into a HIS, which is in
+    scope per user instruction.
+- object_name: PROMIS CAT middleware integration into Epic
+  action: retained
+  reasoning: Clearly in scope as middleware-based PRO integration into Epic.
+- object_name: HL7 CDA middleware information model for PGHD and ODL exchange
+  action: retained
+  reasoning: Retained as an information-model-based PGHD exchange artifact targeted
+    at EHR integration.
+- object_name: 4T CGM-to-EHR integration for pediatric type 1 diabetes
+  action: retained
+  reasoning: Clearly in scope as CGM and PRO integration into EHR-supported diabetes
+    care.

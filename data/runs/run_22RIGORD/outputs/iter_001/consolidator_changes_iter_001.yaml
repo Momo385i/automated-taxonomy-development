@@ -1,0 +1,8 @@
+iteration: 1
+changes_short:
+- Normalized dimension and characteristic names to concise noun phrases.
+- Verified all six objects are in scope and retained them.
+- Confirmed no duplicate objects required merging.
+- Checked all mappings for plausibility and kept assignments.
+- Verified one mapping per dimension for every object.
+- Retained residual characteristic 'Unspecified' in Memory form to satisfy exhaustiveness.

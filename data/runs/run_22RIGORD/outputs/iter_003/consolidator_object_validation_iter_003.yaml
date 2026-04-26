@@ -1,0 +1,60 @@
+iteration: 3
+object_validation:
+- object_name: SayCan
+  action: retained
+  reasoning: Within scope as a post-2020 autonomous LLM-based embodied agent architecture.
+- object_name: ChemCrow
+  action: retained
+  reasoning: Within scope as a modern LLM-based autonomous tool-using agent.
+- object_name: CAMEL role-playing framework
+  action: retained
+  reasoning: Within scope as a multi-agent LLM framework exhibiting autonomous goal-directed
+    behavior.
+- object_name: Generative Agents
+  action: retained
+  reasoning: Within scope as a multi-agent autonomous architecture with explicit planning
+    and memory.
+- object_name: HuggingGPT
+  action: retained
+  reasoning: Within scope as an LLM-based orchestration agent architecture.
+- object_name: ReAct
+  action: retained
+  reasoning: Within scope as a foundational post-2020 autonomous agent architecture.
+- object_name: Reflexion
+  action: retained
+  reasoning: Within scope as a single-agent architecture with explicit self-improvement
+    behavior.
+- object_name: Voyager
+  action: retained
+  reasoning: Within scope as an autonomous embodied LLM agent with self-generated
+    curriculum.
+- object_name: AutoGen
+  action: retained
+  reasoning: Within scope as a multi-agent conversational architecture.
+- object_name: EUREKA
+  action: retained
+  reasoning: Retained as a modern autonomous agentic system for iterative reward design;
+    although specialized, it remains within architectural scope and is not merely
+    an evaluation tool.
+- object_name: AutoGPT
+  action: retained
+  reasoning: Retained as a widely recognized autonomous LLM agent architecture; source
+    quality is weaker than other objects but the object itself is in scope.
+- object_name: BabyAGI
+  action: retained
+  reasoning: Retained as an autonomous task-managing LLM agent architecture; source
+    quality is weaker than primary papers but the object itself is in scope.
+- object_name: Inner Monologue
+  action: retained
+  reasoning: Within scope as a post-2020 embodied autonomous agent architecture.
+- object_name: ChatDev
+  action: retained
+  reasoning: Within scope as a multi-agent software-development architecture with
+    autonomous role coordination.
+- object_name: DEPS
+  action: retained
+  reasoning: Within scope as an LLM-based planning agent architecture.
+- object_name: Auto-GPT with Additional Opinions
+  action: retained
+  reasoning: Retained as a distinct variant rather than a duplicate of AutoGPT because
+    it adds architectural components for advisory feedback and retrieval memory.

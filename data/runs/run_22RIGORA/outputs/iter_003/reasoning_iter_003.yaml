@@ -1,0 +1,219 @@
+iteration: 3
+empirical_reasoning: 'I followed an empirical-to-conceptual procedure anchored strictly
+  in the provided sources and in the object class defined by the topic: autonomous
+  AI agent systems/frameworks with architectural and behavioral properties. I first
+  identified candidate objects explicitly described as agent systems or frameworks
+  rather than general concepts, benchmarks, or isolated components. This yielded six
+  coherent objects from the sources: AutoGPT and BabyAGI from Goola (both explicit
+  autonomous agent frameworks), Inner Monologue from Huang et al. (an embodied LLM-based
+  agent architecture), ChatDev from Qian et al. (a multi-agent software-development
+  framework), DEPS from Wang (an interactive planning agent architecture), and an
+  Auto-GPT styled agent with Additional Opinions from Yang et al. (a concrete architectural
+  variant of Auto-GPT used in online decision-making). I excluded objects such as
+  Custom GPTs, Meta AI assistants, enterprise integration patterns, success detectors,
+  selectors alone, or baseline evaluation models because they were either not sufficiently
+  described as autonomous agent systems in the target class, or they were components/benchmarks
+  rather than the focal system-level architectures.
+
+
+  Next, I extracted differentiating characteristics only where the sources provided
+  repeated, concrete architectural descriptions. I did not include broad notions like
+  “uses LLMs” because that applies to all or nearly all objects and does not discriminate.
+  I also avoided application-domain dimensions such as robotics vs software development,
+  because the user requested system-level architecture and behavior rather than domain
+  performance. The retained dimensions emerged from recurrent contrasts in the sources.
+
+
+  Dimension D1, Agent cardinality, is directly supported by the contrast between single-agent
+  systems (AutoGPT, BabyAGI, Inner Monologue, DEPS, Auto-GPT styled agent) and explicitly
+  multi-agent systems (ChatDev). This dimension is concise, non-overlapping, and clearly
+  discriminating.
+
+
+  Dimension D2, Operational control pattern, captures the primary control logic by
+  which the system proceeds through work. The sources describe distinct patterns rather
+  than a shared generic planning process: AutoGPT as self-prompting architecture;
+  BabyAGI as task creation/prioritization/execution cycle; Inner Monologue and DEPS
+  as closed-loop replanning architectures driven by execution feedback; ChatDev as
+  a phase-chained collaborative workflow; and Yang et al.’s agent as an Auto-GPT decision
+  loop with Thoughts/Reasoning/Plan/Criticism. I kept these categories separate because
+  the sources present them as materially different operating logics. I did not merge
+  DEPS and Inner Monologue beyond closed-loop replanning because the operational distinction
+  needed for this dimension is the shared control pattern, while their specific refinement
+  mechanisms are captured elsewhere.
+
+
+  Dimension D3, Feedback integration mode, was strongly grounded in the empirical
+  material. Some systems are defined by explicit environment feedback (Inner Monologue,
+  DEPS), some by inter-agent communication as the main coordination/feedback channel
+  (ChatDev), some by expert-opinion injection from external models (Auto-GPT with
+  Additional Opinions), and others in the provided descriptions do not centrally integrate
+  such external feedback mechanisms (AutoGPT, BabyAGI). I used “No external feedback
+  integration” rather than “open loop” because the sources for AutoGPT and BabyAGI
+  still describe internal loops, but not explicit externalized feedback channels of
+  the types seen in the other systems.
+
+
+  Dimension D4, Memory organization, was included because the sources provide clear
+  and varied memory structures for several objects. AutoGPT has token-based context
+  retention; BabyAGI has a centralized task database; ChatDev has explicit short-term
+  and long-term memory segmented by phase; Yang et al. explicitly characterize Auto-GPT
+  styled agents as having long-term self-memory and retrieval. For Inner Monologue
+  and DEPS, the sources do not define a comparably explicit memory architecture, so
+  I first checked whether a new characteristic could be added. Because the empirical
+  material only supports that memory architecture is unspecified, rather than a shared
+  positive structure, I added “Not specified” as a legitimate characteristic. This
+  resolves the coverage requirement without forcing unsupported invention. Each characteristic
+  is linked to at least one object.
+
+
+  Dimension D5, Action grounding, captures how high-level reasoning is translated
+  into executable operations. This emerged as a strong discriminant across sources:
+  AutoGPT uses command/tool actions; Inner Monologue and DEPS ground plans in skill
+  libraries or goal-conditioned controllers; ChatDev acts through code artifact production
+  and modification; BabyAGI executes prioritized tasks in an environment-native way
+  rather than through a highlighted command API or robotic skill library. The categories
+  are mutually exclusive at the level of primary grounding mechanism described in
+  each source.
+
+
+  Dimension D6, Planning refinement mechanism, captures how the system improves or
+  repairs decisions once operating. This is separate from D2 because D2 classifies
+  the overarching control pattern, whereas D6 isolates the specific improvement/repair
+  mechanism empirically emphasized: AutoGPT uses reflection-based self-improvement;
+  Inner Monologue and DEPS use feedback-triggered replanning; ChatDev uses clarification-based
+  communicative dehallucination; Yang et al. use external-opinion augmentation; BabyAGI
+  has no separately specified refinement mechanism in the source. I kept “None specified”
+  to avoid inventing refinement where the text does not support one.
+
+
+  I then mapped each object to exactly one characteristic per dimension. For every
+  assignment, I used only short logical justifications based on the source descriptions,
+  without introducing claims beyond the text. I also checked MECE conditions within
+  each dimension. For D1, the two characteristics are exhaustive and exclusive. For
+  D2, each object has one dominant operational control pattern. For D3, the categories
+  are exclusive because each object is classified by its primary feedback mode as
+  described in the source. For D4, the explicit memory organizations plus “Not specified”
+  cover all objects. For D5, the action grounding types are distinct at the primary
+  mechanism level. For D6, each object has one dominant refinement mechanism or lacks
+  one explicitly.
+
+
+  Several deliberate exclusions were made for parsimony and empirical discipline.
+  I did not add dimensions for personalization, multimodality, enterprise deployment,
+  governance, or domain because these were either peripheral to the selected agent
+  objects, not consistently available across objects, or not central to architectural
+  comparison. I also did not create a dimension for “uses LLM as cognitive engine”
+  because it would not differentiate the selected modern agents. Likewise, I did not
+  separate DEPS’s selector into its own dimension because only one object in the selected
+  set explicitly introduces that mechanism, which would have reduced parsimony.
+
+
+  The main limitation is source heterogeneity. The sources differ in granularity and
+  emphasis: some provide rich system architecture details (ChatDev, Inner Monologue,
+  DEPS), while others are more high-level comparative summaries (Goola on AutoGPT
+  and BabyAGI). To remain conservative, I only encoded dimensions that could be grounded
+  across multiple objects or could be exhaustively covered with an empirically warranted
+  residual characteristic such as “Not specified.” The taxonomy therefore favors robust,
+  source-supported distinctions over maximal completeness. This is consistent with
+  the user’s purpose of structuring an emerging phenomenon while preserving comparability
+  across contemporary LLM-based agent architectures.'
+consolidator_reasoning: 'I first validated Taxonomy A against the schema and MECE
+  requirements. Its overall structure was usable, but several names were too long
+  and some dimensions were not fully MECE. In particular, Taxonomy A''s Operational
+  control pattern mixed general control logics with one object-specific category (''Auto-GPT
+  decision loop''), which reduced generalizability. Action grounding also mixed execution
+  medium and capability source, while Planning refinement mechanism partly overlapped
+  with Feedback integration mode. Memory organization was useful but needed normalization
+  because ''Not specified'' is not a substantive architectural property; in the synthesized
+  taxonomy this gap was handled through an explicit residual memory category (''None'')
+  rather than a documentation-status label. Taxonomy A''s object assignments were
+  mostly plausible, though some were reframed to fit a more general synthesis.
+
+
+  I then compared both taxonomies side by side. Taxonomy B contributed several structurally
+  strong dimensions with broad comparative value for Information Systems researchers
+  and practitioners: Task sourcing, Termination assessment, Environment embodiment,
+  and the distinction between centralized and peer-based coordination. However, Taxonomy
+  B''s Action grounding dimension was not MECE because it mixed fundamentally different
+  notions: language as interaction medium, tools as capability integration, affordances
+  as environment coupling, memory as an internal architectural resource, models as
+  external capability sourcing, and code as executable artifact form. These characteristics
+  can co-occur in the same system, so the dimension was excluded as a standalone dimension.
+  Likewise, some of Taxonomy A''s dimensions needed restructuring because they captured
+  overlapping aspects. To preserve explanatory power without unnecessary complexity,
+  I synthesized the two inputs into nine dimensions: Agent organization, Control pattern,
+  Coordination structure, Feedback source, Memory structure, Capability integration,
+  Task sourcing, Termination assessment, and Environment embodiment.
+
+
+  This synthesis keeps the strongest ideas from both taxonomies while ensuring MECE.
+  Agent organization retains the core single-agent versus multi-agent distinction
+  present in both taxonomies. Control pattern consolidates Taxonomy A''s operational
+  loop emphasis with Taxonomy B''s planning structure, but eliminates object-specific
+  or overly narrow categories. I replaced ''Auto-GPT decision loop'' with the more
+  general ''Reactive loop'' because AutoGPT-style loops are a subtype of recurrent
+  reactive control, and keeping a vendor-specific category would reduce extensibility.
+  I also merged conversational and phase-based collaboration into ''Conversational
+  phases'' to cover systems whose primary control logic is staged conversational progression.
+  Coordination structure was separated from agent count so that multi-agent systems
+  can be differentiated by whether control is centralized or peer-based; single-agent
+  systems are naturally centralized. Feedback source was retained because it directly
+  captures a core behavioral property: whether adaptation is driven by internal reasoning,
+  environmental input, inter-agent exchange, or external expert opinions. Memory structure
+  integrates the useful memory distinctions from both taxonomies while making them
+  more general and exclusive: None, Contextual, Task memory, Reflective, Phase memory,
+  and Skill memory. Capability integration captures how external or reusable capabilities
+  are incorporated: none, tool library, skill library, model hub, or code artifacts.
+  This absorbs useful content from both Taxonomy A''s Action grounding and Taxonomy
+  B''s Capability integration while avoiding overlap with control and memory. The
+  remaining three dimensions from Taxonomy B—Task sourcing, Termination assessment,
+  and Environment embodiment—were kept because they directly support comparison of
+  autonomous agent architectures and behaviors without drifting into evaluation-only
+  concerns.
+
+
+  I excluded or transformed specific elements only when they did not contribute to
+  a coherent taxonomy under the meta-characteristic. Taxonomy A''s object-specific
+  characteristic ''Auto-GPT decision loop'' was generalized into Reactive loop. Taxonomy
+  A''s Planning refinement mechanism was removed as a separate dimension because reflection,
+  feedback-driven replanning, clarification, and external opinions are better represented
+  through Feedback source, Memory structure, and Termination assessment, and otherwise
+  the same object could plausibly require multiple characteristics. Taxonomy A''s
+  Action grounding was removed as a separate dimension because command/tool actions,
+  skill-library actions, code artifact actions, and environment-native actions combine
+  execution medium, capability source, and environment relation; this caused overlap
+  with Capability integration and Environment embodiment. Taxonomy B''s Action grounding
+  was removed for the same reason, and its Memory structure was expanded using A''s
+  empirically richer distinctions. No object was removed because all listed systems
+  are genuine autonomous AI agent systems or frameworks within scope, and none are
+  pure benchmarking or evaluation tools.
+
+
+  For object synthesis, there were no cross-taxonomy duplicates by name. I therefore
+  retained all sixteen unique objects and renumbered them sequentially. I merged source
+  references only where duplicate objects would have occurred, but no such case arose
+  here. All mappings were re-evaluated against the final taxonomy. Each object now
+  has exactly one characteristic per dimension, and every referenced dimension and
+  characteristic exists in the final taxonomy. I corrected several mappings made problematic
+  by the original taxonomies'' structural issues. For example, ReAct was originally
+  characterized under Taxonomy B''s action grounding as language-grounded, but in
+  the synthesized taxonomy its more discriminating placement is Reactive loop for
+  control pattern and Environment feedback for feedback source because its thought-action-observation
+  cycle depends on observation updates. Reflexion was placed under Closed-loop replanning
+  rather than plain Reactive loop because its defining contribution is feedback-based
+  revision across attempts. Voyager was mapped to Skill memory and Agent-verified
+  termination because these are central architectural features of the system. ChatDev
+  was mapped to Agent-verified termination because communicative dehallucination functions
+  as an explicit internal checking mechanism before output acceptance. Where a paper
+  did not define a persistent memory architecture, I used the residual characteristic
+  None instead of the documentation label ''Not specified.''
+
+
+  The final taxonomy satisfies the purpose of structuring an emerging phenomenon.
+  It stays within the nine-dimension limit, uses concise noun-phrase names, avoids
+  redundant dimensions, and offers explanatory power for comparing modern autonomous
+  AI agents at the system architecture level. It is also extensible: new agent systems
+  can be placed without requiring object-specific categories or N/A assignments. The
+  final object mapping is fully consistent with the taxonomy and preserves traceability
+  to the original inputs while improving coherence and comparability.'

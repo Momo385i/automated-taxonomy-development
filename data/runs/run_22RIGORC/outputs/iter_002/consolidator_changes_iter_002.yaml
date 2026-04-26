@@ -1,0 +1,16 @@
+iteration: 2
+changes_short:
+- Validated Taxonomy A structure and normalized names to concise noun phrases.
+- Synthesized A and B into 7 dimensions, keeping complementary dimensions from both
+  taxonomies.
+- Merged overlapping dimensions by combining A's environment dimension with B's task-generation
+  dimension rather than forcing one taxonomy to dominate.
+- Dropped Taxonomy B's Action representation as a final dimension because it mixed
+  output modality with coordination style and overlapped with capability integration.
+- Replaced A's Planning feedback basis with B's Improvement mechanism for clearer
+  cross-system comparability, while preserving execution and reflection distinctions.
+- Expanded Memory structure to include None, Reflective memory, and Skill library.
+- Merged and renumbered all objects into one consistent mapping with full coverage
+  across final dimensions.
+- Normalized object names and reassigned mappings to ensure exactly one characteristic
+  per dimension and no N/A values.

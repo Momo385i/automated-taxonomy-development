@@ -1,0 +1,54 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent architecture
+  - id: D1.C2
+    name: Multi-agent architecture
+- id: D2
+  name: External capability integration
+  characteristics:
+  - id: D2.C1
+    name: Internal language-only reasoning
+  - id: D2.C2
+    name: Integrated tools or expert models
+  - id: D2.C3
+    name: Integrated embodied skills
+- id: D3
+  name: Control organization
+  characteristics:
+  - id: D3.C1
+    name: Centralized controller
+  - id: D3.C2
+    name: Role-based peer interaction
+- id: D4
+  name: Memory structure
+  characteristics:
+  - id: D4.C1
+    name: No explicit long-term memory
+  - id: D4.C2
+    name: Structured memory stream
+- id: D5
+  name: Planning feedback basis
+  characteristics:
+  - id: D5.C1
+    name: Prompted reasoning only
+  - id: D5.C2
+    name: Environment-grounded execution feedback
+  - id: D5.C3
+    name: Memory-grounded reflection
+- id: D6
+  name: Primary operating environment
+  characteristics:
+  - id: D6.C1
+    name: Digital task environment
+  - id: D6.C2
+    name: Simulated social environment
+  - id: D6.C3
+    name: Physical environment
+notes:
+  format: prototype_v1

@@ -1,0 +1,357 @@
+iteration: 2
+objects:
+- id: O1
+  name: ReAct
+  source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ReAct is presented as a single LM-driven agent rather than a set of
+      interacting peer agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its defining control pattern is an interleaved reasoning-and-acting
+      loop rather than task-list management, staged planning, or multi-agent chat.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The agent emits textual action traces and text-form actions.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: Its main adaptation mechanism is interleaving reasoning traces with
+      actions during execution.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Behavior is adjusted from environment and task interaction outcomes.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: No separate persistent memory architecture is defined beyond current
+      context.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Goals are externally specified by benchmark tasks or prompts.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: The standard execution loop does not require human participation.
+- id: O2
+  name: Reflexion
+  source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Reflexion is framed as one agent with internal modules, not a multi-agent
+      system.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its operation remains a single-agent reasoning-and-acting loop across
+      repeated attempts.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Its outputs and corrective traces are primarily textual actions and
+      verbal artifacts.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The defining improvement mechanism is verbal self-reflection stored
+      for later trials.
+  - dimension_id: D5
+    characteristic_id: D5.C4
+    reasoning: It can incorporate evaluative or external feedback signals beyond raw
+      environment state, making expert-like feedback the best fit among the available
+      categories.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The architecture stores self-reflections in episodic or reflective
+      memory for reuse.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Tasks are benchmark- or user-specified rather than self-generated.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: The core framework is autonomous during task execution.
+- id: O3
+  name: Voyager
+  source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Voyager is one embodied agent despite multiple internal prompting components.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: It plans tasks and executes generated code, revising based on execution
+      outcomes in a plan-execute style loop.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Its primary action representation is executable code programs.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: The key adaptation mechanism is iterative refinement grounded in execution
+      feedback and self-verification.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The agent learns from environment responses, execution errors, and
+      embodied interaction outcomes.
+  - dimension_id: D6
+    characteristic_id: D6.C7
+    reasoning: A reusable skill library of code snippets is a central persistent memory
+      structure.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Voyager includes an automatic curriculum that generates new tasks for
+      itself.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Human feedback can augment the curriculum or critique process, but
+      is not always required.
+- id: O4
+  name: AutoGen
+  source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: AutoGen is explicitly a multi-agent framework based on conversations
+      among specialized agents.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: Its core execution organization is chained conversational exchange
+      among agents.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: Its operative unit is message passing among agents.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: Progress emerges through conversational coordination among specialized
+      agents.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: The main feedback source is inter-agent communication.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: It primarily relies on conversational context rather than a separate
+      persistent memory store.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Tasks are normally user- or benchmark-initiated.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: Human participation is configurable and optional via user proxy modes.
+- id: O5
+  name: EUREKA
+  source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: EUREKA is presented as a single agentic system for reward design.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: The system repeatedly proposes, evaluates, and refines code artifacts
+      in an execution-centered loop closest to plan-execute.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Its outputs are executable reward programs.
+  - dimension_id: D4
+    characteristic_id: D4.C5
+    reasoning: Its core improvement logic uses evolutionary search over candidate
+      reward programs.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Candidate reward functions are evaluated through environment execution
+      and resulting performance signals.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: No distinct persistent memory component is central to the architecture.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Reward-design problems are externally posed.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Human initialization and feedback are explicit augmentation options.
+- id: O6
+  name: AutoGPT
+  source_document: Goola 2025 - Autonomous Intelligence - A Technical Analysis of
+    Self-Directing AI Systems and Their Enterprise Implementation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: AutoGPT is typically presented as one autonomous agent architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its control logic follows a recurrent self-prompting thought-action
+      loop.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Its actions are typically expressed as textual commands and action
+      proposals.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: It includes reflective self-critique to adjust subsequent behavior.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Runtime feedback comes mainly from execution outcomes and external
+      environment interaction.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: It retains conversational and execution context as memory.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Objectives are externally given by the user.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: The standard loop is autonomous without required human intervention.
+- id: O7
+  name: BabyAGI
+  source_document: Goola 2025 - Autonomous Intelligence - A Technical Analysis of
+    Self-Directing AI Systems and Their Enterprise Implementation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: BabyAGI is a single-agent architecture with internal modules.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its defining pattern is create-prioritize-execute over a task list.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Its execution decisions are represented primarily in textual task descriptions
+      and actions.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: It revises subsequent actions by generating and reprioritizing tasks
+      based on prior outcomes.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Task execution outcomes drive subsequent updates.
+  - dimension_id: D6
+    characteristic_id: D6.C4
+    reasoning: It maintains a structured task store of pending and completed tasks.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: It generates new tasks from the objective and previous results.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Human participation is not required during normal operation.
+- id: O8
+  name: Inner Monologue
+  source_document: Huang et al 2022 - Inner Monologue Embodied Reasoning through Planning
+    with Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The architecture centers on one embodied agent.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: It follows a plan-execute loop updated by execution feedback.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It selects and invokes embodied skills from a skill repertoire.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The system replans when feedback indicates mismatch or failure.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Its main feedback is environmental and execution-based.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The architecture mainly relies on accumulated prompt context rather
+      than a distinct persistent store.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Tasks are externally provided.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Human response signals can be part of the feedback loop, so augmented
+      involvement is the best fit.
+- id: O9
+  name: ChatDev
+  source_document: Qian et al 2024 - ChatDev Communicative Agents for Software Development.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: ChatDev is explicitly a multi-agent software-development architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: Its workflow is a staged chain of role-based chats.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: The primary action form is communicative message exchange among agents.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: Adaptation occurs through conversational coordination and clarification
+      across agents.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Inter-agent communication is the main feedback source.
+  - dimension_id: D6
+    characteristic_id: D6.C5
+    reasoning: It distinguishes phase-level memory across development stages.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Software tasks are externally specified.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: The architecture does not require a human in the loop during standard
+      execution.
+- id: O10
+  name: DEPS
+  source_document: Wang 2024 - Describe, Explain, Plan and Select- Interactive Planning
+    with Large Language Models Enables Open-World Multi-Task Agents.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: DEPS is a single integrated agent architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: It repeatedly plans, executes, and updates the plan from outcomes.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Its actions are grounded in selecting and executing skills or controllers.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: A defining mechanism is replanning after failures or changed observations.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Its loop is driven by environment state and execution outcomes.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: No distinct long-term store is specified, so contextual memory is the
+      best fit.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Tasks are externally posed.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Normal operation is autonomous.
+- id: O11
+  name: Auto-GPT with Additional Opinions
+  source_document: Yang et al 2023- Auto-GPT for Online Decision Making Benchmarks
+    and.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The system remains a single agent with added advisory inputs rather
+      than a peer multi-agent architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: It follows an Auto-GPT-style self-prompting thought-action loop.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Its actions are still primarily textual or tool-invoking action descriptions.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: No separate replanning module is emphasized; reflective adjustment
+      best captures its revision behavior.
+  - dimension_id: D5
+    characteristic_id: D5.C4
+    reasoning: Its distinctive added feedback source is expert-like additional opinions
+      from external models.
+  - dimension_id: D6
+    characteristic_id: D6.C6
+    reasoning: The source explicitly refers to long-term retrieval-style memory.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Objectives are externally given.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: It operates without required human input during execution.

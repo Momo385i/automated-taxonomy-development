@@ -1,0 +1,44 @@
+iteration: 2
+object_validation:
+- object_name: SayCan
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based embodied agent system published
+    after 2020; mappings were plausible and retained with minor normalization.
+- object_name: ChemCrow
+  action: retained
+  reasoning: Within scope as a modern LLM-based autonomous tool-using agent system;
+    mappings were plausible and retained with synthesized-dimension reassignment.
+- object_name: CAMEL role-playing framework
+  action: retained
+  reasoning: Within scope as a multi-agent autonomous role-playing framework; despite
+    being called a framework, it is an agent architecture rather than a pure benchmark
+    or evaluation tool.
+- object_name: Generative Agents
+  action: retained
+  reasoning: Within scope as a multi-agent autonomous architecture with explicit memory
+    and reflection mechanisms.
+- object_name: HuggingGPT
+  action: retained
+  reasoning: Within scope as an LLM-based autonomous orchestration agent architecture;
+    mappings were plausible.
+- object_name: EUREKA
+  action: retained
+  reasoning: Retained as a modern agentic system with autonomous iterative reward
+    design behavior; although narrower in application, it remains within the architectural
+    scope and is not a pure evaluation tool.
+- object_name: Reflexion
+  action: retained
+  reasoning: Within scope as a single-agent architecture with explicit reflective
+    improvement and memory.
+- object_name: VOYAGER
+  action: retained
+  reasoning: Within scope as an autonomous embodied LLM agent with skill library and
+    self-generated curriculum; normalized object name to Voyager.
+- object_name: AutoGen
+  action: retained
+  reasoning: Within scope as a multi-agent conversational architecture; not removed
+    because it classifies system-level design rather than benchmarking.
+- object_name: ReAct
+  action: retained
+  reasoning: Within scope as a foundational single-agent LLM architecture exhibiting
+    autonomous reasoning-acting loops.

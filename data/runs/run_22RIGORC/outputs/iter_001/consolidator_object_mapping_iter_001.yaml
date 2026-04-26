@@ -1,0 +1,119 @@
+iteration: 1
+objects:
+- id: O1
+  name: EUREKA
+  source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: EUREKA is a single agentic system for reward generation rather than
+      a coordinated society of agents.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Its primary output is reward function code, a distinct subtype of code
+      generation central to the system design.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: The system iteratively searches over reward candidates using an evolutionary
+      optimization process.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No persistent reflective memory or reusable skill repository is a core
+      architectural element.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Tasks are provided externally through the environment and task description.
+- id: O2
+  name: Reflexion
+  source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Reflexion is a single agent architecture with internal modules, not
+      multiple autonomous agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its acting interface is primarily textual actions and outputs across
+      supported environments.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Its signature mechanism is verbal self-reflection derived from feedback
+      across episodes.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The architecture stores reflective summaries in memory for later reuse.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It works on externally supplied tasks rather than generating its own
+      curriculum.
+- id: O3
+  name: VOYAGER
+  source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Voyager is presented as one autonomous embodied agent, despite using
+      internal helper components.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its main action representation is executable code used to control behavior
+      in Minecraft.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It improves through execution feedback, self-verification, and iterative
+      code refinement.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: A persistent skill library of executable programs is a central architectural
+      component.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Voyager generates an automatic curriculum of new tasks for open-ended
+      exploration.
+- id: O4
+  name: AutoGen
+  source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: AutoGen is explicitly organized around multiple conversable agents.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: Its primary coordination and action substrate is inter-agent messaging
+      and conversation.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The framework does not prescribe a built-in self-improvement loop as
+      a core mechanism.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: Persistent memory or a skill library is not a defining framework component.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Tasks are initiated externally by users or developers.
+- id: O5
+  name: ReAct
+  source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ReAct is a single LLM-based agent architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: It primarily emits textual reasoning traces and textual action commands.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: It lacks an explicit cross-episode improvement mechanism such as reflection,
+      search, or iterative refinement.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No persistent memory or reusable skill library is part of the core
+      architecture.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Tasks are externally specified by prompts or benchmarks.

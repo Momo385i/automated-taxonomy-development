@@ -1,0 +1,671 @@
+events:
+- agent: consolidator
+  iteration: 1
+  event: Accepted all six dimensions as relevant to the meta-characteristic.
+- agent: consolidator
+  iteration: 1
+  event: Normalized characteristic names to concise noun phrases.
+- agent: consolidator
+  iteration: 1
+  event: Dimension D1 retained — categories are distinct at system architecture level.
+- agent: consolidator
+  iteration: 1
+  event: Dimension D2 retained — interpreted as primary action representation to preserve
+    mutual exclusivity.
+- agent: consolidator
+  iteration: 1
+  event: Dimension D3 retained — no improvement, reflection-based, and search-based
+    are distinct primary mechanisms.
+- agent: consolidator
+  iteration: 1
+  event: Dimension D4 retained — no persistence, reflective memory, and skill library
+    are distinct memory structures.
+- agent: consolidator
+  iteration: 1
+  event: Dimension D5 retained — externally specified versus self-generated tasks
+    is exhaustive for current objects.
+- agent: consolidator
+  iteration: 1
+  event: Dimension D6 retained — environment-determined versus agent-verified completion
+    is exhaustive for current objects.
+- agent: consolidator
+  iteration: 1
+  event: Object ReAct retained — in scope and mapping plausible.
+- agent: consolidator
+  iteration: 1
+  event: Object Reflexion retained — in scope and mapping plausible.
+- agent: consolidator
+  iteration: 1
+  event: Object VOYAGER retained and renamed to Voyager — normalization only.
+- agent: consolidator
+  iteration: 1
+  event: Object AutoGen retained — multi-agent framework remains in scope.
+- agent: consolidator
+  iteration: 1
+  event: Object EUREKA retained — borderline but within scope under keep-doubtful-cases
+    rule.
+- agent: consolidator
+  iteration: 1
+  event: No duplicate objects detected.
+- agent: consolidator
+  iteration: 1
+  event: No new dimensions or characteristics were needed to resolve mapping gaps.
+- agent: consolidator
+  iteration: 1
+  event: Verified that each object has exactly one characteristic per dimension.
+- agent: consolidator
+  iteration: 1
+  event: Verified that all mapping references correspond to existing taxonomy IDs.
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''ReAct'' -> retained — Within scope as a modern LLM-based
+    autonomous agent architecture published after 2020. No duplicate detected. All
+    mappings are plausible.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''Reflexion'' -> retained — Within scope as a modern
+    LLM-based autonomous agent architecture published after 2020. No duplicate detected.
+    All mappings are plausible.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''VOYAGER'' -> retained — Within scope as a modern LLM-based
+    autonomous agent architecture published after 2020. Normalized object name to
+    standard title case ''Voyager''. No duplicate detected. All mappings are plausible.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''AutoGen'' -> retained — Within scope as a modern LLM-based
+    multi-agent framework published after 2020. No duplicate detected. All mappings
+    are plausible.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''EUREKA'' -> retained — Within scope as a modern LLM-based
+    autonomous agent system published after 2020. No duplicate detected. All mappings
+    are plausible, though it is closer to an autonomous design system than an embodied
+    acting agent.'
+- agent: validator
+  iteration: 1
+  event: 'Structure check passed: taxonomy contains 6 dimensions with defined characteristics
+    and complete mappings for 5 objects.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_01 met: each object is assigned exactly one
+    characteristic per dimension.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_02 met: all sample objects are classifiable
+    in all dimensions and no ''N/A'' mappings appear.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_03 met: no object merge or split is indicated
+    in iteration 1.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_04 validation decision: all listed characteristics
+    are populated by at least one object in the sample; condition treated as met despite
+    initial iteration status.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_05 not met: all dimensions and characteristics
+    are new by definition in iteration 1.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_06 met: no evidence of dimension or characteristic
+    merge/split in the provided iteration record.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_07 met: dimension names and meanings are
+    distinct with no duplication.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_08 met: characteristics are unique within
+    each dimension.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_09 met: no two objects share the same full
+    characteristic combination.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_01 met: 6 dimensions keep the taxonomy concise
+    and usable.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_02 met: the taxonomy differentiates the
+    sample objects in meaningful ways.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_03 not met: current dimensions classify
+    the sample but comprehensiveness for the broader domain remains unproven.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_04 met: modular dimensions make later extension
+    straightforward.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_05 met: dimensions explain salient architectural
+    and behavioral differences among agents.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_06 not met: 5 objects are too narrow a sample
+    for the target domain.'
+- agent: validator
+  iteration: 1
+  event: 'Ending conditions overall not met: not all objective ending conditions are
+    satisfied, so another iteration is recommended.'
+- agent: validator
+  iteration: 1
+  event: 'Summary: 7 out of 9 OECs met, 4 out of 6 SECs met. Human intervention is
+    most useful to continue iteration because this is iteration 1 and OEC_05 is necessarily
+    not met; reviewers should also expand the object sample and stress-test comprehensiveness
+    against additional modern LLM-based agent architectures. Another iteration should
+    be run.'
+- agent: consolidator
+  iteration: 2
+  event: Validated Taxonomy A structure and normalized long labels to concise noun
+    phrases.
+- agent: consolidator
+  iteration: 2
+  event: Compared Taxonomy A and Taxonomy B dimensions side by side with equal priority.
+- agent: consolidator
+  iteration: 2
+  event: Merged 'Agent cardinality' and 'Agent organization' into D1 Agent organization.
+- agent: consolidator
+  iteration: 2
+  event: Retained single-agent and multi-agent as D1 characteristics because both
+    taxonomies agreed conceptually.
+- agent: consolidator
+  iteration: 2
+  event: Selected Taxonomy A's action-oriented dimension as the base because it better
+    reflects architectural grounding than Taxonomy B's action representation.
+- agent: consolidator
+  iteration: 2
+  event: Added D2.C6 Code-grounded to cover Voyager and EUREKA and close an exhaustiveness
+    gap.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy A control dimension and renamed characteristics to Centralized
+    and Peer-based.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy A capability dimension and shortened the name to Capability
+    integration.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy A planning dimension and shortened characteristic names
+    to Iterative, Hierarchical, and Conversational.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy A embodiment dimension with concise labels Physical world,
+    Virtual world, and Digital tools.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy B memory structure because it adds explanatory power absent
+    in Taxonomy A.
+- agent: consolidator
+  iteration: 2
+  event: Moved the idea of reusable skills out of Taxonomy B memory labels into final
+    distinctions between capability integration and skill memory.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy B task generation as D7 Task sourcing.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy B termination assessment as D8 Termination assessment.
+- agent: consolidator
+  iteration: 2
+  event: Rejected Taxonomy B Improvement mechanism as a standalone dimension due to
+    overlap with memory, planning, and verification and weaker MECE boundaries.
+- agent: consolidator
+  iteration: 2
+  event: No objects were removed for being outside scope.
+- agent: consolidator
+  iteration: 2
+  event: No duplicate objects were found across Taxonomy A and Taxonomy B.
+- agent: consolidator
+  iteration: 2
+  event: Object name 'VOYAGER' normalized to 'Voyager'.
+- agent: consolidator
+  iteration: 2
+  event: Reassigned Reflexion to Reflective memory in the final memory dimension.
+- agent: consolidator
+  iteration: 2
+  event: Reassigned Voyager to Code-grounded action grounding.
+- agent: consolidator
+  iteration: 2
+  event: Mapped SayCan to Skill memory to preserve exhaustiveness in memory structure.
+- agent: consolidator
+  iteration: 2
+  event: Mapped Generative Agents to Reflective memory and Hierarchical planning.
+- agent: consolidator
+  iteration: 2
+  event: Mapped AutoGen to Peer-based control and Conversational planning.
+- agent: consolidator
+  iteration: 2
+  event: Mapped EUREKA to Virtual world embodiment because it operates over simulated
+    environments.
+- agent: consolidator
+  iteration: 2
+  event: Verified every object has exactly one mapping per final dimension.
+- agent: consolidator
+  iteration: 2
+  event: Verified all mapping references point to existing final dimension and characteristic
+    IDs.
+- agent: consolidator
+  iteration: 2
+  event: Performed MECE self-check and retained nine dimensions as the best balance
+    of coverage and parsimony.
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''SayCan'' -> retained — Within scope as a post-2020
+    autonomous agent architecture with goal-directed embodied behavior. Mapping was
+    plausible and extended to added synthesized dimensions.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''ChemCrow'' -> retained — Within scope as a modern LLM-based
+    autonomous tool-using agent. Existing assignments were plausible; missing synthesized
+    dimensions were added.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''CAMEL role-playing framework'' -> retained — Within
+    scope because it is a multi-agent autonomous framework rather than a pure benchmark.
+    Mappings were plausible and completed for synthesized dimensions.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Generative Agents'' -> retained — Within scope as a
+    multi-agent autonomous architecture with explicit planning and memory. Existing
+    assignments were plausible and expanded.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''HuggingGPT'' -> retained — Within scope as a controller-based
+    LLM agent architecture orchestrating external models. Existing assignments were
+    plausible and expanded.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''ReAct'' -> retained — Within scope as a foundational
+    modern LLM agent architecture. No duplicate found in Taxonomy A.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Reflexion'' -> retained — Within scope as an autonomous
+    LLM agent architecture with reflective improvement. Improvement was captured through
+    memory rather than retained as a standalone dimension.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''VOYAGER'' -> retained_renamed — Within scope as a modern
+    embodied autonomous agent. Name normalized to ''Voyager'' for consistency; mappings
+    re-evaluated against synthesized dimensions.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''AutoGen'' -> retained — Within scope as a multi-agent
+    conversational agent framework. Reflection-based label from Taxonomy B was not
+    retained as a final dimension because it overlapped with other structural dimensions.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''EUREKA'' -> retained — Kept despite being near the
+    scope boundary because it is a post-2020 autonomous LLM-based agentic architecture
+    rather than a pure benchmark or evaluation tool. Its mappings were reinterpreted
+    under the synthesized taxonomy.'
+- agent: validator
+  iteration: 2
+  event: 'Structure check passed: taxonomy defines 9 dimensions and all 10 objects
+    are mapped across D1-D9.'
+- agent: validator
+  iteration: 2
+  event: 'No taxonomy gap from N/A assignments: no object uses characteristic_id ''N/A''.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_01 not met: D2 Action grounding contains
+    overlapping categories such as language, tool, memory, model, and code grounding
+    that can co-occur in one agent.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_01 not met: D4 Capability integration allows
+    possible overlap between Skill library and Tool library for some agent architectures.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_01 not met: D6 Memory structure allows possible
+    overlap between Reflective memory and Skill memory.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_02 met: all provided objects are assigned
+    one characteristic in every dimension and no object is left unclassified.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_03 met: iteration notes report no object
+    merges or splits, only normalization of ''VOYAGER'' to ''Voyager''.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_04 met: every characteristic across D1-D9
+    has at least one assigned object in the sample.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_05 not met: iteration notes state the taxonomy
+    was synthesized into 9 dimensions and D2 was expanded with a code-oriented characteristic.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_06 not met: iteration notes explicitly mention
+    merging dimensions and combining complementary structural dimensions.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_07 met: the 9 dimensions are distinct and
+    not duplicated by name or obvious construct repetition.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_08 met: characteristic labels are unique
+    within each dimension.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_09 not met: CAMEL and AutoGen share the same
+    full characteristic combination across D1-D9, so a cell is duplicated.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_01 met: nine dimensions are manageable and
+    meaningful for the intended research and practitioner use.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_02 met: taxonomy differentiates several
+    important agent architecture types, though overlap and duplicate cells weaken
+    discrimination.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_03 not met: sample coverage is good, but
+    several dimensions do not yet cleanly cover hybrid modern LLM-agent designs at
+    the domain level.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_04 met: modular dimensions make later addition
+    of new characteristics or dimensions feasible.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_05 met: dimensions explain core architectural
+    and behavioral differences relevant to comparing autonomous AI agents.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_06 met: object sample is reasonably diverse
+    across embodied, virtual, digital, single-agent, and multi-agent systems.'
+- agent: validator
+  iteration: 2
+  event: 'Summary: 6 out of 9 OECs met, 5 out of 6 SECs met. Human intervention is
+    most needed to resolve non-mutually-exclusive dimensions—especially Action grounding
+    (D2), Capability integration (D4), and Memory structure (D6)—and to address repeated
+    full-cell profiles such as CAMEL and AutoGen; iteration-change conditions (OEC_05,
+    OEC_06) also remain unmet because the taxonomy was still actively restructured
+    this round. Another iteration should be run before declaring completion.'
+- agent: consolidator
+  iteration: 3
+  event: Validated Taxonomy A schema and found all six dimensions structurally usable
+    but in need of normalization.
+- agent: consolidator
+  iteration: 3
+  event: Renamed long Taxonomy A labels to concise noun phrases in the synthesis.
+- agent: consolidator
+  iteration: 3
+  event: Taxonomy A dimension Operational control pattern reworked into Control pattern
+    because one characteristic was object-specific.
+- agent: consolidator
+  iteration: 3
+  event: Characteristic 'Auto-GPT decision loop' generalized into 'Reactive loop'
+    to improve extensibility.
+- agent: consolidator
+  iteration: 3
+  event: Taxonomy A dimension Planning refinement mechanism removed as standalone
+    dimension due to overlap with feedback and memory concepts.
+- agent: consolidator
+  iteration: 3
+  event: Taxonomy A dimension Action grounding removed as standalone dimension because
+    it mixed execution medium and capability source.
+- agent: consolidator
+  iteration: 3
+  event: Taxonomy B dimension Action grounding rejected as standalone dimension because
+    characteristics were not mutually exclusive.
+- agent: consolidator
+  iteration: 3
+  event: Taxonomy B dimension Capability integration retained and expanded with code
+    artifacts to absorb strong content from Taxonomy A.
+- agent: consolidator
+  iteration: 3
+  event: Separated Control pattern from Coordination structure to avoid conflating
+    temporal control logic with centralized versus peer-based control.
+- agent: consolidator
+  iteration: 3
+  event: Feedback integration mode from Taxonomy A retained as synthesized dimension
+    Feedback source.
+- agent: consolidator
+  iteration: 3
+  event: Memory-related content from both taxonomies merged into synthesized dimension
+    Memory structure.
+- agent: consolidator
+  iteration: 3
+  event: Taxonomy B dimensions Task sourcing, Termination assessment, and Environment
+    embodiment retained because they contribute clear comparative value.
+- agent: consolidator
+  iteration: 3
+  event: Converted Taxonomy A memory characteristic 'Not specified' into substantive
+    residual category 'None' in the synthesis.
+- agent: consolidator
+  iteration: 3
+  event: Retained object AutoGPT as in-scope autonomous agent framework.
+- agent: consolidator
+  iteration: 3
+  event: Retained object BabyAGI as in-scope autonomous agent framework.
+- agent: consolidator
+  iteration: 3
+  event: Retained object Inner Monologue as in-scope embodied autonomous agent.
+- agent: consolidator
+  iteration: 3
+  event: Retained object ChatDev as in-scope multi-agent autonomous framework.
+- agent: consolidator
+  iteration: 3
+  event: Retained object DEPS as in-scope autonomous planning agent.
+- agent: consolidator
+  iteration: 3
+  event: Retained object Auto-GPT styled agent with Additional Opinions as in-scope
+    architectural variant, not a benchmark-only artifact.
+- agent: consolidator
+  iteration: 3
+  event: Retained object SayCan as in-scope embodied autonomous agent.
+- agent: consolidator
+  iteration: 3
+  event: Retained object ChemCrow as in-scope tool-using autonomous agent.
+- agent: consolidator
+  iteration: 3
+  event: Retained object CAMEL role-playing framework as in-scope multi-agent framework.
+- agent: consolidator
+  iteration: 3
+  event: Retained object Generative Agents as in-scope autonomous multi-agent architecture.
+- agent: consolidator
+  iteration: 3
+  event: Retained object HuggingGPT as in-scope orchestration agent.
+- agent: consolidator
+  iteration: 3
+  event: Retained object ReAct as in-scope autonomous agent pattern.
+- agent: consolidator
+  iteration: 3
+  event: Retained object Reflexion as in-scope reflective autonomous agent.
+- agent: consolidator
+  iteration: 3
+  event: Retained object Voyager as in-scope embodied autonomous agent.
+- agent: consolidator
+  iteration: 3
+  event: Retained object AutoGen as in-scope multi-agent conversational architecture.
+- agent: consolidator
+  iteration: 3
+  event: Retained object EUREKA as in-scope autonomous coding agent architecture.
+- agent: consolidator
+  iteration: 3
+  event: No duplicate objects found across Taxonomy A and Taxonomy B.
+- agent: consolidator
+  iteration: 3
+  event: Reassigned all objects to synthesized dimensions and removed all N/A needs.
+- agent: consolidator
+  iteration: 3
+  event: Mapped ChatDev termination to Agent-verified because communicative dehallucination
+    provides explicit internal checking.
+- agent: consolidator
+  iteration: 3
+  event: Mapped ReAct feedback to Environment because observation updates guide subsequent
+    actions.
+- agent: consolidator
+  iteration: 3
+  event: Mapped Reflexion control pattern to Closed-loop replanning because iterative
+    revision is its defining mechanism.
+- agent: consolidator
+  iteration: 3
+  event: Mapped Voyager task sourcing to Self-generated because it autonomously constructs
+    a curriculum.
+- agent: consolidator
+  iteration: 3
+  event: Renumbered final objects sequentially from O1 to O16.
+- agent: consolidator
+  iteration: 3
+  event: Verified final mapping references only existing dimension and characteristic
+    IDs.
+- agent: consolidator
+  iteration: 3
+  event: Verified each object has exactly one characteristic per final dimension.
+- agent: consolidator
+  iteration: 3
+  event: Verified final dimensions are mutually exclusive within dimension and collectively
+    exhaustive across retained objects.
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''AutoGPT'' -> retained — Within scope as a modern autonomous
+    LLM-based agent framework focused on architectural and behavioral properties.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''BabyAGI'' -> retained — Within scope as a post-2020
+    autonomous agent architecture centered on task creation and execution.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Inner Monologue'' -> retained — Within scope as a post-2020
+    embodied autonomous agent architecture with closed-loop planning.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''ChatDev'' -> retained — Within scope as a modern multi-agent
+    software-development architecture exhibiting autonomous role-based behavior.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''DEPS'' -> retained — Within scope as an LLM-based autonomous
+    planning agent architecture.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Auto-GPT styled agent with Additional Opinions'' ->
+    retained — Retained as an in-scope architectural variant of autonomous Auto-GPT-style
+    agents rather than a pure benchmark or evaluation tool.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''SayCan'' -> retained — Within scope as a post-2020
+    autonomous embodied agent architecture grounded in robotic affordances.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''ChemCrow'' -> retained — Within scope as a modern tool-using
+    autonomous LLM agent system.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''CAMEL role-playing framework'' -> retained — Within
+    scope as a modern multi-agent framework with autonomous role-based interaction.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Generative Agents'' -> retained — Within scope as a
+    modern multi-agent architecture with autonomous planning, memory, and behavior.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''HuggingGPT'' -> retained — Within scope as a modern
+    autonomous orchestration agent over external models.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''ReAct'' -> retained — Within scope as a foundational
+    post-2020 LLM-based autonomous agent pattern.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Reflexion'' -> retained — Within scope as a modern
+    autonomous agent architecture with reflective improvement.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Voyager'' -> retained — Within scope as a modern embodied
+    autonomous agent with self-generated curriculum and skill acquisition.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''AutoGen'' -> retained — Within scope as a modern multi-agent
+    conversational architecture.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''EUREKA'' -> retained — Retained as a post-2020 autonomous
+    coding agent architecture rather than an evaluation-only framework.'
+- agent: validator
+  iteration: 3
+  event: 'Structure validation passed: taxonomy contains 9 dimensions with clear labels
+    and characteristics.'
+- agent: validator
+  iteration: 3
+  event: 'Structure validation passed: all 16 objects are mapped in every dimension
+    with exactly one characteristic each.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_01 met: no object has multiple characteristic
+    assignments within the same dimension.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_02 met: all objects are fully classified
+    and no mapping uses N/A, so no immediate taxonomy gap appears in the sample.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_03 met: iteration notes do not report object-level
+    merge or split operations.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_04 review: all characteristics were checked
+    against the mapping; each characteristic has at least one assigned object.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_05 not met: iteration notes state the taxonomy
+    was synthesized into 9 dimensions, indicating new/reconfigured dimensions or characteristics
+    in this iteration.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_06 not met: iteration notes explicitly report
+    merged overlapping dimensions and absorbed removed dimensions into others.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_07 met: dimensions are distinct in naming
+    and conceptual focus.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_08 met: characteristics are unique within
+    each dimension.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_09 not met: CAMEL and AutoGen share the same
+    full characteristic combination, so a duplicated cell exists.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_01 met: 9 dimensions are concise enough
+    for practical comparison.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_02 met: taxonomy offers strong differentiation,
+    though duplicated cells show limits.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_03 met: sample objects are all classifiable
+    and cover major agent architecture patterns.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_04 met: modular dimensions support future
+    extension.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_05 met: dimensions explain architecture
+    and behavior in a way useful for comparison.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_06 met: sample is diverse across single-agent,
+    multi-agent, embodied, virtual, and tool-augmented systems.'
+- agent: validator
+  iteration: 3
+  event: 'Summary: 6 out of 9 OECs met, 6 out of 6 SECs met. Human review is most
+    needed on iteration-stopping criteria tied to process change: this iteration still
+    merged/split dimensions and introduced a synthesized structure, so OEC_05 and
+    OEC_06 are not met; additionally, OEC_09 fails because CAMEL and AutoGen occupy
+    the same cell and may require a new differentiating dimension or sharper characteristic
+    definitions. Another iteration should be run before declaring the taxonomy finalized.'
+total_events: 170
+last_updated_iteration: 3

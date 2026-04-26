@@ -1,0 +1,198 @@
+iteration: 1
+objects:
+- id: O1
+  name: AutoGPT
+  source_document: Goola 2025 - Autonomous Intelligence - A Technical Analysis of
+    Self-Directing AI Systems and Their Enterprise Implementation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: AutoGPT is described as one autonomous agent with internal components
+      rather than multiple interacting agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The source explicitly characterizes AutoGPT as a self-prompting architecture
+      operating continuously through prompts and responses.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: It interacts with its environment and itself continuously, using memory,
+      planning, and reflection during execution.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: Its operation includes interaction with environment and command execution
+      over files, web resources, and computational environments.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The source states that AutoGPT uses a token-based memory system for
+      context retention.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: AutoGPT includes a reflection system for self-evaluation and recursive
+      self-improvement.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Its action layer is a command system with distinct action categories
+      for external operations.
+- id: O2
+  name: BabyAGI
+  source_document: Goola 2025 - Autonomous Intelligence - A Technical Analysis of
+    Self-Directing AI Systems and Their Enterprise Implementation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: BabyAGI is presented as one autonomous framework with internal task
+      modules, not a society of agents.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The source explicitly describes a continuous cycle of task creation,
+      prioritization, and execution over a dynamic task list.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The task list evolves from ongoing results and changing objectives,
+      so execution is updated from runtime outcomes.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: Prioritization and execution depend on recorded outcomes and operational
+      state from the running system.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The source identifies a centralized task database storing completed,
+      active, and pending tasks.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Task prioritization and subsequent execution are revised based on outcomes
+      and changing conditions.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Its execution engine carries out prioritized tasks sequentially rather
+      than issuing low-level commands or tool calls.
+- id: O3
+  name: Inner Monologue
+  source_document: Huang et al 2022 - Inner Monologue Embodied Reasoning through Planning
+    with Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The system centers on one embodied robotic agent guided by an LLM planner.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: It follows iterative planning and execution, injecting feedback into
+      the plan as actions are attempted.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The core contribution is grounded closed-loop feedback during execution.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The planner uses runtime environment feedback such as success detection,
+      scene description, object recognition, and human response.
+  - dimension_id: D5
+    characteristic_id: D5.C5
+    reasoning: The source discusses prompt accumulation of feedback but does not specify
+      a distinct named memory architecture for the system itself.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The agent retries, switches approach, and replans in response to observed
+      failures and new information.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: The planner selects from a library of pretrained robotic skills with
+      textual descriptions.
+- id: O4
+  name: ChatDev
+  source_document: Qian et al 2024 - ChatDev Communicative Agents for Software Development.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: ChatDev is explicitly a framework of multiple specialized communicative
+      agents with different social roles.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Its organizing principle is a sequential chat chain spanning design,
+      coding, and testing subtasks.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The workflow updates through ongoing multi-turn communication and later-phase
+      review/testing feedback.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: Its primary runtime information source is communication between agents
+      acting as instructor and assistant.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: The source explicitly defines short-term memory within a phase and
+      long-term memory carrying solutions across phases.
+  - dimension_id: D6
+    characteristic_id: D6.C4
+    reasoning: Communicative dehallucination works by having agents request more specific
+      details before final responses.
+  - dimension_id: D7
+    characteristic_id: D7.C4
+    reasoning: Agents act through language-based software development operations,
+      including coding, review, and testing tools and artifacts.
+- id: O5
+  name: DEPS
+  source_document: Wang 2024 - Describe, Explain, Plan and Select- Interactive Planning
+    with Large Language Models Enables Open-World Multi-Task Agents.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: DEPS is a single agent architecture combining descriptor, planner,
+      explainer, selector, and controller modules for one embodied agent.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: The architecture repeatedly plans, selects a sub-goal, executes it,
+      and updates the plan after failures.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Its defining feature is interactive closed-loop planning with description
+      and explanation after execution feedback.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The descriptor summarizes runtime state and execution outcomes from
+      the environment back to the planner.
+  - dimension_id: D5
+    characteristic_id: D5.C5
+    reasoning: The paper details descriptors and plan updates but does not define
+      a dedicated memory store as a separate architectural memory type.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: It explicitly revises plans through describe-explain-plan cycles when
+      goals fail or become inefficient.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: The planner outputs natural-language sub-goals that are executed by
+      goal-conditioned controllers as skills.
+- id: O6
+  name: Auto-GPT styled agent with Additional Opinions
+  source_document: Yang et al 2023- Auto-GPT for Online Decision Making Benchmarks
+    and.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The paper characterizes an Auto-GPT styled autonomous agent, augmented
+      by external opinions, not a multi-agent society.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The agent follows the Auto-GPT style of iterative self-monologue with
+      thoughts, reasoning, plan, and criticism at each step.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: It makes online decisions in unknown environments and updates stepwise
+      as new observations arrive.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: Its distinctive added feedback is top-k additional opinions from external
+      expert models such as IL agents.
+  - dimension_id: D5
+    characteristic_id: D5.C4
+    reasoning: The paper explicitly lists long-term self-memory and memory retrieval
+      as defining properties of Auto-GPT styled agents.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The source describes self-monologue and added opinions, but not a separate
+      explicit replanning or clarification mechanism like reflection or dehallucination
+      modules.
+  - dimension_id: D7
+    characteristic_id: D7.C4
+    reasoning: Available actions are represented as tools, and task adaptation is
+      done by giving tool descriptions and examples.

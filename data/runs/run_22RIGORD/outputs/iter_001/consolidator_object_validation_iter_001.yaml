@@ -1,0 +1,28 @@
+iteration: 1
+object_validation:
+- object_name: AutoGPT
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based agent architecture. No
+    duplicate detected. All assignments are plausible after terminology normalization.
+- object_name: BabyAGI
+  action: retained
+  reasoning: Within scope as a post-2020 autonomous LLM-based agent framework. No
+    duplicate detected. Mapping is internally consistent.
+- object_name: Inner Monologue
+  action: retained
+  reasoning: Within scope as a post-2020 autonomous agent system with embodied closed-loop
+    planning. Although not purely software-only, it matches the meta-characteristic
+    and object class.
+- object_name: ChatDev
+  action: retained
+  reasoning: Within scope as a modern multi-agent LLM-based framework exhibiting autonomous
+    goal-directed behavior. No duplicate detected.
+- object_name: DEPS
+  action: retained
+  reasoning: Within scope as a modern LLM-based autonomous agent architecture. No
+    duplicate detected. Assignments are plausible.
+- object_name: Auto-GPT styled agent with Additional Opinions
+  action: retained
+  reasoning: Retained as an in-scope agent architecture variant rather than a benchmark
+    alone. It is sufficiently system-like and not a duplicate of AutoGPT because the
+    added expert-opinion mechanism materially changes the architecture.

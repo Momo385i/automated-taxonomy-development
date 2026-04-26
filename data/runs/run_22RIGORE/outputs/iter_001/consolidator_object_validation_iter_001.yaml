@@ -1,0 +1,27 @@
+iteration: 1
+object_validation:
+- object_name: ReAct
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based agent architecture published
+    after 2020. No duplicate detected. Original mappings were plausible and retained
+    with only naming normalization in the taxonomy.
+- object_name: Reflexion
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based agent architecture published
+    after 2020. No duplicate detected. Original mappings were plausible and retained
+    with only taxonomy label normalization.
+- object_name: Voyager
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based agent architecture published
+    after 2020. No duplicate detected. Original mappings were plausible and retained.
+- object_name: AutoGen
+  action: retained
+  reasoning: Within scope as a modern predominantly LLM-based multi-agent framework
+    published after 2020. It is not merely an evaluation tool. No duplicate detected.
+    Original mappings were plausible and retained.
+- object_name: EUREKA
+  action: retained
+  reasoning: Retained as a modern LLM-based autonomous agent system focused on reward
+    design through iterative code generation and optimization. Although narrower in
+    application scope than general-purpose agents, it remains within the stated system-level
+    architectural focus. No duplicate detected.

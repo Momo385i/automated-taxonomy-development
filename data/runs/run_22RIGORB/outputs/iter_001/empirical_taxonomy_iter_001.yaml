@@ -1,0 +1,58 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent system
+  - id: D1.C2
+    name: Multi-agent system
+- id: D2
+  name: Primary action representation
+  characteristics:
+  - id: D2.C1
+    name: Textual actions
+  - id: D2.C2
+    name: Executable code
+- id: D3
+  name: Improvement mechanism
+  characteristics:
+  - id: D3.C1
+    name: None
+  - id: D3.C2
+    name: Interleaved reasoning
+  - id: D3.C3
+    name: Reflective memory
+  - id: D3.C4
+    name: Iterative code refinement
+  - id: D3.C5
+    name: Evolutionary search
+- id: D4
+  name: Task generation source
+  characteristics:
+  - id: D4.C1
+    name: Externally specified tasks
+  - id: D4.C2
+    name: Self-generated curriculum
+- id: D5
+  name: Persistent capability store
+  characteristics:
+  - id: D5.C1
+    name: Absent
+  - id: D5.C2
+    name: Reflective memory buffer
+  - id: D5.C3
+    name: Skill library
+- id: D6
+  name: Human involvement mode
+  characteristics:
+  - id: D6.C1
+    name: None
+  - id: D6.C2
+    name: Optional human-in-the-loop
+  - id: D6.C3
+    name: Integrated human feedback
+notes:
+  format: prototype_v1

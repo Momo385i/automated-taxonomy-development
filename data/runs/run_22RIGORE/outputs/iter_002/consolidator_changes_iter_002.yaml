@@ -1,0 +1,15 @@
+iteration: 2
+changes_short:
+- Validated Taxonomy A structure and normalized names to concise noun phrases.
+- Synthesized A and B into 8 dimensions, keeping complementary dimensions from both
+  taxonomies.
+- Merged overlapping action-related elements by separating actuation domain, action
+  interface, planning organization, adaptation mechanism, grounding mechanism, and
+  task sourcing.
+- Removed Taxonomy B dimension names as standalone where better-fitting A dimensions
+  existed, but preserved their explanatory content in synthesized dimensions.
+- Corrected object mappings to ensure one characteristic per final dimension for every
+  object.
+- Adjusted CAMEL and AutoGen to message exchange action interface; corrected Voyager
+  actuation domain to digital.
+- No duplicate objects were found across A and B.

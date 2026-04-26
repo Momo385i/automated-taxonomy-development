@@ -1,0 +1,141 @@
+iteration: 2
+objects:
+- id: O1
+  name: SayCan
+  source_document: 'Ahn et al 2022 - Do As I Can, Not As I Say: Grounding Language
+    in Robotic Affordances'
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The system centers on one robot agent that plans and executes skills.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Action selection is grounded by learned affordance/value functions
+      combined with LLM scores.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: A single planning loop selects and executes skills for the robot.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The architecture relies on a predefined repertoire of low-level robotic
+      skills.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The next skill is selected iteratively at each step until a termination
+      token is chosen.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The agent is a mobile manipulator operating in real kitchen environments.
+- id: O2
+  name: ChemCrow
+  source_document: Bran et al 2023 - ChemCrow - Augmenting large-language models with
+    chemistry tools
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ChemCrow is described as one LLM chemistry agent using tools.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: It reasons and acts by invoking chemistry tools, receiving observations
+      from their outputs.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: One agent controls the task-solving loop and chooses tools centrally.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The architecture integrates an explicit library of 18 expert-designed
+      tools.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It follows an iterative Thought-Action-Observation loop until reaching
+      a final answer.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The agent primarily operates over digital chemistry tools and APIs,
+      with optional connection to robotic lab infrastructure.
+- id: O3
+  name: CAMEL role-playing framework
+  source_document: 'Li et al 2023 - CAMEL: Communicative Agents for Mind Exploration
+    of Large Language Model Society'
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The framework consists of multiple communicative agents, minimally
+      an AI user and an AI assistant, sometimes with task specifier and critic.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Coordination is achieved through prompting and dialogue rather than
+      external tools, affordances, or specialist models.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Task completion emerges through role-based interaction between peer
+      agents with distinct assigned roles.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The core framework relies on communicative LLM agents and prompts rather
+      than external tool or model libraries.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Planning unfolds as multi-turn instruction-following conversation between
+      AI user and AI assistant.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The agents operate in a text-based conversational environment rather
+      than a simulated world or physical embodiment.
+- id: O4
+  name: Generative Agents
+  source_document: 'Park et al 2023 - Generative Agents: Interactive Simulacra of
+    Human Behavior'
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The system instantiates a society of 25 interacting agents.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: Behavior is grounded in the agents’ memory stream, reflection, and
+      retrieval mechanisms tied to world observations.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: There is no single controller over the society; agents interact with
+      one another based on their own plans and memories.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The architecture is built around memory, planning, and reflection modules
+      rather than external tool, skill, or model catalogs.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Agents create daily plans and recursively decompose them into finer-grained
+      actions.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The agents inhabit the Smallville sandbox simulation, a virtual interactive
+      world.
+- id: O5
+  name: HuggingGPT
+  source_document: 'Shen et al 2023 - HuggingGPT: Solving AI Tasks with ChatGPT and
+    its Friends in Hugging Face'
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The system is organized around one LLM-powered agent/controller coordinating
+      task execution.
+  - dimension_id: D2
+    characteristic_id: D2.C5
+    reasoning: Task completion is grounded through selecting and invoking external
+      AI models from Hugging Face.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: A central LLM controller performs planning, model selection, execution
+      coordination, and response generation.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: The system explicitly integrates a hub/community of expert models described
+      via model cards.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It plans a task list and executes subtasks with dependencies in an
+      iterative pipeline.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The agent operates over digital multimodal models and endpoints rather
+      than a physical or simulated embodied world.

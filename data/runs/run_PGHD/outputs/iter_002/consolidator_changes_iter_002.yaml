@@ -1,0 +1,17 @@
+iteration: 2
+changes_short:
+- Validated Taxonomy A structure and normalized labels to concise noun phrases.
+- Synthesized A and B into 9 dimensions emphasizing integration design choices across
+  technical and clinical domains.
+- Retained Care setting and Integration target from B because they improve explanatory
+  power for healthcare IT evaluation.
+- Merged A and B acquisition-related ideas into PGHD source and kept pathway, interoperability,
+  direction, processing, and trigger dimensions from A/B synthesis.
+- Dropped Taxonomy A Primary reviewing actor because reviewer role was less stable
+  and less central than care setting and target for this use case.
+- Dropped Taxonomy B Data scope, Capture temporality, and standalone Response mechanism
+  as redundant with PGHD source, processing, and trigger dimensions.
+- Added CDA to Interoperability basis to preserve empirically grounded content from
+  Taxonomy B.
+- Removed five out-of-scope B objects lacking clear clinical system integration.
+- Re-mapped all retained objects to the final taxonomy and renumbered object IDs sequentially.

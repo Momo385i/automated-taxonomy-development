@@ -1,0 +1,24 @@
+iteration: 1
+object_validation:
+- object_name: ReAct
+  action: retained
+  reasoning: Within scope as a modern post-2020 LLM-based autonomous agent architecture.
+    No duplicate detected. All mappings are plausible after minor terminology normalization.
+- object_name: Reflexion
+  action: retained
+  reasoning: Within scope as a modern LLM-based autonomous agent architecture with
+    self-improvement. No duplicate detected. Existing assignments are plausible.
+- object_name: VOYAGER
+  action: retained
+  reasoning: Within scope as a modern LLM-based autonomous agent system with autonomous
+    curriculum and persistent skill reuse. No duplicate detected. Name normalized
+    from all-caps to standard title case.
+- object_name: AutoGen
+  action: retained
+  reasoning: Within scope as a multi-agent LLM framework for autonomous task execution
+    and coordination. Not a benchmark or evaluation-only tool. No duplicate detected.
+- object_name: EUREKA
+  action: retained
+  reasoning: Within scope as an autonomous LLM-based agentic system for reward design
+    through iterative code search. No duplicate detected. Name normalized from all-caps
+    to standard title case.

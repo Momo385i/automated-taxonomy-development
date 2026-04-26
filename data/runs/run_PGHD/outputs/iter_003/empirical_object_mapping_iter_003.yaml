@@ -1,0 +1,307 @@
+iteration: 3
+objects:
+- id: O1
+  name: REMORA smartphone-to-EHR rheumatoid arthritis integration
+  source_document: austin et al 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The integrated data are daily, weekly, and monthly patient-reported
+      symptom and impact measures from the smartphone app; sensor data are not part
+      of the integrated EHR view.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: PGHD were integrated into the hospital EHR and viewed there during
+      consultations.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Patients manually entered symptom questionnaires into the app.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: Clinicians viewed graphical summaries of longitudinal data during consultations.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The main described use was to improve in-consultation understanding
+      and person-centred discussion.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The article describes technical integration and graphing functionality
+      but does not ground the integration in named interoperability standards.
+- id: O2
+  name: PatientDataChain blockchain PHR integration platform
+  source_document: cernian et al 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C4
+    reasoning: The platform unifies patient-entered data, wearable/sensor data, and
+      data from EHRs and other providers.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The core architecture is a patient health wallet acting as a PHR linked
+      to EHR systems and other sources.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The platform combines manual patient entry with automatic ingestion
+      from EHR APIs and Fitbit integration.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The clinician-facing access is through a doctor web platform and health
+      wallet-oriented interfaces rather than simple graphs or flowsheets.
+  - dimension_id: D5
+    characteristic_id: D5.C4
+    reasoning: Its primary goal is to create a unified patient-controlled longitudinal
+      record across the healthcare value chain.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The architecture explicitly states compliance with HL7 and uses FHIR
+      among the referenced interoperability standards.
+- id: O3
+  name: eCoach tethered PHR-EHR interoperability prototype
+  source_document: chatterjee et al 2022
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The system integrates questionnaire/interview-based personal data and
+      sensor-derived activity/physiological data.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The prototype is explicitly a tethered PHR allowing bidirectional communication
+      with an EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It collects self-reported data and sensor data through the mobile app
+      and associated devices.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The architecture includes mobile/web PHR views and dashboards for individuals
+      and professionals rather than only graphs or flowsheets.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The main function is secure exchange and management of personal health
+      data for ongoing monitoring and self-management around care.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The prototype is explicitly built on HL7 FHIR with SNOMED-CT.
+- id: O4
+  name: SafeHeart multimodal ICD prediction platform
+  source_document: frodi et al 2021
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C4
+    reasoning: The platform combines EHR data, remote monitoring, wearable accelerometry,
+      and patient-reported outcomes.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: The integrated output is a web-based clinician dashboard and SafeHeart
+      Platform rather than direct EHR embedding.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It uses both automatic remote/wearable data capture and patient-reported
+      questionnaires/diaries.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The clinician-facing component is a dashboard presenting risk probability
+      and feature importance.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: The primary purpose is prediction of ICD therapy and clinical decision
+      support.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The study describes integration of multiple data streams into a platform
+      but does not specify a standards-based interoperability approach such as FHIR
+      or CDA.
+- id: O5
+  name: MyHealthKeeper EHR-tethered PHR with wearable integration
+  source_document: JW Kim et al 2019
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The system integrates patient-entered lifestyle logs and wearable/mobile
+      step-count data.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The app is described as an EHR-tethered PHR linked to the hospital
+      EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Some data are manually logged by patients while step counts are synced
+      from Samsung Health/wearable devices.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: Clinicians review summarized lifelog information and comments through
+      the EHR-linked interface with visualized summaries.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The integration is framed as supporting lifestyle counseling and clinician-patient
+      discussion during care.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The article describes linkage to Samsung Health and the hospital EHR
+      but not named interoperability standards.
+- id: O6
+  name: DM-TNG MyChart and Apple HealthKit blood glucose integration
+  source_document: lewinski et al 2019
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The integrated PGHD are blood glucose readings originating from glucose
+      meters, either manually transcribed or automatically transferred.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Data are brought into the EHR through patient-facing platforms and
+      project-specific flowsheets rather than native direct embedding at source.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The project intentionally compares manual MyChart entry and automatic
+      HealthKit device transfer.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: Clinicians accessed the data through EHR flowsheet displays.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The integration supports telemedicine-based diabetes monitoring and
+      medication management between visits.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The integration relies on Epic MyChart and Apple HealthKit workflows
+      without a named interoperability standard basis in the report.
+- id: O7
+  name: HeartMapp CHF mobile telemedicine and web monitoring system
+  source_document: sano et al 2015
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The system combines patient-entered assessment/exercise data with wearable
+      physiological monitoring.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: Data are sent to a server and viewed through a web interface by the
+      clinical team rather than integrated into an EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Patients answer questionnaires and perform guided exercises while wearable
+      sensors stream physiologic data automatically.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The clinician access point is a web interface with plots and team views.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: A core stated function is clinical decision support and prompt intervention
+      for CHF self-care management.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The paper describes a client-server architecture and JSON transmission
+      but not healthcare interoperability standards.
+- id: O8
+  name: ROAMM-EHR smartwatch-to-Epic postoperative monitoring platform
+  source_document: sun et al 2024
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The system integrates smartwatch sensor streams with patient-reported
+      outcomes and ecological momentary assessments.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Data are collected to an AWS server and then exposed into Epic through
+      an app, making the server an intermediary repository.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The platform combines automatic smartwatch sensing with prompted patient-reported
+      responses.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: A defining clinician-facing feature is the notification system for
+      severe or urgent conditions, alongside other views.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Its primary integration purpose is real-time postoperative monitoring
+      and timely care management.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The article emphasizes end-to-end architecture and APIs but does not
+      specify FHIR, CDA, or openEHR as the integration basis.
+- id: O9
+  name: PD_Manager mHealth clinical decision support system for Parkinson’s disease
+  source_document: timotijevic et al 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The envisioned system combines patient self-reports with wearable device-generated
+      symptom data.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: The implementation is framed as a mobile health CDSS sharing data via
+      the cloud for clinician use, not as direct EHR embedding.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The evidence sources explicitly include self-reported and device-generated
+      information.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The clinician-facing component is a CDSS interface presenting monitored
+      symptoms and decision-support information.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: The central purpose is clinical decision support for Parkinson’s disease
+      management.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The paper focuses on user needs and CDSS design principles rather than
+      a named interoperability standard.
+- id: O10
+  name: iT2DM diabetes PGHD-integrated phenotyping framework
+  source_document: wei et al 2017
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C4
+    reasoning: The framework integrates PGHD such as self-monitored blood glucose
+      and fundus images with EHR, lab, and gene data.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The paper repeatedly frames the result as a personal health record
+      that can be transferred and shared across systems.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Data enter through manual upload, file upload, and automated HL7-based
+      integration from devices and other systems.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The system provides a web interface with query, grouping, and visualization
+      modules.
+  - dimension_id: D5
+    characteristic_id: D5.C5
+    reasoning: The primary described use is secondary use of integrated data for cohort
+      identification and phenotyping.
+  - dimension_id: D6
+    characteristic_id: D6.C4
+    reasoning: The framework is explicitly based on OpenEHR archetypes and templates,
+      while also using CDA/V2 for exchange.
+- id: O11
+  name: SMART on FHIR PRO integration architecture
+  source_document: wesley et al 2021
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The integrated data are patient-reported outcomes collected through
+      surveys and assessments.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: The architecture intentionally uses a cloud-based FHIR data hub as
+      an intermediary between the app and multiple EHRs.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Patients complete PRO instruments directly in the app on tablets or
+      their own devices.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: Providers view the PRO scores through an embedded web-based interface
+      within the EHR.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The purpose is to make standardized PRO data available during ambulatory
+      encounters for provider use.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The solution is explicitly built on SMART on FHIR and the ONC PRO FHIR
+      implementation guide.

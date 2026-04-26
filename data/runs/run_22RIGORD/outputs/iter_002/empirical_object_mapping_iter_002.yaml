@@ -1,0 +1,150 @@
+iteration: 2
+objects:
+- id: O1
+  name: ReAct
+  source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ReAct is described as one language-model agent interacting with an
+      environment rather than a set of cooperating agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its policy generates interleaved thoughts and task-specific actions
+      in text form, such as search, lookup, finish, or textual environment actions.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Its core mechanism is the interleaving of reasoning traces and actions
+      to support planning, exception handling, and information gathering.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The paper does not describe a separate persistent memory store beyond
+      the current trajectory context and prompt examples.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The agent is given externally defined questions or environment goals
+      rather than generating its own tasks.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The main architecture operates without human interaction during task
+      execution.
+- id: O2
+  name: Reflexion
+  source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Although modularized into actor, evaluator, and self-reflection models,
+      Reflexion is framed as one agent with internal components rather than multiple
+      conversing agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The actor generates textual actions or outputs, and improvement is
+      mediated through textual self-reflections.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The defining mechanism is verbal self-reflection that converts feedback
+      into language for future trials.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The framework stores self-reflections in an episodic memory buffer
+      used in later trials.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Tasks come from benchmarks such as AlfWorld, HotPotQA, and programming
+      problems, not from the agent itself.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The core Reflexion loop is autonomous; although feedback sources can
+      vary, the main framework does not require human participation.
+- id: O3
+  name: VOYAGER
+  source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: VOYAGER is presented as one embodied agent operating in Minecraft,
+      despite using multiple prompting modules internally.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: It explicitly uses code as the action space, generating executable
+      programs for embodied control.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Its iterative prompting mechanism refines programs using environment
+      feedback, execution errors, and self-verification.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: A central architectural component is the ever-growing skill library
+      of executable code that is stored and retrieved.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: VOYAGER includes an automatic curriculum that proposes progressively
+      harder self-driven tasks.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The paper presents human feedback extensions where humans can act as
+      critic or curriculum, augmenting the base system rather than being always required.
+- id: O4
+  name: AutoGen
+  source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: AutoGen is explicitly a framework of multiple conversable agents cooperating
+      through message exchange.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: The framework’s basic operational unit is conversational message passing
+      among agents, even when tools or code execution are invoked.
+  - dimension_id: D3
+    characteristic_id: D3.C5
+    reasoning: Task progress is achieved through conversation programming, auto-reply,
+      and coordination among specialized agents.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The source emphasizes agent context from messages but does not define
+      a distinct persistent reflective memory or reusable skill library as a core
+      architectural store.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Applications are initiated from user or benchmark tasks rather than
+      an internally generated curriculum.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Human involvement is configurable and optional, for example through
+      user proxy agents with different human input modes.
+- id: O5
+  name: EUREKA
+  source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: EUREKA is described as a single reward-design agentic system rather
+      than a multi-agent conversation architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its outputs are executable reward function programs produced by a coding
+      LLM.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: Its central improvement loop is evolutionary search over sampled reward
+      programs with reflection-guided mutation.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The system iterates using prompts and reward reflections, but the paper
+      does not introduce a persistent memory store analogous to a skill library or
+      episodic memory buffer.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The task description and environment are provided externally for each
+      reward-generation problem.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Although the base loop is autonomous, the paper explicitly introduces
+      human reward initialization and textual human feedback as augmentation modes.

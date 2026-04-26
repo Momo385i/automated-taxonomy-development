@@ -1,0 +1,86 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent
+  - id: D1.C2
+    name: Multi-agent
+- id: D2
+  name: Execution environment
+  characteristics:
+  - id: D2.C1
+    name: Physical
+  - id: D2.C2
+    name: Digital
+  - id: D2.C3
+    name: Social simulation
+  - id: D2.C4
+    name: Hybrid
+- id: D3
+  name: Planning structure
+  characteristics:
+  - id: D3.C1
+    name: Reactive loop
+  - id: D3.C2
+    name: Conversational
+  - id: D3.C3
+    name: Hierarchical
+- id: D4
+  name: Capability source
+  characteristics:
+  - id: D4.C1
+    name: Base model
+  - id: D4.C2
+    name: Tools
+  - id: D4.C3
+    name: Expert models
+  - id: D4.C4
+    name: Skill library
+  - id: D4.C5
+    name: Memory store
+- id: D5
+  name: Action format
+  characteristics:
+  - id: D5.C1
+    name: Textual
+  - id: D5.C2
+    name: Code
+  - id: D5.C3
+    name: Tool calls
+  - id: D5.C4
+    name: Embodied skills
+- id: D6
+  name: Adaptation mechanism
+  characteristics:
+  - id: D6.C1
+    name: None
+  - id: D6.C2
+    name: Reason-act
+  - id: D6.C3
+    name: Reflection
+  - id: D6.C4
+    name: Code refinement
+  - id: D6.C5
+    name: Evolutionary search
+- id: D7
+  name: Task source
+  characteristics:
+  - id: D7.C1
+    name: External tasks
+  - id: D7.C2
+    name: Self-generated
+- id: D8
+  name: Human involvement
+  characteristics:
+  - id: D8.C1
+    name: None
+  - id: D8.C2
+    name: Optional loop
+  - id: D8.C3
+    name: Integrated feedback
+notes:
+  format: prototype_v1

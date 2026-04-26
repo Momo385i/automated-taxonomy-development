@@ -1,0 +1,64 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent architecture
+  - id: D1.C2
+    name: Multi-agent architecture
+- id: D2
+  name: Operational control pattern
+  characteristics:
+  - id: D2.C1
+    name: Self-prompting loop
+  - id: D2.C2
+    name: Task-queue cycle
+  - id: D2.C3
+    name: Closed-loop replanning
+  - id: D2.C4
+    name: Chain-structured collaboration
+- id: D3
+  name: Planning adaptation mechanism
+  characteristics:
+  - id: D3.C1
+    name: Static plan execution
+  - id: D3.C2
+    name: Feedback-driven replanning
+  - id: D3.C3
+    name: Expert-opinion augmentation
+- id: D4
+  name: Memory organization
+  characteristics:
+  - id: D4.C1
+    name: Token-context memory
+  - id: D4.C2
+    name: Task-state memory
+  - id: D4.C3
+    name: Phase-segmented memory
+- id: D5
+  name: Feedback source configuration
+  characteristics:
+  - id: D5.C1
+    name: No external feedback
+  - id: D5.C2
+    name: Environment feedback
+  - id: D5.C3
+    name: Inter-agent feedback
+  - id: D5.C4
+    name: External expert feedback
+- id: D6
+  name: Action grounding mode
+  characteristics:
+  - id: D6.C1
+    name: Command-based tools
+  - id: D6.C2
+    name: Skill library control
+  - id: D6.C3
+    name: Code artifact production
+  - id: D6.C4
+    name: Web-environment actions
+notes:
+  format: prototype_v1

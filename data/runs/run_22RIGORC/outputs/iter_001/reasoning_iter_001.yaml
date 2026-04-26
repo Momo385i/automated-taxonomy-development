@@ -1,0 +1,177 @@
+iteration: 1
+empirical_reasoning: 'I followed an empirical-to-conceptual procedure grounded only
+  in the five supplied source documents. I first identified concrete objects that
+  belong to a coherent class under the stated topic and meta-characteristic: autonomous
+  AI agent systems or frameworks with architectural and behavioral properties. The
+  sources contain five distinct candidate objects that clearly meet this condition:
+  ReAct, Reflexion, VOYAGER, EUREKA, and AutoGen. Although AutoGen is a framework
+  rather than a single benchmarked agent instance, the source presents it as a system
+  for constructing conversable multi-agent applications, so it still fits the user’s
+  target class of agent systems/frameworks. I excluded baselines and secondary variants
+  mentioned inside papers, such as Human, Sparse, L2R, EUREKA ablations, VOYAGER ablations,
+  and application examples within AutoGen, because they are either not LLM-based autonomous
+  agents in the intended sense or are subordinate configurations rather than distinct
+  top-level objects.
+
+
+  I then derived differentiating characteristics directly from recurrent architectural
+  and behavioral contrasts in the sources. I only kept aspects that vary across the
+  identified objects and are explicitly supported by descriptions in the papers. This
+  yielded five dimensions.
+
+
+  D1 Agent multiplicity captures whether the system is organized as a single agent
+  or as multiple interacting agents. This distinction is explicit in AutoGen’s core
+  framing around multi-agent conversation, while ReAct, Reflexion, VOYAGER, and EUREKA
+  are each presented as one agent system, even if they contain internal modules. This
+  dimension is non-overlapping with the others because it concerns the number of agent
+  entities rather than how actions are represented or how learning occurs.
+
+
+  D2 Primary action representation captures the main form in which the agent operationalizes
+  its decisions. The sources empirically support four different forms. ReAct uses
+  textual task actions interleaved with reasoning traces. Reflexion likewise acts
+  through text actions and generations in environments and programming tasks. VOYAGER
+  explicitly uses executable code as action space for embodied control. EUREKA’s output
+  is more specific: it generates reward code rather than environment control programs,
+  and this is central enough to warrant a separate characteristic instead of merging
+  it with generic code actions. AutoGen is organized primarily around conversational
+  messaging among agents; although some agents may execute tools or code, the framework’s
+  defining interaction mode is multi-agent chat. These characteristics are mutually
+  exclusive at the object level because each object has one empirically dominant action
+  substrate emphasized by its source.
+
+
+  D3 Improvement mechanism captures how the architecture improves behavior or outputs
+  over time without weight updates. The sources support four characteristics. ReAct
+  has no explicit cross-trial self-improvement loop as a defining mechanism; its contribution
+  is interleaving reasoning and acting within trajectories. AutoGen similarly provides
+  orchestration and interaction patterns but no single built-in learning loop at framework
+  level, so it is also mapped to None. Reflexion is defined by verbal reflection and
+  reuse of textual lessons from feedback. VOYAGER iteratively refines code using execution-grounded
+  signals: environment feedback, execution errors, and self-verification. EUREKA improves
+  by evolutionary search over reward candidates combined with reflection summaries;
+  because the paper explicitly centers evolutionary optimization, that mechanism was
+  kept distinct from generic execution-grounded refinement. This dimension is distinct
+  from D4 because D3 addresses how improvement happens, whereas D4 addresses what
+  persistent knowledge structure, if any, is stored.
+
+
+  D4 Persistent knowledge structure captures whether the system stores reusable knowledge
+  across trials or tasks, and if so in what form. The sources empirically support
+  three states. Reflexion uses reflective memory stored in an episodic buffer. VOYAGER
+  uses a skill library of code programs indexed for retrieval and reuse. ReAct, EUREKA,
+  and AutoGen do not describe a comparable persistent memory structure as a core architectural
+  element in the same sense, so they map to None. I considered whether EUREKA’s iterative
+  prompt state counted as memory, but the source does not present it as a persistent
+  reusable knowledge store analogous to Reflexion’s memory or VOYAGER’s skill library,
+  so I conservatively kept it under None.
+
+
+  D5 Task generation mode captures whether objectives are externally specified or
+  self-generated through a curriculum. This distinction is strongly supported by VOYAGER’s
+  automatic curriculum, which proposes tasks based on world state and exploration
+  progress. All other objects in the provided sources operate on externally supplied
+  tasks, prompts, benchmark instances, or developer/user requests. This dimension
+  is orthogonal to improvement mechanism: a system may improve iteratively while still
+  working only on externally specified tasks, as EUREKA and Reflexion do.
+
+
+  I intentionally did not introduce additional dimensions that might seem useful but
+  were insufficiently and consistently supported across the sources, such as human-in-the-loop
+  capability, environment type, tool use, model updating, openness of world, embodiment,
+  planning horizon, or evaluation setting. Some of these appeared in only one or two
+  papers or risked redundancy with stronger dimensions. For example, tool use is present
+  in several systems but is not a clean discriminator because it appears in different
+  forms and often as a secondary feature. Likewise, feedback source could have been
+  a candidate dimension, but the papers often combine several sources, which would
+  have jeopardized mutual exclusivity.
+
+
+  For object-characteristic mapping, I assigned exactly one characteristic per dimension
+  to each object. I avoided N/A because every object could be classified on every
+  retained dimension without stretching definitions. I also verified that every characteristic
+  is instantiated by at least one object: Single-agent architecture by EUREKA, Reflexion,
+  VOYAGER, ReAct; Multi-agent architecture by AutoGen; Text actions by Reflexion and
+  ReAct; Code actions by VOYAGER; Reward code generation by EUREKA; Conversational
+  messaging by AutoGen; None improvement by ReAct and AutoGen; Verbal reflection by
+  Reflexion; Execution-grounded refinement by VOYAGER; Evolutionary search by EUREKA;
+  None persistent knowledge by EUREKA, AutoGen, ReAct; Reflective memory by Reflexion;
+  Skill library by VOYAGER; Externally specified tasks by EUREKA, Reflexion, AutoGen,
+  ReAct; Self-generated curriculum by VOYAGER.
+
+
+  There are several limitations from the empirical material. First, the taxonomy is
+  intentionally parsimonious and reflects only the five supplied sources, not the
+  broader post-2020 LLM-agent literature. Second, some objects are systems while others
+  are frameworks, which can create mild asymmetry, but they still belong to the coherent
+  target class of agent systems/frameworks. Third, certain papers describe internal
+  modular components that resemble multiple agents (for example evaluators or self-verifiers),
+  but I classified multiplicity conservatively based on whether the paper frames the
+  overall architecture as a single agent versus a multi-agent conversational system.
+  Fourth, the dimension Primary action representation reduces richer hybrids to one
+  dominant form, which sacrifices some nuance for MECE compliance. This was necessary
+  to ensure exactly one assignment per dimension. Overall, the resulting taxonomy
+  is empirically grounded, non-redundant, and suited to the stated purpose of helping
+  Information Systems researchers and practitioners compare modern autonomous AI agent
+  architectures at the system level.'
+consolidator_reasoning: 'I treated the provided taxonomy as the initial empirical
+  taxonomy and performed a structural validation, object validation, and consistency
+  check against the stated meta-characteristic: architectural and behavioral properties
+  of autonomous AI agents. All five objects fit the intended conceptual class. They
+  are post-2020, predominantly LLM-based agent systems or frameworks, and none are
+  pure benchmarks or evaluation-only tools. AutoGen required the closest scope check
+  because it is a framework rather than a single instantiated agent, but the user
+  explicitly includes systems and frameworks such as AutoGPT or Voyager, and AutoGen
+  clearly supports autonomous, goal-directed multi-agent architectures. Therefore,
+  it was retained.
+
+
+  The taxonomy already had a coherent structure with five dimensions, well below the
+  stated upper bound. I preserved the dimensional logic because each dimension captures
+  a distinct architectural or behavioral aspect relevant to comparing modern AI agent
+  systems: number of agents, dominant action substrate, improvement logic, persistent
+  knowledge form, and task origination mode. I applied only minimal normalization
+  by shortening names into concise noun phrases of one to three words where possible.
+  This affected several labels, for example changing ''Single-agent architecture''
+  to ''Single-agent'' and ''Self-generated curriculum'' to ''Self curriculum''. These
+  edits preserve meaning while improving conformity with the naming constraint.
+
+
+  I checked the dimensions for mutual exclusivity and collective exhaustiveness. D1
+  is MECE because a system is classified by its primary architecture as either single-agent
+  or multi-agent. D3 and D4 are also MECE as defined, because each object is assigned
+  according to its dominant built-in improvement mechanism and dominant persistent
+  knowledge structure respectively; ''None'' serves as the residual category. D5 is
+  MECE because task generation is either externally provided or generated internally
+  as a curriculum. D2 needed the most careful review because text actions, code actions,
+  reward code, and message actions can appear related. I retained all four characteristics
+  because they can be made mutually exclusive when interpreted as the primary action
+  representation of the system, which is consistent with the user instruction that
+  when objects exhibit multiple behaviors, the taxonomy may classify the primary attribute.
+  Under this interpretation, AutoGen is primarily message-based, Voyager primarily
+  code-acting, ReAct and Reflexion primarily text-acting, and EUREKA primarily reward-code
+  generating. ''Reward code'' remains a justified subtype because reward synthesis
+  is not just generic code generation but a salient architectural specialization in
+  EUREKA that would otherwise be obscured.
+
+
+  I validated each object-characteristic assignment for plausibility. EUREKA as single-agent,
+  reward-code, evolutionary-search, no persistent knowledge structure, and external
+  tasks is coherent with the paper. Reflexion is appropriately characterized by verbal
+  reflection and reflective memory. Voyager clearly combines executable code actions,
+  execution-grounded refinement, a persistent skill library, and self-generated curriculum.
+  AutoGen is correctly mapped as multi-agent and message-based, without an inherent
+  improvement loop or memory structure at the framework level. ReAct is appropriately
+  represented as single-agent, text-action, with no explicit cross-trial improvement
+  or persistent knowledge structure. No assignment required correction.
+
+
+  I also checked referential integrity and completeness. Every dimension ID and characteristic
+  ID used by the object mapping exists in the final taxonomy. Every retained object
+  has exactly one mapping entry for each of the five dimensions. No N/A assignments
+  were present, and no additional residual characteristics were needed beyond existing
+  ''None'' categories. No duplicate objects were detected, so no merges or deletions
+  were necessary. The resulting taxonomy is internally consistent, object-consistent,
+  and suitable for information systems researchers and practitioners who need a compact
+  but discriminating structure for comparing autonomous AI agent architectures.'

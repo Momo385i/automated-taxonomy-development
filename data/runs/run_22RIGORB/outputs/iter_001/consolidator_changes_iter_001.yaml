@@ -1,0 +1,7 @@
+iteration: 1
+changes_short:
+- Normalized dimension and characteristic names to concise noun phrases.
+- Refined D3 labels to improve mutual exclusivity and interpretability.
+- Normalized object names VOYAGER to Voyager and EUREKA to Eureka.
+- Verified all objects are in scope and found no duplicates.
+- Verified complete one-to-one mapping coverage across all dimensions.

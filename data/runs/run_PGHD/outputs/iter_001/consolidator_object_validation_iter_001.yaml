@@ -1,0 +1,52 @@
+iteration: 1
+object_validation:
+- object_name: COVID-19 home quarantine clinical decision support system
+  action: retained
+  reasoning: Within scope because it is an individual PGHD integration system used
+    by clinicians through a clinical platform. No duplicate detected.
+- object_name: BREATHE mHealth informatics platform
+  action: retained
+  reasoning: Within scope because it integrates PGHD into a clinician-facing platform
+    connected to care processes. No duplicate detected.
+- object_name: EHR-integrated postpartum HDP monitoring app
+  action: retained
+  reasoning: Within scope because it is a concrete PGHD-to-EHR integration project.
+    No duplicate detected.
+- object_name: Wearable at-home vital sign monitoring prototype
+  action: retained
+  reasoning: Retained as a borderline but in-scope clinician-facing integration prototype;
+    it includes PGHD flow into a clinical web application rather than only consumer
+    monitoring. No duplicate detected.
+- object_name: MobiCardio clinical-grade CVD management system
+  action: retained
+  reasoning: Within scope because it integrates wearable PGHD with hospital information
+    infrastructure. No duplicate detected.
+- object_name: PROMIS CAT middleware integration into Epic
+  action: retained
+  reasoning: Within scope because it is a concrete PGHD middleware integration into
+    an EHR. No duplicate detected.
+- object_name: HL7 CDA middleware information model for PGHD and ODL exchange
+  action: retained
+  reasoning: Retained as a borderline but in-scope integration artifact because it
+    describes a concrete middleware-based exchange approach for PGHD into EHRs, not
+    merely a generic standard. No duplicate detected.
+- object_name: 4T CGM-to-EHR integration for pediatric type 1 diabetes
+  action: retained
+  reasoning: Within scope because it is a concrete PGHD-to-EHR integration effort.
+    No duplicate detected.
+- object_name: MyWear smart garment monitoring system
+  action: retained
+  reasoning: Within scope because it is a clinician-accessible PGHD monitoring system
+    integrated into a clinical platform. No duplicate detected.
+- object_name: CDPMS hemodialysis integrated monitoring system
+  action: retained
+  reasoning: Within scope because it connects PGHD across home and dialysis-unit clinical
+    workflows using a dedicated clinical system. No duplicate detected.
+- object_name: AECOPD prediction system with wearable, app, and home sensors
+  action: retained
+  reasoning: Within scope because it integrates PGHD into a clinician-facing risk
+    prediction platform. No duplicate detected.
+- object_name: Medical-grade wireless ward monitoring system
+  action: retained
+  reasoning: Within scope because it integrates patient-generated sensor data with
+    hospital information infrastructure. No duplicate detected.

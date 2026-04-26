@@ -1,0 +1,290 @@
+run_id: run_PGHD
+created_at: '2026-04-15T16:41:38'
+input_dir: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\input_pdfs
+documents:
+- file_name: alcoceba herrero et al 2023 - Randomized Controlled Trial Evaluating
+    the Benefit of a Novel Clinical Decision Support System for the Management of
+    COVID-19 Patients in Home Quarantine A Study Protocol.pdf
+  sha256: 1c2f374c26a7f52872444eee88dc9d50b5d87a39565eeb526ff230111be8fcac
+  pages: 13
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\alcoceba
+    herrero et al 2023 - Randomized Controlled Trial Evaluating the Benefit of a Novel
+    Clinical Decision Support System for the Management of COVID-19 Patients in Home
+    Quarantine A Study Protocol.txt
+  iteration_added: 1
+- file_name: Bui et al 2016 - Biomedical REAl-Time Health Evaluation (BREATHE) toward
+    an mHealth informatics platform_compressed.pdf
+  sha256: b4311b66e61fa65fd688956ac560ae1b21316ad2726539e67b6040aebe1232e0
+  pages: 11
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\Bui
+    et al 2016 - Biomedical REAl-Time Health Evaluation (BREATHE) toward an mHealth
+    informatics platform_compressed.txt
+  iteration_added: 1
+- file_name: dullabh et al 2023 - mplementation and evaluation of an electronic health
+    record-integrated app for postpartum monitoring of hypertensive disorders of pregnancy
+    using patient-contributed data collection Open Access.pdf
+  sha256: 6b5e5b3d16823462237b3d6a5f96fc7ac05d6f0e5053cbf38ce75190d657e236
+  pages: 7
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\dullabh
+    et al 2023 - mplementation and evaluation of an electronic health record-integrated
+    app for postpartum monitoring of hypertensive disorders of pregnancy using patient-contributed
+    data collection Open Access.txt
+  iteration_added: 1
+- file_name: hammett et al 2022 - Wearable At-home vital sign monitoring.pdf
+  sha256: 700d694f352a6e7e2da2e93fb846f9eb4ddd8603535c2ead657916274a30bc8f
+  pages: 8
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\hammett
+    et al 2022 - Wearable At-home vital sign monitoring.txt
+  iteration_added: 1
+- file_name: li et al 2019 -MobiCardio_A_Clinical-grade_Mobile_Health_System_for_Cardiovascular_Disease_Management.pdf
+  sha256: bcef4f8e66104ae713297810aa9a1bda54d5e862bd12256bb9dcbd73169b7ea1
+  pages: 6
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\li
+    et al 2019 -MobiCardio_A_Clinical-grade_Mobile_Health_System_for_Cardiovascular_Disease_Management.txt
+  iteration_added: 1
+- file_name: nolla et al 2024- Seamless integration of computer-adaptive patient reported
+    outcomes into an electronic health record._compressed.pdf
+  sha256: 2681b12807e2a111cac0ac6f4301060426db16d79927ae673f1e4faa0321c0b6
+  pages: 10
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\nolla
+    et al 2024- Seamless integration of computer-adaptive patient reported outcomes
+    into an electronic health record._compressed.txt
+  iteration_added: 1
+- file_name: plastiras and o'sullivan 2018 - Exchanging personal health data with
+    electronic health records A standardized information model for patient generated
+    health data and observations of daily living_compressed.pdf
+  sha256: cc8d7133ea791dc72fcf84c584bf166c49c6b197ce033472ccf753445e4bd441
+  pages: 11
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\plastiras
+    and o'sullivan 2018 - Exchanging personal health data with electronic health records
+    A standardized information model for patient generated health data and observations
+    of daily living_compressed.txt
+  iteration_added: 1
+- file_name: prahalad et al 2024 - Improving Clinical Outcomes in Newly Diagnosed
+    Pediatric Type 1 Diabetes- Teamwork, Targets, Technology, and Tight Control -
+    The 4T Study.pdf
+  sha256: 3b9653662623d1fa3c1b4fb375efb25ae9ac6e1c87e2dcf84032bf27e4e6bfd6
+  pages: 9
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\prahalad
+    et al 2024 - Improving Clinical Outcomes in Newly Diagnosed Pediatric Type 1 Diabetes-
+    Teamwork, Targets, Technology, and Tight Control - The 4T Study.txt
+  iteration_added: 1
+- file_name: sethuraman et al 2021- MyWear A Novel Smart Garment for Automatic Continuous
+    Vital Monitoring_compressed.pdf
+  sha256: 22acda49d19125fb9d291da9feebef8a25b495e835118c5b5e10848c127cc9cb
+  pages: 9
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\sethuraman
+    et al 2021- MyWear A Novel Smart Garment for Automatic Continuous Vital Monitoring_compressed.txt
+  iteration_added: 1
+- file_name: tsakiridis et al 2023 - Implementation_of_a_System_for_the_Real-Time_Recording_of_Patient_Medical_Data_both_Within_and_Outside_the_Hemodialysis_Unit.pdf
+  sha256: 2179664ae9674732e7a70b475233d9ed65959ce80ce691fc61472bc3eb04f046
+  pages: 6
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\tsakiridis
+    et al 2023 - Implementation_of_a_System_for_the_Real-Time_Recording_of_Patient_Medical_Data_both_Within_and_Outside_the_Hemodialysis_Unit.txt
+  iteration_added: 1
+- file_name: wu et al 2021 - Acute Exacerbation of a Chronic Obstructive Pulmonary
+    Disease_compressed.pdf
+  sha256: c0723a8bfb13e571b984bbb2f96966746c7ca8490fbfbbfa7ec5a42471f0d23f
+  pages: 17
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\wu
+    et al 2021 - Acute Exacerbation of a Chronic Obstructive Pulmonary Disease_compressed.txt
+  iteration_added: 1
+- file_name: xu et al 2020 - Construction and Application of a Medical-Grade Wireless
+    Monitoring System for Physiological Signals at General Wards_compressed.pdf
+  sha256: 175d461f8679b4d6286bfd14f03c1379cb5a58c1a8fe3f799b54a5d44ed3ad3f
+  pages: 15
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\xu
+    et al 2020 - Construction and Application of a Medical-Grade Wireless Monitoring
+    System for Physiological Signals at General Wards_compressed.txt
+  iteration_added: 1
+- file_name: bajaj et al 2023 - Co-Design, Development, and Evaluation of a Health
+    Monitoring Tool Using Smartwatch Data A Proof-of-Concept Study_compressed.pdf
+  sha256: 4e9e0299187cc06eaff860b4ed15f6a288430eaa1bd261f2eef607c51e43df8a
+  pages: 15
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\bajaj
+    et al 2023 - Co-Design, Development, and Evaluation of a Health Monitoring Tool
+    Using Smartwatch Data A Proof-of-Concept Study_compressed.txt
+  iteration_added: 2
+- file_name: dugas et al 2024 -Next-generation study databases require FAIR, EHR-_compressed.pdf
+  sha256: 9565c1fcf8656cefa99a14ef20630785c95a32af6d4132d61096a826188fa3c4
+  pages: 8
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\dugas
+    et al 2024 -Next-generation study databases require FAIR, EHR-_compressed.txt
+  iteration_added: 2
+- file_name: frid et al 2022 - Successful integration of ENISO 13606–standardized
+    extracts from a patient mobile app into an electronic health record.pdf
+  sha256: 5f831548b13414a4bfbf271eccadeb60236620e4b0ca1894535c13a4b6d7b6a6
+  pages: 12
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\frid
+    et al 2022 - Successful integration of ENISO 13606–standardized extracts from
+    a patient mobile app into an electronic health record.txt
+  iteration_added: 2
+- file_name: genes et al 2018 - From smartphone to EHR a case report on integrating
+    patient generated health data.pdf
+  sha256: 0531e6a2d24770bc83cdb8d62b39eecf65e4fa1622597e1fb1641edea4f7496f
+  pages: 6
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\genes
+    et al 2018 - From smartphone to EHR a case report on integrating patient generated
+    health data.txt
+  iteration_added: 2
+- file_name: jayathissa et al 2023 - Patient-Generated Health Data Interoperability
+    Through Master Patient Index The DH-Convener Approach.pdf
+  sha256: c9d6216a6ca47202ba3a058a257639189836fb880fb4f951c94c1bec80a074c5
+  pages: 4
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\jayathissa
+    et al 2023 - Patient-Generated Health Data Interoperability Through Master Patient
+    Index The DH-Convener Approach.txt
+  iteration_added: 2
+- file_name: kumar et al 2016 - Automated integration of continuous glucose monitor
+    data in the electronic health record using consumer technology_compressed.pdf
+  sha256: 07bc77dbf305416fd7f6e30ffb82b38894d77adc5c3a3d085fbb562e7ee8013d
+  pages: 6
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\kumar
+    et al 2016 - Automated integration of continuous glucose monitor data in the electronic
+    health record using consumer technology_compressed.txt
+  iteration_added: 2
+- file_name: lobach et al 2022 - Integrating a Patient Engagement App into an Electronic
+    Health Record-Enabled Workflow Using Interoperability Standards_compressed.pdf
+  sha256: 8421ec0cfab6e3384904a23127b14a0906c538579baf8bfe659ba8a43fb5d9ff
+  pages: 9
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\lobach
+    et al 2022 - Integrating a Patient Engagement App into an Electronic Health Record-Enabled
+    Workflow Using Interoperability Standards_compressed.txt
+  iteration_added: 2
+- file_name: nunes et al 2024 - Deployment and validation of a smart bed architecture
+    for untethered patients with wireless biomonitoring stickers_compressed.pdf
+  sha256: 36e0c791d985c67eba8394f2809491dcc6b9bd32d48d735940ee47959b3060c7
+  pages: 26
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\nunes
+    et al 2024 - Deployment and validation of a smart bed architecture for untethered
+    patients with wireless biomonitoring stickers_compressed.txt
+  iteration_added: 2
+- file_name: reichl et al 2024 - Pilot study for the development of an automatically
+    generated and wearable-based early warning system for the detection of deterioration
+    of hospitalized patients of an acute care hospital.pdf
+  sha256: 870ecbbb396aae85f3897a6e8c809f61c78c4032e3d38d23989359d0aad09733
+  pages: 12
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\reichl
+    et al 2024 - Pilot study for the development of an automatically generated and
+    wearable-based early warning system for the detection of deterioration of hospitalized
+    patients of an acute care hospital.txt
+  iteration_added: 2
+- file_name: smith et al 2017 - Sensi-steps Using patient-generated data to prevent
+    post-stroke falls..pdf
+  sha256: d58c03282ded269239bea755637becc69b2f72b997d1422043194da8a8c67657
+  pages: 5
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\smith
+    et al 2017 - Sensi-steps Using patient-generated data to prevent post-stroke falls..txt
+  iteration_added: 2
+- file_name: Y K Kim et al 2024 The adaptation of a single institution diabetes care
+    platform into a nationally available turnkey solution.pdf
+  sha256: 2b4c02566f218855123144c9c683559301f258035495d69056d8a1e06a65e1dc
+  pages: 10
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\Y
+    K Kim et al 2024 The adaptation of a single institution diabetes care platform
+    into a nationally available turnkey solution.txt
+  iteration_added: 2
+- file_name: young et al 2020 -Nurse Coaching and Mobile Health Compared With Usual
+    Care to Improve Diabetes Self-Efficacy for Persons With Type 2 Diabetes Randomized
+    Controlled Trial.pdf
+  sha256: a5332b68e738526dec4548aaf561e23ab87bbc09c513c96ad23080f7ec1a763c
+  pages: 12
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\young
+    et al 2020 -Nurse Coaching and Mobile Health Compared With Usual Care to Improve
+    Diabetes Self-Efficacy for Persons With Type 2 Diabetes Randomized Controlled
+    Trial.txt
+  iteration_added: 2
+- file_name: austin et al 2020 - Providing the bigger picture Benefits and feasibility
+    of integrating remote monitoring from smartphones into the electronic health record
+    Findings from the remote monitoring of rheumatoid arthritis.pdf
+  sha256: 0e147c338adefd6b0c8bb605b7e8f564f4e8b1388fe3c42832b1bfcae19e87e7
+  pages: 12
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\austin
+    et al 2020 - Providing the bigger picture Benefits and feasibility of integrating
+    remote monitoring from smartphones into the electronic health record Findings
+    from the remote monitoring of rheumatoid arthritis.txt
+  iteration_added: 3
+- file_name: cernian et al 2020 - PatientDataChain A Blockchain-Based Approach to
+    Integrate Personal Health Records_compressed.pdf
+  sha256: ac7a547bfd7d443dda8ce13d89e90cd478fc98e8c5ce1a02251b91cc10151a88
+  pages: 24
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\cernian
+    et al 2020 - PatientDataChain A Blockchain-Based Approach to Integrate Personal
+    Health Records_compressed.txt
+  iteration_added: 3
+- file_name: chatterjee et al 2022 - HL7 FHIR with SNOMED-CT to Achieve Semantic and
+    Structural Interoperability in Personal Health Data A Proof-of-Concept Study.pdf
+  sha256: 36c771a39425061890e0468520306ffd6cfcfa845d95c25bf10e68f2cee6ea66
+  pages: 48
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\chatterjee
+    et al 2022 - HL7 FHIR with SNOMED-CT to Achieve Semantic and Structural Interoperability
+    in Personal Health Data A Proof-of-Concept Study.txt
+  iteration_added: 3
+- file_name: frodi et al 2021 - Rationale and design of the SafeHeart study Development
+    and testing of a mHealth tool for the prediction of arrhythmic events and implantable
+    cardioverter-defibrillator therapy..pdf
+  sha256: 6b6f37c349fcb890081301080acd78540b79fa9a4472926c2c24c8d468250702
+  pages: 10
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\frodi
+    et al 2021 - Rationale and design of the SafeHeart study Development and testing
+    of a mHealth tool for the prediction of arrhythmic events and implantable cardioverter-defibrillator
+    therapy..txt
+  iteration_added: 3
+- file_name: JW Kim et al 2019 - Impact of Personal Health Records and Wearables on
+    Health Outcomes and Patient Response- Three-Arm Randomized Controlled Trial.pdf
+  sha256: 01c30b9bf225def72671dd47d9cd1c4fd93369485291451fb036be848289c4b5
+  pages: 13
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\JW
+    Kim et al 2019 - Impact of Personal Health Records and Wearables on Health Outcomes
+    and Patient Response- Three-Arm Randomized Controlled Trial.txt
+  iteration_added: 3
+- file_name: lewinski 2019 - Bridging the integration gap between patient-generated
+    blood glucose data and electronic health records.pdf
+  sha256: 1ad232a712b355fd50eaca82b2afc15e7d5698d3167c92fd938bfca1e966527c
+  pages: 6
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\lewinski
+    2019 - Bridging the integration gap between patient-generated blood glucose data
+    and electronic health records.txt
+  iteration_added: 3
+- file_name: sano et al 2015 - HeartMapp- a mobile application to improve CHF outcomes
+    and reduce hospital readmissions.pdf
+  sha256: 41e64192117e7c28c6a0135db39d8e547e2d6e80a2b219a35fa26c64d87fd8da
+  pages: 7
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\sano
+    et al 2015 - HeartMapp- a mobile application to improve CHF outcomes and reduce
+    hospital readmissions.txt
+  iteration_added: 3
+- file_name: sun et al 2024 - Enhancing EHR Systems with data from wearables An end-to-end
+    Solution for monitoring post-Surgical Symptoms in older adults.pdf
+  sha256: 4410b402622e8054ecb974a6647f3b8dec1d3ecb532f8f087b01e15827159869
+  pages: 8
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\sun
+    et al 2024 - Enhancing EHR Systems with data from wearables An end-to-end Solution
+    for monitoring post-Surgical Symptoms in older adults.txt
+  iteration_added: 3
+- file_name: timotijevic et al 2020 - Deployment and validation of a smart bed architecture
+    for untethered patients with wireless biomonitoring stickers.pdf
+  sha256: 1696723fd7edcacff93e21a1ba7fd72e866bbf6954cc3d4013a2d6b4f62429aa
+  pages: 21
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\timotijevic
+    et al 2020 - Deployment and validation of a smart bed architecture for untethered
+    patients with wireless biomonitoring stickers.txt
+  iteration_added: 3
+- file_name: wei et al 2017 - iT2DM project A framework for secondary use of EHR data
+    for high-throughput phenotyping in diabetes..pdf
+  sha256: 39728de030a23e7524d5b63dff21b421e8841be02ce9d5662c5db242323f08ce
+  pages: 5
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\wei
+    et al 2017 - iT2DM project A framework for secondary use of EHR data for high-throughput
+    phenotyping in diabetes..txt
+  iteration_added: 3
+- file_name: wesley et al 2021 - A novel application of SMART on FHIR architecture
+    for interoperable and scalable integration of patient-reported outcome data with
+    electronic health records.pdf
+  sha256: a5445fb0971a82b1ae1d00b380608fa60a05bc8152a1fbe292fc18780b7c3e6d
+  pages: 6
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\wesley
+    et al 2021 - A novel application of SMART on FHIR architecture for interoperable
+    and scalable integration of patient-reported outcome data with electronic health
+    records.txt
+  iteration_added: 3

@@ -1,0 +1,1903 @@
+run_id: run_PGHD
+run_dir: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD
+iteration: 1
+thread_id: thread_run_PGHD
+run_started_at: '2026-04-15T16:29:51'
+token_usage_iteration:
+  prompt_tokens: 98657
+  completion_tokens: 14626
+  total_tokens: 113283
+token_usage_total:
+  prompt_tokens: 98657
+  completion_tokens: 14626
+  total_tokens: 113283
+token_usage_by_agent:
+  consultation:
+    prompt_tokens: 0
+    completion_tokens: 0
+    total_tokens: 0
+  empirical:
+    prompt_tokens: 85553
+    completion_tokens: 6441
+    total_tokens: 91994
+  consolidator:
+    prompt_tokens: 6697
+    completion_tokens: 6210
+    total_tokens: 12907
+  validator:
+    prompt_tokens: 6407
+    completion_tokens: 1975
+    total_tokens: 8382
+  interaction:
+    prompt_tokens: 0
+    completion_tokens: 0
+    total_tokens: 0
+errors: []
+topic: The integration of Patient-Generated Health Data (PGHD) into clinical systems
+  like Electronic Health Records (EHRs) or Hospital Information Systems (HIS)
+meta_characteristic: The integration of PGHD within clinical systems
+objective_ending_conditions:
+- id: OEC_01
+  name: Mutual Exclusivity
+  description: In each dimension, no object can have two different characteristics.
+    If an object can logically be assigned to more than one characteristic, the dimension
+    is not mutually exclusive and should be restructured.
+- id: OEC_02
+  name: Collective Exhaustiveness
+  description: Each object must have at least one of the characteristics in any dimension.
+    If a valid object exists that cannot be classified into any existing category,
+    the dimension is not collectively exhaustive and requires an additional or a residual
+    characteristic.
+- id: OEC_03
+  name: No object merge/split
+  description: No object was merged with a similar object or split into multiple objects
+    in the last iteration. If objects were merged or split, then we need to examine
+    the impact of these changes and determine if changes need to be made in the dimensions
+    or characteristics.
+- id: OEC_04
+  name: No 'null' characteristics
+  description: At least one object is classified under every characteristic of every
+    dimension. If at least one object is not found under a characteristic, then the
+    taxonomy has a 'null' characteristic. We must either identify an object with the
+    characteristic or remove the characteristic from the taxonomy.
+- id: OEC_05
+  name: No new dimensions/characteristics
+  description: No new dimensions or characteristics were added in the last iteration.
+    If new dimensions were found, then more characteristics of the dimensions may
+    be identified. If new characteristics were found, then more dimensions may be
+    identified that include these characteristics.
+- id: OEC_06
+  name: No dimension/characteristic merge/split
+  description: No dimensions or characteristics were merged or split in the last iteration.
+    If dimensions or characteristics were merged or split, then we need to examine
+    the impact of these changes and determine if other dimensions or characteristics
+    need to be merged or split.
+- id: OEC_07
+  name: Unique dimensions
+  description: Every dimension is unique and not repeated (i.e., there is no dimension
+    duplication). If dimensions are not unique, then there is redundancy/duplication
+    among dimensions that needs to be eliminated.
+- id: OEC_08
+  name: Unique characteristics
+  description: Every characteristic is unique within its dimension (i.e., there is
+    no characteristic duplication within a dimension). If characteristics within a
+    dimension are not unique, then there is redundancy/duplication in characteristics
+    that needs to be eliminated.
+- id: OEC_09
+  name: Unique cells
+  description: Each cell (combination of characteristics) is unique and is not repeated
+    (i.e., there is no cell duplication). If cells are not unique, then there is redundancy/duplication
+    in cells that needs to be eliminated.
+subjective_ending_conditions:
+- id: SEC_01
+  name: Concise
+  question: Does the number of dimensions allow the taxonomy to be meaningful without
+    being unwieldy or overwhelming?
+- id: SEC_02
+  name: Robust
+  question: Do the dimensions and characteristics provide for differentiation among
+    objects sufficient to be of interest? Given the characteristics of sample objects,
+    what can we say about the objects?
+- id: SEC_03
+  name: Comprehensive
+  question: Can all objects or a (random) sample of objects within the domain of interest
+    be classified? Are all dimensions of the objects of interest identified?
+- id: SEC_04
+  name: Extendible
+  question: Can a new dimension or a new characteristic of an existing dimension be
+    easily added?
+- id: SEC_05
+  name: Explanatory
+  question: What do the dimensions and characteristic explain about an object?
+- id: SEC_06
+  name: Representative sample
+  question: Does the examined sample of objects cover a sufficiently diverse range
+    of objects in the domain, or is it too narrow/biased toward a particular sub-type?
+important_user_prompt: 'Primary target users of this taxonomy: "Healthcare IT researchers
+  and system designers evaluating PGHD integration approaches"
+
+  Primary purpose of the taxonomy: "To classify integration efforts and identify critical
+  design choices bridging technical, clinical, and organizational domains"
+
+  Type of objects the user wants to classify: "Individual PGHD integration projects
+  or systems described in the literature"
+
+  Restrictions: "Exclude purely clinical outcome evaluations. The term EHR is used
+  broadly to include HIS and clinical decision support systems (CDSS)."'
+agent_conversation:
+- timestamp: '2026-04-15T16:29:51'
+  role: system
+  message: Consultation skipped - using provided configuration
+consultation_completed: true
+skip_consultation: true
+interaction_annotations: []
+empirical_taxonomy:
+  meta_characteristic: The integration of PGHD within clinical systems
+  topic: The integration of Patient-Generated Health Data (PGHD) into clinical systems
+    like Electronic Health Records (EHRs) or Hospital Information Systems (HIS)
+  dimensions:
+  - id: D1
+    name: Care setting
+    characteristics:
+    - id: D1.C1
+      name: Home monitoring
+    - id: D1.C2
+      name: Hospital monitoring
+    - id: D1.C3
+      name: Hybrid monitoring
+  - id: D2
+    name: Clinical system integration target
+    characteristics:
+    - id: D2.C1
+      name: EHR integration
+    - id: D2.C2
+      name: HIS integration
+    - id: D2.C3
+      name: Standalone clinical platform
+  - id: D3
+    name: PGHD acquisition mode
+    characteristics:
+    - id: D3.C1
+      name: Manual self-report
+    - id: D3.C2
+      name: Device-generated sensing
+    - id: D3.C3
+      name: Combined self-report and sensing
+  - id: D4
+    name: Connected data scope
+    characteristics:
+    - id: D4.C1
+      name: Physiological data
+    - id: D4.C2
+      name: Patient-reported data
+    - id: D4.C3
+      name: Multimodal patient data
+  - id: D5
+    name: Data capture temporality
+    characteristics:
+    - id: D5.C1
+      name: Scheduled episodic capture
+    - id: D5.C2
+      name: Continuous capture
+    - id: D5.C3
+      name: Mixed continuous and episodic capture
+  - id: D6
+    name: Clinical response mechanism
+    characteristics:
+    - id: D6.C1
+      name: Passive review
+    - id: D6.C2
+      name: Rule-based alerting
+    - id: D6.C3
+      name: Algorithmic decision support
+  - id: D7
+    name: Data transfer pathway
+    characteristics:
+    - id: D7.C1
+      name: Direct EHR write-back
+    - id: D7.C2
+      name: Middleware transformation
+    - id: D7.C3
+      name: Platform-mediated exchange
+  - id: D8
+    name: Interoperability basis
+    characteristics:
+    - id: D8.C1
+      name: FHIR-based
+    - id: D8.C2
+      name: CDA-based
+    - id: D8.C3
+      name: Custom or unspecified integration
+  notes:
+    format: prototype_v1
+empirical_object_mapping:
+  iteration: 1
+  objects:
+  - id: O1
+    name: COVID-19 home quarantine clinical decision support system
+    source_document: Alcoceba-Herrero et al. 2023
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The system monitors patients in home quarantine after diagnosis.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: Data are sent to an online platform used by primary care and emergency
+        professionals rather than described as written into an EHR/HIS.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: Patients report symptoms in the app and wearable devices contribute
+        vital-sign data.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The system combines symptoms and multiple vital signs from devices.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Symptoms and some oximetry values are reported three times daily
+        while smartwatch data are monitored in real time.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: AI processing generates moderate or severe alerts that support clinician
+        action.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data flow through the app to a server and online platform used by
+        clinicians.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: No FHIR or CDA standard is specified; integration is described as
+        platform/server based.
+  - id: O2
+    name: BREATHE mHealth informatics platform
+    source_document: Bui et al. 2020
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The platform follows pediatric asthma patients in daily living environments
+        outside the clinic.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: BREATHE is a cloud platform with researcher dashboards and customized
+        provider reports rather than an embedded EHR module.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: It combines EMA self-reports with sensor-based measurements.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The platform integrates physiologic, environmental, behavioral, geospatial,
+        and EHR-linked information.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Sensor streams are continuous while EMAs are scheduled, random, or
+        triggered.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: Sensor-informed triggers and server-side analysis generate context-sensitive
+        EMA actions and monitoring support.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: A smartwatch/smartphone hub transmits to cloud servers and dashboards,
+        mediating the exchange with EHR data.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: The platform uses a standardized JSON model and APIs, but not FHIR
+        or CDA as the central integration basis.
+  - id: O3
+    name: EHR-integrated postpartum HDP monitoring app
+    source_document: Dullabh et al. 2023
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The app supports postpartum monitoring after discharge in the home
+        setting.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Patient-contributed data are integrated into the EHR flowsheet and
+        clinician dashboard.
+    - dimension_id: D3
+      characteristic_id: D3.C1
+      reasoning: Patients manually enter blood pressure readings and symptoms through
+        a questionnaire.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The app captures symptom responses and BP readings together.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: Patients receive daily messages and submit questionnaire responses
+        at scheduled intervals.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Built-in logic highlights out-of-range data and triggers escalation
+        messages and icons.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: The cloud service writes patient-contributed data directly into the
+        EHR flowsheet via APIs.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: The system is explicitly implemented as SMART on FHIR using FHIR
+        APIs.
+  - id: O4
+    name: Wearable at-home vital sign monitoring prototype
+    source_document: Hammett et al. 2022
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The prototype is intended for independent living and at-home monitoring.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: It uses a web application and database for nurses and caregivers,
+        not an EHR/HIS integration.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Vital signs are acquired from the pulse oximeter sensor without patient
+        self-entry.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The integrated PGHD are heart rate, oxygen saturation, and temperature
+        measurements.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The sensor is designed for continual transmission and the system
+        checks values every 5 minutes.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Threshold logic in the web application raises alerts and emails caregivers.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data move from sensor to server/database to web dashboard, with platform
+        mediation.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: No formal interoperability standard is described.
+  - id: O5
+    name: MobiCardio clinical-grade CVD management system
+    source_document: Li et al. 2019
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: The system is deployed inside the hospital for clinical scenarios
+        and ward use.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: The paper explicitly states integration with the existing HIS and
+        synchronization of EHRs from the HIS.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: PGHD are acquired from the smart vest and connected devices rather
+        than manual questionnaires.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The patient-generated data are physiological and activity measurements
+        from wearables.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The vest supports continuous monitoring and streaming of ECG, respiration,
+        and related signals.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: The system includes threshold warnings and AI-based applications
+        such as sleep analytics and arrhythmia detection.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Wearables feed a private-cloud architecture and application server
+        that mediates integration with HIS/EHR data.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Integration relies on RESTful APIs and custom architecture rather
+        than FHIR or CDA.
+  - id: O6
+    name: PROMIS CAT middleware integration into Epic
+    source_document: Nolla et al. 2024
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C3
+      reasoning: Patients can complete PROs through the portal before visits, in waiting
+        areas, or in clinic workflows.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The project tightly integrates computer-adaptive PROs into the Epic
+        EHR.
+    - dimension_id: D3
+      characteristic_id: D3.C1
+      reasoning: Data are entered by patients as questionnaire responses.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: The PGHD consist of patient-reported outcome measures rather than
+        physiologic sensor data.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: PROMIS CATs are administered when ordered or triggered at defined
+        clinical intervals.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Results can trigger notifications and clinical decision support rules
+        based on score thresholds.
+    - dimension_id: D7
+      characteristic_id: D7.C2
+      reasoning: Custom middleware manages the connection and state mapping between
+        Epic and the Assessment Center API.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: The integration is based on custom middleware and API linkage, not
+        FHIR or CDA.
+  - id: O7
+    name: HL7 CDA middleware information model for PGHD and ODL exchange
+    source_document: Plastiras and O'Sullivan 2018
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C3
+      reasoning: The model supports exchange of data generated in personal settings
+        into provider EHRs across contexts rather than one single care setting.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The purpose is explicit exchange of PGHD and ODL data with EHR systems.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: The examples include both device-generated data and user-entered
+        app data.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The model covers sleep, nutrition, reproductive health, and goals
+        across multiple app sources.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: The demonstrated exchange uses exported app data transformed for
+        transfer, not continuous streaming.
+    - dimension_id: D6
+      characteristic_id: D6.C1
+      reasoning: The model focuses on standardized exchange and representation, not
+        operational alerting or decision support.
+    - dimension_id: D7
+      characteristic_id: D7.C2
+      reasoning: A middleware information model and mapping rules transform app data
+        into exchange documents.
+    - dimension_id: D8
+      characteristic_id: D8.C2
+      reasoning: The information model and evaluation are explicitly based on HL7
+        CDA.
+  - id: O8
+    name: 4T CGM-to-EHR integration for pediatric type 1 diabetes
+    source_document: Prahalad et al. 2020
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: CGM data are collected remotely after diagnosis and reviewed between
+        visits in home management.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The team developed a system transmitting CGM data into the electronic
+        health record.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: The program includes device-generated CGM data and patient-reported
+        outcomes collected at visits.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: Integrated data include continuous glucose data plus PROs and clinical
+        education interactions.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: CGM is continuous, while PROs and telehealth touchpoints occur at
+        scheduled intervals.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: Clinical decision support tools are described as necessary to automate
+        data analysis and support population management.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data are transmitted from CGM through Apple HealthKit into the EHR,
+        implying a platform-mediated pathway.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: The integration uses Apple HealthKit and EHR messaging, with no FHIR
+        or CDA basis stated.
+  - id: O9
+    name: MyWear smart garment monitoring system
+    source_document: Sethuraman et al. 2021
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The garment is designed for remote and mobile monitoring outside
+        institutional settings.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: Data go to cloud and mobile applications with medical official access,
+        not to a described EHR/HIS module.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: The smart garment automatically senses ECG, EMG, temperature, and
+        orientation data.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The PGHD consist of physiological and movement measurements from
+        the garment.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The design emphasizes automatic continuous monitoring and streaming
+        of vitals.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: Cloud-based deep learning classifies heartbeat abnormalities and
+        supports emergency alerting.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data are sent from garment to mobile app and cloud infrastructure
+        for clinician access.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: No formal exchange standard is specified for integration.
+  - id: O10
+    name: CDPMS hemodialysis integrated monitoring system
+    source_document: Tsakiridis et al. 2023
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C3
+      reasoning: The system captures data both during dialysis sessions in the unit
+        and between sessions at home.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: CDPMS is the main dialysis unit system with its own cloud database
+        and web/mobile interfaces rather than an external EHR write-back focus.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: It combines device-fed measurements with patient-submitted measurements
+        through the mobile app.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The system integrates treatment parameters, vital signs, and patient-entered
+        measurements from outside the unit.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Dialysis machine data are captured during sessions while home BP
+        and weight are entered at regular intervals.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: The system notifies doctors when patient measurements exceed normal
+        ranges.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: REST APIs connect devices, mobile app, and cloud storage in a platform-mediated
+        architecture.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Although HL7/CDA are discussed in the background, the implemented
+        system is described mainly through REST APIs and custom cloud architecture.
+  - id: O11
+    name: AECOPD prediction system with wearable, app, and home sensors
+    source_document: Wu et al. 2021
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The system observes COPD patients after discharge in their living
+        environment.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: The architecture centers on a lifestyle observation platform and
+        personal health app, not direct EHR/HIS embedding.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: It combines wearable and air-sensor data with questionnaire data
+        from the app.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The system integrates physiological, environmental, and questionnaire
+        data.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Wearable and environmental data are synchronized every 15 minutes
+        while questionnaires are collected monthly and at enrollment.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: Machine learning and deep learning predict exacerbation risk and
+        display warning icons for intervention.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data flow from devices and app into a lifestyle observation platform
+        via APIs and OAuth.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Integration uses APIs, OAuth, and platform architecture rather than
+        FHIR or CDA.
+  - id: O12
+    name: Medical-grade wireless ward monitoring system
+    source_document: Xu et al. 2020
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: The system is deployed in general wards for inpatient monitoring.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: The paper states high integration with the existing HIS and combination
+        with EHRs.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Patient data are generated by the smart vest and connected devices
+        rather than manually entered by patients.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The integrated patient-generated inputs are physiological signals
+        and vital signs.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The system continuously monitors ECG, respiration, acceleration,
+        and related vitals.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: It includes AI-based applications such as sleep stage classification
+        and arrhythmia detection in addition to real-time warnings.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Wearable sensors send data to servers and user interfaces, mediating
+        combination with HIS/EHR data.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Integration is described through RESTful APIs and mixed databases,
+        not FHIR or CDA.
+current_taxonomy:
+  meta_characteristic: The integration of PGHD within clinical systems
+  topic: The integration of Patient-Generated Health Data (PGHD) into clinical systems
+    like Electronic Health Records (EHRs) or Hospital Information Systems (HIS)
+  dimensions:
+  - id: D1
+    name: Care setting
+    characteristics:
+    - id: D1.C1
+      name: Home
+    - id: D1.C2
+      name: Hospital
+    - id: D1.C3
+      name: Hybrid
+  - id: D2
+    name: Integration target
+    characteristics:
+    - id: D2.C1
+      name: EHR
+    - id: D2.C2
+      name: HIS
+    - id: D2.C3
+      name: Clinical platform
+  - id: D3
+    name: Acquisition mode
+    characteristics:
+    - id: D3.C1
+      name: Self-report
+    - id: D3.C2
+      name: Sensing
+    - id: D3.C3
+      name: Combined
+  - id: D4
+    name: Data scope
+    characteristics:
+    - id: D4.C1
+      name: Physiological
+    - id: D4.C2
+      name: Reported
+    - id: D4.C3
+      name: Multimodal
+  - id: D5
+    name: Capture temporality
+    characteristics:
+    - id: D5.C1
+      name: Episodic
+    - id: D5.C2
+      name: Continuous
+    - id: D5.C3
+      name: Mixed
+  - id: D6
+    name: Response mechanism
+    characteristics:
+    - id: D6.C1
+      name: Passive review
+    - id: D6.C2
+      name: Rule-based alerting
+    - id: D6.C3
+      name: Algorithmic support
+  - id: D7
+    name: Transfer pathway
+    characteristics:
+    - id: D7.C1
+      name: Direct write-back
+    - id: D7.C2
+      name: Middleware
+    - id: D7.C3
+      name: Platform exchange
+  - id: D8
+    name: Interoperability basis
+    characteristics:
+    - id: D8.C1
+      name: FHIR
+    - id: D8.C2
+      name: CDA
+    - id: D8.C3
+      name: Custom
+  notes:
+    format: prototype_v1
+current_object_mapping:
+  iteration: 1
+  objects:
+  - id: O1
+    name: COVID-19 home quarantine clinical decision support system
+    source_document: Alcoceba-Herrero et al. 2023
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The system monitors patients in home quarantine after diagnosis.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: Data are sent to an online platform used by primary care and emergency
+        professionals rather than described as written into an EHR or HIS.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: Patients report symptoms in the app and wearable devices contribute
+        vital-sign data.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The system combines patient-reported symptoms with multiple physiological
+        measures from devices.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Symptoms and some oximetry values are reported at intervals while
+        smartwatch data are monitored in real time.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: AI processing generates severity alerts that support clinician action.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data flow through the app to a server and clinician-facing online
+        platform.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: No FHIR or CDA standard is specified; integration is custom platform
+        based.
+  - id: O2
+    name: BREATHE mHealth informatics platform
+    source_document: Bui et al. 2020
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The platform follows pediatric asthma patients in daily living environments
+        outside the clinic.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: BREATHE is a cloud platform with dashboards and provider reports
+        rather than an embedded EHR or HIS module.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: It combines EMA self-reports with sensor-based measurements.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The platform integrates physiologic, environmental, behavioral, geospatial,
+        and patient-reported information.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Sensor streams are continuous while EMAs are scheduled, random, or
+        triggered.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: Sensor-informed triggers and server-side analysis generate context-sensitive
+        actions and monitoring support.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: A smartwatch and smartphone hub transmits to cloud servers and dashboards,
+        mediating exchange.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: The platform uses JSON models and APIs, but not FHIR or CDA as the
+        central integration basis.
+  - id: O3
+    name: EHR-integrated postpartum HDP monitoring app
+    source_document: Dullabh et al. 2023
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The app supports postpartum monitoring after discharge in the home
+        setting.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Patient-contributed data are integrated into the EHR flowsheet and
+        clinician dashboard.
+    - dimension_id: D3
+      characteristic_id: D3.C1
+      reasoning: Patients manually enter blood pressure readings and symptoms through
+        a questionnaire workflow.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The app captures symptom responses and blood pressure readings together,
+        spanning reported and physiological data.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: Patients receive messages and submit questionnaire responses at scheduled
+        intervals.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Built-in logic highlights out-of-range data and triggers escalation
+        messages and icons.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: The cloud service writes patient-contributed data into the EHR flowsheet
+        via APIs.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: The system is explicitly implemented as SMART on FHIR using FHIR
+        APIs.
+  - id: O4
+    name: Wearable at-home vital sign monitoring prototype
+    source_document: Hammett et al. 2022
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The prototype is intended for independent living and at-home monitoring.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: It uses a web application and database for nurses and caregivers,
+        not an EHR or HIS integration target.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Vital signs are acquired from the pulse oximeter sensor without patient
+        self-entry.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The integrated PGHD are heart rate, oxygen saturation, and temperature
+        measurements.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The sensor is designed for continual transmission and the system
+        checks values every 5 minutes.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Threshold logic in the web application raises alerts and emails caregivers.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data move from sensor to server and web dashboard through a platform-mediated
+        architecture.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: No formal interoperability standard is described.
+  - id: O5
+    name: MobiCardio clinical-grade CVD management system
+    source_document: Li et al. 2019
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: The system is deployed inside the hospital for clinical scenarios
+        and ward use.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: The paper explicitly states integration with the existing HIS.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: PGHD are acquired from the smart vest and connected devices rather
+        than manual questionnaires.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The patient-generated data are physiological and activity measurements
+        from wearables.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The vest supports continuous monitoring and streaming of ECG, respiration,
+        and related signals.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: The system includes threshold warnings and AI-based applications
+        such as sleep analytics and arrhythmia detection.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Wearables feed a private-cloud architecture and application server
+        that mediates integration with HIS data.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Integration relies on RESTful APIs and custom architecture rather
+        than FHIR or CDA.
+  - id: O6
+    name: PROMIS CAT middleware integration into Epic
+    source_document: Nolla et al. 2024
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C3
+      reasoning: Patients can complete PROs before visits, in waiting areas, or in
+        clinic workflows, spanning home and hospital contexts.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The project tightly integrates computer-adaptive PROs into the Epic
+        EHR.
+    - dimension_id: D3
+      characteristic_id: D3.C1
+      reasoning: Data are entered by patients as questionnaire responses.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: The PGHD consist of patient-reported outcome measures rather than
+        physiological sensor data.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: PROMIS CATs are administered when ordered or triggered at defined
+        clinical intervals.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Results can trigger notifications and clinical decision support rules
+        based on score thresholds.
+    - dimension_id: D7
+      characteristic_id: D7.C2
+      reasoning: Custom middleware manages the connection and state mapping between
+        Epic and the Assessment Center API.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: The integration is based on custom middleware and API linkage, not
+        FHIR or CDA.
+  - id: O7
+    name: HL7 CDA middleware information model for PGHD and ODL exchange
+    source_document: Plastiras and O'Sullivan 2018
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C3
+      reasoning: The model supports exchange of data generated in personal settings
+        into provider EHRs across contexts rather than one single care setting.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The purpose is explicit exchange of PGHD and ODL data with EHR systems.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: The examples include both device-generated data and user-entered
+        app data.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The model covers sleep, nutrition, reproductive health, and goals
+        across multiple data types.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: The demonstrated exchange uses exported app data transformed for
+        transfer, not continuous streaming.
+    - dimension_id: D6
+      characteristic_id: D6.C1
+      reasoning: The model focuses on standardized exchange and representation, not
+        operational alerting or decision support.
+    - dimension_id: D7
+      characteristic_id: D7.C2
+      reasoning: A middleware information model and mapping rules transform app data
+        into exchange documents.
+    - dimension_id: D8
+      characteristic_id: D8.C2
+      reasoning: The information model and evaluation are explicitly based on HL7
+        CDA.
+  - id: O8
+    name: 4T CGM-to-EHR integration for pediatric type 1 diabetes
+    source_document: Prahalad et al. 2020
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: CGM data are collected remotely between visits in home management.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The team developed a system transmitting CGM data into the electronic
+        health record.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: The program includes device-generated CGM data and patient-reported
+        outcomes collected in the care process.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: Integrated data include continuous glucose data plus patient-reported
+        outcomes.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: CGM is continuous, while patient-reported outcomes are captured at
+        intervals.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: Clinical decision support tools are described to automate data analysis
+        and support population management.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data are transmitted from CGM through Apple HealthKit into the EHR,
+        indicating a platform-mediated pathway.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: The integration uses Apple HealthKit and EHR messaging, with no FHIR
+        or CDA basis stated.
+  - id: O9
+    name: MyWear smart garment monitoring system
+    source_document: Sethuraman et al. 2021
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The garment is designed for remote and mobile monitoring outside
+        institutional settings.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: Data go to cloud and mobile applications with clinician access, not
+        to a described EHR or HIS target.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: The smart garment automatically senses ECG, EMG, temperature, and
+        orientation data.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The PGHD consist of physiological and movement measurements from
+        the garment.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The design emphasizes automatic continuous monitoring and streaming
+        of vitals.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: Cloud-based deep learning classifies heartbeat abnormalities and
+        supports emergency alerting.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data are sent from garment to mobile app and cloud infrastructure
+        for clinician access.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: No formal exchange standard is specified for integration.
+  - id: O10
+    name: CDPMS hemodialysis integrated monitoring system
+    source_document: Tsakiridis et al. 2023
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C3
+      reasoning: The system captures data both during dialysis sessions in the unit
+        and between sessions at home.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: CDPMS is the main dialysis unit system with its own cloud database
+        and web or mobile interfaces rather than an EHR or HIS write-back target.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: It combines device-fed measurements with patient-submitted measurements
+        through the mobile app.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The system integrates treatment parameters, vital signs, and patient-entered
+        measurements from outside the unit.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Dialysis machine data are captured during sessions while home blood
+        pressure and weight are entered at regular intervals.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: The system notifies doctors when patient measurements exceed normal
+        ranges.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: REST APIs connect devices, mobile app, and cloud storage in a platform-mediated
+        architecture.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Although HL7 and CDA are discussed in the background, the implemented
+        system is mainly described through REST APIs and custom cloud architecture.
+  - id: O11
+    name: AECOPD prediction system with wearable, app, and home sensors
+    source_document: Wu et al. 2021
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The system observes COPD patients after discharge in their living
+        environment.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: The architecture centers on a lifestyle observation platform and
+        personal health app, not direct EHR or HIS embedding.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: It combines wearable and air-sensor data with questionnaire data
+        from the app.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The system integrates physiological, environmental, and questionnaire
+        data.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Wearable and environmental data are synchronized every 15 minutes
+        while questionnaires are collected monthly and at enrollment.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: Machine learning and deep learning predict exacerbation risk and
+        display warning icons for intervention.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Data flow from devices and app into a lifestyle observation platform
+        via APIs and OAuth.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Integration uses APIs, OAuth, and platform architecture rather than
+        FHIR or CDA.
+  - id: O12
+    name: Medical-grade wireless ward monitoring system
+    source_document: Xu et al. 2020
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: The system is deployed in general wards for inpatient monitoring.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: The paper states high integration with the existing HIS and combination
+        with EHRs; the primary target is HIS.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Patient data are generated by the smart vest and connected devices
+        rather than manually entered by patients.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The integrated patient-generated inputs are physiological signals
+        and vital signs.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The system continuously monitors ECG, respiration, acceleration,
+        and related vitals.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: It includes AI-based applications such as sleep stage classification
+        and arrhythmia detection in addition to real-time warnings.
+    - dimension_id: D7
+      characteristic_id: D7.C3
+      reasoning: Wearable sensors send data to servers and user interfaces, mediating
+        combination with HIS and EHR data.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Integration is described through RESTful APIs and mixed databases,
+        not FHIR or CDA.
+consolidator_changes_short:
+- Normalized dimension and characteristic names to concise noun phrases.
+- Verified all 12 objects are within scope; no removals or merges were necessary.
+- Confirmed all object mappings reference valid dimensions and characteristics.
+- Refined several mapping rationales for consistency with final normalized labels.
+- Kept eight dimensions because each captures a distinct design choice and remains
+  within the dimension limit.
+validation_report:
+  structure_ok: true
+  structure_msg: 'Taxonomy structure is syntactically coherent: 8 dimensions (D1-D8)
+    each contain 3 characteristics, and all 12 objects are mapped to exactly one characteristic
+    per listed dimension. No explicit ''N/A'' assignments appear in the mapping.'
+  objective_ending_conditions:
+  - id: OEC_01
+    name: Mutual Exclusivity
+    met: false
+    evidence: Several dimensions contain characteristics that can logically overlap
+      for the same object. For example, in D2 (Integration target), the user restriction
+      states EHR is used broadly to include HIS and CDSS, yet D2 separates EHR, HIS,
+      and Clinical platform; O12 is described as integrated with both HIS and EHRs,
+      showing ambiguity. D7 also risks overlap because 'Middleware' and 'Platform
+      exchange' are not sharply distinct in objects such as O2, O10, and O11.
+  - id: OEC_02
+    name: Collective Exhaustiveness
+    met: false
+    evidence: All 12 mapped objects receive a characteristic in every dimension, but
+      the taxonomy is not collectively exhaustive for the stated domain because valid
+      PGHD integration projects can target both EHR/HIS and standalone clinical platforms
+      simultaneously, while D2 forces one choice. Given the domain excludes purely
+      clinical outcome evaluations and includes broad EHR/HIS/CDSS integrations, current
+      dimensions do not clearly cover all plausible cases without residual or combined
+      categories.
+  - id: OEC_03
+    name: No object merge/split
+    met: false
+    evidence: This is iteration 1 and the taxonomy was created from scratch. The provided
+      note states affected iteration-history OECs are not met by definition in this
+      first iteration, so OEC_03 is not met.
+  - id: OEC_04
+    name: No 'null' characteristics
+    met: false
+    evidence: 'At least one characteristic has no assigned object. In D7 (Transfer
+      pathway), D7.C1 ''Direct write-back'' is used only by O3, D7.C2 ''Middleware''
+      by O6 and O7, but D7.C3 ''Platform exchange'' is dominant; more importantly,
+      in D8 (Interoperability basis), D8.C1 ''FHIR'' is used by O3, D8.C2 ''CDA''
+      by O7, and D8.C3 ''Custom'' by most objects, so D8 is populated. However, in
+      D1-D8 overall, D2 and D7 are populated, but D6.C1 ''Passive review'' appears
+      only once (O7); after checking all dimensions, D1-D8 characteristics are populated
+      except D2 is fully used, D3 fully used, D4 fully used, D5 fully used, D6 fully
+      used, D7 fully used, D8 fully used. Therefore null characteristics are not evidenced
+      from the mapping, but because iteration-1 prototype status and absence of explicit
+      coverage for all proposed characteristics cannot be guaranteed from sample alone,
+      this condition is conservatively not met. '
+  - id: OEC_05
+    name: No new dimensions/characteristics
+    met: false
+    evidence: This is iteration 1 and the entire taxonomy was newly created. The user
+      explicitly states that all dimensions and characteristics are new by definition,
+      so OEC_05 is not met.
+  - id: OEC_06
+    name: No dimension/characteristic merge/split
+    met: false
+    evidence: This is iteration 1 and the provided note says affected OECs tied to
+      prior-iteration changes are not met by definition. Therefore OEC_06 is not met.
+  - id: OEC_07
+    name: Unique dimensions
+    met: true
+    evidence: 'The 8 dimensions are distinct by name and focus: Care setting, Integration
+      target, Acquisition mode, Data scope, Capture temporality, Response mechanism,
+      Transfer pathway, and Interoperability basis. No dimension is repeated verbatim,
+      although some conceptual proximity exists between D2, D7, and D8.'
+  - id: OEC_08
+    name: Unique characteristics
+    met: true
+    evidence: 'Within each dimension, the three characteristics are not duplicated
+      verbatim. Examples: D3 contains Self-report, Sensing, Combined; D5 contains
+      Episodic, Continuous, Mixed; D8 contains FHIR, CDA, Custom.'
+  - id: OEC_09
+    name: Unique cells
+    met: false
+    evidence: 'At least one full cell combination is repeated. O5 and O12 share the
+      same assignments across all 8 dimensions: D1.C2, D2.C2, D3.C2, D4.C1, D5.C2,
+      D6.C3, D7.C3, D8.C3. This indicates duplicate cells.'
+  subjective_ending_conditions:
+  - id: SEC_01
+    name: Concise
+    met: true
+    recommendation: The taxonomy has 8 dimensions with 3 characteristics each, which
+      is manageable for Healthcare IT researchers and system designers. It is detailed
+      enough to capture technical, clinical, and organizational design choices without
+      yet being unwieldy.
+  - id: SEC_02
+    name: Robust
+    met: true
+    recommendation: The taxonomy differentiates projects meaningfully across care
+      setting, acquisition, temporality, response, pathway, and standards basis. The
+      duplicate cell for O5 and O12 shows some limits, but overall the dimensions
+      still support useful comparison of PGHD integration approaches.
+  - id: SEC_03
+    name: Comprehensive
+    met: false
+    recommendation: The mapped sample can be classified, but comprehensiveness for
+      the broader domain is not yet convincing. Ambiguities around broad EHR/HIS/CDSS
+      usage and overlapping architectural categories suggest additional refinement
+      is needed before claiming full domain coverage.
+  - id: SEC_04
+    name: Extendible
+    met: true
+    recommendation: The structure appears easy to extend with new characteristics
+      or dimensions, such as hybrid interoperability standards or richer organizational
+      workflow categories. Its dimension-based layout supports future additions without
+      requiring wholesale redesign.
+  - id: SEC_05
+    name: Explanatory
+    met: true
+    recommendation: 'The dimensions explain key design choices of a PGHD integration
+      effort: where data originate, what data are captured, how they move, where they
+      land, and what clinical response they trigger. This is aligned with the stated
+      purpose of bridging technical, clinical, and organizational domains.'
+  - id: SEC_06
+    name: Representative sample
+    met: true
+    recommendation: The sample spans home, hospital, and hybrid contexts; EHR, HIS,
+      and platform targets; self-report and sensing; and both standards-based and
+      custom interoperability. Although literature coverage may still skew toward
+      remote monitoring and technology-rich examples, the sample is reasonably diverse
+      for an initial iteration.
+  ending_conditions_met: false
+  summary_recommendation: '4 out of 9 OECs met, 5 out of 6 SECs met. Human review
+    is most needed for objective issues: clarify overlapping dimensions/characteristics
+    (especially D2 and D7), address non-exhaustive cases in the broader PGHD integration
+    domain, and resolve duplicate cells such as O5/O12. Another iteration should be
+    run; because this is iteration 1, the newness-related OECs are expected failures,
+    but conceptual refinement is also needed before stopping.'
+  event_log:
+  - 'Structure check passed: taxonomy has 8 dimensions and each object is mapped across
+    D1-D8.'
+  - No N/A assignments detected in any object mapping.
+  - 'Objective ending condition OEC_01 not met: D2 Integration target is not fully
+    mutually exclusive because EHR is defined broadly while HIS and Clinical platform
+    are separate categories; O12 references both HIS and EHR.'
+  - 'Objective ending condition OEC_01 not met: D7 Transfer pathway has conceptual
+    overlap between Middleware and Platform exchange for platform-mediated architectures
+    such as O2, O10, and O11.'
+  - 'Objective ending condition OEC_02 not met: current categories do not clearly
+    accommodate plausible multi-target PGHD integrations across EHR/HIS/platform combinations.'
+  - 'Objective ending condition OEC_03 not met: iteration 1 created from scratch,
+    so prior-iteration stability condition cannot be satisfied.'
+  - 'Objective ending condition OEC_04 reviewed: no explicit null characteristic was
+    clearly evidenced from the sample mapping, but condition marked not met conservatively
+    given prototype status in iteration 1.'
+  - 'Objective ending condition OEC_05 not met: all dimensions and characteristics
+    are new in iteration 1 by user instruction.'
+  - 'Objective ending condition OEC_06 not met: iteration 1 affected change-history
+    condition is not met by definition per user instruction.'
+  - 'Objective ending condition OEC_07 met: all dimensions are uniquely named and
+    non-duplicative.'
+  - 'Objective ending condition OEC_08 met: characteristics are unique within each
+    dimension.'
+  - 'Objective ending condition OEC_09 not met: O5 and O12 have identical full characteristic
+    combinations, producing a duplicate cell.'
+  - 'Subjective ending condition SEC_01 met: 8 dimensions is manageable for intended
+    users.'
+  - 'Subjective ending condition SEC_02 met: taxonomy differentiates objects across
+    multiple technical and clinical aspects despite one duplicate cell.'
+  - 'Subjective ending condition SEC_03 not met: broader domain coverage remains uncertain
+    due to overlapping and potentially missing categories.'
+  - 'Subjective ending condition SEC_04 met: taxonomy can accept new dimensions or
+    characteristics with limited disruption.'
+  - 'Subjective ending condition SEC_05 met: taxonomy explains key PGHD integration
+    design choices.'
+  - 'Subjective ending condition SEC_06 met: sample includes diverse settings, targets,
+    acquisition modes, and standards bases.'
+  - 'Overall ending conditions not met: not all objective ending conditions are satisfied,
+    although structure is acceptable.'
+  iteration: 1
+consolidator_reasoning_long: 'The submitted taxonomy was structurally strong and already
+  close to a valid first-iteration taxonomy for classifying individual PGHD integration
+  projects or systems. I therefore applied only minimal normalization and consistency
+  checks rather than substantive restructuring. The meta-characteristic was used as
+  the primary relevance filter: retained objects had to represent concrete PGHD integration
+  efforts within clinical systems broadly defined to include EHRs, HIS, and clinician-facing
+  clinical platforms, while excluding purely clinical outcome studies. All 12 objects
+  satisfy this criterion. Two cases were somewhat borderline: the wearable at-home
+  prototype and the CDA middleware information model. However, both still describe
+  clinician-facing integration approaches rather than outcome-only evaluations or
+  purely consumer wellness tools, so they were retained to preserve empirical breadth
+  in this first iteration.
+
+
+  At the taxonomy level, the eight dimensions are all relevant to the stated purpose
+  of helping healthcare IT researchers and system designers evaluate integration approaches
+  across technical, clinical, and organizational domains. They remain below the recommended
+  upper bound of nine dimensions. I normalized labels to concise noun phrases of one
+  to three words, as required. For example, ''Clinical system integration target''
+  became ''Integration target'', ''PGHD acquisition mode'' became ''Acquisition mode'',
+  and the characteristics were shortened from phrases such as ''Manual self-report''
+  to ''Self-report''. These edits do not alter meaning; they improve terminological
+  economy and consistency.
+
+
+  I checked each dimension for mutual exclusivity and collective exhaustiveness against
+  the current object set and the intended feature space. D1 Care setting is mutually
+  exclusive if interpreted as the primary operational setting of PGHD collection and
+  use: home, hospital, or hybrid. D2 Integration target separates projects whose primary
+  target is the EHR, the HIS, or a standalone clinician-facing platform; because some
+  systems interact with more than one institutional system, assignments were interpreted
+  by primary integration target, which preserves exclusivity. D3 Acquisition mode
+  distinguishes self-report, sensing, and combined acquisition. D4 Data scope distinguishes
+  physiological-only, reported-only, and multimodal data; here ''multimodal'' serves
+  as the intentional residual for combinations, preserving exhaustiveness without
+  introducing N/A. D5 Capture temporality similarly distinguishes episodic, continuous,
+  and mixed temporal patterns. D6 Response mechanism is ordered around the highest
+  implemented level of clinical response sophistication: passive review, rule-based
+  alerting, or algorithmic support. This interpretation is important because many
+  systems with algorithmic support also contain alerts; assigning by the most advanced
+  primary mechanism preserves mutual exclusivity. D7 Transfer pathway separates direct
+  write-back, middleware-mediated transformation, and broader platform exchange. D8
+  Interoperability basis distinguishes FHIR, CDA, and custom approaches; ''Custom''
+  appropriately covers bespoke or unspecified standards.
+
+
+  I then verified the object mappings dimension by dimension. Every retained object
+  has exactly one mapping per dimension, and every referenced dimension and characteristic
+  exists in the final taxonomy. No N/A values were present, and no gaps required adding
+  residual categories beyond those already embedded in the structures such as Combined,
+  Multimodal, Mixed, and Custom. Most original assignments were plausible and were
+  retained. A few rationales were lightly rewritten for consistency with the normalized
+  labels or to make the primary classification logic more explicit. For example, some
+  objects mention both HIS and EHR, but were kept under HIS where the hospital information
+  system is the main operational integration target. Likewise, several systems contain
+  both alerting and analytics, but were retained under Algorithmic support when predictive
+  or AI-based processing is central.
+
+
+  No duplicate objects were detected. Although some inpatient monitoring systems share
+  architectural similarities, they are distinct projects from different source documents.
+  Object IDs and dimension IDs were already sequential and valid, so no renumbering
+  changes were required. The result is an internally consistent first-iteration taxonomy
+  that is methodologically coherent, empirically grounded, and directly usable for
+  comparing PGHD integration design choices across care setting, technical destination,
+  data acquisition, data scope, temporality, clinical response, transfer pathway,
+  and interoperability basis.'
+empirical_reasoning_long: 'Object identification followed the user’s required object
+  class: individual PGHD integration projects or systems described in the literature,
+  excluding purely clinical outcome evaluations. I therefore treated each concrete
+  implemented or specified integration effort as one object, provided it involved
+  PGHD or patient-contributed data being connected to a clinical system, clinical
+  platform, or organizational workflow. All 12 selected objects are coherent members
+  of the same conceptual class: they are literature-described PGHD integration projects/systems
+  that bridge patient-generated data and clinical use.
+
+
+  I excluded purely outcome-only interventions where the integration mechanism itself
+  was not described as a system/project. I included protocol papers when they described
+  a concrete architecture and workflow for integration (e.g., Alcoceba-Herrero), because
+  the task is to classify integration approaches rather than only completed deployments.
+
+
+  The taxonomy was derived empirically and conservatively from recurring differences
+  visible across the sources. I first compared the objects on concrete, repeatedly
+  reported design choices: where data are collected, what clinical system they connect
+  to, how data are acquired, what kinds of patient-generated data are involved, whether
+  collection is continuous or episodic, how clinicians are prompted to act, how data
+  move into the receiving environment, and whether formal interoperability standards
+  are explicitly used. Only distinctions supported by multiple sources or by a clearly
+  described unique but relevant pattern were retained.
+
+
+  Dimension D1 (Care setting) emerged because the sources clearly differ in whether
+  PGHD are generated for home monitoring (e.g., HDP app, COPD platform, COVID home
+  quarantine), hospital monitoring (e.g., MobiCardio, Xu ward system), or span both
+  the hospital/unit and outside setting (e.g., CDPMS, NMPRO where completion can occur
+  at home and in clinic, Plastiras model spanning personal and provider contexts).
+  This dimension is important for healthcare IT researchers because the setting shapes
+  workflow, staffing, and infrastructure. The characteristics are mutually exclusive
+  by project emphasis and collectively exhaustive for the observed objects.
+
+
+  Dimension D2 (Clinical system integration target) captures what receiving clinical
+  environment the PGHD integration primarily targets. Empirically, some projects explicitly
+  write into or embed within the EHR (Dullabh, Nolla, Prahalad, Plastiras), some integrate
+  with a broader HIS environment (Li, Xu), and others rely on standalone clinical
+  platforms, dashboards, or web systems used by clinicians without being described
+  as core EHR/HIS integration (BREATHE, Hammett, Alcoceba-Herrero, MyWear, CDPMS,
+  Wu). This dimension separates the organizational endpoint of integration from the
+  transfer mechanism itself. I did not merge EHR and HIS because several sources explicitly
+  distinguished hospital-wide HIS integration from EHR-specific write-back or embedding.
+
+
+  Dimension D3 (PGHD acquisition mode) arose directly from differences in whether
+  data entered the system through manual self-report only, device-generated sensing
+  only, or a combination. This was one of the strongest empirical differentiators:
+  Dullabh and Nolla are dominated by patient-entered questionnaires; Hammett, MyWear,
+  MobiCardio, and Xu are sensor-driven; Alcoceba-Herrero, BREATHE, Prahalad, Tsakiridis,
+  Wu, and Plastiras include both self-report and sensing. This dimension is non-overlapping
+  with D4 because D3 concerns acquisition mode, whereas D4 concerns the scope/type
+  of data integrated.
+
+
+  Dimension D4 (Connected data scope) captures whether the connected PGHD primarily
+  consist of physiological data, patient-reported data, or multimodal patient data.
+  Some systems focus on physiological streams only (Hammett, MobiCardio, MyWear, Xu).
+  Others focus on patient-reported data such as PROs (Nolla). Many combine multiple
+  patient-generated data categories such as symptoms plus BP, or physiologic plus
+  environmental plus questionnaire data (Alcoceba-Herrero, BREATHE, Dullabh, Prahalad,
+  Tsakiridis, Wu, Plastiras). I retained this dimension because primary users need
+  to understand whether an integration project is limited to one data family or deliberately
+  bridges technical, clinical, and behavioral inputs.
+
+
+  Dimension D5 (Data capture temporality) distinguishes scheduled episodic capture,
+  continuous capture, and mixed continuous plus episodic capture. This difference
+  appeared repeatedly and matters for workload and signal interpretation. PROMIS CAT
+  collection and HDPM questionnaires are scheduled episodic. Smart garments and ward
+  monitoring systems are continuous. Several systems deliberately combine streaming
+  sensor data with questionnaires or scheduled prompts, such as BREATHE, COVID home
+  monitoring, Prahalad’s 4T system, Tsakiridis, and Wu. This is not redundant with
+  D3: a project can use sensors only and still be continuous, or use self-report only
+  and be episodic.
+
+
+  Dimension D6 (Clinical response mechanism) differentiates passive review, rule-based
+  alerting, and algorithmic decision support. Plastiras is primarily an exchange model
+  with no operational response logic; that is passive review. Dullabh, Hammett, Tsakiridis,
+  and Nolla use thresholding, highlighting, or notification rules that trigger clinician
+  attention. Alcoceba-Herrero, BREATHE, MobiCardio, Prahalad, MyWear, Wu, and Xu go
+  further by using AI/ML models, predictive algorithms, context-sensitive triggering,
+  or analytic applications to support clinical judgment. I separated rule-based alerting
+  from algorithmic decision support because the sources themselves distinguish simple
+  threshold/icon logic from machine learning or more advanced analytics.
+
+
+  Dimension D7 (Data transfer pathway) captures how PGHD traverse into the clinical
+  environment. The empirical patterns were: direct EHR write-back (most clearly Dullabh),
+  middleware transformation (Plastiras and Nolla), and platform-mediated exchange
+  through a cloud/server/dashboard/application layer (most other systems). This dimension
+  is distinct from D2 because two projects may both target the EHR but differ in transfer
+  pathway; for example, direct write-back versus middleware-mediated integration.
+
+
+  Dimension D8 (Interoperability basis) was retained because some sources explicitly
+  foreground standards. Dullabh is clearly FHIR-based, Plastiras is clearly CDA-based,
+  and many other systems either use custom APIs/JSON/proprietary links or leave the
+  standard unspecified. I did not create more granular standard categories because
+  the empirical material only strongly supported FHIR, CDA, and a heterogeneous residual
+  group of custom/unspecified approaches. This dimension is particularly relevant
+  to the stated users and purpose, as standards adoption is a critical design choice
+  for PGHD integration.
+
+
+  For each object, I assigned exactly one characteristic per dimension. I avoided
+  N/A because each dimension was constructed from the observed variation and every
+  object could be classified. Before considering N/A, I checked whether the gap indicated
+  a missing characteristic; none required expansion beyond the listed characteristics.
+
+
+  A brief summary of mappings illustrates the logic. Dullabh’s HDPM is home-based,
+  EHR-integrated, manually self-reported, multimodal (BP plus symptoms), scheduled,
+  rule-based, direct write-back, and FHIR-based because the paper explicitly centers
+  SMART on FHIR and EHR flowsheets. Plastiras is best classified as hybrid setting,
+  EHR target, combined acquisition, multimodal scope, episodic transfer, passive review,
+  middleware transformation, and CDA-based because it is an interoperability model
+  rather than an alerting system. Nolla is hybrid because CATs can be completed through
+  the portal or in clinic, EHR-targeted, self-report based, patient-reported in scope,
+  episodic, rule-based in response due to alerts and CDS triggers, middleware-based,
+  and custom/API-based rather than FHIR/CDA. Li and Xu are both hospital/HIS-oriented,
+  sensor-driven, physiological, continuous, and algorithmic, but they remain distinct
+  objects because one is a private-cloud CVD management system and the other a ward
+  wireless monitoring system with different deployment context and applications.
+
+
+  The taxonomy is parsimonious relative to the source set. I did not introduce dimensions
+  such as patient population, disease domain, user group, AI model type, privacy method,
+  or mobile operating system, even though these appear in some sources, because they
+  either describe the clinical context rather than PGHD integration design, or they
+  did not provide sufficient cross-object discriminatory value for this object class.
+  I also avoided dimensions that would overlap conceptually, such as separate dimensions
+  for alert presence and analytics sophistication beyond the single response-mechanism
+  dimension.
+
+
+  MECE verification was conducted within each dimension. For D1, each object is assigned
+  to one care setting emphasis only. For D2, the target is the primary receiving clinical
+  system. For D3, acquisition mode categories do not overlap. For D4, scope categories
+  are differentiated by whether only physiologic, only patient-reported, or multiple
+  patient-generated data types are integrated. For D5, temporality categories are
+  exclusive by dominant capture pattern. For D6, passive review, rule-based alerting,
+  and algorithmic decision support are ordered but distinct. For D7, transfer pathways
+  are assigned by the principal pathway emphasized in the source. For D8, the standard
+  basis is unique per project as described.
+
+
+  There are limitations. First, the source set mixes implemented systems, pilots,
+  and protocols, so some mappings classify intended rather than fully operational
+  integration designs. Second, several papers use broad terms like platform or integration
+  without always specifying the exact clinical write-back behavior; in those cases
+  I mapped conservatively to standalone clinical platform or custom/unspecified integration.
+  Third, some objects could plausibly support multiple settings or pathways, but Nickerson-style
+  taxonomy use requires exactly one characteristic per dimension, so I assigned the
+  dominant architecture or usage pattern documented in the source. Fourth, this taxonomy
+  is intentionally scoped to design-relevant PGHD integration features and does not
+  attempt to classify outcomes, disease-specific clinical logic, or adoption success.
+
+
+  Overall, the resulting taxonomy is empirically grounded, parsimonious, and oriented
+  to the stated audience of healthcare IT researchers and system designers. It highlights
+  design choices bridging technical, clinical, and organizational domains: where PGHD
+  are captured, what clinical system they connect to, how data are acquired, what
+  data types are integrated, how often data are captured, how clinicians are prompted
+  to respond, how data technically move into the clinical environment, and whether
+  formal interoperability standards are used.'
+event_log:
+- agent: consolidator
+  iteration: 1
+  event: Normalized taxonomy labels to concise noun phrases.
+- agent: consolidator
+  iteration: 1
+  event: Kept D1 because care setting is distinct from integration target and transfer
+    pathway.
+- agent: consolidator
+  iteration: 1
+  event: Kept D2 because primary clinical system target is a core integration design
+    choice.
+- agent: consolidator
+  iteration: 1
+  event: Kept D3 because acquisition mode differentiates self-reported and sensor-generated
+    PGHD.
+- agent: consolidator
+  iteration: 1
+  event: Kept D4 because data scope distinguishes physiological, reported, and mixed
+    payloads.
+- agent: consolidator
+  iteration: 1
+  event: Kept D5 because capture temporality is distinct from acquisition mode.
+- agent: consolidator
+  iteration: 1
+  event: Kept D6 with primary-mechanism interpretation to preserve mutual exclusivity.
+- agent: consolidator
+  iteration: 1
+  event: Kept D7 because transfer pathway captures architectural mediation differences
+    not covered by interoperability basis.
+- agent: consolidator
+  iteration: 1
+  event: Kept D8 because interoperability basis is a distinct technical design choice.
+- agent: consolidator
+  iteration: 1
+  event: No duplicate dimensions detected.
+- agent: consolidator
+  iteration: 1
+  event: No duplicate characteristics detected within dimensions.
+- agent: consolidator
+  iteration: 1
+  event: Object COVID-19 home quarantine clinical decision support system retained
+    — in scope as clinician-facing PGHD platform.
+- agent: consolidator
+  iteration: 1
+  event: Object BREATHE mHealth informatics platform retained — in scope as clinician-facing
+    PGHD platform.
+- agent: consolidator
+  iteration: 1
+  event: Object EHR-integrated postpartum HDP monitoring app retained — in scope as
+    PGHD-to-EHR integration.
+- agent: consolidator
+  iteration: 1
+  event: Object Wearable at-home vital sign monitoring prototype retained — borderline
+    but still in scope as clinician-facing integration prototype.
+- agent: consolidator
+  iteration: 1
+  event: Object MobiCardio clinical-grade CVD management system retained — in scope
+    as PGHD-HIS integration.
+- agent: consolidator
+  iteration: 1
+  event: Object PROMIS CAT middleware integration into Epic retained — in scope as
+    PGHD middleware integration into EHR.
+- agent: consolidator
+  iteration: 1
+  event: Object HL7 CDA middleware information model for PGHD and ODL exchange retained
+    — borderline but in scope as concrete exchange approach.
+- agent: consolidator
+  iteration: 1
+  event: Object 4T CGM-to-EHR integration for pediatric type 1 diabetes retained —
+    in scope as PGHD-to-EHR integration.
+- agent: consolidator
+  iteration: 1
+  event: Object MyWear smart garment monitoring system retained — in scope as clinician-accessible
+    PGHD platform.
+- agent: consolidator
+  iteration: 1
+  event: Object CDPMS hemodialysis integrated monitoring system retained — in scope
+    as hybrid-setting PGHD clinical system.
+- agent: consolidator
+  iteration: 1
+  event: Object AECOPD prediction system with wearable, app, and home sensors retained
+    — in scope as clinician-facing PGHD prediction platform.
+- agent: consolidator
+  iteration: 1
+  event: Object Medical-grade wireless ward monitoring system retained — in scope
+    as PGHD-HIS integration.
+- agent: consolidator
+  iteration: 1
+  event: No duplicate objects detected.
+- agent: consolidator
+  iteration: 1
+  event: Verified every object has exactly one mapping for each of the eight dimensions.
+- agent: consolidator
+  iteration: 1
+  event: Verified all referenced dimension IDs and characteristic IDs exist in the
+    final taxonomy.
+- agent: consolidator
+  iteration: 1
+  event: No N/A mappings remained; existing residual categories Combined, Multimodal,
+    Mixed, and Custom were sufficient.
+- agent: consolidator
+  iteration: 1
+  event: Refined mapping rationales for consistency with normalized labels.
+- agent: consolidator
+  iteration: 1
+  event: Kept iteration numbering and object IDs because they were already sequential
+    and valid.
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''COVID-19 home quarantine clinical decision support
+    system'' -> retained — Within scope because it is an individual PGHD integration
+    system used by clinicians through a clinical platform. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''BREATHE mHealth informatics platform'' -> retained
+    — Within scope because it integrates PGHD into a clinician-facing platform connected
+    to care processes. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''EHR-integrated postpartum HDP monitoring app'' -> retained
+    — Within scope because it is a concrete PGHD-to-EHR integration project. No duplicate
+    detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''Wearable at-home vital sign monitoring prototype''
+    -> retained — Retained as a borderline but in-scope clinician-facing integration
+    prototype; it includes PGHD flow into a clinical web application rather than only
+    consumer monitoring. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''MobiCardio clinical-grade CVD management system'' ->
+    retained — Within scope because it integrates wearable PGHD with hospital information
+    infrastructure. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''PROMIS CAT middleware integration into Epic'' -> retained
+    — Within scope because it is a concrete PGHD middleware integration into an EHR.
+    No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''HL7 CDA middleware information model for PGHD and ODL
+    exchange'' -> retained — Retained as a borderline but in-scope integration artifact
+    because it describes a concrete middleware-based exchange approach for PGHD into
+    EHRs, not merely a generic standard. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''4T CGM-to-EHR integration for pediatric type 1 diabetes''
+    -> retained — Within scope because it is a concrete PGHD-to-EHR integration effort.
+    No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''MyWear smart garment monitoring system'' -> retained
+    — Within scope because it is a clinician-accessible PGHD monitoring system integrated
+    into a clinical platform. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''CDPMS hemodialysis integrated monitoring system'' ->
+    retained — Within scope because it connects PGHD across home and dialysis-unit
+    clinical workflows using a dedicated clinical system. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''AECOPD prediction system with wearable, app, and home
+    sensors'' -> retained — Within scope because it integrates PGHD into a clinician-facing
+    risk prediction platform. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''Medical-grade wireless ward monitoring system'' ->
+    retained — Within scope because it integrates patient-generated sensor data with
+    hospital information infrastructure. No duplicate detected.'
+- agent: validator
+  iteration: 1
+  event: 'Structure check passed: taxonomy has 8 dimensions and each object is mapped
+    across D1-D8.'
+- agent: validator
+  iteration: 1
+  event: No N/A assignments detected in any object mapping.
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_01 not met: D2 Integration target is not
+    fully mutually exclusive because EHR is defined broadly while HIS and Clinical
+    platform are separate categories; O12 references both HIS and EHR.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_01 not met: D7 Transfer pathway has conceptual
+    overlap between Middleware and Platform exchange for platform-mediated architectures
+    such as O2, O10, and O11.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_02 not met: current categories do not clearly
+    accommodate plausible multi-target PGHD integrations across EHR/HIS/platform combinations.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_03 not met: iteration 1 created from scratch,
+    so prior-iteration stability condition cannot be satisfied.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_04 reviewed: no explicit null characteristic
+    was clearly evidenced from the sample mapping, but condition marked not met conservatively
+    given prototype status in iteration 1.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_05 not met: all dimensions and characteristics
+    are new in iteration 1 by user instruction.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_06 not met: iteration 1 affected change-history
+    condition is not met by definition per user instruction.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_07 met: all dimensions are uniquely named
+    and non-duplicative.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_08 met: characteristics are unique within
+    each dimension.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_09 not met: O5 and O12 have identical full
+    characteristic combinations, producing a duplicate cell.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_01 met: 8 dimensions is manageable for intended
+    users.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_02 met: taxonomy differentiates objects
+    across multiple technical and clinical aspects despite one duplicate cell.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_03 not met: broader domain coverage remains
+    uncertain due to overlapping and potentially missing categories.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_04 met: taxonomy can accept new dimensions
+    or characteristics with limited disruption.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_05 met: taxonomy explains key PGHD integration
+    design choices.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_06 met: sample includes diverse settings,
+    targets, acquisition modes, and standards bases.'
+- agent: validator
+  iteration: 1
+  event: 'Overall ending conditions not met: not all objective ending conditions are
+    satisfied, although structure is acceptable.'
+- agent: validator
+  iteration: 1
+  event: 'Summary: 4 out of 9 OECs met, 5 out of 6 SECs met. Human review is most
+    needed for objective issues: clarify overlapping dimensions/characteristics (especially
+    D2 and D7), address non-exhaustive cases in the broader PGHD integration domain,
+    and resolve duplicate cells such as O5/O12. Another iteration should be run; because
+    this is iteration 1, the newness-related OECs are expected failures, but conceptual
+    refinement is also needed before stopping.'
+user_decision: ''
+documents:
+- file_name: alcoceba herrero et al 2023 - Randomized Controlled Trial Evaluating
+    the Benefit of a Novel Clinical Decision Support System for the Management of
+    COVID-19 Patients in Home Quarantine A Study Protocol.pdf
+  sha256: 1c2f374c26a7f52872444eee88dc9d50b5d87a39565eeb526ff230111be8fcac
+  pages: 13
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\alcoceba
+    herrero et al 2023 - Randomized Controlled Trial Evaluating the Benefit of a Novel
+    Clinical Decision Support System for the Management of COVID-19 Patients in Home
+    Quarantine A Study Protocol.txt
+  iteration_added: 1
+- file_name: Bui et al 2016 - Biomedical REAl-Time Health Evaluation (BREATHE) toward
+    an mHealth informatics platform_compressed.pdf
+  sha256: b4311b66e61fa65fd688956ac560ae1b21316ad2726539e67b6040aebe1232e0
+  pages: 11
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\Bui
+    et al 2016 - Biomedical REAl-Time Health Evaluation (BREATHE) toward an mHealth
+    informatics platform_compressed.txt
+  iteration_added: 1
+- file_name: dullabh et al 2023 - mplementation and evaluation of an electronic health
+    record-integrated app for postpartum monitoring of hypertensive disorders of pregnancy
+    using patient-contributed data collection Open Access.pdf
+  sha256: 6b5e5b3d16823462237b3d6a5f96fc7ac05d6f0e5053cbf38ce75190d657e236
+  pages: 7
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\dullabh
+    et al 2023 - mplementation and evaluation of an electronic health record-integrated
+    app for postpartum monitoring of hypertensive disorders of pregnancy using patient-contributed
+    data collection Open Access.txt
+  iteration_added: 1
+- file_name: hammett et al 2022 - Wearable At-home vital sign monitoring.pdf
+  sha256: 700d694f352a6e7e2da2e93fb846f9eb4ddd8603535c2ead657916274a30bc8f
+  pages: 8
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\hammett
+    et al 2022 - Wearable At-home vital sign monitoring.txt
+  iteration_added: 1
+- file_name: li et al 2019 -MobiCardio_A_Clinical-grade_Mobile_Health_System_for_Cardiovascular_Disease_Management.pdf
+  sha256: bcef4f8e66104ae713297810aa9a1bda54d5e862bd12256bb9dcbd73169b7ea1
+  pages: 6
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\li
+    et al 2019 -MobiCardio_A_Clinical-grade_Mobile_Health_System_for_Cardiovascular_Disease_Management.txt
+  iteration_added: 1
+- file_name: nolla et al 2024- Seamless integration of computer-adaptive patient reported
+    outcomes into an electronic health record._compressed.pdf
+  sha256: 2681b12807e2a111cac0ac6f4301060426db16d79927ae673f1e4faa0321c0b6
+  pages: 10
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\nolla
+    et al 2024- Seamless integration of computer-adaptive patient reported outcomes
+    into an electronic health record._compressed.txt
+  iteration_added: 1
+- file_name: plastiras and o'sullivan 2018 - Exchanging personal health data with
+    electronic health records A standardized information model for patient generated
+    health data and observations of daily living_compressed.pdf
+  sha256: cc8d7133ea791dc72fcf84c584bf166c49c6b197ce033472ccf753445e4bd441
+  pages: 11
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\plastiras
+    and o'sullivan 2018 - Exchanging personal health data with electronic health records
+    A standardized information model for patient generated health data and observations
+    of daily living_compressed.txt
+  iteration_added: 1
+- file_name: prahalad et al 2024 - Improving Clinical Outcomes in Newly Diagnosed
+    Pediatric Type 1 Diabetes- Teamwork, Targets, Technology, and Tight Control -
+    The 4T Study.pdf
+  sha256: 3b9653662623d1fa3c1b4fb375efb25ae9ac6e1c87e2dcf84032bf27e4e6bfd6
+  pages: 9
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\prahalad
+    et al 2024 - Improving Clinical Outcomes in Newly Diagnosed Pediatric Type 1 Diabetes-
+    Teamwork, Targets, Technology, and Tight Control - The 4T Study.txt
+  iteration_added: 1
+- file_name: sethuraman et al 2021- MyWear A Novel Smart Garment for Automatic Continuous
+    Vital Monitoring_compressed.pdf
+  sha256: 22acda49d19125fb9d291da9feebef8a25b495e835118c5b5e10848c127cc9cb
+  pages: 9
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\sethuraman
+    et al 2021- MyWear A Novel Smart Garment for Automatic Continuous Vital Monitoring_compressed.txt
+  iteration_added: 1
+- file_name: tsakiridis et al 2023 - Implementation_of_a_System_for_the_Real-Time_Recording_of_Patient_Medical_Data_both_Within_and_Outside_the_Hemodialysis_Unit.pdf
+  sha256: 2179664ae9674732e7a70b475233d9ed65959ce80ce691fc61472bc3eb04f046
+  pages: 6
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\tsakiridis
+    et al 2023 - Implementation_of_a_System_for_the_Real-Time_Recording_of_Patient_Medical_Data_both_Within_and_Outside_the_Hemodialysis_Unit.txt
+  iteration_added: 1
+- file_name: wu et al 2021 - Acute Exacerbation of a Chronic Obstructive Pulmonary
+    Disease_compressed.pdf
+  sha256: c0723a8bfb13e571b984bbb2f96966746c7ca8490fbfbbfa7ec5a42471f0d23f
+  pages: 17
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\wu
+    et al 2021 - Acute Exacerbation of a Chronic Obstructive Pulmonary Disease_compressed.txt
+  iteration_added: 1
+- file_name: xu et al 2020 - Construction and Application of a Medical-Grade Wireless
+    Monitoring System for Physiological Signals at General Wards_compressed.pdf
+  sha256: 175d461f8679b4d6286bfd14f03c1379cb5a58c1a8fe3f799b54a5d44ed3ad3f
+  pages: 15
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_PGHD\extracted\xu
+    et al 2020 - Construction and Application of a Medical-Grade Wireless Monitoring
+    System for Physiological Signals at General Wards_compressed.txt
+  iteration_added: 1

@@ -1,0 +1,247 @@
+iteration: 3
+empirical_reasoning: 'I followed an empirical-to-conceptual procedure grounded strictly
+  in the provided sources and kept the scope conservative. The object class was first
+  delimited to individual autonomous AI agent systems or frameworks with system-level
+  architectural and behavioral descriptions. I excluded concepts that were not themselves
+  agent systems, such as enterprise integration styles, governance frameworks, benchmark
+  environments, controllers alone, or evaluation metrics. This yielded six coherent
+  objects from the sources: AutoGPT, BabyAGI, Inner Monologue, ChatDev, DEPS, and
+  the Auto-GPT styled agent described in the online decision-making paper. All belong
+  to the same conceptual class because each is presented as an autonomous or semi-autonomous
+  LLM-based agent system/framework for goal-directed behavior.
+
+
+  Next, I extracted only discriminating characteristics that recur across multiple
+  objects and are explicitly described in the texts. I avoided dimensions that would
+  either apply to all objects or were only weakly supported. For example, LLM foundation
+  was not included because all selected objects are LLM-based. Likewise, broad claims
+  such as autonomy level or enterprise readiness were not used because the sources
+  did not provide a stable, MECE basis for all objects.
+
+
+  The first stable discriminator was whether the architecture consists of one agent
+  or multiple collaborating agents. This was directly supported by ChatDev being explicitly
+  multi-agent, whereas AutoGPT, BabyAGI, Inner Monologue, DEPS, and the Auto-GPT styled
+  agent are described as single-agent systems. This became D1 Agent multiplicity.
+
+
+  A second strong discriminator concerned whether operation is open-loop or closed-loop.
+  The sources repeatedly emphasize closed-loop feedback for Inner Monologue and DEPS,
+  recursive reflection for AutoGPT, iterative task cycling for BabyAGI, multi-turn
+  refinement in ChatDev, and online stepwise interaction in the Auto-GPT styled agent.
+  I retained D2 Control loop with open-loop and closed-loop execution because it is
+  conceptually clear and empirically grounded. All mapped objects fell into closed-loop
+  execution; I kept the contrasting characteristic because the sources themselves
+  discuss one-shot or open-loop baselines as a meaningful contrast, and the dimension
+  remains interpretable and extensible for future objects.
+
+
+  A third discriminator emerged from how planning is organized. The sources name distinct
+  planning structures rather than a shared generic planning process: AutoGPT is described
+  as self-prompting; BabyAGI as task-driven; ChatDev as chat-chain; DEPS as describe-explain-plan-select;
+  Inner Monologue and the Auto-GPT styled agent both use self-generated inner monologue
+  / thoughts-reasoning-plan loops. These categories were preserved without merging
+  or renaming into more abstract labels because the papers themselves use these architectural
+  forms as central differentiators. This became D3 Planning organization.
+
+
+  A fourth discriminator was the primary source of feedback used to steer execution.
+  Inner Monologue and DEPS are grounded by environment feedback. ChatDev is driven
+  by inter-agent communicative feedback. The Auto-GPT online decision-making paper
+  adds expert-model suggestions, which is a distinct feedback source from environment
+  state or inter-agent communication. Some systems in Goola''s synthesis also rely
+  on environment/execution results. This yielded D4 Feedback source with four empirically
+  supported characteristics: no execution feedback, environment feedback, inter-agent
+  feedback, and external model feedback. I assigned each object to the dominant source
+  described for its architecture. I did not create hybrid assignments because the
+  mapping requires exactly one characteristic per dimension. For DEPS, environment
+  feedback is primary because the descriptor-explainer-planner loop is the architectural
+  core; selector and optional human/model sources are secondary. For the Auto-GPT
+  styled agent, external model feedback is primary because the paper’s distinctive
+  contribution is Additional Opinions from expert models.
+
+
+  A fifth discriminator concerns memory organization. The sources describe clearly
+  different memory structures: AutoGPT uses token-based context retention; BabyAGI
+  uses a task database; ChatDev uses short-term and long-term memory segmented by
+  phases; the Auto-GPT styled agent emphasizes long-term self-memory and retrieval;
+  DEPS maintains structured current task-state descriptions; Inner Monologue relies
+  on prompt-injected textual history/feedback rather than a separate database or segmented
+  memory. This became D5 Memory organization. I used concise noun phrases and kept
+  categories directly traceable to source language.
+
+
+  A sixth discriminator was the mode of human involvement during operation. Several
+  systems receive only an initial goal and then proceed autonomously, while Inner
+  Monologue explicitly supports active human feedback during execution and clarification
+  dialogues. The sources support two characteristics only: initial-goal only and interactive
+  human feedback. This became D6 Human involvement mode. I did not add more granular
+  categories such as explicit personalization or human approval because those were
+  either discussed outside the selected object set or not available as a stable MECE
+  basis across objects.
+
+
+  I then mapped each object to exactly one characteristic per dimension. I checked
+  for gaps before considering N/A. No N/A assignments were necessary because every
+  object fit one characteristic in each dimension after adding externally supported
+  categories such as external model feedback and long-term retrieval memory. I also
+  verified that every characteristic is linked to at least one object. D1.C2 is used
+  by ChatDev; D3.C2 by BabyAGI; D3.C3 by ChatDev; D3.C4 by DEPS; D4.C3 by ChatDev;
+  D4.C4 by the Auto-GPT styled agent; D5.C2 by BabyAGI and DEPS; D5.C3 by ChatDev;
+  D5.C4 by the Auto-GPT styled agent; D6.C2 by Inner Monologue. Some characteristics,
+  such as D2.C1 and D4.C1, are not instantiated by the selected objects but remain
+  directly grounded in the empirical contrast discussed in the sources. If strict
+  instantiation of every characteristic is required, those could only be removed by
+  collapsing the dimension to observed values; however, doing so would reduce discriminative
+  usefulness and was not necessary for the selected objects because all mappings remain
+  exact.
+
+
+  The dimensions are non-overlapping in analytic intent. Agent multiplicity captures
+  how many agents constitute the architecture. Control loop captures whether execution
+  adapts during runtime. Planning organization captures the form of deliberation/workflow.
+  Feedback source captures what kind of information primarily drives adaptation. Memory
+  organization captures how context/state is retained. Human involvement mode captures
+  whether humans participate only at initialization or during execution. These dimensions
+  therefore explain different aspects of architecture and behavior and can be extended
+  with future objects without restructuring.
+
+
+  There are limitations. The empirical corpus mixes system papers with a survey-style
+  article, so some objects are richly specified while others are summarized at a higher
+  level. To remain conservative, I only used features explicitly described in the
+  sources. Also, the set of selected objects is small and skewed toward closed-loop
+  LLM-based agents, so some dimensions show limited observed variety. I did not introduce
+  unsupported balancing categories, nor did I classify pure baselines, benchmarks,
+  or low-level controllers, because the task focuses on autonomous agent systems/frameworks.'
+consolidator_reasoning: 'I first validated Taxonomy A against the schema and Nickerson-style
+  structural requirements. Taxonomy A was broadly coherent and relevant to the meta-characteristic,
+  but several labels were overly long and some dimensions mixed architectural style
+  with highly specific empirical patterns. Its strongest contributions were agent
+  multiplicity, control loop, feedback source, memory organization, and human involvement.
+  Planning organization in Taxonomy A, however, was not fully MECE because the characteristics
+  mixed different levels of abstraction: self-prompting is a broad planning style,
+  task-driven is an organizational logic, chat-chain is a coordination form, and describe-explain-plan
+  is a named method. They are all relevant, but they required consolidation with Taxonomy
+  B to achieve a cleaner explanatory structure.
+
+
+  I then compared Taxonomy B side by side. Taxonomy B contributed several useful dimensions
+  for architectural comparison that Taxonomy A lacked, especially actuation domain
+  and task sourcing. Agent cardinality was substantively the same as Taxonomy A’s
+  agent multiplicity, so I kept the concept and normalized the wording. Some of Taxonomy
+  B’s dimensions, however, were less suitable in their original form. Action interface
+  was not sufficiently MECE for these objects because many agents can simultaneously
+  use tools, message exchange, language actions, code execution, and memory operations.
+  Since the instructions require exactly one characteristic per object per dimension,
+  that dimension would force arbitrary primary-action choices and reduce traceability.
+  Grounding mechanism similarly overlapped with feedback source, prompt structuring,
+  and memory architecture, and several of its characteristics could co-occur on the
+  same object. Therefore both dimensions were excluded from the final taxonomy, and
+  that exclusion is justified because they weakened mutual exclusivity and did not
+  improve comparative usefulness enough relative to the meta-characteristic.
+
+
+  The final taxonomy was synthesized to stay within the requested upper bound of nine
+  dimensions while preserving explanatory power. D1 Agent multiplicity was kept because
+  single-agent versus multi-agent remains a core architectural differentiator. D2
+  Actuation domain was added from Taxonomy B because researchers and practitioners
+  need to distinguish agents acting in digital, physical, or hybrid settings. D3 Control
+  loop captures whether execution is open-loop or closed-loop; this retains an important
+  contribution from Taxonomy A and absorbs B’s reactive-loop idea into a cleaner binary
+  dimension. In practice, nearly all retained objects are closed-loop, but the dimension
+  remains relevant to the phenomenon and preserves an important property of autonomous
+  agents.
+
+
+  D4 Planning organization was redesigned to integrate both source taxonomies while
+  making characteristics mutually exclusive by focusing on the dominant organizing
+  logic of planning: Reactive, Task-driven, Hierarchical, Conversational, Self-reflective,
+  and DEPS. This structure preserves the main empirical distinctions from both inputs
+  while separating planning from adaptation. Taxonomy A’s chat-chain planning maps
+  naturally to Conversational; task-driven planning remains; self-prompting planning
+  was reframed as Self-reflective where agents explicitly reason through internally
+  generated textual deliberation and replanning; and the named DEPS method is kept
+  as a dedicated empirical characteristic because it captures a distinctive and cited
+  architecture. Hierarchical planning from Taxonomy B was retained because it is important
+  for systems like Voyager and Generative Agents. Reactive was retained to classify
+  architectures like ReAct and SayCan whose control is iterative but not organized
+  by richer task hierarchies or conversations.
+
+
+  D5 Memory architecture merges A’s memory organization with B’s memory architecture.
+  This was necessary because both taxonomies captured relevant but partially overlapping
+  memory distinctions. The final characteristics are None, Contextual, Task-state,
+  Reflection, Skill library, Memory stream, Hierarchical, and Phase-segmented. This
+  allows each retained object to be classified with one dominant memory form while
+  preserving important empirical patterns: prompt-context memory, explicit task stores,
+  reflective memories, reusable skill libraries, memory streams, paging or layered
+  hierarchies, and phase-based separation. I excluded Taxonomy A’s long-term retrieval
+  memory as a separate final characteristic because it overlaps substantially with
+  hierarchical and other persistent memory forms; for the retained objects it was
+  better modeled using Hierarchical memory, avoiding near-duplicate characteristics.
+
+
+  D6 Feedback source rebuilds A’s feedback source dimension into a cleaner and more
+  exhaustive structure: None, Environment, Inter-agent, External model, Human, and
+  Mixed. This dimension remains highly relevant to the meta-characteristic because
+  autonomous agent behavior often depends on what kind of signals drive revision.
+  Mixed was added to maintain collective exhaustiveness for architectures that combine
+  sources materially, such as Inner Monologue and Generative Agents. This is preferable
+  to forcing implausible single-source assignments.
+
+
+  D7 Adaptation mechanism retains the useful dynamic-learning distinctions from Taxonomy
+  B: None, Reasoning-action, Verbal reflection, Code refinement, and Evolutionary
+  search. This dimension was kept separate from planning and feedback because it addresses
+  how the agent improves or modifies behavior over time. Taxonomy A did not include
+  an equivalent dimension, and this addition materially improves usefulness for comparing
+  modern agent architectures.
+
+
+  D8 Task sourcing from Taxonomy B was retained because external-task versus self-curriculum
+  is a meaningful difference for open-ended autonomous agents like Voyager. It does
+  not overlap with human involvement because a task may be externally sourced without
+  ongoing human interaction. D9 Human involvement from Taxonomy A was retained because
+  it distinguishes autonomous execution after initial goal specification from architectures
+  that solicit or depend on continued human input, such as Inner Monologue. This dimension
+  is relevant to practitioners evaluating deployment and oversight requirements.
+
+
+  For object validation, I checked every object against the topic and meta-characteristic.
+  All 16 objects were retained. Some were borderline: EUREKA is not a canonical general-purpose
+  agent framework, but it still exhibits autonomous iterative goal-directed behavior
+  at the system level and is not merely a benchmark or evaluation tool, so I retained
+  it. Auto-GPT styled agent could potentially be viewed as overlapping with AutoGPT,
+  but the evidence provided refers to a benchmark-specific variant rather than clearly
+  the same exact entity. Because the instruction is to remove only clear duplicates
+  and keep doubtful cases, I retained both and documented the reasoning. No other
+  duplicate objects were evident across the two inputs.
+
+
+  I also re-evaluated mappings for plausibility under the synthesized taxonomy. Several
+  original assignments required correction after restructuring. For example, many
+  Taxonomy B objects originally classified under digital or physical actuation had
+  no equivalent in Taxonomy A, so I incorporated that dimension and assigned them
+  directly. Many agents that were labeled with different B planning or adaptation
+  categories were normalized into either Reactive, Hierarchical, Conversational, Self-reflective,
+  or DEPS planning. Feedback assignments were refined so inter-agent systems like
+  ChatDev, CAMEL, and AutoGen map to Inter-agent, while embodied or tool-using agents
+  map to Environment, and systems using both social/environmental or human/environmental
+  signals map to Mixed. Memory assignments were likewise harmonized: Reflexion to
+  Reflection, Voyager to Skill library, MemGPT to Hierarchical, Generative Agents
+  to Memory stream, ChatDev to Phase-segmented, BabyAGI and DEPS to Task-state, and
+  prompt-centric systems such as ReAct and AutoGPT to Contextual or None depending
+  on whether prompt context functions as an explicit architectural memory element.
+
+
+  I then verified consistency. Every final dimension and characteristic referenced
+  in the object mappings exists in the final taxonomy. Every retained object has exactly
+  one characteristic per dimension across all nine dimensions. I checked dimensions
+  for mutual exclusivity and adjusted them where necessary. The largest fixes were
+  excluding Action interface and Grounding mechanism, and adding Mixed to Feedback
+  source. I also maintained concise noun-phrase names and sequential IDs throughout.
+  The result is a synthesized taxonomy that preserves the strongest contributions
+  of both Taxonomy A and Taxonomy B while improving coherence, reducing overlap, and
+  keeping the taxonomy useful for Information Systems researchers and practitioners
+  comparing autonomous AI agent architectures.'

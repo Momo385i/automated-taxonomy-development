@@ -1,0 +1,316 @@
+iteration: 2
+objects:
+- id: O1
+  name: SayCan
+  source_document: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language in
+    Robotic Affordances.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: SayCan is one embodied agent controlling a robot.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: It acts in the physical world through a mobile manipulator.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Its action interface selects from a predefined robot skill set.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No explicit persistent long-term memory module is part of the core
+      architecture.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It chooses the next action step iteratively in a reactive loop.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The architecture does not center on explicit self-improvement beyond
+      action selection.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Action choice is grounded by affordance and value estimates for robot
+      skills.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Goals are externally provided by user instructions.
+- id: O2
+  name: ChemCrow
+  source_document: bran et al 2023 - ChemCrow - Augmenting large-language models with
+    chemistry tools.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ChemCrow is presented as a single LLM-based agent.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: It can operate via digital chemistry tools and interface with robotic
+      lab execution, making it hybrid.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The agent primarily invokes external tools.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No explicit persistent memory architecture is defined as a core component.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It proceeds step by step in an iterative action-observation loop.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Its characteristic control pattern is interleaved reasoning and acting
+      with tool feedback.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Its decisions are grounded in outputs returned by invoked chemistry
+      tools.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Tasks are externally specified chemistry objectives.
+- id: O3
+  name: CAMEL role-playing framework
+  source_document: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration
+    of Large Language Model Society.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: CAMEL organizes task solving through multiple interacting agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The agents operate in a digital conversational environment.
+  - dimension_id: D3
+    characteristic_id: D3.C5
+    reasoning: The core action interface is inter-agent message exchange.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: Persistent context is maintained through the dialogue history rather
+      than a separate memory module.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Planning emerges through role-based conversation.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The framework does not prescribe a distinct built-in self-improvement
+      mechanism.
+  - dimension_id: D7
+    characteristic_id: D7.C4
+    reasoning: Behavior is mainly structured by prompts, roles, and protocol constraints.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Tasks are externally specified through prompts.
+- id: O4
+  name: MemGPT
+  source_document: packer et al 2023 - MemGPT Towards LLMs as Operating Systems.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: MemGPT is a single-agent architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its use cases are digital chat and document settings.
+  - dimension_id: D3
+    characteristic_id: D3.C6
+    reasoning: The system exposes explicit memory read-write and paging operations
+      as actions.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: Its core architecture is a layered memory hierarchy with managed paging.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It operates in an iterative event-response loop rather than explicit
+      long-horizon planning.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: It is not primarily framed around reflection, code refinement, or evolutionary
+      self-improvement.
+  - dimension_id: D7
+    characteristic_id: D7.C5
+    reasoning: Behavior is grounded in the current managed memory state.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Tasks are externally provided by users or inputs.
+- id: O5
+  name: Generative Agents
+  source_document: Park et al 2023 - Generative Agents Interactive Simulacra of Human
+    Behavior.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The system consists of many interacting agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The sandbox world is simulated and therefore digital.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: Agents generate natural-language actions and dialogue that drive behavior.
+  - dimension_id: D4
+    characteristic_id: D4.C5
+    reasoning: The architecture includes a memory stream with retrieval and reflection.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Agents form and decompose higher-level plans hierarchically.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: A key adaptation mechanism is verbal reflection over accumulated experiences.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Behavior is grounded in social and environmental observations within
+      the agent society.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Activities are driven by scenario conditions rather than self-generated
+      curricula in the Voyager sense.
+- id: O6
+  name: ReAct
+  source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ReAct is a single agent trajectory.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its benchmark environments are digital.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: Its actions are expressed as textual action commands.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: It does not add a persistent memory module beyond current context.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It alternates reasoning and acting step by step in a reactive loop.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Its hallmark mechanism is interleaved reasoning and acting.
+  - dimension_id: D7
+    characteristic_id: D7.C4
+    reasoning: Behavior is primarily guided by prompting and in-context trajectory
+      formatting.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Tasks are externally provided.
+- id: O7
+  name: Reflexion
+  source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Reflexion is centered on a single agent.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: It operates in digital environments and benchmark tasks.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: Actions are generally textual or language-mediated in its benchmark
+      settings.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: It stores verbal self-reflections for future trials.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Task execution is organized as iterative trial-and-error loops.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Its defining adaptation mechanism is verbal self-reflection.
+  - dimension_id: D7
+    characteristic_id: D7.C5
+    reasoning: Later behavior is grounded partly in stored reflective memory from
+      prior episodes.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Tasks are externally supplied.
+- id: O8
+  name: Voyager
+  source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Voyager is presented as one embodied agent.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Despite being embodied in Minecraft, the environment is simulated and
+      digital.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Its action interface is executable code programs.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: It maintains a library of verified reusable skills.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: It uses long-horizon progression and decomposes tasks while exploring.
+  - dimension_id: D6
+    characteristic_id: D6.C4
+    reasoning: Its key adaptation mechanism is iterative code generation and refinement.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: The agent is grounded in environment feedback from executing code and
+      observing outcomes.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: It generates an automatic curriculum of progressively harder tasks.
+- id: O9
+  name: AutoGen
+  source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: AutoGen is explicitly multi-agent.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its interaction setting is digital.
+  - dimension_id: D3
+    characteristic_id: D3.C5
+    reasoning: Its main action interface is agent-to-agent message exchange, even
+      when tools may be integrated.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: Conversation history is the default persistent interaction context.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Problem solving is organized through conversational coordination among
+      agents.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The framework itself does not prescribe a single built-in adaptation
+      mechanism.
+  - dimension_id: D7
+    characteristic_id: D7.C4
+    reasoning: Core coordination is established through prompts, roles, and conversation
+      protocol.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Tasks are generally initiated externally by the user.
+- id: O10
+  name: EUREKA
+  source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: EUREKA is a single agent-centered architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: It operates on simulated training environments and coding workflows,
+      which are digital.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Its main outputs are executable code artifacts for reward functions.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No persistent reusable memory architecture is central to the system.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It evaluates and updates candidates iteratively rather than through
+      explicit hierarchical planning.
+  - dimension_id: D6
+    characteristic_id: D6.C5
+    reasoning: Its main adaptation mechanism is evolutionary search over code candidates.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: It is grounded by evaluation feedback from executing generated reward
+      code in the environment.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Optimization targets are externally specified.

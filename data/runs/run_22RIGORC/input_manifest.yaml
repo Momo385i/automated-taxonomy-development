@@ -1,0 +1,111 @@
+run_id: run_22RIGORC
+created_at: '2026-04-09T14:53:48'
+input_dir: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\iteration_3_papers
+documents:
+- file_name: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large Language
+    Models.pdf
+  sha256: aa3b6350a92e4e8b1d894d0879d0af72df2fe76b3fe5d9341151924cb5884f74
+  pages: 45
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\ma
+    et al 2023 - Eureka- Human-Level Reward Design via Coding Large Language Models.txt
+  iteration_added: 1
+- file_name: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  sha256: 6059b6f89fea9959bd3dab553fbb97756a3dfb1b15e3cbab2fbf3ab6664333bd
+  pages: 19
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\shinn
+    et al 2023 - Reflexion- Language Agents with Verbal Reinforcement Learning.txt
+  iteration_added: 1
+- file_name: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large Language
+    Models.pdf
+  sha256: dca2bad99395ca454c1f9755b230055b90d232c651d1b1cf04aa7cc3c9dbeed7
+  pages: 42
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\wang
+    et al 2023 - Voyager-An Open-Ended Embodied Agent with Large Language Models.txt
+  iteration_added: 1
+- file_name: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  sha256: fcf8b1acae6b1bd6f14c92463caa9726828bf998234ba9f10c2411087897c96b
+  pages: 43
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\wu
+    et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent Conversation.txt
+  iteration_added: 1
+- file_name: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  sha256: f285b0971ae4a790e402fb93966bed3adde2cf0a04977d08b2b40d6ab0cace69
+  pages: 33
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\yao
+    et al 2023 - ReAct- Synergizing Reasoning and Acting in Language Models.txt
+  iteration_added: 1
+- file_name: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language in Robotic
+    Affordances.pdf
+  sha256: ebd714947dae222fb67c8831e25d714950c993b95d17961e88739cdc70e1ac8a
+  pages: 34
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\Ahn
+    et al 2022 - Do As I Can, Not As I Say Grounding Language in Robotic Affordances.txt
+  iteration_added: 2
+- file_name: bran et al 2023 - ChemCrow - Augmenting large-language models with chemistry
+    tools.pdf
+  sha256: d9c25ba2a415b8f687887a9a29fbefc297936dd3a2b9b889791d04c87b47bd09
+  pages: 38
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\bran
+    et al 2023 - ChemCrow - Augmenting large-language models with chemistry tools.txt
+  iteration_added: 2
+- file_name: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration of Large
+    Language Model Society.pdf
+  sha256: 2d3c0072b5e192a5d5c31e0a2d4a5cf4afa66e5f12690d81ca57d03c54c2586c
+  pages: 77
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\Li
+    et al 2023 - CAMEL- Communicative Agents for Mind Exploration of Large Language
+    Model Society.txt
+  iteration_added: 2
+- file_name: Park et al 2023 - Generative Agents Interactive Simulacra of Human Behavior.pdf
+  sha256: 65bba50decac44f9581d68792fbfcdd88f031bedca4f79a26e7cbab82fb027f5
+  pages: 22
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\Park
+    et al 2023 - Generative Agents Interactive Simulacra of Human Behavior.txt
+  iteration_added: 2
+- file_name: shen et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and its Friends
+    in Hugging Face.pdf
+  sha256: 5add5f7ff9041299c305769d49615e1ac2de2229e17c46e0811d1a60f94d6e3b
+  pages: 27
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\shen
+    et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and its Friends in Hugging
+    Face.txt
+  iteration_added: 2
+- file_name: Goola 2025 - Autonomous Intelligence - A Technical Analysis of Self-Directing
+    AI Systems and Their Enterprise Implementation.pdf
+  sha256: 43ec9417b16c16cf13ef1e53aa967bf504f7a0b25078223f18c97eb151862380
+  pages: 11
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\Goola
+    2025 - Autonomous Intelligence - A Technical Analysis of Self-Directing AI Systems
+    and Their Enterprise Implementation.txt
+  iteration_added: 3
+- file_name: Huang et al 2022 - Inner Monologue Embodied Reasoning through Planning
+    with Language Models.pdf
+  sha256: aa7c511fc9ba233ce76a48e4b211130b2347c7d08bd184fbc5ee119a89c72479
+  pages: 25
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\Huang
+    et al 2022 - Inner Monologue Embodied Reasoning through Planning with Language
+    Models.txt
+  iteration_added: 3
+- file_name: Qian et al 2024 - ChatDev Communicative Agents for Software Development.pdf
+  sha256: 416199189202f8e65a2684b9e13facf4132a618e39f1d0fccf6c923b066d3b54
+  pages: 13
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\Qian
+    et al 2024 - ChatDev Communicative Agents for Software Development.txt
+  iteration_added: 3
+- file_name: Wang 2024 - Describe, Explain, Plan and Select- Interactive Planning
+    with Large Language Models Enables Open-World Multi-Task Agents.pdf
+  sha256: 4ca850db8167de862f67316637dda70de0fa2cb59852204f70f7d4dc355e9ef6
+  pages: 37
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\Wang
+    2024 - Describe, Explain, Plan and Select- Interactive Planning with Large Language
+    Models Enables Open-World Multi-Task Agents.txt
+  iteration_added: 3
+- file_name: Yang et al 2023- Auto-GPT for Online Decision Making Benchmarks and.pdf
+  sha256: 157b5fcd3898dd7b62df121588e1f48efa02de63a4ec01a897cbc82b738ded74
+  pages: 14
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORC\extracted\Yang
+    et al 2023- Auto-GPT for Online Decision Making Benchmarks and.txt
+  iteration_added: 3

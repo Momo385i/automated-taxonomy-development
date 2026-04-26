@@ -1,0 +1,94 @@
+# ---------------------------------------------------------------------------
+# Python build / cache
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+**/*.egg-info/
+
+# ---------------------------------------------------------------------------
+# Virtual environments
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+
+# ---------------------------------------------------------------------------
+# Secrets — never commit real credentials!
+# ---------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+# Google Vertex AI service-account key file (matches gen-lang-client-*.json)
+gen-lang-*
+
+# ---------------------------------------------------------------------------
+# IDE / editor / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+.cursor/
+.claude/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Examples / debug helpers / dev-only scripts
+# ---------------------------------------------------------------------------
+examples/
+scripts/
+src/mas_taxonomy/auto_run.py
+
+# ---------------------------------------------------------------------------
+# Data: inputs and intermediate artifacts that are user-specific or huge
+# ---------------------------------------------------------------------------
+# Input PDFs are user-supplied; do not ship them
+data/input_pdfs/
+# Loose extracted text directory (legacy / scratch)
+data/extracted_text/
+# Per-iteration paper folders used during local development
+data/iteration_*/
+# Per-run extracted text (full text of copyrighted papers — must not be
+# redistributed via a public repo; regeneratable by the user from their PDFs)
+data/runs/*/extracted/
+
+# ---------------------------------------------------------------------------
+# Runs: ship ONLY the published example runs (keep outputs/, logs/,
+# run_config.yaml, input_manifest.yaml — but NOT extracted/, see above)
+# ---------------------------------------------------------------------------
+# Ignore every run by default …
+data/runs/*
+# … then explicitly re-include the runs we want to publish
+!data/runs/run_22RIGORA/
+!data/runs/run_22RIGORB/
+!data/runs/run_22RIGORC/
+!data/runs/run_22RIGORD/
+!data/runs/run_22RIGORE/
+!data/runs/run_PGHD/
+
+# Within the kept runs, drop derivative export artifacts from iter_003
+# (markdown / PNG / LaTeX renderings of the taxonomy).
+data/runs/run_22RIGORA/outputs/iter_003/*.md
+data/runs/run_22RIGORA/outputs/iter_003/*.png
+data/runs/run_22RIGORA/outputs/iter_003/*.tex
+data/runs/run_22RIGORB/outputs/iter_003/*.md
+data/runs/run_22RIGORB/outputs/iter_003/*.png
+data/runs/run_22RIGORB/outputs/iter_003/*.tex
+data/runs/run_22RIGORC/outputs/iter_003/*.md
+data/runs/run_22RIGORC/outputs/iter_003/*.png
+data/runs/run_22RIGORC/outputs/iter_003/*.tex
+data/runs/run_22RIGORD/outputs/iter_003/*.md
+data/runs/run_22RIGORD/outputs/iter_003/*.png
+data/runs/run_22RIGORD/outputs/iter_003/*.tex
+data/runs/run_22RIGORE/outputs/iter_003/*.md
+data/runs/run_22RIGORE/outputs/iter_003/*.png
+data/runs/run_22RIGORE/outputs/iter_003/*.tex
+data/runs/run_PGHD/outputs/iter_003/*.md
+data/runs/run_PGHD/outputs/iter_003/*.png
+data/runs/run_PGHD/outputs/iter_003/*.tex

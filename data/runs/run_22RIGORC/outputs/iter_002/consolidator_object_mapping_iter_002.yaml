@@ -1,0 +1,285 @@
+iteration: 2
+objects:
+- id: O1
+  name: SayCan
+  source_document: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language in
+    Robotic Affordances.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: SayCan is a single embodied agent controlling one robot.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Its core capability integration is a library of grounded robotic skills
+      and affordance models.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Action selection is coordinated by a single decision process rather
+      than multiple peer agents.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: It does not include an explicit persistent reflective memory or reusable
+      learned skill repository beyond predefined skills.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Behavior is adjusted using execution and affordance feedback from the
+      environment.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Tasks are externally given as user instructions.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: It operates in a physical robotic environment.
+- id: O2
+  name: ChemCrow
+  source_document: bran et al 2023 - ChemCrow - Augmenting large-language models with
+    chemistry tools.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ChemCrow is a single LLM-based agent.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its defining architectural feature is integration of external chemistry
+      and search tools.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: A single agent centrally plans and invokes tools.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No explicit persistent reflective memory or skill library is central
+      to the architecture.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: It adapts subsequent steps based on tool outputs and execution feedback.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Tasks are externally specified by users or experiments.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Its main operating setting is a digital tool environment.
+- id: O3
+  name: CAMEL role-playing framework
+  source_document: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration
+    of Large Language Model Society.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: CAMEL is organized as multiple role-playing agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The core setup relies on language-based interaction rather than tool
+      or embodied integration.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Task progress emerges through peer role interaction.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: It lacks a dedicated persistent memory or reusable skill repository
+      as a core component.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: No explicit built-in improvement mechanism is central to the architecture.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Tasks are externally specified through prompts and scenarios.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: It operates primarily in digital conversational settings.
+- id: O4
+  name: Generative Agents
+  source_document: Park et al 2023 - Generative Agents Interactive Simulacra of Human
+    Behavior.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: Generative Agents consists of a population of interacting agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its core architecture extends language agents with memory and reflection
+      rather than external tools or embodied skills.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Behavior is decentralized across socially interacting peer agents.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: A structured memory stream with retrieval and reflection is a defining
+      architectural element.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: The system uses reflection over stored experiences to improve future
+      behavior.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The scenario and agent goals are externally instantiated rather than
+      self-generated as an open-ended curriculum.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: It operates in a simulated social world.
+- id: O5
+  name: HuggingGPT
+  source_document: shen et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and its
+    Friends in Hugging Face.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: HuggingGPT uses a single controller agent.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its defining feature is orchestration of external expert models.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: A centralized controller decomposes tasks and coordinates execution.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No persistent reflective memory or skill library is a core element.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The architecture does not center on explicit iterative self-improvement.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Tasks are externally provided by users.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: It operates in digital multimodal task environments.
+- id: O6
+  name: EUREKA
+  source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: EUREKA is a single agentic system.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its central agentic output is language and code generation, but it
+      is not primarily a tool-orchestration or embodied-skill architecture; under
+      the synthesized dimension it best fits language-only capability integration.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: It is centrally organized rather than multi-agent.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No persistent reflective memory or skill library is central to the
+      architecture.
+  - dimension_id: D5
+    characteristic_id: D5.C4
+    reasoning: Its defining improvement process is iterative search over reward candidates.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Tasks are externally specified by benchmarks and environments.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: The agent operates in a digital development and simulation workflow.
+- id: O7
+  name: Reflexion
+  source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Reflexion is a single-agent architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: It primarily relies on language reasoning and actions, without defining
+      tool orchestration or embodied skill integration as the core architectural contribution.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The architecture is centrally controlled by one agent.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: Reflective summaries are stored and reused across episodes.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Its signature mechanism is verbal self-reflection from feedback.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: It solves externally provided tasks.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: It is evaluated in digital task environments.
+- id: O8
+  name: Voyager
+  source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Voyager is a single embodied agent.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Its architecture centers on executable embodied skills for acting in
+      Minecraft.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Control is centrally organized within one agent architecture.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: A persistent skill library is a defining architectural component.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: It improves by iterative execution feedback and code refinement.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Voyager autonomously generates a curriculum of new tasks.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Minecraft is a digital interactive environment rather than a physical
+      world.
+- id: O9
+  name: AutoGen
+  source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: AutoGen is explicitly multi-agent.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Although conversation is central, AutoGen agents are designed to integrate
+      tools, code executors, and assistant capabilities; under the synthesized dimension
+      this best fits tool-model integration.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Its architecture is based on interactions among peer agents.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No persistent reflective memory or skill library is required by the
+      framework.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The framework does not prescribe an intrinsic improvement loop.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Tasks are externally initiated by users or developers.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: It primarily operates in digital conversational and tool-use settings.
+- id: O10
+  name: ReAct
+  source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ReAct is a single language agent.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its architecture is fundamentally language-based reasoning and acting,
+      even when actions are emitted as text commands.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: It uses a single centralized agent.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: No persistent memory or skill repository is part of the core architecture.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It lacks an explicit built-in improvement mechanism.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Tasks are externally supplied.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: It is mainly instantiated in digital environments such as QA and web
+      settings.

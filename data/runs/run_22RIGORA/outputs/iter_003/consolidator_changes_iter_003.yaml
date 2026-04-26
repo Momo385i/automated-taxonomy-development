@@ -1,0 +1,18 @@
+iteration: 3
+changes_short:
+- Validated Taxonomy A structure and normalized dimension and characteristic names
+  to concise noun phrases.
+- Synthesized A and B into 9 dimensions, preserving the strongest explanatory elements
+  from both.
+- Merged overlapping dimensions by separating control pattern, coordination structure,
+  feedback source, memory structure, and capability integration.
+- Removed Taxonomy A dimensions Action grounding and Planning refinement as standalone
+  dimensions and absorbed their information into Capability integration, Feedback
+  source, Memory structure, Termination assessment, and Control pattern.
+- Removed Taxonomy B dimension Action grounding because its characteristics mixed
+  action medium, capability source, and memory, violating mutual exclusivity.
+- Retained Taxonomy B dimensions Task sourcing, Termination assessment, and Environment
+  embodiment due to clear explanatory value.
+- Reassigned all objects to exactly one characteristic per final dimension with no
+  N/A values.
+- Renumbered dimensions, characteristics, and objects sequentially in the final synthesis.

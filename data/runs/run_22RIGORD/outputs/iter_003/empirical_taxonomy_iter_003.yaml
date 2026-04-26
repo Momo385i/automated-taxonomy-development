@@ -1,0 +1,57 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent architecture
+  - id: D1.C2
+    name: Multi-agent architecture
+- id: D2
+  name: External capability integration
+  characteristics:
+  - id: D2.C1
+    name: Predefined embodied skills
+  - id: D2.C2
+    name: Expert software tools
+  - id: D2.C3
+    name: Model hub experts
+  - id: D2.C4
+    name: No external toolset
+- id: D3
+  name: Action-generation mechanism
+  characteristics:
+  - id: D3.C1
+    name: Option scoring
+  - id: D3.C2
+    name: Thought-action loop
+  - id: D3.C3
+    name: Task-graph orchestration
+  - id: D3.C4
+    name: Role-play dialogue
+  - id: D3.C5
+    name: Memory-conditioned generation
+- id: D4
+  name: Memory architecture
+  characteristics:
+  - id: D4.C1
+    name: No explicit long-term memory
+  - id: D4.C2
+    name: Conversation history memory
+  - id: D4.C3
+    name: Structured dependency memory
+  - id: D4.C4
+    name: Reflective memory stream
+- id: D5
+  name: Physical-world actuation
+  characteristics:
+  - id: D5.C1
+    name: No physical actuation
+  - id: D5.C2
+    name: Embodied robot actuation
+  - id: D5.C3
+    name: Cloud-lab actuation
+notes:
+  format: prototype_v1

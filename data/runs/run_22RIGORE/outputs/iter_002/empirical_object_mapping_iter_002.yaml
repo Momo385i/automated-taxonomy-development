@@ -1,0 +1,143 @@
+iteration: 2
+objects:
+- id: O1
+  name: SayCan
+  source_document: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language in
+    Robotic Affordances.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: SayCan is described as one robot agent that plans and executes skills.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The system acts through a mobile manipulator in real kitchen environments.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The LLM selects among a predefined set of robot skills with language
+      labels.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The architecture uses current instruction, state, and skill/value functions,
+      but no explicit long-term memory store is described as part of the core system.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It repeatedly scores candidate next skills and appends the chosen step
+      until termination.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Action choice is grounded by multiplying LLM usefulness scores with
+      affordance/value-function success estimates.
+- id: O2
+  name: ChemCrow
+  source_document: bran et al 2023 - ChemCrow - Augmenting large-language models with
+    chemistry tools.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ChemCrow is presented as one LLM chemistry agent using a toolbox.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: It uses digital chemistry tools and can also execute syntheses on a
+      robotic lab platform.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The agent acts by selecting and invoking named external tools with
+      inputs.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The paper describes iterative reasoning with observations from tools,
+      but not an explicit persistent memory architecture for the agent itself.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It follows a repeated Thought-Action-Observation loop choosing the
+      next tool step iteratively.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The agent grounds its reasoning through tool outputs returned as observations
+      after each action.
+- id: O3
+  name: CAMEL role-playing framework
+  source_document: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration
+    of Large Language Model Society.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The framework centers on at least two communicating agents, typically
+      an AI user and AI assistant, optionally with task specifier and critic.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The agents operate through dialogue and dataset generation in a digital
+      conversational setting.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Agents produce natural-language instructions and solutions to each
+      other rather than calling tools or selecting embodied skills.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The framework relies on conversation history and prompts, but no explicit
+      long-term memory module is introduced.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Task solving is organized through role-playing dialogue between assigned
+      agent roles.
+  - dimension_id: D6
+    characteristic_id: D6.C4
+    reasoning: Cooperation is primarily shaped by inception prompting, role prompts,
+      and protocol constraints rather than tools, affordances, or explicit memory
+      state.
+- id: O4
+  name: MemGPT
+  source_document: packer et al 2023 - MemGPT Towards LLMs as Operating Systems.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: MemGPT is a single LLM agent architecture with self-managed memory
+      operations.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its demonstrated domains are chat and document analysis, both digital
+      environments.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: The agent acts through explicit memory functions such as search, append,
+      replace, and archival/recall operations.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The core contribution is a hierarchical memory system with main context,
+      recall storage, and archival storage managed via paging-like operations.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The agent processes events and may chain functions step by step to
+      complete a task before replying.
+  - dimension_id: D6
+    characteristic_id: D6.C5
+    reasoning: Its behavior is grounded in the current state of working context, FIFO
+      queue, recall storage, and archival storage managed by the agent.
+- id: O5
+  name: Generative Agents
+  source_document: Park et al 2023 - Generative Agents Interactive Simulacra of Human
+    Behavior.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The system instantiates a society of 25 interacting agents in one environment.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The agents inhabit a simulated sandbox world rather than a physical
+      robot platform.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: They generate natural-language actions, dialogue, plans, and reflections
+      that are translated into world behavior.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The architecture explicitly includes a memory stream plus retrieval
+      and higher-level reflection memories.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Agents form daily plans and recursively decompose them into increasingly
+      fine-grained actions.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Behavior is grounded in perceived observations from the sandbox world
+      and social interactions with other agents.

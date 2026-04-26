@@ -1,0 +1,69 @@
+iteration: 3
+object_validation:
+- object_name: AutoGPT
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based agent system published
+    after 2020. Mapping was normalized to the synthesized dimensions.
+- object_name: BabyAGI
+  action: retained
+  reasoning: Within scope as an autonomous LLM-based single-agent framework. Mapping
+    was normalized to the synthesized dimensions.
+- object_name: Inner Monologue
+  action: retained
+  reasoning: Within scope as a post-2020 autonomous embodied LLM-based agent architecture.
+    Human-feedback assignment was broadened to mixed feedback because environment
+    and human inputs both matter.
+- object_name: ChatDev
+  action: retained
+  reasoning: Within scope as a post-2020 multi-agent LLM framework. Mapping was normalized
+    to conversational planning and phase-segmented memory.
+- object_name: DEPS
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based agent architecture. Mapping
+    was preserved with minor normalization into the synthesized DEPS planning characteristic.
+- object_name: Auto-GPT styled agent
+  action: retained
+  reasoning: Retained as a distinct object because it refers to a benchmark-specific
+    architecture variant rather than clearly the same entity as AutoGPT. Mapping was
+    corrected to digital actuation domain and hierarchical memory approximation.
+- object_name: SayCan
+  action: retained
+  reasoning: Within scope as a post-2020 autonomous agent architecture with LLM-based
+    grounding. Although robotics-focused, it matches the meta-characteristic and topic.
+- object_name: ChemCrow
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based agent using tools. Hybrid
+    actuation was retained as plausible due to digital and lab-interface positioning.
+- object_name: CAMEL role-playing framework
+  action: retained
+  reasoning: Within scope as a multi-agent LLM architecture. Mapping was normalized
+    to conversational planning and contextual memory.
+- object_name: MemGPT
+  action: retained
+  reasoning: Within scope as an autonomous LLM agent architecture focused on memory
+    management. Mapping was normalized to hierarchical memory and reactive planning.
+- object_name: Generative Agents
+  action: retained
+  reasoning: Within scope as a multi-agent autonomous architecture. Mapping was normalized
+    to hierarchical planning, memory stream, and mixed feedback.
+- object_name: ReAct
+  action: retained
+  reasoning: Within scope as a foundational post-2020 LLM agent architecture. Mapping
+    was normalized to reactive planning and reasoning-action adaptation.
+- object_name: Reflexion
+  action: retained
+  reasoning: Within scope as an autonomous LLM-based agent architecture. Mapping was
+    normalized to self-reflective planning and reflection memory.
+- object_name: Voyager
+  action: retained
+  reasoning: Within scope as an autonomous LLM-based embodied agent. Mapping preserved
+    with normalization to hierarchical planning, skill-library memory, and self-curriculum.
+- object_name: AutoGen
+  action: retained
+  reasoning: Within scope as a modern multi-agent LLM framework. Mapping was normalized
+    to conversational planning and contextual memory.
+- object_name: EUREKA
+  action: retained
+  reasoning: Retained as a borderline but in-scope autonomous agentic architecture
+    because it embodies iterative autonomous code generation and evaluation rather
+    than being a pure benchmark or evaluation tool.

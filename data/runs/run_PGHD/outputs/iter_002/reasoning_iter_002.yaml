@@ -1,0 +1,249 @@
+iteration: 2
+empirical_reasoning: 'I followed an empirical-to-conceptual approach and restricted
+  the taxonomy to individual PGHD integration projects or systems explicitly described
+  in the supplied sources. I excluded purely clinical outcome objects and selected
+  only artifacts or implementations whose central concern was integrating patient-generated
+  data into a clinical information environment or workflow.
+
+
+  Object identification. I first extracted concrete, sufficiently distinct integration
+  efforts from each source. The resulting object class is coherent: each object is
+  a project, platform, prototype, or implemented workflow that moves PGHD into an
+  EHR, HIS, clinical repository, CDS environment, or closely related clinical system.
+  Examples include direct app-to-EHR integrations (Genes; Lobach), wearable-to-EHR
+  pipelines (Kumar; Reichl), intermediary platforms or repositories (Frid; Kim; Dugas),
+  and hospital monitoring architectures connected to HIS (Nunes). Although the systems
+  differ in maturity and scope, they all belong to the same conceptual class required
+  by the topic.
+
+
+  Characteristic derivation. I searched for discriminating properties repeatedly described
+  across sources and useful for healthcare IT researchers and system designers comparing
+  PGHD integration approaches. I excluded attributes that were nearly universal or
+  insufficiently discriminating, such as simply having patient data, involving clinicians,
+  or being health-related. I also excluded purely evaluative outcomes such as usability
+  ratings or clinical impact because the user explicitly asked to exclude purely clinical
+  outcome evaluations.
+
+
+  Dimension formation. The final dimensions were formed by grouping empirically recurring
+  characteristics into coherent explanatory concepts.
+
+
+  D1 PGHD source captures what kind of patient-generated input enters the integration
+  effort. The sources support three empirically grounded categories: wearable sensor
+  data (e.g., CGM, smartwatch, biomonitoring patch), mobile app entry (e.g., symptoms,
+  questionnaires, PEFR, inhaler use), and hybrid source where both entered and automatically
+  collected data are integrated. This dimension helps distinguish technical acquisition
+  demands without overlapping with architecture or processing.
+
+
+  D2 Clinical system role captures what role the receiving clinical system plays in
+  the integration. Empirically, some projects primarily persist or document PGHD in
+  a record or repository (Frid, Dugas, Jayathissa), some embed PGHD into remote monitoring
+  workflows (Genes, Kumar, Nunes, Young), and some primarily support decision support
+  functions such as risk stratification, anomaly detection, or early warning (Bajaj,
+  Lobach, Reichl, Smith, Kim). I retained these three because they are directly evidenced
+  and distinguish why the integration exists from how it is built.
+
+
+  D3 Integration architecture captures the structural path by which PGHD reaches the
+  clinical system. The sources support four non-overlapping architectural patterns:
+  direct app-to-clinical system link (Lobach), mobile platform bridge using patient
+  phone ecosystem or portal bridge (Genes, Kumar, Young), intermediary platform such
+  as repository, EDC, MPI, or analytics platform (Bajaj, Dugas, Frid, Jayathissa,
+  Reichl, Smith, Kim), and bedside gateway architectures characteristic of in-hospital
+  sensor aggregation (Nunes). This dimension is important for designers because it
+  reflects deployment complexity and coupling.
+
+
+  D4 Interoperability basis captures the main technical basis for exchange. The sources
+  empirically support FHIR (Jayathissa, Lobach, Nunes), EN/ISO 13606 (Frid), vendor
+  API frameworks such as HealthKit/ResearchKit/MyChart (Genes, Kumar, Young), and
+  proprietary or custom links including bespoke dashboards, Device Hub integrations,
+  ODM/PDF/ETL mixtures, or platform-specific APIs without a dominant general standard
+  (Bajaj, Dugas, Reichl, Smith, Kim). I deliberately did not force HL7 v2, CDISC ODM,
+  SMART, and HealthKit into more fine-grained separate categories because the object
+  set would become sparse and less parsimonious.
+
+
+  D5 Data transfer direction distinguishes unidirectional and bidirectional exchange.
+  This was repeatedly explicit in the sources and mattered conceptually. Some systems
+  only move PGHD toward the clinical environment (Frid, Bajaj, Nunes, Reichl, Jayathissa,
+  Young), whereas others both receive PGHD and send commands, summaries, or context
+  in return, or otherwise support two-way system exchange (Dugas, Genes, Kumar, Lobach,
+  Smith, Kim). This dimension was retained because it bridges technical and workflow
+  design.
+
+
+  D6 PGHD processing captures what happens to PGHD before or as it is integrated.
+  Three empirically supported characteristics emerged: raw data transfer, summary
+  visualization, and automated analytics. Raw transfer appears where the aim is record
+  insertion or simple observation filing; summary visualization appears where dashboards,
+  reports, or trend views organize but do not algorithmically classify data; automated
+  analytics appears where anomaly detection, NEWS2 scoring, risk scoring, or algorithmic
+  patient ranking are central. This dimension is distinct from clinical role because
+  a monitoring system can still use raw transfer or visualization, whereas a decision
+  support system often but not always uses analytics.
+
+
+  D7 Workflow trigger captures what initiates review or action. The sources support
+  clinician-initiated review, scheduled monitoring, and threshold or event trigger.
+  I retained only these three because they were recurrent and mutually exclusive at
+  the object level when focusing on the dominant workflow logic. Examples: provider
+  orders initiating monitoring in Genes are not the main ongoing trigger because alerts
+  are threshold-based; Kumar uses regular biweekly review; Smith and Bajaj emphasize
+  alerting or high-risk notifications.
+
+
+  D8 Primary reviewing actor captures the principal role expected to review or respond
+  to the integrated PGHD. This dimension is strongly grounded in the literature’s
+  concern with workload distribution and organizational design. The sources support
+  physician, nurse or care manager, allied health professional, and administrative
+  or technical intermediary. The latter is important because Bajaj and Smith explicitly
+  discuss non-physician triage roles, and Bajaj uniquely foregrounds healthcare administrators
+  as preferred first-line reviewers. This dimension serves the stated user need to
+  bridge technical, clinical, and organizational design choices.
+
+
+  MECE checks. Within each dimension, I ensured that characteristics are mutually
+  exclusive and collectively exhaustive for the objects in hand. When an object appeared
+  to span multiple characteristics, I assigned the dominant characteristic described
+  by the source. For example, several projects include both monitoring and decision
+  support elements; I used the article’s primary integrated purpose to choose one
+  D2 characteristic. Likewise, hybrid source in D1 was added specifically to avoid
+  forcing projects like Frid, Smith, and Young into ill-fitting single-source categories.
+  No N/A assignments were needed because all classification gaps were resolvable by
+  adding empirically supported characteristics.
+
+
+  Mapping logic. Each object was mapped to exactly one characteristic per dimension.
+  The short reasoning in each mapping states the logical basis for assignment using
+  only properties described in the source. I did not infer absent capabilities. For
+  instance, Frid was mapped as unidirectional because the article explicitly states
+  unidirectional communication; Bajaj was mapped to proprietary/custom interoperability
+  because the article does not claim a named interoperability standard; Lobach was
+  mapped to direct app-to-clinical system link because the design intent centered
+  on direct EHR workflow integration through APIs, even though implementation workarounds
+  existed.
+
+
+  Limitations. The sources are heterogeneous in detail. Some are implemented pilots,
+  others are conceptual frameworks or proof-of-concept systems, and they report architecture
+  at different levels of specificity. Consequently, the taxonomy is intentionally
+  parsimonious and focuses on dimensions that recur clearly across the material. Some
+  potentially interesting distinctions were not retained because empirical support
+  across sources was too thin or too inconsistent, such as consent mechanism, deployment
+  scale, disease specificity, or exact data governance model. Also, several systems
+  could reasonably be read as serving both monitoring and decision support; I resolved
+  this by selecting the dominant role emphasized in each paper rather than creating
+  overlapping dimensions.
+
+
+  Overall, the taxonomy is grounded in the provided empirical material and tailored
+  to the primary purpose stated by the user: classifying PGHD integration efforts
+  and identifying design choices that bridge technical, clinical, and organizational
+  domains.'
+consolidator_reasoning: 'I first checked Taxonomy A for structural validity. Taxonomy
+  A was generally well formed, with eight dimensions, concise labels, and one characteristic
+  assignment per object. However, several labels were slightly too long for a final
+  taxonomy and some dimensions were narrower than needed for synthesis. Taxonomy A
+  also omitted contextual aspects that are useful for healthcare IT researchers and
+  system designers, especially where PGHD is generated and what kind of clinical system
+  is the destination. Those aspects appeared in Taxonomy B and contribute directly
+  to comparing integration approaches across organizational and technical settings.
+
+
+  I then compared both taxonomies side by side against the meta-characteristic, which
+  acts as a relevance filter: the taxonomy should classify individual PGHD integration
+  projects or systems within clinical systems, and should help identify design choices
+  bridging technical, clinical, and organizational domains. This meant retaining dimensions
+  only if they explain meaningful variation in PGHD integration, not simply because
+  they were available in one input.
+
+
+  The final taxonomy keeps nine dimensions, at the allowed upper bound, because the
+  synthesis needed to preserve explanatory power from both inputs without unnecessary
+  overlap. From Taxonomy B, Care setting was retained because home versus hospital
+  versus hybrid strongly shapes integration design, workflow, and infrastructure.
+  Integration target was also retained because integration into EHR, HIS, or a clinical
+  platform is a central design distinction for the target users. From Taxonomy A,
+  Clinical system role, Transfer pathway, Interoperability basis, Exchange direction,
+  Data processing, and Workflow trigger were retained because they capture the technical,
+  functional, and workflow characteristics most relevant to evaluating integration
+  efforts. PGHD source was synthesized from A''s PGHD source and B''s Acquisition
+  mode into a more general and MECE dimension with Sensor, Self-report, and Hybrid.
+  This formulation is cleaner than A''s technology-specific source labels and more
+  directly classifies the acquisition nature of PGHD.
+
+
+  Several dimensions from the source taxonomies were excluded after comparison. Taxonomy
+  A''s Primary reviewing actor was dropped, not because it was invalid, but because
+  it was less stable across projects and often secondary to workflow design; many
+  systems involve multiple actors, making mutual exclusivity harder and reducing comparability.
+  For the stated purpose, Care setting and Integration target explain more than reviewer
+  role. Taxonomy B''s Data scope was excluded because it overlaps with PGHD source
+  and did not directly classify integration design decisions; it describes content
+  more than integration. Capture temporality was excluded because scheduling and continuous
+  collection patterns were already substantially represented through Workflow trigger
+  and, in practice, often cut across the same systems in non-exclusive ways. Response
+  mechanism was not retained as a separate dimension because its distinctions were
+  better decomposed into Data processing and Workflow trigger, which together provide
+  clearer and more MECE classification of passive transfer, summarization, analytics,
+  and event-driven review. Taxonomy B''s Transfer pathway was merged with Taxonomy
+  A''s Integration architecture, with A providing the more useful pathway distinctions;
+  B''s direct write-back, middleware, and platform exchange were partially preserved
+  through Direct link, Mobile bridge, Middleware, and Bedside gateway. Taxonomy B''s
+  Interoperability basis was merged into A''s corresponding dimension, while CDA was
+  added from B because it contributed an empirically grounded and relevant standard
+  category.
+
+
+  I also checked mutual exclusivity and collective exhaustiveness of the final dimensions.
+  Each dimension was defined so that one object can be assigned to exactly one characteristic.
+  To ensure MECE, some categories were generalized: for example, PGHD source uses
+  Sensor, Self-report, and Hybrid rather than listing specific device classes; Transfer
+  pathway uses architecture role rather than a mix of technological and semantic criteria.
+  Collective exhaustiveness was ensured by including residual Custom in Interoperability
+  basis and Hybrid categories where needed. No final object required N/A.
+
+
+  For object validation, I evaluated every object from both mappings against the meta-characteristic
+  and the user restriction to exclude purely clinical outcome evaluations. All retained
+  objects are integration projects, systems, frameworks, or architectures involving
+  PGHD and clinical systems. I removed only objects clearly outside the scope boundary.
+  Specifically, BREATHE, Wearable at-home vital sign monitoring prototype, MyWear
+  smart garment monitoring system, CDPMS hemodialysis integrated monitoring system,
+  and AECOPD prediction system were removed because the provided descriptions centered
+  on standalone research, cloud, or caregiver platforms without clear integration
+  into a clinical system such as EHR, HIS, CDSS, or equivalent clinical platform embedded
+  in care workflows. I retained doubtful but still relevant cases such as DH-Convener
+  and the HL7 CDA information model because they target clinical-system integration
+  and contribute important architectural design knowledge. No exact duplicate objects
+  appeared across A and B, so no cross-taxonomy merges were required.
+
+
+  I then re-mapped all retained objects to the synthesized taxonomy. Reassignments
+  were made where the new dimensions differed from the source structure or where the
+  original mapping was less plausible. For example, the Epic COVID tracker from Taxonomy
+  A was moved from decision support to monitoring in Clinical role because its operational
+  use is routine coordinator monitoring, while decision-support logic is secondary.
+  The postpartum HDP app was classified as direct link plus FHIR because SMART on
+  FHIR provides a direct API-mediated write-back into the EHR. PROMIS CAT middleware
+  was classified under decision support and summarization because threshold-triggered
+  notifications are central and instrument scoring yields summary outputs rather than
+  raw transfer alone. Some objects that had originally been labeled bidirectional
+  in Taxonomy A were reconsidered under the stricter Exchange direction dimension:
+  where the article described ordering or enrollment but not real data exchange back
+  from the clinical system, I used unidirectional. In each case, I preferred the assignment
+  that best matched the final dimension definition rather than mechanically inheriting
+  source mappings.
+
+
+  The resulting taxonomy is internally consistent with the final object mapping. Every
+  dimension and characteristic ID referenced in the mapping exists in the taxonomy.
+  Every retained object has exactly one mapping per dimension. The final structure
+  balances both taxonomies: it preserves the stronger integration-specific architecture
+  and workflow distinctions from Taxonomy A while incorporating contextual dimensions
+  from Taxonomy B that improve utility for healthcare IT researchers and system designers
+  evaluating PGHD integration approaches.'

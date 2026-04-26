@@ -1,0 +1,64 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent architecture
+  - id: D1.C2
+    name: Multi-agent architecture
+- id: D2
+  name: External actuation domain
+  characteristics:
+  - id: D2.C1
+    name: Digital-only environment
+  - id: D2.C2
+    name: Physical-world embodiment
+  - id: D2.C3
+    name: Hybrid digital-physical environment
+- id: D3
+  name: Action interface
+  characteristics:
+  - id: D3.C1
+    name: Constrained skill selection
+  - id: D3.C2
+    name: Tool invocation
+  - id: D3.C3
+    name: Natural-language interaction generation
+  - id: D3.C4
+    name: Memory operation invocation
+- id: D4
+  name: Memory architecture
+  characteristics:
+  - id: D4.C1
+    name: No explicit long-term memory module
+  - id: D4.C2
+    name: Memory stream with retrieval and reflection
+  - id: D4.C3
+    name: Hierarchical memory with self-managed paging
+- id: D5
+  name: Planning organization
+  characteristics:
+  - id: D5.C1
+    name: Iterative next-action planning
+  - id: D5.C2
+    name: Hierarchical long-horizon planning
+  - id: D5.C3
+    name: Role-based conversational planning
+- id: D6
+  name: Grounding mechanism
+  characteristics:
+  - id: D6.C1
+    name: Affordance-grounded action scoring
+  - id: D6.C2
+    name: Tool-observation grounding
+  - id: D6.C3
+    name: Social-environment grounding
+  - id: D6.C4
+    name: Prompt-only grounding
+  - id: D6.C5
+    name: Memory-state grounding
+notes:
+  format: prototype_v1

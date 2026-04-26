@@ -1,0 +1,2133 @@
+run_id: run_22RIGORD
+run_dir: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORD
+iteration: 3
+thread_id: thread_run_22RIGORD
+run_started_at: '2026-04-09T17:11:00'
+token_usage_iteration:
+  prompt_tokens: 79204
+  completion_tokens: 12939
+  total_tokens: 92143
+token_usage_total:
+  prompt_tokens: 187835
+  completion_tokens: 32902
+  total_tokens: 220737
+token_usage_by_agent:
+  consultation:
+    prompt_tokens: 0
+    completion_tokens: 0
+    total_tokens: 0
+  empirical:
+    prompt_tokens: 149887
+    completion_tokens: 9934
+    total_tokens: 159821
+  consolidator:
+    prompt_tokens: 19524
+    completion_tokens: 18014
+    total_tokens: 37538
+  validator:
+    prompt_tokens: 18424
+    completion_tokens: 4954
+    total_tokens: 23378
+  interaction:
+    prompt_tokens: 0
+    completion_tokens: 0
+    total_tokens: 0
+errors: []
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+objective_ending_conditions:
+- id: OEC_01
+  name: Mutual Exclusivity
+  description: In each dimension, no object can have two different characteristics.
+    If an object can logically be assigned to more than one characteristic, the dimension
+    is not mutually exclusive and should be restructured.
+- id: OEC_02
+  name: Collective Exhaustiveness
+  description: Each object must have at least one of the characteristics in any dimension.
+    If a valid object exists that cannot be classified into any existing category,
+    the dimension is not collectively exhaustive and requires an additional or a residual
+    characteristic.
+- id: OEC_03
+  name: No object merge/split
+  description: No object was merged with a similar object or split into multiple objects
+    in the last iteration. If objects were merged or split, then we need to examine
+    the impact of these changes and determine if changes need to be made in the dimensions
+    or characteristics.
+- id: OEC_04
+  name: No 'null' characteristics
+  description: At least one object is classified under every characteristic of every
+    dimension. If at least one object is not found under a characteristic, then the
+    taxonomy has a 'null' characteristic. We must either identify an object with the
+    characteristic or remove the characteristic from the taxonomy.
+- id: OEC_05
+  name: No new dimensions/characteristics
+  description: No new dimensions or characteristics were added in the last iteration.
+    If new dimensions were found, then more characteristics of the dimensions may
+    be identified. If new characteristics were found, then more dimensions may be
+    identified that include these characteristics.
+- id: OEC_06
+  name: No dimension/characteristic merge/split
+  description: No dimensions or characteristics were merged or split in the last iteration.
+    If dimensions or characteristics were merged or split, then we need to examine
+    the impact of these changes and determine if other dimensions or characteristics
+    need to be merged or split.
+- id: OEC_07
+  name: Unique dimensions
+  description: Every dimension is unique and not repeated (i.e., there is no dimension
+    duplication). If dimensions are not unique, then there is redundancy/duplication
+    among dimensions that needs to be eliminated.
+- id: OEC_08
+  name: Unique characteristics
+  description: Every characteristic is unique within its dimension (i.e., there is
+    no characteristic duplication within a dimension). If characteristics within a
+    dimension are not unique, then there is redundancy/duplication in characteristics
+    that needs to be eliminated.
+- id: OEC_09
+  name: Unique cells
+  description: Each cell (combination of characteristics) is unique and is not repeated
+    (i.e., there is no cell duplication). If cells are not unique, then there is redundancy/duplication
+    in cells that needs to be eliminated.
+subjective_ending_conditions:
+- id: SEC_01
+  name: Concise
+  question: Does the number of dimensions allow the taxonomy to be meaningful without
+    being unwieldy or overwhelming?
+- id: SEC_02
+  name: Robust
+  question: Do the dimensions and characteristics provide for differentiation among
+    objects sufficient to be of interest? Given the characteristics of sample objects,
+    what can we say about the objects?
+- id: SEC_03
+  name: Comprehensive
+  question: Can all objects or a (random) sample of objects within the domain of interest
+    be classified? Are all dimensions of the objects of interest identified?
+- id: SEC_04
+  name: Extendible
+  question: Can a new dimension or a new characteristic of an existing dimension be
+    easily added?
+- id: SEC_05
+  name: Explanatory
+  question: What do the dimensions and characteristic explain about an object?
+- id: SEC_06
+  name: Representative sample
+  question: Does the examined sample of objects cover a sufficiently diverse range
+    of objects in the domain, or is it too narrow/biased toward a particular sub-type?
+important_user_prompt: 'Primary target users of this taxonomy: "Information Systems
+  researchers seeking to systematically compare and differentiate AI agent architectures,
+  and practitioners evaluating agent designs for specific use cases."
+
+  Primary purpose of the taxonomy: "Structuring an emerging phenomenon. The field
+  of autonomous AI agents is rapidly evolving but lacks a unified classification framework
+  that goes beyond functional labels."
+
+  Type of objects the user wants to classify: "Individual AI agent systems and frameworks
+  that exhibit autonomous, goal-directed behavior — including both single-agent and
+  multi-agent architectures. Examples include systems like ReAct, AutoGPT or Voyager."
+
+  Restrictions: "Focus on modern, predominantly LLM-based agents published after 2020.
+  Excluded are pure benchmarking frameworks and evaluation tools. The classification
+  targets system-level architecture and behavior, not application-domain performance."'
+agent_conversation:
+- timestamp: '2026-04-09T17:02:24'
+  role: system
+  message: Consultation skipped - using provided configuration
+consultation_completed: true
+skip_consultation: true
+interaction_annotations: []
+documents:
+- file_name: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language in Robotic
+    Affordances.pdf
+  sha256: ebd714947dae222fb67c8831e25d714950c993b95d17961e88739cdc70e1ac8a
+  pages: 34
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORD\extracted\Ahn
+    et al 2022 - Do As I Can, Not As I Say Grounding Language in Robotic Affordances.txt
+  iteration_added: 3
+- file_name: bran et al 2023 - ChemCrow - Augmenting large-language models with chemistry
+    tools.pdf
+  sha256: d9c25ba2a415b8f687887a9a29fbefc297936dd3a2b9b889791d04c87b47bd09
+  pages: 38
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORD\extracted\bran
+    et al 2023 - ChemCrow - Augmenting large-language models with chemistry tools.txt
+  iteration_added: 3
+- file_name: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration of Large
+    Language Model Society.pdf
+  sha256: 2d3c0072b5e192a5d5c31e0a2d4a5cf4afa66e5f12690d81ca57d03c54c2586c
+  pages: 77
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORD\extracted\Li
+    et al 2023 - CAMEL- Communicative Agents for Mind Exploration of Large Language
+    Model Society.txt
+  iteration_added: 3
+- file_name: Park et al 2023 - Generative Agents Interactive Simulacra of Human Behavior.pdf
+  sha256: 65bba50decac44f9581d68792fbfcdd88f031bedca4f79a26e7cbab82fb027f5
+  pages: 22
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORD\extracted\Park
+    et al 2023 - Generative Agents Interactive Simulacra of Human Behavior.txt
+  iteration_added: 3
+- file_name: shen et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and its Friends
+    in Hugging Face.pdf
+  sha256: 5add5f7ff9041299c305769d49615e1ac2de2229e17c46e0811d1a60f94d6e3b
+  pages: 27
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORD\extracted\shen
+    et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and its Friends in Hugging
+    Face.txt
+  iteration_added: 3
+empirical_taxonomy:
+  meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+  topic: Classification of autonomous AI agents based on their architectural design
+    and behavioral capabilities.
+  dimensions:
+  - id: D1
+    name: Agent cardinality
+    characteristics:
+    - id: D1.C1
+      name: Single-agent architecture
+    - id: D1.C2
+      name: Multi-agent architecture
+  - id: D2
+    name: External capability integration
+    characteristics:
+    - id: D2.C1
+      name: Predefined embodied skills
+    - id: D2.C2
+      name: Expert software tools
+    - id: D2.C3
+      name: Model hub experts
+    - id: D2.C4
+      name: No external toolset
+  - id: D3
+    name: Action-generation mechanism
+    characteristics:
+    - id: D3.C1
+      name: Option scoring
+    - id: D3.C2
+      name: Thought-action loop
+    - id: D3.C3
+      name: Task-graph orchestration
+    - id: D3.C4
+      name: Role-play dialogue
+    - id: D3.C5
+      name: Memory-conditioned generation
+  - id: D4
+    name: Memory architecture
+    characteristics:
+    - id: D4.C1
+      name: No explicit long-term memory
+    - id: D4.C2
+      name: Conversation history memory
+    - id: D4.C3
+      name: Structured dependency memory
+    - id: D4.C4
+      name: Reflective memory stream
+  - id: D5
+    name: Physical-world actuation
+    characteristics:
+    - id: D5.C1
+      name: No physical actuation
+    - id: D5.C2
+      name: Embodied robot actuation
+    - id: D5.C3
+      name: Cloud-lab actuation
+  notes:
+    format: prototype_v1
+empirical_object_mapping:
+  iteration: 3
+  objects:
+  - id: O1
+    name: SayCan
+    source_document: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language
+      in Robotic Affordances.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The system is described as one robot agent that plans and executes
+        skills for a user instruction.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Its external capabilities are a fixed repertoire of pretrained low-level
+        robotic skills with affordance/value functions.
+    - dimension_id: D3
+      characteristic_id: D3.C1
+      reasoning: The next action is chosen by scoring candidate skills with LLM likelihood
+        and affordance probability, then selecting the maximum.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The paper describes iterative skill selection using the current instruction
+        context and state, but not an explicit long-term memory store for accumulated
+        experiences.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The selected skills are executed by a mobile manipulator robot in
+        kitchen environments.
+  - id: O2
+    name: ChemCrow
+    source_document: bran et al 2023 - ChemCrow - Augmenting large-language models
+      with chemistry tools.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: ChemCrow is presented as one LLM-based chemistry agent using many
+        tools, not as multiple cooperating agents.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: Its core architecture augments the LLM with 18 chemistry-specific
+        and general software tools.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: It follows an iterative Thought, Action, Action Input, Observation
+        loop until a final answer is reached.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The paper emphasizes iterative reasoning with tool observations,
+        but does not describe an explicit persistent long-term memory architecture.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: The agent can execute syntheses through the cloud-connected RoboRXN
+        robotic chemistry platform.
+  - id: O3
+    name: CAMEL role-playing framework
+    source_document: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration
+      of Large Language Model Society.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: The framework centers on autonomous cooperation between at least
+        an AI user and an AI assistant, with optional task specifier and critic.
+    - dimension_id: D2
+      characteristic_id: D2.C4
+      reasoning: The described core framework relies on communicative agents and prompting
+        rather than external task-specific tools or model hubs.
+    - dimension_id: D3
+      characteristic_id: D3.C4
+      reasoning: Task solving occurs through structured role-play dialogue between
+        agents with instruction-following turns.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: The agents operate over the evolving message history and system prompts,
+        i.e., conversation history is the operative memory structure.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: The framework studies conversational cooperation and dataset generation,
+        not physical execution in robots or labs.
+  - id: O4
+    name: Generative Agents
+    source_document: Park et al 2023 - Generative Agents Interactive Simulacra of
+      Human Behavior.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: The system instantiates a society of 25 agents that interact with
+        one another in a shared environment.
+    - dimension_id: D2
+      characteristic_id: D2.C4
+      reasoning: The architecture extends an LLM with memory, reflection, and planning,
+        but not with external tools or expert model collections.
+    - dimension_id: D3
+      characteristic_id: D3.C5
+      reasoning: Behavior is generated from retrieved memories, reflections, and plans,
+        i.e., generation is conditioned on an explicit memory architecture.
+    - dimension_id: D4
+      characteristic_id: D4.C4
+      reasoning: The architecture includes a memory stream plus higher-level reflections
+        and plans stored back into memory.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: The agents act in a simulated sandbox world rather than controlling
+        physical robots or lab equipment.
+  - id: O5
+    name: HuggingGPT
+    source_document: shen et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and
+      its Friends in Hugging Face.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: HuggingGPT is presented as one LLM-powered controller that coordinates
+        model execution.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: Its architecture explicitly connects the LLM to expert models from
+        the Hugging Face model hub.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: It decomposes requests into structured tasks with ids and dependencies,
+        then orchestrates execution as a task graph.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The workflow maintains structured task ids, dependencies, and resource
+        references such as <resource>-task_id.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: The system executes AI models and returns multimodal outputs, but
+        not through direct physical-world actuation.
+current_taxonomy:
+  meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+  topic: Classification of autonomous AI agents based on their architectural design
+    and behavioral capabilities.
+  dimensions:
+  - id: D1
+    name: Agent cardinality
+    characteristics:
+    - id: D1.C1
+      name: Single-agent
+    - id: D1.C2
+      name: Multi-agent
+  - id: D2
+    name: External integration
+    characteristics:
+    - id: D2.C1
+      name: None
+    - id: D2.C2
+      name: Software tools
+    - id: D2.C3
+      name: Model hubs
+    - id: D2.C4
+      name: Embodied skills
+  - id: D3
+    name: Control pattern
+    characteristics:
+    - id: D3.C1
+      name: Option scoring
+    - id: D3.C2
+      name: Reason-act loop
+    - id: D3.C3
+      name: Task cycle
+    - id: D3.C4
+      name: Plan-execute
+    - id: D3.C5
+      name: Task graph
+    - id: D3.C6
+      name: Chat chain
+    - id: D3.C7
+      name: Memory-guided
+  - id: D4
+    name: Memory form
+    characteristics:
+    - id: D4.C1
+      name: None
+    - id: D4.C2
+      name: Context memory
+    - id: D4.C3
+      name: Task memory
+    - id: D4.C4
+      name: Reflective memory
+    - id: D4.C5
+      name: Retrieval memory
+    - id: D4.C6
+      name: Skill library
+  - id: D5
+    name: Adaptation mechanism
+    characteristics:
+    - id: D5.C1
+      name: None
+    - id: D5.C2
+      name: Interleaved reasoning
+    - id: D5.C3
+      name: Verbal reflection
+    - id: D5.C4
+      name: Replanning
+    - id: D5.C5
+      name: Execution iteration
+    - id: D5.C6
+      name: Evolutionary search
+    - id: D5.C7
+      name: Conversational coordination
+  - id: D6
+    name: Feedback source
+    characteristics:
+    - id: D6.C1
+      name: None
+    - id: D6.C2
+      name: Environment
+    - id: D6.C3
+      name: Inter-agent
+    - id: D6.C4
+      name: Expert
+  - id: D7
+    name: Task origin
+    characteristics:
+    - id: D7.C1
+      name: External tasks
+    - id: D7.C2
+      name: Self-generated tasks
+  - id: D8
+    name: Human involvement
+    characteristics:
+    - id: D8.C1
+      name: None
+    - id: D8.C2
+      name: Optional
+    - id: D8.C3
+      name: Augmented
+  - id: D9
+    name: Physical actuation
+    characteristics:
+    - id: D9.C1
+      name: None
+    - id: D9.C2
+      name: Robot actuation
+    - id: D9.C3
+      name: Cloud-lab actuation
+  notes:
+    format: prototype_v1
+current_object_mapping:
+  iteration: 3
+  objects:
+  - id: O1
+    name: SayCan
+    source_document: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language
+      in Robotic Affordances.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: SayCan is a single embodied agent controlling one robot rather than
+        a society of peer agents.
+    - dimension_id: D2
+      characteristic_id: D2.C4
+      reasoning: Its external capabilities are a predefined set of embodied robotic
+        skills with affordance models.
+    - dimension_id: D3
+      characteristic_id: D3.C1
+      reasoning: It selects the next action by scoring candidate skills using language-model
+        probabilities and affordances.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: No explicit persistent long-term memory architecture is central to
+        the system.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: The architecture does not emphasize a separate adaptation mechanism
+        such as reflection or replanning beyond action scoring.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Action selection depends on environmental state and affordance feedback
+        from the robot setting.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Tasks are given externally by user instructions.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: Normal execution does not require ongoing human participation.
+    - dimension_id: D9
+      characteristic_id: D9.C2
+      reasoning: The system executes actions through a physical mobile manipulator
+        robot.
+  - id: O2
+    name: ChemCrow
+    source_document: bran et al 2023 - ChemCrow - Augmenting large-language models
+      with chemistry tools.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: ChemCrow is one LLM-based agent using tools rather than multiple
+        interacting agents.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: It is built around invocation of expert software tools for chemistry
+        and related tasks.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Its operation follows a Thought/Action/Observation style reason-act
+        loop.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: No explicit persistent memory store is a defining architectural component.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The agent adapts by interleaving reasoning with tool actions and
+        observations.
+    - dimension_id: D6
+      characteristic_id: D6.C4
+      reasoning: Tool outputs and chemistry-specific analyses act as expert feedback.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Goals are externally provided by the user.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: The core agent loop is autonomous once prompted.
+    - dimension_id: D9
+      characteristic_id: D9.C3
+      reasoning: It can connect to the cloud-based RoboRXN laboratory platform for
+        physical experiment execution.
+  - id: O3
+    name: CAMEL role-playing framework
+    source_document: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration
+      of Large Language Model Society.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: CAMEL is explicitly based on multiple role-playing agents.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The core framework relies on prompting and agent communication rather
+        than external tool integration.
+    - dimension_id: D3
+      characteristic_id: D3.C6
+      reasoning: Task progress occurs through chained role-play conversation among
+        agents.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: The operative memory is mainly the ongoing conversational context.
+    - dimension_id: D5
+      characteristic_id: D5.C7
+      reasoning: Coordination and adaptation arise through conversation between specialized
+        roles.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: The immediate feedback source is inter-agent communication.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Tasks are externally specified.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: The standard framework does not require a human in the loop after
+        setup.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: The framework does not actuate physical systems.
+  - id: O4
+    name: Generative Agents
+    source_document: Park et al 2023 - Generative Agents Interactive Simulacra of
+      Human Behavior.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: The system contains a society of many interacting agents.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Its architecture centers on internal memory and planning rather than
+        external tool integration.
+    - dimension_id: D3
+      characteristic_id: D3.C7
+      reasoning: Behavior generation is primarily conditioned by retrieved memories,
+        reflections, and plans.
+    - dimension_id: D4
+      characteristic_id: D4.C4
+      reasoning: It uses a reflective memory stream with higher-level reflections
+        stored over time.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Reflection is the key adaptation mechanism shaping future behavior.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Agents adapt to the simulated environment and other observed events
+        in the world state.
+    - dimension_id: D7
+      characteristic_id: D7.C2
+      reasoning: Agents generate and pursue self-created plans and activities inside
+        the simulation.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: No human participation is required during normal operation.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: The environment is simulated, not physically actuated.
+  - id: O5
+    name: HuggingGPT
+    source_document: shen et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and
+      its Friends in Hugging Face.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: HuggingGPT uses a single controller agent orchestrating model calls.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: It integrates expert models from the Hugging Face model hub.
+    - dimension_id: D3
+      characteristic_id: D3.C5
+      reasoning: It decomposes tasks into a dependency graph and orchestrates execution
+        accordingly.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: The system maintains structured task and dependency state as task
+        memory.
+    - dimension_id: D5
+      characteristic_id: D5.C4
+      reasoning: It can revise execution when model outputs or dependencies require
+        re-planning of task flow.
+    - dimension_id: D6
+      characteristic_id: D6.C4
+      reasoning: Feedback comes from expert model outputs rather than only raw environment
+        state.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Tasks are user-provided.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: No ongoing human participation is required after task submission.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: The system does not perform physical-world actuation.
+  - id: O6
+    name: ReAct
+    source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+      Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: ReAct is a single LM-driven agent.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: It does not require a dedicated external tool architecture in its
+        core formulation.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Its defining control pattern is a reason-act loop.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: No persistent memory component is central to the architecture.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: Adaptation is achieved through interleaved reasoning and action.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: The agent updates behavior based on observations from the environment
+        or task interface.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Tasks are externally specified.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: The standard execution loop is autonomous.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: No physical actuation is involved.
+  - id: O7
+    name: Reflexion
+    source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+      Learning.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: Reflexion is a single agent architecture.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Its core architecture does not depend on external tool integration.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Operation is organized as repeated reason-act attempts.
+    - dimension_id: D4
+      characteristic_id: D4.C4
+      reasoning: Self-reflections are stored as a reflective memory for later trials.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Its defining adaptation mechanism is verbal self-reflection.
+    - dimension_id: D6
+      characteristic_id: D6.C4
+      reasoning: It can use evaluator or external performance signals that are best
+        captured as expert feedback.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Tasks are externally assigned.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: The core loop is autonomous.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: It does not act on physical systems.
+  - id: O8
+    name: Voyager
+    source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+      Language Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: Voyager is one embodied agent, not a multi-agent system.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Its architecture does not primarily center on external software tools,
+        model hubs, or fixed embodied skill libraries; generated code becomes internal
+        skills.
+    - dimension_id: D3
+      characteristic_id: D3.C4
+      reasoning: Its main loop plans tasks, executes generated code, and revises based
+        on outcomes.
+    - dimension_id: D4
+      characteristic_id: D4.C6
+      reasoning: A reusable skill library of executable programs is the central persistent
+        memory form.
+    - dimension_id: D5
+      characteristic_id: D5.C5
+      reasoning: The key adaptation mechanism is iterative execution, verification,
+        and refinement.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Learning is driven by embodied environment feedback and execution
+        results.
+    - dimension_id: D7
+      characteristic_id: D7.C2
+      reasoning: The automatic curriculum generates new tasks for the agent.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Human input can augment curriculum or critique.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: It acts in Minecraft, a simulated embodied environment rather than
+        the physical world.
+  - id: O9
+    name: AutoGen
+    source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via
+      Multi-Agent Conversation.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: AutoGen is explicitly a multi-agent conversation framework.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The framework itself is not defined by a fixed external integration
+        type; tool use is configurable rather than constitutive.
+    - dimension_id: D3
+      characteristic_id: D3.C6
+      reasoning: Its core control pattern is chained conversation among agents.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: It primarily relies on conversational context as memory.
+    - dimension_id: D5
+      characteristic_id: D5.C7
+      reasoning: Adaptation emerges through conversational coordination among agents.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: The main feedback source is inter-agent communication.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Tasks are normally externally initiated.
+    - dimension_id: D8
+      characteristic_id: D8.C2
+      reasoning: Human participation is optional via user proxy configurations.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: No physical actuation is intrinsic to the framework.
+  - id: O10
+    name: EUREKA
+    source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding
+      Large Language Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: EUREKA is a single agentic system.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Its core architecture does not depend on a dedicated external tool
+        or model-hub integration.
+    - dimension_id: D3
+      characteristic_id: D3.C4
+      reasoning: It iteratively proposes, executes, and revises reward code in a plan-execute
+        style loop.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: No distinct persistent memory form is central to the architecture.
+    - dimension_id: D5
+      characteristic_id: D5.C6
+      reasoning: Its defining adaptation mechanism is evolutionary search over candidate
+        reward programs.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Performance signals come from environment execution outcomes.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Problems are externally posed.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Human initialization or feedback can augment the process.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: The system does not directly actuate physical systems.
+  - id: O11
+    name: AutoGPT
+    source_document: Goola 2025 - Autonomous Intelligence - A Technical Analysis of
+      Self-Directing AI Systems and Their Enterprise Implementation.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: AutoGPT is typically framed as a single autonomous agent.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: It commonly integrates external software tools and services such
+        as search, browsing, or plugins.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Its control logic is a recurrent thought-action style reason-act
+        loop.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: It mainly retains conversational and execution context rather than
+        a richer persistent store.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Reflective self-critique is a common adaptation mechanism in AutoGPT-style
+        loops.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Runtime feedback comes largely from tool execution outcomes and environment
+        interaction.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Objectives are externally provided by the user.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: Standard execution is autonomous once started.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: No physical-world actuation is intrinsic.
+  - id: O12
+    name: BabyAGI
+    source_document: Goola 2025 - Autonomous Intelligence - A Technical Analysis of
+      Self-Directing AI Systems and Their Enterprise Implementation.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: BabyAGI is a single-agent architecture with internal modules.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Its canonical architecture does not depend on a special external
+        integration type.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: Its defining loop is create-prioritize-execute over a task list.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: It maintains a structured store of pending and completed tasks.
+    - dimension_id: D5
+      characteristic_id: D5.C4
+      reasoning: It adapts by reprioritizing and regenerating tasks, which is best
+        captured as replanning.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Task execution outcomes provide the feedback driving updates.
+    - dimension_id: D7
+      characteristic_id: D7.C2
+      reasoning: It generates new tasks from the objective and prior results.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: Human participation is not required during normal execution.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: It has no physical actuation.
+  - id: O13
+    name: Inner Monologue
+    source_document: Huang et al 2022 - Inner Monologue Embodied Reasoning through
+      Planning with Language Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The architecture centers on a single embodied agent.
+    - dimension_id: D2
+      characteristic_id: D2.C4
+      reasoning: It uses a repertoire of embodied skills as the main external capability
+        basis.
+    - dimension_id: D3
+      characteristic_id: D3.C4
+      reasoning: It follows a plan-execute loop updated by execution feedback.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: It mainly relies on accumulated prompt and interaction context rather
+        than a distinct persistent memory store.
+    - dimension_id: D5
+      characteristic_id: D5.C4
+      reasoning: A defining mechanism is replanning when feedback indicates failure
+        or mismatch.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Its main feedback source is environmental and execution-based.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Tasks are externally provided.
+    - dimension_id: D8
+      characteristic_id: D8.C3
+      reasoning: Human response signals may augment the feedback loop.
+    - dimension_id: D9
+      characteristic_id: D9.C2
+      reasoning: It is designed for embodied robotic execution.
+  - id: O14
+    name: ChatDev
+    source_document: Qian et al 2024 - ChatDev Communicative Agents for Software Development.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: ChatDev is explicitly a multi-agent architecture.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Its architecture is centered on role-based interaction rather than
+        a specific external integration type.
+    - dimension_id: D3
+      characteristic_id: D3.C6
+      reasoning: Its workflow is a staged chain of role-based chats.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: It preserves phase-structured development artifacts, best treated
+        as task memory.
+    - dimension_id: D5
+      characteristic_id: D5.C7
+      reasoning: Adaptation occurs through conversational coordination and clarification
+        across roles.
+    - dimension_id: D6
+      characteristic_id: D6.C3
+      reasoning: Inter-agent communication is the dominant feedback source.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Software tasks are externally specified.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: Standard execution does not require a human in the loop.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: No physical actuation is involved.
+  - id: O15
+    name: DEPS
+    source_document: Wang 2024 - Describe, Explain, Plan and Select- Interactive Planning
+      with Large Language Models Enables Open-World Multi-Task Agents.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: DEPS is a single integrated agent architecture.
+    - dimension_id: D2
+      characteristic_id: D2.C4
+      reasoning: It relies on selecting and executing skills/controllers as external
+        capabilities.
+    - dimension_id: D3
+      characteristic_id: D3.C4
+      reasoning: Its control logic repeatedly plans, executes, and updates the plan.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: No distinct persistent long-term store is central, so context memory
+        is the best fit.
+    - dimension_id: D5
+      characteristic_id: D5.C4
+      reasoning: A defining adaptation mechanism is replanning after failures or changed
+        observations.
+    - dimension_id: D6
+      characteristic_id: D6.C2
+      reasoning: Its loop is driven by environment state and execution outcomes.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Tasks are externally posed.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: Normal operation is autonomous.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: No physical-world actuation is intrinsic.
+  - id: O16
+    name: Auto-GPT with Additional Opinions
+    source_document: Yang et al 2023- Auto-GPT for Online Decision Making Benchmarks
+      and.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: The system remains a single agent with added advisory inputs.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: It retains an AutoGPT-style architecture with external services or
+        advisory components rather than no integration.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Its core control logic is still a thought-action style reason-act
+        loop.
+    - dimension_id: D4
+      characteristic_id: D4.C5
+      reasoning: The system includes long-term retrieval-style memory.
+    - dimension_id: D5
+      characteristic_id: D5.C3
+      reasoning: Reflective adjustment remains the best fit for its revision behavior.
+    - dimension_id: D6
+      characteristic_id: D6.C4
+      reasoning: Its distinctive added feedback source is expert-like additional opinions
+        from external models.
+    - dimension_id: D7
+      characteristic_id: D7.C1
+      reasoning: Objectives are externally given.
+    - dimension_id: D8
+      characteristic_id: D8.C1
+      reasoning: It operates without required human input during execution.
+    - dimension_id: D9
+      characteristic_id: D9.C1
+      reasoning: No physical actuation is involved.
+consolidator_changes_short:
+- Normalized dimension and characteristic names to concise noun phrases.
+- Synthesized A and B into 9 dimensions, keeping both shared and uniquely useful aspects.
+- Merged A's physical-world actuation as final dimension D9 because it adds architectural
+  discrimination missing in B.
+- Kept B's task origin and human involvement because they contribute behavioral differentiation
+  relevant to autonomous agents.
+- Merged overlapping action-generation and control dimensions into a single MECE control-pattern
+  dimension.
+- Merged memory architecture and memory form into a unified memory-form dimension.
+- Retained adaptation mechanism and feedback source from B as distinct dimensions
+  because they explain different aspects.
+- Dropped B's primary action form as redundant with control pattern and external integration.
+- Reassigned all objects to exactly one characteristic per dimension and filled coverage
+  gaps without N/A.
+- Renumbered final taxonomy and object IDs sequentially.
+validation_report:
+  structure_ok: true
+  structure_msg: 'Taxonomy structure is well-formed: 9 distinct dimensions (D1-D9),
+    each with defined characteristics, and all 16 objects are mapped to exactly one
+    characteristic in every dimension with no N/A assignments.'
+  objective_ending_conditions:
+  - id: OEC_01
+    name: Mutual Exclusivity
+    met: true
+    evidence: Each object has exactly one characteristic assigned per dimension across
+      D1-D9; no object is double-classified within a dimension in the provided mapping.
+  - id: OEC_02
+    name: Collective Exhaustiveness
+    met: true
+    evidence: All 16 objects (O1-O16) are classified in every dimension D1-D9, and
+      the consolidator explicitly states coverage gaps were filled without N/A. No
+      unmapped object/dimension combinations appear in the sample.
+  - id: OEC_03
+    name: No object merge/split
+    met: true
+    evidence: The iteration notes report renumbering of object IDs, but no object
+      merge or split is described; the object set remains 16 distinct systems/frameworks.
+  - id: OEC_04
+    name: No 'null' characteristics
+    met: false
+    evidence: 'Several characteristics have no assigned objects in the mapping: D8.C2
+      Optional is only used by O9, but D5.C1-D5.C7 all used? More importantly D6.C1
+      None has no objects assigned, and D8.C2/D8.C3 are used, but D4.C5 Retrieval
+      memory appears only once. The clear null characteristic is D6.C1 None with zero
+      objects.'
+  - id: OEC_05
+    name: No new dimensions/characteristics
+    met: false
+    evidence: The change log states the taxonomy was synthesized into 9 dimensions,
+      added D9 Physical actuation, kept some dimensions from B, and merged others
+      into new consolidated dimensions such as D3 Control pattern and D4 Memory form.
+      This indicates new dimensions/characteristics were introduced or newly consolidated
+      in this iteration.
+  - id: OEC_06
+    name: No dimension/characteristic merge/split
+    met: false
+    evidence: The change log explicitly says overlapping dimensions were merged into
+      D3 Control pattern, memory architecture and memory form were merged into D4,
+      and physical-world actuation was merged as D9. Therefore dimensions/characteristics
+      were merged in this iteration.
+  - id: OEC_07
+    name: Unique dimensions
+    met: true
+    evidence: 'The 9 dimensions are distinct by name and focus: Agent cardinality,
+      External integration, Control pattern, Memory form, Adaptation mechanism, Feedback
+      source, Task origin, Human involvement, and Physical actuation. No duplicated
+      dimension appears.'
+  - id: OEC_08
+    name: Unique characteristics
+    met: true
+    evidence: Within each dimension, characteristic labels are unique; for example
+      D3 contains seven different labels (Option scoring, Reason-act loop, Task cycle,
+      Plan-execute, Task graph, Chat chain, Memory-guided) with no repeated characteristic
+      names inside D3 or any other dimension.
+  - id: OEC_09
+    name: Unique cells
+    met: false
+    evidence: 'At least one full cell combination is repeated: O3 CAMEL and O9 AutoGen
+      share the same assignments on D1, D2, D3, D4, D5, D6, D7, and D9, differing
+      only on D8; additionally O6 ReAct and O16 Auto-GPT with Additional Opinions
+      overlap strongly but not fully. The taxonomy does not guarantee every object
+      occupies a unique full combination, and repeated or near-repeated cells remain
+      possible.'
+  subjective_ending_conditions:
+  - id: SEC_01
+    name: Concise
+    met: true
+    recommendation: Met. Nine dimensions is manageable for IS researchers and practitioners,
+      especially given the architectural focus and one-label-per-dimension design.
+      It is not minimal, but still usable without being unwieldy.
+  - id: SEC_02
+    name: Robust
+    met: true
+    recommendation: Met. The taxonomy differentiates important classes of modern LLM-based
+      agents such as single vs. multi-agent systems, reason-act vs. plan-execute vs.
+      chat-chain control, and memory/adaptation styles. It supports meaningful comparison
+      across systems like ReAct, Voyager, HuggingGPT, and CAMEL.
+  - id: SEC_03
+    name: Comprehensive
+    met: false
+    recommendation: Not met. The sample objects are fully mapped, but the empty characteristic
+      D6.C1 None suggests the feedback-source dimension may not yet reflect the actual
+      diversity of the domain. Also, some dimensions use broad residual-like categories
+      such as D2 None that may hide additional relevant distinctions for modern agent
+      architectures.
+  - id: SEC_04
+    name: Extendible
+    met: true
+    recommendation: Met. The dimensions are modular and expressed at a fairly stable
+      abstraction level, so new characteristics or dimensions could be added as the
+      field evolves. This is important for an emerging phenomenon like autonomous
+      AI agents.
+  - id: SEC_05
+    name: Explanatory
+    met: true
+    recommendation: Met. The dimensions explain how an agent is organized, how it
+      acts, how it adapts, where feedback comes from, and whether humans or physical
+      systems are involved. These are directly useful for comparing architectural
+      design choices rather than just application outcomes.
+  - id: SEC_06
+    name: Representative sample
+    met: true
+    recommendation: Met. The object set covers embodied agents, software-tool agents,
+      multi-agent conversation systems, task planners, memory-centric agents, and
+      self-generated-task systems. While some sources are secondary and the sample
+      leans toward prominent published exemplars, it is sufficiently diverse for the
+      target domain.
+  ending_conditions_met: false
+  summary_recommendation: 5 out of 9 OECs met, 5 out of 6 SECs met. Human review is
+    most needed to address null characteristics (especially D6.C1 None), confirm whether
+    OEC_09 should be assessed via full-cell duplication in the current sample, and
+    stabilize the taxonomy after this iteration because dimensions/characteristics
+    were still merged and newly consolidated. Another iteration should be run before
+    declaring the taxonomy finished.
+  event_log:
+  - 'Structure validated: taxonomy contains 9 dimensions with complete object mappings
+    for 16 objects.'
+  - 'Objective ending condition OEC_01 met: every object has exactly one characteristic
+    assignment in each dimension.'
+  - 'Objective ending condition OEC_02 met: all sample objects are classifiable in
+    all dimensions and no N/A assignments were used.'
+  - 'Objective ending condition OEC_03 met: iteration notes mention renumbering only,
+    not object merge or split.'
+  - 'Objective ending condition OEC_04 not met: characteristic D6.C1 None has no assigned
+    objects, indicating a null characteristic.'
+  - 'Objective ending condition OEC_05 not met: change log states the taxonomy was
+    synthesized into 9 dimensions and includes newly consolidated dimensions such
+    as D3, D4, and D9.'
+  - 'Objective ending condition OEC_06 not met: change log explicitly reports merges
+    of overlapping dimensions and characteristics.'
+  - 'Objective ending condition OEC_07 met: all dimension names and conceptual scopes
+    are distinct.'
+  - 'Objective ending condition OEC_08 met: characteristic labels are unique within
+    each dimension.'
+  - 'Objective ending condition OEC_09 not met: repeated or insufficiently differentiated
+    cells remain possible; CAMEL and AutoGen are near-identical across most dimensions
+    and the taxonomy does not clearly ensure unique full combinations.'
+  - 'Subjective ending condition SEC_01 met: 9 dimensions is concise enough for comparison
+    purposes.'
+  - 'Subjective ending condition SEC_02 met: taxonomy supports meaningful differentiation
+    among major autonomous agent architectures.'
+  - 'Subjective ending condition SEC_03 not met: empty characteristic D6.C1 and broad
+    categories suggest exhaustiveness/completeness still need refinement.'
+  - 'Subjective ending condition SEC_04 met: modular dimensions support future extension.'
+  - 'Subjective ending condition SEC_05 met: taxonomy explains architectural and behavioral
+    differences relevant to researchers and practitioners.'
+  - 'Subjective ending condition SEC_06 met: sample spans diverse modern LLM-based
+    autonomous agent types.'
+  iteration: 3
+consolidator_reasoning_long: 'I first validated Taxonomy A structurally. Taxonomy
+  A is relatively coherent and already close to the target topic, but it is incomplete
+  as a synthesis candidate because it covers only five dimensions and omits several
+  behaviorally relevant aspects captured in Taxonomy B, notably adaptation, feedback,
+  task origin, and human involvement. Its names were somewhat verbose, so I minimally
+  normalized them to concise noun phrases in the merged result. Taxonomy A also had
+  one potential structural weakness: its dimension ''Action-generation mechanism''
+  mixed execution styles that are partly control patterns and partly generation bases.
+  Taxonomy B had a similar but not identical issue because ''Control pattern'' and
+  ''Primary action form'' partly overlap. In synthesis, I resolved this by preserving
+  a single dimension ''Control pattern'' and dropping ''Primary action form'' as redundant.
+  This improves explanatory power and MECE compliance because action form such as
+  text, code, skill, or message often co-occurs with different control logics and
+  therefore does not force exactly one characteristic per object without arbitrary
+  choices. By contrast, control pattern can be defined around the primary execution
+  logic of the architecture.
+
+
+  I compared both taxonomies side by side. ''Agent cardinality'' was shared and retained
+  directly. Taxonomy A''s ''External capability integration'' contributed important
+  architectural information absent from B, especially distinctions among no integration,
+  software tools, model hubs, and embodied skills. This is highly relevant to AI agent
+  architecture, so it was retained in normalized form as ''External integration''.
+  Taxonomy A''s ''Physical-world actuation'' was also retained because it materially
+  differentiates architectures such as SayCan, ChemCrow, and Inner Monologue from
+  purely digital agents. This dimension clearly derives from the meta-characteristic
+  and is useful for researchers and practitioners evaluating agent designs. Taxonomy
+  B''s ''Adaptation mechanism'', ''Feedback source'', ''Task origin'', and ''Human
+  involvement'' each add nonredundant behavioral distinctions and were therefore retained.
+  ''Task origin'' is particularly useful for distinguishing agents like Voyager, BabyAGI,
+  and Generative Agents from externally tasked systems. ''Human involvement'' remains
+  relevant because practitioner evaluation often depends on whether a system is fully
+  autonomous, optionally interactive, or explicitly augmented.
+
+
+  For memory, Taxonomy A and B both had useful but partially overlapping dimensions.
+  A distinguished no memory, conversation history, structured dependency memory, and
+  reflective memory stream. B distinguished none, context memory, reflective memory,
+  task memory, phase memory, retrieval memory, and skill library. I synthesized these
+  into one memory dimension with six characteristics: None, Context memory, Task memory,
+  Reflective memory, Retrieval memory, and Skill library. ''Phase memory'' from B
+  was excluded as a separate characteristic because it is too specific and can be
+  subsumed under task memory without loss of classificatory power. ''Structured dependency
+  memory'' from A maps naturally into task memory. This preserves MECE better than
+  keeping multiple overlapping memory subtypes that are difficult to separate in practice.
+
+
+  For control logic, I merged A''s ''Action-generation mechanism'' with B''s ''Control
+  pattern''. I retained the following characteristics because each captures a meaningfully
+  distinct primary architecture style: Option scoring, Reason-act loop, Task cycle,
+  Plan-execute, Task graph, Chat chain, and Memory-guided. ''Role-play dialogue''
+  from A was merged into ''Chat chain'' because both describe multi-turn conversational
+  coordination as the primary execution logic. ''Memory-conditioned generation'' from
+  A became ''Memory-guided'', capturing architectures like Generative Agents whose
+  generation is driven mainly by memory retrieval and reflection rather than standard
+  task decomposition or thought-action sequencing. This merged dimension is more complete
+  than either input alone.
+
+
+  I excluded Taxonomy B''s ''Primary action form'' despite evaluating all its characteristics.
+  The exclusion is justified because its categories are not cleanly MECE in this context.
+  An architecture may simultaneously use code actions, text actions, and message actions,
+  or embodied skill actions plus textual reasoning. Keeping this dimension would either
+  force arbitrary primary assignments or require hybrid categories that would inflate
+  complexity. The same discriminative information is captured more rigorously by combining
+  external integration, control pattern, and physical actuation. Thus the exclusion
+  improves coherence and avoids redundancy.
+
+
+  I retained Taxonomy B''s ''Adaptation mechanism'' and ''Feedback source'' as separate
+  dimensions because they explain different aspects. Adaptation mechanism describes
+  how the system changes behavior, whereas feedback source describes where the signal
+  comes from. For example, Reflexion uses verbal reflection as adaptation but may
+  consume external evaluator feedback; AutoGen uses conversational coordination and
+  inter-agent feedback; EUREKA uses evolutionary search and environment feedback.
+  These are not redundant.
+
+
+  I validated all objects against the meta-characteristic. All retained objects are
+  modern, predominantly LLM-based agent systems or frameworks published after 2020
+  and are not mere evaluation tools. I kept doubtful but plausible cases in accordance
+  with the instruction to retain doubtful cases. EUREKA is specialized, but it still
+  qualifies as an agentic architecture rather than a benchmark. AutoGPT and BabyAGI
+  were retained despite weaker source grounding in the provided mapping because the
+  objects themselves are unquestionably within scope. ''Auto-GPT with Additional Opinions''
+  was assessed for duplication against AutoGPT. I did not merge them because the provided
+  description indicates a distinct architectural variant with additional advisory
+  feedback and retrieval memory. No other exact duplicates across A and B were present.
+
+
+  I then rebuilt all object mappings against the final taxonomy. Every object was
+  assigned exactly one characteristic per dimension. Where original assignments from
+  A or B became incompatible after synthesis, I re-evaluated them using the strongest
+  available reasoning. For example, HuggingGPT''s original structured dependency memory
+  was mapped to Task memory; SayCan''s robotic skills map to Embodied skills; CAMEL
+  and AutoGen were mapped to Chat chain and Conversational coordination; Generative
+  Agents was mapped to Memory-guided control and Reflective memory; Voyager was mapped
+  to Skill library memory and Self-generated tasks. For objects like SayCan, where
+  no explicit adaptation mechanism beyond core action scoring is central, I used the
+  residual characteristic ''None'' in the adaptation dimension to maintain collective
+  exhaustiveness without N/A. This residual is conceptually justified and avoids inventing
+  unsupported adaptation processes.
+
+
+  The final taxonomy stays within the 9-dimension limit and is internally consistent.
+  Each dimension is unique and nonredundant. Within each dimension, the characteristics
+  are intended to be mutually exclusive by classifying only the primary architectural
+  attribute. They are collectively exhaustive for the retained object set, with residual
+  categories such as ''None'' where necessary. All final mapping references correspond
+  to existing dimension and characteristic IDs, and every retained object has exactly
+  one mapping for each dimension. The result synthesizes the best explanatory elements
+  from both inputs while removing overlaps that would reduce clarity for Information
+  Systems researchers and practitioners comparing autonomous AI agent architectures.'
+empirical_reasoning_long: 'I followed an empirical-to-conceptual procedure anchored
+  strictly in the five provided sources and the stated object class: modern, predominantly
+  LLM-based autonomous agent systems/frameworks published after 2020 that exhibit
+  autonomous, goal-directed behavior. I first identified concrete objects that are
+  clearly instances of this class and are sufficiently distinct at the system level:
+  SayCan, ChemCrow, CAMEL role-playing, Generative Agents, and HuggingGPT. I excluded
+  subcomponents, baselines, datasets, and evaluation methods because they are not
+  themselves autonomous agent architectures of the target class. Each selected object
+  is explicitly described in one source document as an autonomous system or framework
+  that takes a goal or user request and proceeds with limited or minimal further human
+  intervention.
+
+
+  I then derived differentiating characteristics only where the sources showed meaningful
+  variation across objects. I avoided adding dimensions that would be universal, weakly
+  supported, or mainly evaluative. For example, all objects are LLM-based, so that
+  would not discriminate. Likewise, domains such as robotics, chemistry, social simulation,
+  and multimodal AI were present, but domain itself is not the requested focus; instead,
+  I extracted architectural properties that explain those systems’ differences.
+
+
+  Dimension D1, Agent cardinality, emerged directly from the empirical contrast between
+  systems centered on one autonomous controller or agent (SayCan, ChemCrow, HuggingGPT)
+  and systems whose core architecture depends on multiple interacting agents (CAMEL,
+  Generative Agents). This dimension is concise, non-overlapping with others, and
+  relevant to both researchers and practitioners comparing agent architectures.
+
+
+  Dimension D2, External capability integration, captures how the agent extends its
+  action capabilities beyond the base LLM. The sources support four distinct forms.
+  SayCan grounds planning in pretrained embodied skills; ChemCrow augments reasoning
+  with chemistry and general software tools; HuggingGPT routes tasks to external expert
+  models from a model hub; CAMEL and Generative Agents, in the described core forms,
+  rely on prompt-based or architectural mechanisms without an external tool/model
+  set. I kept these characteristics separate because the sources describe them as
+  materially different integration patterns: skill repertoires, callable tools, model-hub
+  experts, and no such external capability layer.
+
+
+  Dimension D3, Action-generation mechanism, was derived from the distinct control
+  logics used to produce next actions or behaviors. SayCan uses option scoring over
+  candidate skills by combining LLM and affordance scores. ChemCrow uses a ReAct-style
+  thought-action-observation loop. HuggingGPT uses task decomposition and dependency-aware
+  orchestration. CAMEL relies on role-play dialogue between agents. Generative Agents
+  produce actions through memory-conditioned planning and reaction. These are all
+  directly named or clearly described mechanisms in the sources, and each object fits
+  exactly one of them. I did not merge them because doing so would lose explanatory
+  value for architecture comparison.
+
+
+  Dimension D4, Memory architecture, was included because the sources show substantive
+  architectural differences in how prior information is stored and reused. Generative
+  Agents has the richest explicit memory architecture: memory stream, retrieval, reflection,
+  and plans. CAMEL depends on conversation history and system prompts across turns.
+  HuggingGPT maintains structured task, dependency, and resource references across
+  stages. SayCan and ChemCrow, as described in the selected papers, do not define
+  an explicit long-term memory module; they operate iteratively with current instruction/state
+  or current reasoning trace, but no dedicated persistent memory architecture is presented
+  as a core component. I therefore used “No explicit long-term memory” rather than
+  inventing finer distinctions unsupported by the sources. This dimension remains
+  non-overlapping with D3: D3 is about how actions are generated, D4 about how prior
+  information is represented and carried forward.
+
+
+  Dimension D5, Physical-world actuation, was supported because the sources clearly
+  distinguish systems that remain digital/simulated from those that can trigger real-world
+  execution. SayCan actuates a physical robot. ChemCrow can launch syntheses on a
+  cloud-connected robotic lab. CAMEL, Generative Agents, and HuggingGPT do not directly
+  actuate physical systems in their described implementations. I retained separate
+  characteristics for embodied robot actuation and cloud-lab actuation because the
+  sources describe these as distinct physical execution settings with different interfaces
+  and constraints.
+
+
+  For object mapping, I assigned each object to exactly one characteristic per dimension,
+  ensuring MECE within each dimension. I checked whether any mapping gap required
+  adding a new characteristic before considering N/A. No N/A was necessary because
+  every object could be assigned cleanly under all five dimensions. I also verified
+  that every characteristic is used by at least one object: D1.C1 by SayCan/ChemCrow/HuggingGPT;
+  D1.C2 by CAMEL/Generative Agents; D2.C1 by SayCan; D2.C2 by ChemCrow; D2.C3 by HuggingGPT;
+  D2.C4 by CAMEL/Generative Agents; D3.C1 by SayCan; D3.C2 by ChemCrow; D3.C3 by HuggingGPT;
+  D3.C4 by CAMEL; D3.C5 by Generative Agents; D4.C1 by SayCan/ChemCrow; D4.C2 by CAMEL;
+  D4.C3 by HuggingGPT; D4.C4 by Generative Agents; D5.C1 by CAMEL/Generative Agents/HuggingGPT;
+  D5.C2 by SayCan; D5.C3 by ChemCrow.
+
+
+  Analytically, I stayed conservative. I did not introduce dimensions such as autonomy
+  level, prompting style, interpretability, safety mechanism, environment type, or
+  learning paradigm because the available material either did not support stable MECE
+  characteristics across all objects or would have produced overlapping or weakly
+  grounded constructs. For instance, prompting styles vary, but they are often tied
+  to the action-generation mechanism and not consistently separable across all cases.
+  Likewise, safety appears in ChemCrow and as discussion in other papers, but not
+  as a common differentiating architectural variable across all objects.
+
+
+  A limitation of this taxonomy is that it is derived from a small empirical set spanning
+  quite different application settings. Accordingly, it is intentionally parsimonious
+  and focused on the most robust architectural distinctions that recur across these
+  sources. It structures the phenomenon without claiming completeness for the broader
+  post-2020 LLM-agent landscape. As more empirical cases are added, future extension
+  could elaborate additional dimensions if and only if new sources consistently support
+  them without restructuring the present dimensions.'
+event_log:
+- agent: consolidator
+  iteration: 1
+  event: Validated taxonomy against the meta-characteristic and retained only in-scope
+    architectural dimensions.
+- agent: consolidator
+  iteration: 1
+  event: Normalized characteristic names to concise noun phrases.
+- agent: consolidator
+  iteration: 1
+  event: Retained seven dimensions because they are distinct and non-redundant.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed D1 Agent cardinality is MECE for the current object set.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed D2 Execution organization is used as a primary-pattern dimension
+    to preserve exclusivity.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed D3 Feedback closure is mutually exclusive and exhaustive.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed D4 Primary feedback source is distinct from feedback closure and
+    captures origin of runtime signals.
+- agent: consolidator
+  iteration: 1
+  event: Retained D5.C5 Unspecified to satisfy exhaustiveness for systems without
+    explicit memory architecture.
+- agent: consolidator
+  iteration: 1
+  event: Renamed D6 from Planning revision mechanism to Revision mechanism for brevity.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed D6 characteristics are interpreted as primary revision logic to
+    preserve exclusivity.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed D7 Action grounding captures the dominant action interface per
+    object.
+- agent: consolidator
+  iteration: 1
+  event: Validated AutoGPT as in scope and retained it.
+- agent: consolidator
+  iteration: 1
+  event: Validated BabyAGI as in scope and retained it.
+- agent: consolidator
+  iteration: 1
+  event: Validated Inner Monologue as in scope and retained it.
+- agent: consolidator
+  iteration: 1
+  event: Validated ChatDev as in scope and retained it.
+- agent: consolidator
+  iteration: 1
+  event: Validated DEPS as in scope and retained it.
+- agent: consolidator
+  iteration: 1
+  event: Validated Auto-GPT styled agent with Additional Opinions as in scope and
+    retained it.
+- agent: consolidator
+  iteration: 1
+  event: Checked duplicate risk between AutoGPT and Auto-GPT styled agent with Additional
+    Opinions and did not merge them.
+- agent: consolidator
+  iteration: 1
+  event: Verified every object has exactly one mapping per final dimension.
+- agent: consolidator
+  iteration: 1
+  event: Verified all referenced dimension IDs and characteristic IDs exist in the
+    final taxonomy.
+- agent: consolidator
+  iteration: 1
+  event: No object removals were necessary.
+- agent: consolidator
+  iteration: 1
+  event: No object merges were necessary.
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''AutoGPT'' -> retained — Within scope as a modern autonomous
+    LLM-based agent architecture. No duplicate detected. All assignments are plausible
+    after terminology normalization.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''BabyAGI'' -> retained — Within scope as a post-2020
+    autonomous LLM-based agent framework. No duplicate detected. Mapping is internally
+    consistent.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''Inner Monologue'' -> retained — Within scope as a post-2020
+    autonomous agent system with embodied closed-loop planning. Although not purely
+    software-only, it matches the meta-characteristic and object class.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''ChatDev'' -> retained — Within scope as a modern multi-agent
+    LLM-based framework exhibiting autonomous goal-directed behavior. No duplicate
+    detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''DEPS'' -> retained — Within scope as a modern LLM-based
+    autonomous agent architecture. No duplicate detected. Assignments are plausible.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''Auto-GPT styled agent with Additional Opinions'' ->
+    retained — Retained as an in-scope agent architecture variant rather than a benchmark
+    alone. It is sufficiently system-like and not a duplicate of AutoGPT because the
+    added expert-opinion mechanism materially changes the architecture.'
+- agent: validator
+  iteration: 1
+  event: 'Structure check passed: taxonomy contains 7 dimensions with defined characteristics
+    and complete object mappings.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_01 met: each object has exactly one characteristic
+    per dimension in the provided mapping.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_02 met: all objects are classified across
+    D1-D7 and no ''N/A'' mappings appear.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_03 met: no object merge or split is evidenced
+    in iteration 1.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_04 not met: some characteristics are null,
+    including D3.C1 Open-loop and D4.C1 None with no assigned objects.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_05 not met: user states all dimensions and
+    characteristics are new in iteration 1.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_06 met: no dimension or characteristic merge/split
+    is reported.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_07 met: dimensions are distinct and non-duplicative.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_08 met: characteristics are unique within
+    each dimension.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_09 met: no two objects share an identical
+    full cell combination.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_01 met: 7 dimensions are manageable and
+    not overly unwieldy.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_02 met: taxonomy differentiates several
+    meaningful agent architecture types.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_03 not met: comprehensiveness is limited
+    by sparse coverage and use of ''Unspecified'' memory.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_04 met: modular dimensions make future extension
+    feasible.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_05 met: dimensions explain salient architectural
+    and behavioral properties.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_06 not met: sample is too small and somewhat
+    biased toward a few prominent agent patterns.'
+- agent: validator
+  iteration: 1
+  event: 'Final validation decision: ending conditions not met because not all objective
+    ending conditions are satisfied.'
+- agent: validator
+  iteration: 1
+  event: 'Summary: 7 out of 9 OECs met, 4 out of 6 SECs met. Human review is most
+    needed to address null characteristics (e.g., D3.C1 and D4.C1 unused), validate
+    whether iteration-1 dimensions/characteristics should be retained in later rounds,
+    and expand the object sample to test exhaustiveness and representativeness for
+    modern LLM-based agents. Another iteration should be run.'
+- agent: consolidator
+  iteration: 2
+  event: Validated Taxonomy A structure — IDs were consistent and all dimensions were
+    relevant to the meta-characteristic.
+- agent: consolidator
+  iteration: 2
+  event: Compared Taxonomy A and B dimension by dimension without granting priority
+    to either input.
+- agent: consolidator
+  iteration: 2
+  event: Retained Agent cardinality from both taxonomies with normalized characteristic
+    names.
+- agent: consolidator
+  iteration: 2
+  event: Merged Taxonomy B Execution organization with relevant architectural insights
+    into final dimension Control pattern.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy A Primary action representation concept and merged in useful
+    distinctions from Taxonomy B Action grounding.
+- agent: consolidator
+  iteration: 2
+  event: Dropped Taxonomy B Feedback closure — too coarse and largely derivable from
+    adaptation mechanism and feedback source.
+- agent: consolidator
+  iteration: 2
+  event: Merged Taxonomy A Improvement mechanism and Taxonomy B Revision mechanism
+    into Adaptation mechanism.
+- agent: consolidator
+  iteration: 2
+  event: Created Feedback source from Taxonomy B Primary feedback source because it
+    adds explanatory power absent in A.
+- agent: consolidator
+  iteration: 2
+  event: Merged Taxonomy A Persistent knowledge store and Taxonomy B Memory form into
+    final Memory form dimension.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy A Task generation mode as Task origin.
+- agent: consolidator
+  iteration: 2
+  event: Retained Taxonomy A Human involvement mode as Human involvement with normalized
+    labels.
+- agent: consolidator
+  iteration: 2
+  event: Dropped standalone Taxonomy B Action grounding — distinctions absorbed into
+    Primary action form.
+- agent: consolidator
+  iteration: 2
+  event: Normalized dimension names to concise noun phrases.
+- agent: consolidator
+  iteration: 2
+  event: Normalized characteristic names to concise noun phrases.
+- agent: consolidator
+  iteration: 2
+  event: Renumbered final dimensions sequentially D1 to D8.
+- agent: consolidator
+  iteration: 2
+  event: Renumbered characteristics sequentially within each dimension.
+- agent: consolidator
+  iteration: 2
+  event: Retained ReAct — in scope and mapping plausible.
+- agent: consolidator
+  iteration: 2
+  event: Retained Reflexion — in scope and mapping plausible.
+- agent: consolidator
+  iteration: 2
+  event: Retained VOYAGER and normalized name to Voyager.
+- agent: consolidator
+  iteration: 2
+  event: Retained AutoGen — in scope as multi-agent LLM framework.
+- agent: consolidator
+  iteration: 2
+  event: Retained EUREKA — in scope as autonomous LLM-based agentic system.
+- agent: consolidator
+  iteration: 2
+  event: Retained AutoGPT — in scope and not duplicated in Taxonomy A.
+- agent: consolidator
+  iteration: 2
+  event: Retained BabyAGI — in scope and not duplicated in Taxonomy A.
+- agent: consolidator
+  iteration: 2
+  event: Retained Inner Monologue — in scope as post-2020 LLM-based embodied agent.
+- agent: consolidator
+  iteration: 2
+  event: Retained ChatDev — in scope as multi-agent autonomous architecture.
+- agent: consolidator
+  iteration: 2
+  event: Retained DEPS — in scope as autonomous planning agent.
+- agent: consolidator
+  iteration: 2
+  event: Retained Auto-GPT styled agent with Additional Opinions and normalized name
+    to Auto-GPT with Additional Opinions.
+- agent: consolidator
+  iteration: 2
+  event: Did not merge AutoGPT with Auto-GPT with Additional Opinions — treated as
+    distinct architectural variant.
+- agent: consolidator
+  iteration: 2
+  event: Reassigned Voyager from code-centric category to Plan-execute loop for control
+    pattern after synthesis.
+- agent: consolidator
+  iteration: 2
+  event: Mapped AutoGen and ChatDev to Message actions because conversational exchange
+    is their primary operational form.
+- agent: consolidator
+  iteration: 2
+  event: Mapped BabyAGI to Self-generated tasks because it creates new tasks from
+    prior results.
+- agent: consolidator
+  iteration: 2
+  event: Mapped ReAct to Environment feedback because execution outcomes inform subsequent
+    steps.
+- agent: consolidator
+  iteration: 2
+  event: Added None characteristic to Feedback source to preserve exhaustiveness for
+    future objects.
+- agent: consolidator
+  iteration: 2
+  event: Added None characteristic to Memory form to preserve exhaustiveness for agents
+    without persistent stores.
+- agent: consolidator
+  iteration: 2
+  event: Verified every final object has exactly one characteristic per dimension.
+- agent: consolidator
+  iteration: 2
+  event: Verified all mapping references correspond to existing final dimension and
+    characteristic IDs.
+- agent: consolidator
+  iteration: 2
+  event: Checked MECE condition and defined dimensions by dominant architectural attribute
+    where overlap could occur.
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''ReAct'' -> retained — In scope as a modern post-2020
+    LLM-based autonomous agent architecture; mappings were plausible and retained
+    with minor normalization to the synthesized dimensions.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Reflexion'' -> retained — In scope as a post-2020 LLM-based
+    autonomous agent system with explicit self-improvement; mappings retained and
+    adapted to the merged taxonomy.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''VOYAGER'' -> retained_renamed — In scope and retained;
+    normalized name to ''Voyager'' for consistency while preserving the same entity.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''AutoGen'' -> retained — In scope as a modern multi-agent
+    LLM framework with autonomous interaction patterns; mapping adjusted to synthesized
+    dimensions.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''EUREKA'' -> retained — In scope as a modern LLM-based
+    autonomous system focused on reward generation and iterative improvement; mapping
+    normalized to merged dimensions.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''AutoGPT'' -> retained — In scope as a commonly cited
+    autonomous LLM agent architecture; no duplicate found in Taxonomy A.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''BabyAGI'' -> retained — In scope as a task-generating
+    autonomous agent architecture; no duplicate found in Taxonomy A.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Inner Monologue'' -> retained — In scope as a post-2020
+    LLM-based embodied autonomous agent architecture.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''ChatDev'' -> retained — In scope as a multi-agent autonomous
+    software-development architecture based on LLM communication.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''DEPS'' -> retained — In scope as an LLM-based autonomous
+    planning agent architecture.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Auto-GPT styled agent with Additional Opinions'' ->
+    retained_renamed — Kept as an in-scope variant of Auto-GPT augmented with external
+    opinions; renamed to ''Auto-GPT with Additional Opinions'' for concise normalization.
+    Not merged with AutoGPT because the source describes a distinct architectural
+    variant.'
+- agent: validator
+  iteration: 2
+  event: 'Structure check passed: taxonomy contains 8 dimensions with characteristics
+    and all 11 objects are mapped across all 8 dimensions.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_01 not met: dimensions D4 and D6 contain
+    conceptually overlapping characteristics that weaken mutual exclusivity.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_02 not met: all sampled objects are classifiable,
+    but broader domain exhaustiveness is doubtful in D5 and D8 due to forced single-choice
+    categories.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_03 met: change log reports no object merge
+    or split in this iteration.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_04 not met: D5.C1 ''None'' has no assigned
+    objects, creating a null characteristic.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_05 not met: this iteration synthesized and
+    normalized the final 8 dimensions and characteristics, so new/reworked elements
+    were introduced.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_06 not met: change log explicitly states
+    dimensions/characteristics were merged and absorbed.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_07 met: all 8 dimension names are unique.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_08 met: characteristics are unique within
+    each dimension.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_09 met: no duplicate full characteristic
+    profiles are present among O1-O11.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_01 met: 8 dimensions provide a concise but
+    usable taxonomy.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_02 met: taxonomy differentiates major architecture
+    patterns across the sample.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_03 not met: comprehensiveness is limited
+    by coarse or forced categories, especially for hybrid agents.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_04 met: modular structure supports future
+    extension.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_05 met: dimensions explain architectural
+    and behavioral differences relevant to comparison.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_06 met: sample is reasonably diverse though
+    somewhat skewed toward prominent academic exemplars.'
+- agent: validator
+  iteration: 2
+  event: 'Summary: 5 out of 9 OECs met, 5 out of 6 SECs met. The main issues needing
+    human attention are resolving overlap and forced single-choice assignments in
+    D4/D5/D6/D8, removing or populating the null characteristic D5.C1 (''None''),
+    and accounting for the fact that dimensions/characteristics were still merged
+    and introduced this iteration. Another iteration should be run before declaring
+    the taxonomy complete.'
+- agent: consolidator
+  iteration: 3
+  event: Validated Taxonomy A structure and found it broadly coherent but incomplete
+    relative to the topic.
+- agent: consolidator
+  iteration: 3
+  event: Normalized verbose names to concise noun phrases in the merged taxonomy.
+- agent: consolidator
+  iteration: 3
+  event: Retained Agent cardinality because both taxonomies include it and it is central
+    to architecture comparison.
+- agent: consolidator
+  iteration: 3
+  event: Retained External capability integration from Taxonomy A as External integration
+    because it adds architectural discrimination absent from B.
+- agent: consolidator
+  iteration: 3
+  event: Merged Taxonomy A Action-generation mechanism with Taxonomy B Control pattern
+    into final dimension Control pattern.
+- agent: consolidator
+  iteration: 3
+  event: Characteristic Role-play dialogue merged into Chat chain due to overlapping
+    conversational execution logic.
+- agent: consolidator
+  iteration: 3
+  event: Characteristic Memory-conditioned generation transformed into Memory-guided
+    within Control pattern.
+- agent: consolidator
+  iteration: 3
+  event: Dropped Taxonomy B Primary action form because it overlapped with Control
+    pattern and violated clean MECE boundaries.
+- agent: consolidator
+  iteration: 3
+  event: Merged Taxonomy A Memory architecture with Taxonomy B Memory form into final
+    dimension Memory form.
+- agent: consolidator
+  iteration: 3
+  event: Characteristic Structured dependency memory merged into Task memory.
+- agent: consolidator
+  iteration: 3
+  event: Characteristic Phase memory excluded as a separate class and subsumed under
+    Task memory.
+- agent: consolidator
+  iteration: 3
+  event: Retained Adaptation mechanism from Taxonomy B as a distinct behavioral dimension.
+- agent: consolidator
+  iteration: 3
+  event: Retained Feedback source from Taxonomy B as a distinct dimension separate
+    from Adaptation mechanism.
+- agent: consolidator
+  iteration: 3
+  event: Retained Task origin from Taxonomy B because self-generated versus externally
+    assigned goals is behaviorally informative.
+- agent: consolidator
+  iteration: 3
+  event: Retained Human involvement from Taxonomy B because autonomy level and human
+    augmentation matter for practitioner comparison.
+- agent: consolidator
+  iteration: 3
+  event: Retained Physical-world actuation from Taxonomy A as Physical actuation because
+    it captures embodied versus digital architectures.
+- agent: consolidator
+  iteration: 3
+  event: Added residual characteristic None to Adaptation mechanism to ensure collective
+    exhaustiveness.
+- agent: consolidator
+  iteration: 3
+  event: Reassigned SayCan adaptation from implicit control behavior to None because
+    no distinct adaptation mechanism is central.
+- agent: consolidator
+  iteration: 3
+  event: Reassigned ChemCrow feedback to Expert because tool outputs are expert-system
+    feedback rather than pure environment state.
+- agent: consolidator
+  iteration: 3
+  event: Mapped HuggingGPT memory to Task memory after merging structured dependency
+    memory into Task memory.
+- agent: consolidator
+  iteration: 3
+  event: Mapped CAMEL and AutoGen control to Chat chain after merging dialogue-based
+    categories.
+- agent: consolidator
+  iteration: 3
+  event: Mapped Generative Agents control to Memory-guided because memory retrieval
+    and reflection drive action selection.
+- agent: consolidator
+  iteration: 3
+  event: Mapped Voyager memory to Skill library because reusable learned skills are
+    its central persistent store.
+- agent: consolidator
+  iteration: 3
+  event: Mapped BabyAGI control to Task cycle because create-prioritize-execute is
+    its defining loop.
+- agent: consolidator
+  iteration: 3
+  event: Mapped Inner Monologue and DEPS external integration to Embodied skills because
+    both rely on skill/controller repertoires.
+- agent: consolidator
+  iteration: 3
+  event: Assessed AutoGPT and Auto-GPT with Additional Opinions for duplication and
+    retained them as distinct because the latter is an architectural variant with
+    added opinions and retrieval memory.
+- agent: consolidator
+  iteration: 3
+  event: Retained EUREKA despite specialization because it is an autonomous agentic
+    system, not a benchmark tool.
+- agent: consolidator
+  iteration: 3
+  event: Retained AutoGPT and BabyAGI despite weaker provided source grounding because
+    the objects themselves are clearly in scope.
+- agent: consolidator
+  iteration: 3
+  event: Renumbered final dimensions sequentially D1 to D9.
+- agent: consolidator
+  iteration: 3
+  event: Renumbered final objects sequentially O1 to O16.
+- agent: consolidator
+  iteration: 3
+  event: Verified every final object has exactly one mapping per dimension.
+- agent: consolidator
+  iteration: 3
+  event: Verified all referenced dimension and characteristic IDs exist in the final
+    taxonomy.
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''SayCan'' -> retained — Within scope as a post-2020
+    autonomous LLM-based embodied agent architecture.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''ChemCrow'' -> retained — Within scope as a modern LLM-based
+    autonomous tool-using agent.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''CAMEL role-playing framework'' -> retained — Within
+    scope as a multi-agent LLM framework exhibiting autonomous goal-directed behavior.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Generative Agents'' -> retained — Within scope as a
+    multi-agent autonomous architecture with explicit planning and memory.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''HuggingGPT'' -> retained — Within scope as an LLM-based
+    orchestration agent architecture.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''ReAct'' -> retained — Within scope as a foundational
+    post-2020 autonomous agent architecture.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Reflexion'' -> retained — Within scope as a single-agent
+    architecture with explicit self-improvement behavior.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Voyager'' -> retained — Within scope as an autonomous
+    embodied LLM agent with self-generated curriculum.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''AutoGen'' -> retained — Within scope as a multi-agent
+    conversational architecture.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''EUREKA'' -> retained — Retained as a modern autonomous
+    agentic system for iterative reward design; although specialized, it remains within
+    architectural scope and is not merely an evaluation tool.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''AutoGPT'' -> retained — Retained as a widely recognized
+    autonomous LLM agent architecture; source quality is weaker than other objects
+    but the object itself is in scope.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''BabyAGI'' -> retained — Retained as an autonomous task-managing
+    LLM agent architecture; source quality is weaker than primary papers but the object
+    itself is in scope.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Inner Monologue'' -> retained — Within scope as a post-2020
+    embodied autonomous agent architecture.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''ChatDev'' -> retained — Within scope as a multi-agent
+    software-development architecture with autonomous role coordination.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''DEPS'' -> retained — Within scope as an LLM-based planning
+    agent architecture.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Auto-GPT with Additional Opinions'' -> retained — Retained
+    as a distinct variant rather than a duplicate of AutoGPT because it adds architectural
+    components for advisory feedback and retrieval memory.'
+- agent: validator
+  iteration: 3
+  event: 'Structure validated: taxonomy contains 9 dimensions with complete object
+    mappings for 16 objects.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_01 met: every object has exactly one characteristic
+    assignment in each dimension.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_02 met: all sample objects are classifiable
+    in all dimensions and no N/A assignments were used.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_03 met: iteration notes mention renumbering
+    only, not object merge or split.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_04 not met: characteristic D6.C1 None has
+    no assigned objects, indicating a null characteristic.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_05 not met: change log states the taxonomy
+    was synthesized into 9 dimensions and includes newly consolidated dimensions such
+    as D3, D4, and D9.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_06 not met: change log explicitly reports
+    merges of overlapping dimensions and characteristics.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_07 met: all dimension names and conceptual
+    scopes are distinct.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_08 met: characteristic labels are unique
+    within each dimension.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_09 not met: repeated or insufficiently differentiated
+    cells remain possible; CAMEL and AutoGen are near-identical across most dimensions
+    and the taxonomy does not clearly ensure unique full combinations.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_01 met: 9 dimensions is concise enough for
+    comparison purposes.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_02 met: taxonomy supports meaningful differentiation
+    among major autonomous agent architectures.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_03 not met: empty characteristic D6.C1 and
+    broad categories suggest exhaustiveness/completeness still need refinement.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_04 met: modular dimensions support future
+    extension.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_05 met: taxonomy explains architectural
+    and behavioral differences relevant to researchers and practitioners.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_06 met: sample spans diverse modern LLM-based
+    autonomous agent types.'
+- agent: validator
+  iteration: 3
+  event: 'Summary: 5 out of 9 OECs met, 5 out of 6 SECs met. Human review is most
+    needed to address null characteristics (especially D6.C1 None), confirm whether
+    OEC_09 should be assessed via full-cell duplication in the current sample, and
+    stabilize the taxonomy after this iteration because dimensions/characteristics
+    were still merged and newly consolidated. Another iteration should be run before
+    declaring the taxonomy finished.'
+user_decision: end
+run_finished_at: '2026-04-09T17:14:34'
+duration_seconds: 730.793

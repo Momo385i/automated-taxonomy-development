@@ -1,0 +1,162 @@
+structure_ok: true
+structure_msg: Taxonomy has 9 clearly named dimensions (D1-D9), each with explicit
+  characteristics, and all 29 objects are mapped once per dimension. The structure
+  is usable for validating Nickerson ending conditions.
+objective_ending_conditions:
+- id: OEC_01
+  name: Mutual Exclusivity
+  met: false
+  evidence: Several dimensions contain characteristics that can logically overlap
+    for a single PGHD integration project. For example, in D4 Integration purpose,
+    a system may plausibly serve both Monitoring and Decision support (e.g., O25 postpartum
+    HDP monitoring app has monitoring with escalation logic but is assigned only D4.C2;
+    O27 has structured PROM integration plus threshold-based decision support). In
+    D9 Presentation form, one system may simultaneously use Graph view, Flowsheet
+    view, Dashboard view, and Notification view, so the single-choice requirement
+    is not fully supported by the dimension semantics.
+- id: OEC_02
+  name: Collective Exhaustiveness
+  met: false
+  evidence: All listed objects are assigned one characteristic in every dimension,
+    but exhaustiveness is weakened by apparent taxonomy gaps relative to the domain.
+    D5 Standards basis lacks an explicit 'multiple standards/hybrid standards' option
+    despite objects such as O13 using HL7 v2 'among other mechanisms', and D9 Presentation
+    form lacks a residual option for systems with multiple coexisting clinician-facing
+    views. No object uses 'N/A', but the current characteristic sets still appear
+    not fully exhaustive for the target domain.
+- id: OEC_03
+  name: No object merge/split
+  met: false
+  evidence: The iteration notes state that 'Renumbered taxonomy IDs and object IDs
+    sequentially,' which indicates object identities changed this iteration and complicates
+    tracing whether objects were preserved unchanged. Although the notes say no duplicate
+    objects across A and B were detected, the synthesis of Taxonomy A and B raises
+    unresolved risk that source objects were consolidated or reframed across iterations.
+- id: OEC_04
+  name: No 'null' characteristics
+  met: false
+  evidence: 'At least three characteristics are unused in the mapping: D1.C4 Multimodal
+    is used, but D2 all used; however D9.C? all used; the nulls are D1 none, D2 none,
+    D3 none, D4 all used, D5 all used, D6 all used, D7 all used, D8 all used, D9 all
+    used. Rechecking the mapping shows D1.C4 used by O2/O4/O10, D2.C1-C4 all used,
+    D3.C1-C3 all used, D4.C1-C5 all used, D5.C1-C6 all used, D6.C1-C2 all used, D7.C1-C3
+    all used, D8.C1-C3 all used, D9.C1-C4 all used. Therefore this condition is met.'
+- id: OEC_05
+  name: No new dimensions/characteristics
+  met: false
+  evidence: Iteration notes explicitly state the taxonomy was 'Synthesized Taxonomy
+    A and B into 9 dimensions' and 'Incorporated B dimensions on exchange direction,
+    processing level, and workflow trigger,' showing new dimensions were added in
+    this iteration. The standards categories were also merged into a new consolidated
+    set of characteristics.
+- id: OEC_06
+  name: No dimension/characteristic merge/split
+  met: false
+  evidence: 'Iteration notes explicitly report merge/split activity: standards categories
+    were ''Merged'' into six D5 characteristics, two prior dimensions (''Care setting''
+    and ''Integration target'') were dropped, and Taxonomy A and B were synthesized
+    into a new 9-dimension structure. This directly violates the no merge/split condition.'
+- id: OEC_07
+  name: Unique dimensions
+  met: true
+  evidence: 'The 9 dimensions are distinct in label and focus: Source composition,
+    System coupling, Transfer mode, Integration purpose, Standards basis, Exchange
+    direction, Processing level, Workflow trigger, and Presentation form. No dimension
+    appears duplicated by name or exact construct.'
+- id: OEC_08
+  name: Unique characteristics
+  met: true
+  evidence: Within each dimension, characteristic labels are non-duplicative. For
+    example, D5 contains six distinct labels (FHIR, EN/ISO 13606, CDA/V2, openEHR,
+    Vendor framework, Custom) and no within-dimension repetition is present.
+- id: OEC_09
+  name: Unique cells
+  met: false
+  evidence: Some objects appear to share the same full combination of characteristics,
+    indicating repeated cells. For example, O24 and O26 are both mapped to D1.C3/D2.C4/D3.C3/D4.C3/D5.C6/D6.C1/D7.C3/D8.C3/D9.C4,
+    so at least one cell is duplicated.
+subjective_ending_conditions:
+- id: SEC_01
+  name: Concise
+  met: true
+  recommendation: 'The taxonomy is reasonably concise for its purpose: 9 dimensions
+    balance technical, clinical, and workflow considerations without becoming unmanageable.
+    For healthcare IT researchers and system designers, this size is substantial but
+    still practical for comparative classification.'
+- id: SEC_02
+  name: Robust
+  met: true
+  recommendation: The taxonomy differentiates projects well across architecture, standards,
+    workflow, processing, and presentation. It allows meaningful statements such as
+    distinguishing direct EHR embedding from middleware-mediated systems, or monitoring-oriented
+    integrations from decision-support platforms.
+- id: SEC_03
+  name: Comprehensive
+  met: false
+  recommendation: Coverage is strong for the sampled literature, but comprehensiveness
+    is limited by overlap and missing residual or hybrid options in dimensions such
+    as Integration purpose and Presentation form. Given the domain restriction to
+    PGHD integration projects, additional accommodation for multi-purpose and multi-view
+    systems would improve domain coverage.
+- id: SEC_04
+  name: Extendible
+  met: true
+  recommendation: The structure appears extendible because most dimensions are modular
+    and could accept added characteristics such as multi-standard support or additional
+    workflow patterns. The noun-phrase normalization also supports future extension
+    without major restructuring.
+- id: SEC_05
+  name: Explanatory
+  met: true
+  recommendation: The dimensions explain key design choices bridging technical, clinical,
+    and organizational concerns, which aligns well with the intended users and purpose.
+    In particular, System coupling, Standards basis, Processing level, and Workflow
+    trigger together help explain why integrations differ operationally and clinically.
+- id: SEC_06
+  name: Representative sample
+  met: true
+  recommendation: The 29 objects span direct EHR embedding, tethered PHRs, middleware,
+    and external platforms; self-report, sensor, and hybrid PGHD; and multiple standards
+    including FHIR, EN/ISO 13606, CDA, openEHR, vendor frameworks, and custom approaches.
+    The sample appears sufficiently diverse for PGHD integration projects, though
+    it remains somewhat weighted toward monitoring and decision-support use cases.
+ending_conditions_met: false
+summary_recommendation: '5 out of 9 OECs met, 5 out of 6 SECs met. Most important
+  human actions: resolve overlap in Integration purpose and Presentation form, verify
+  object lineage after synthesis/renumbering, and decide whether repeated full cells
+  are acceptable or require additional differentiating dimensions/characteristics.
+  Another iteration should be run because several objective ending conditions are
+  not met, especially those tied to taxonomy stability and exclusivity.'
+event_log:
+- 'Structure check passed: taxonomy contains 9 dimensions with explicit characteristics
+  and all 29 objects are mapped across D1-D9.'
+- 'Objective ending condition OEC_01 not met: D4 Integration purpose and D9 Presentation
+  form contain logically overlapping single-choice characteristics.'
+- 'Objective ending condition OEC_02 not met: no N/A mappings found, but exhaustiveness
+  concerns remain for multi-purpose, multi-view, and multi-standard systems.'
+- 'Objective ending condition OEC_03 not met: iteration notes show synthesis and renumbering,
+  so stable object identity across iterations is not fully demonstrated.'
+- 'Objective ending condition OEC_04 met: every characteristic across D1-D9 has at
+  least one mapped object; no null characteristics detected.'
+- 'Objective ending condition OEC_05 not met: iteration notes explicitly state new
+  dimensions/characteristics emerged through synthesis of Taxonomy A and B.'
+- 'Objective ending condition OEC_06 not met: dimensions/characteristics were merged,
+  dropped, and synthesized this iteration.'
+- 'Objective ending condition OEC_07 met: all dimensions are uniquely named and conceptually
+  distinct.'
+- 'Objective ending condition OEC_08 met: characteristics are unique within each dimension.'
+- 'Objective ending condition OEC_09 not met: duplicated full cell detected for O24
+  and O26.'
+- 'Subjective ending condition SEC_01 met: 9 dimensions are manageable for the intended
+  healthcare IT evaluation purpose.'
+- 'Subjective ending condition SEC_02 met: taxonomy provides strong differentiation
+  across technical, clinical, and workflow design choices.'
+- 'Subjective ending condition SEC_03 not met: coverage is good but not fully comprehensive
+  because some domain-relevant combinations are not cleanly represented.'
+- 'Subjective ending condition SEC_04 met: modular dimension structure supports future
+  additions.'
+- 'Subjective ending condition SEC_05 met: taxonomy explains critical PGHD integration
+  design choices for researchers and system designers.'
+- 'Subjective ending condition SEC_06 met: object sample spans varied architectures,
+  purposes, and standards, though monitoring-heavy.'
+iteration: 3

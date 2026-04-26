@@ -1,0 +1,18 @@
+iteration: 2
+changes_short:
+- Normalized dimension and characteristic names to concise noun phrases.
+- Synthesized A and B into 9 dimensions by combining complementary structural dimensions
+  and dropping redundant ones.
+- Merged Taxonomy A 'Agent cardinality' and Taxonomy B 'Agent organization' into one
+  dimension.
+- Expanded Taxonomy A 'Action grounding basis' with B's code-oriented characteristic
+  to cover code-centric agents.
+- Retained Taxonomy A control, capability, planning, and embodiment dimensions with
+  concise labels.
+- Retained Taxonomy B memory, task sourcing, and termination dimensions because they
+  add explanatory power absent in A.
+- Dropped Taxonomy B 'Improvement mechanism' as a standalone dimension due to overlap
+  with memory, planning, and verification and weak MECE boundaries.
+- Reassigned all objects to exactly one characteristic per final dimension.
+- Normalized object name 'VOYAGER' to 'Voyager'; no duplicate object merges were required
+  across A and B.

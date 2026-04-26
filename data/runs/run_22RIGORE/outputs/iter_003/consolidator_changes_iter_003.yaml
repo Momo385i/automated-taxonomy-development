@@ -1,0 +1,22 @@
+iteration: 3
+changes_short:
+- Validated Taxonomy A structure and normalized names to concise noun phrases.
+- Synthesized both taxonomies into 9 MECE dimensions.
+- Kept shared cardinality dimension and renamed it Agent multiplicity.
+- Added Actuation domain and Task sourcing from Taxonomy B because they improve architectural
+  comparison.
+- Merged Taxonomy A control loop with Taxonomy B reactive-loop logic into a binary
+  Control loop dimension.
+- Rebuilt Planning organization to combine both taxonomies and separate planning style
+  from adaptation.
+- Rebuilt Memory architecture by merging memory-related dimensions from both taxonomies.
+- Reworked Feedback source to capture source of execution feedback and added Mixed
+  for exhaustiveness.
+- Retained Adaptation mechanism from Taxonomy B and separated it from planning and
+  feedback.
+- Retained Human involvement from Taxonomy A as complementary to task sourcing.
+- Dropped Action interface and Grounding mechanism from Taxonomy B as not sufficiently
+  MECE or too overlapping with planning, feedback, and actuation.
+- Removed no objects; no duplicate entities were merged across A and B.
+- Renumbered and remapped all objects to the final taxonomy ensuring exactly one characteristic
+  per dimension.

@@ -1,0 +1,45 @@
+iteration: 2
+object_validation:
+- object_name: SayCan
+  action: retained
+  reasoning: Within scope as a post-2020 autonomous agent architecture with goal-directed
+    embodied behavior. Mapping was plausible and extended to added synthesized dimensions.
+- object_name: ChemCrow
+  action: retained
+  reasoning: Within scope as a modern LLM-based autonomous tool-using agent. Existing
+    assignments were plausible; missing synthesized dimensions were added.
+- object_name: CAMEL role-playing framework
+  action: retained
+  reasoning: Within scope because it is a multi-agent autonomous framework rather
+    than a pure benchmark. Mappings were plausible and completed for synthesized dimensions.
+- object_name: Generative Agents
+  action: retained
+  reasoning: Within scope as a multi-agent autonomous architecture with explicit planning
+    and memory. Existing assignments were plausible and expanded.
+- object_name: HuggingGPT
+  action: retained
+  reasoning: Within scope as a controller-based LLM agent architecture orchestrating
+    external models. Existing assignments were plausible and expanded.
+- object_name: ReAct
+  action: retained
+  reasoning: Within scope as a foundational modern LLM agent architecture. No duplicate
+    found in Taxonomy A.
+- object_name: Reflexion
+  action: retained
+  reasoning: Within scope as an autonomous LLM agent architecture with reflective
+    improvement. Improvement was captured through memory rather than retained as a
+    standalone dimension.
+- object_name: VOYAGER
+  action: retained_renamed
+  reasoning: Within scope as a modern embodied autonomous agent. Name normalized to
+    'Voyager' for consistency; mappings re-evaluated against synthesized dimensions.
+- object_name: AutoGen
+  action: retained
+  reasoning: Within scope as a multi-agent conversational agent framework. Reflection-based
+    label from Taxonomy B was not retained as a final dimension because it overlapped
+    with other structural dimensions.
+- object_name: EUREKA
+  action: retained
+  reasoning: Kept despite being near the scope boundary because it is a post-2020
+    autonomous LLM-based agentic architecture rather than a pure benchmark or evaluation
+    tool. Its mappings were reinterpreted under the synthesized taxonomy.

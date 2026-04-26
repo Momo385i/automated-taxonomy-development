@@ -1,0 +1,77 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent
+  - id: D1.C2
+    name: Multi-agent
+- id: D2
+  name: Execution organization
+  characteristics:
+  - id: D2.C1
+    name: Self-prompting
+  - id: D2.C2
+    name: Task-list cycle
+  - id: D2.C3
+    name: Chat-chain
+  - id: D2.C4
+    name: Plan-execute
+- id: D3
+  name: Feedback closure
+  characteristics:
+  - id: D3.C1
+    name: Open-loop
+  - id: D3.C2
+    name: Closed-loop
+- id: D4
+  name: Primary feedback source
+  characteristics:
+  - id: D4.C1
+    name: None
+  - id: D4.C2
+    name: Environment
+  - id: D4.C3
+    name: Inter-agent
+  - id: D4.C4
+    name: Expert
+- id: D5
+  name: Memory form
+  characteristics:
+  - id: D5.C1
+    name: Context memory
+  - id: D5.C2
+    name: Task store
+  - id: D5.C3
+    name: Phase memory
+  - id: D5.C4
+    name: Retrieval memory
+  - id: D5.C5
+    name: Unspecified
+- id: D6
+  name: Revision mechanism
+  characteristics:
+  - id: D6.C1
+    name: None
+  - id: D6.C2
+    name: Reflection
+  - id: D6.C3
+    name: Replanning
+  - id: D6.C4
+    name: Clarification
+- id: D7
+  name: Action grounding
+  characteristics:
+  - id: D7.C1
+    name: Command actions
+  - id: D7.C2
+    name: Task actions
+  - id: D7.C3
+    name: Skill actions
+  - id: D7.C4
+    name: Tool actions
+notes:
+  format: prototype_v1

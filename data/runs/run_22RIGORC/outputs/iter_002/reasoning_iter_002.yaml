@@ -1,0 +1,227 @@
+iteration: 2
+empirical_reasoning: 'I followed an empirical-to-conceptual procedure grounded only
+  in the provided sources and kept the scope conservative. First, I identified objects
+  that belong to a coherent object class under the topic and meta-characteristic:
+  system-level AI agents or agent frameworks that exhibit autonomous, goal-directed
+  behavior. The eligible objects in the sources were SayCan, ChemCrow, the CAMEL role-playing
+  framework, Generative Agents, and HuggingGPT. I excluded baselines, ablations, evaluation
+  methods, and auxiliary examples because they are not distinct target agent systems
+  of the same class. I also treated each selected object at the system/framework level,
+  consistent with the user’s requested unit of analysis.
+
+
+  Next, I derived discriminating characteristics from repeated architectural and behavioral
+  patterns explicitly described in the papers. I only retained aspects that clearly
+  varied across the selected objects. I excluded properties that were either too universal
+  in this sample or insufficiently supported across multiple objects. For example,
+  all objects are LLM-centered, so that is not useful as a differentiating characteristic.
+  Likewise, I did not introduce dimensions about application domain, benchmark performance,
+  or safety because the task targets architecture and behavior rather than domain
+  success, and the sources did not support a clean, MECE set for all objects.
+
+
+  The first empirically supported differentiator was whether the object is organized
+  as one agent or as multiple interacting agents. This yielded D1 Agent cardinality
+  with Single-agent architecture and Multi-agent architecture. SayCan, ChemCrow, and
+  HuggingGPT are described as one agent/controller. CAMEL and Generative Agents explicitly
+  involve multiple agents.
+
+
+  A second strong differentiator was how the agent extends its capabilities beyond
+  the core language model. The sources show three distinct patterns: no external tool/skill
+  layer but internal LLM-centered architecture (CAMEL, Generative Agents), integration
+  of external tools or expert models (ChemCrow, HuggingGPT), and integration of embodied
+  robotic skills with affordance/value grounding (SayCan). These are architecturally
+  distinct and empirically visible, so I formed D2 External capability integration
+  with three characteristics. I kept embodied skills separate from generic tools/models
+  because SayCan’s skill library and affordance-grounding are materially different
+  from software-tool or model orchestration in ChemCrow and HuggingGPT.
+
+
+  A third pattern concerned how control is organized. Some systems use one central
+  planner/controller that decomposes tasks and selects the next action or model. Others
+  distribute progress through structured interaction among role-specialized agents.
+  This produced D3 Control organization with Centralized controller and Role-based
+  peer interaction. SayCan, ChemCrow, and HuggingGPT are centrally controlled. CAMEL
+  and Generative Agents rely on interaction among multiple agents rather than a single
+  central controller driving all behavior.
+
+
+  A fourth differentiator was explicit long-term memory architecture. Generative Agents
+  clearly contributes a structured memory stream with retrieval, timestamps, reflections,
+  and plans. The other systems use prompts, conversation history, task lists, or iterative
+  context, but the papers do not describe a comparable explicit long-term memory module.
+  This yielded D4 Memory structure with No explicit long-term memory and Structured
+  memory stream. I avoided finer distinctions like episodic vs semantic memory because
+  only Generative Agents provides sufficient empirical support for such detail.
+
+
+  A fifth differentiator concerned what directly grounds or updates planning decisions.
+  The sources supported three distinct bases. CAMEL and HuggingGPT rely primarily
+  on prompted reasoning and conversational or staged planning. SayCan and ChemCrow
+  incorporate execution-time grounding from the environment through affordances, tool
+  observations, validation outputs, or execution results. Generative Agents relies
+  on memory retrieval and reflection as the central behavioral grounding mechanism.
+  This yielded D5 Planning feedback basis with Prompted reasoning only, Environment-grounded
+  execution feedback, and Memory-grounded reflection. I grouped ChemCrow with environment-grounded
+  execution feedback because its iterative tool observations and synthesis-validation/execution
+  loop are materially used to revise decisions, even though the environment is digital
+  rather than physical.
+
+
+  A sixth differentiator concerned primary operating environment. The objects clearly
+  split across physical environments (SayCan), simulated social environments (Generative
+  Agents), and digital task environments (ChemCrow, CAMEL, HuggingGPT). This became
+  D6 Primary operating environment with Digital task environment, Simulated social
+  environment, and Physical environment. I assigned ChemCrow to Digital task environment
+  because the architecture is primarily described as operating through computational
+  tools and digital workflows, even when some tasks culminate in robotic lab execution.
+  This choice preserves mutual exclusivity while reflecting the system’s main operating
+  architecture.
+
+
+  I then checked MECE conditions within each dimension. For each dimension, every
+  object can be assigned to exactly one characteristic, and each characteristic is
+  instantiated by at least one object. No N/A assignments were required because each
+  apparent gap could be resolved by adding a supported characteristic, and the final
+  dimensions fully covered the observed variation among the five objects. I also checked
+  non-overlap among dimensions: agent cardinality addresses how many agents; external
+  capability integration addresses what is connected to the LLM; control organization
+  addresses where decision authority lies; memory structure addresses persistence
+  and retrieval of prior experience; planning feedback basis addresses what immediately
+  informs next-step behavior; and primary operating environment addresses where the
+  agent mainly acts. These dimensions are distinct and extensible without restructuring.
+
+
+  Limitations remain. The taxonomy is intentionally source-bounded and sample-sensitive.
+  Because only five objects were available, some potentially relevant distinctions
+  from the wider post-2020 LLM-agent literature could not be introduced without overreaching
+  empirically. Examples include autonomy initiation mode, degree of closed-loop replanning,
+  tool-selection granularity, or human oversight pattern. I omitted these because
+  the provided sources did not support a robust, non-redundant, MECE set across all
+  objects. Also, the selected objects span different domains—robotics, chemistry,
+  multimodal model orchestration, simulated societies, and cooperative dialogue—which
+  increases architectural variety but may compress some within-domain nuances. Still,
+  for the intended users—IS researchers and practitioners comparing modern autonomous
+  AI agent architectures—the resulting taxonomy offers a parsimonious structure grounded
+  directly in the empirical material and suitable for systematic comparison.'
+consolidator_reasoning: 'I first validated Taxonomy A against the schema and the Nickerson
+  et al. requirements. Taxonomy A already had an appropriate topic and meta-characteristic
+  and contained six dimensions, which is within the recommended limit. Its dimensions
+  were broadly relevant to the meta-characteristic, but several labels were longer
+  than necessary and some dimensions were not fully MECE when compared across a broader
+  set of contemporary agents. In particular, Taxonomy A''s dimension ''External capability
+  integration'' was useful but needed shorter characteristic names and clearer boundaries;
+  Taxonomy A''s ''Planning feedback basis'' mixed absence of improvement, environment
+  feedback, and memory-based reflection in a way that partially overlapped with Taxonomy
+  B''s more general ''Improvement mechanism''. Taxonomy A''s ''Primary operating environment''
+  was useful and relevant, but Taxonomy B added a distinct and orthogonal idea with
+  ''Task generation'', which should not be collapsed into environment because externally
+  assigned tasks versus self-generated curricula are architecturally different.
+
+
+  I then compared both taxonomies side by side without privileging either. Several
+  pairs were near-equivalents. Taxonomy A''s ''Agent cardinality'' and Taxonomy B''s
+  ''Agent multiplicity'' captured the same aspect, so I kept one merged dimension
+  as ''Agent cardinality'' with concise characteristics ''Single-agent'' and ''Multi-agent''.
+  Taxonomy A''s ''Control organization'' added explanatory value not present in B
+  because multi-agent systems differ meaningfully between centralized orchestration
+  and peer interaction. It also remained useful for single-agent systems because they
+  are naturally centralized. I therefore retained it as a separate dimension.
+
+
+  For external action and capability dimensions, Taxonomy B''s ''Action representation''
+  was examined closely against the meta-characteristic. I excluded it as a final dimension
+  because its characteristics were not consistently comparable at the same abstraction
+  level: ''Text actions'', ''Code actions'', and ''Reward code'' are output forms,
+  while ''Message actions'' partly captures coordination substrate. This would reduce
+  mutual exclusivity and create overlap with both control organization and capability
+  integration. For example, AutoGen''s messaging behavior reflects multi-agent control
+  more than a stable action modality, and Voyager''s code generation is instrumental
+  to its skill architecture rather than the most informative architectural trait.
+  Instead, I retained and generalized Taxonomy A''s dimension as ''Capability integration''
+  with characteristics ''Language-only'', ''Tool-model'', and ''Embodied skills''.
+  This better serves researchers comparing architectural designs because it distinguishes
+  whether the agent remains purely language-based, relies on external tools/models,
+  or is grounded in embodied executable skills. Taxonomy B''s useful empirical signals
+  from action representation were not discarded entirely; they informed reassignment
+  decisions for EUREKA, Voyager, and AutoGen under the more coherent integrated dimension.
+
+
+  Taxonomy B''s ''Improvement mechanism'' was stronger than Taxonomy A''s ''Planning
+  feedback basis'' for the target purpose because it differentiates architecturally
+  meaningful adaptation patterns across systems: no built-in improvement, execution
+  refinement, verbal reflection, and evolutionary search. Taxonomy A''s categories
+  ''Prompted reasoning only'', ''Environment-grounded execution feedback'', and ''Memory-grounded
+  reflection'' partly mapped into these. I therefore replaced A''s dimension with
+  a merged ''Improvement mechanism'' while preserving A''s distinctions where they
+  aligned: ''Prompted reasoning only'' became ''None'' when there is no dedicated
+  improvement loop; ''Environment-grounded execution feedback'' became ''Execution
+  refinement''; and ''Memory-grounded reflection'' became ''Verbal reflection'' when
+  reflective summaries are explicitly used. B''s ''Evolutionary search'' was retained
+  because EUREKA would otherwise be poorly represented.
+
+
+  For memory, Taxonomy A''s ''Memory structure'' and B''s ''Knowledge structure''
+  overlapped strongly. A distinguished only ''No explicit long-term memory'' and ''Structured
+  memory stream'', which was insufficient for systems like Voyager with persistent
+  skill libraries. B contributed ''Skill library'' and a more portable ''Reflective
+  memory'' notion. I merged them into ''Memory structure'' with three characteristics:
+  ''None'', ''Reflective memory'', and ''Skill library''. This improved exhaustiveness
+  while staying mutually exclusive by focusing on the dominant persistent internal
+  structure. I assigned Generative Agents and Reflexion to reflective memory, Voyager
+  to skill library, and the rest to none.
+
+
+  Taxonomy B''s ''Task generation'' was retained because it is orthogonal and highly
+  informative for autonomous agents, especially for distinguishing open-ended agents
+  like Voyager from agents that only execute externally supplied tasks. I renamed
+  it to ''Task sourcing'' for concision. Taxonomy A had no direct equivalent, so its
+  addition improves explanatory power without redundancy.
+
+
+  Taxonomy A''s ''Primary operating environment'' was retained and renamed to ''Operating
+  environment''. It remains directly relevant to the meta-characteristic because architectural
+  designs differ substantially between digital agents, social simulations, and physical
+  embodied agents. It helps distinguish systems like SayCan, Generative Agents, and
+  ChemCrow/Voyager in a way not captured by other dimensions.
+
+
+  On object validation, all ten objects were retained. Each object is a genuine system
+  or framework for autonomous, goal-directed agent behavior published after 2020 and
+  falls within the user-specified scope. I did not remove frameworks such as CAMEL
+  or AutoGen because the exclusion rule applies to pure benchmarking and evaluation
+  tools, whereas these are agent architectures. I also retained EUREKA despite its
+  specialized reward-design setting because it remains an autonomous agentic system
+  with distinctive architecture. No duplicate objects across A and B referred to the
+  same entity, though I normalized ''VOYAGER'' to ''Voyager''.
+
+
+  I re-evaluated all mappings under the synthesized taxonomy. Every object now has
+  exactly one characteristic per dimension, and every referenced dimension and characteristic
+  exists in the final taxonomy. I resolved cases where direct transfer from the original
+  taxonomies would have been inconsistent. For example, AutoGen''s original ''Message
+  actions'' was not preserved as a final characteristic; instead it was mapped to
+  ''Tool-model'' for capability integration and ''Peer interaction'' for control organization,
+  which better reflects its architecture. Voyager''s ''Code actions'' was not preserved
+  literally; under the synthesized taxonomy it is best understood as an embodied-skill
+  architecture with a skill library, execution refinement, self curriculum, and digital
+  environment. EUREKA''s ''Reward code'' was likewise absorbed into the more general
+  framework and classified by its centralized single-agent structure, no persistent
+  memory, evolutionary search, and external tasks.
+
+
+  The final taxonomy contains seven dimensions, each relevant to the meta-characteristic
+  and useful for systematic comparison of modern autonomous AI agents. The dimensions
+  are unique and non-redundant: cardinality captures how many agents are involved;
+  capability integration captures the external grounding and augmentation pattern;
+  control organization captures orchestration structure; memory structure captures
+  persistent internal knowledge form; improvement mechanism captures how the system
+  changes or refines behavior over time; task sourcing captures whether objectives
+  come from outside or are self-generated; and operating environment captures the
+  setting in which the agent acts. Within each dimension, characteristics are mutually
+  exclusive by design and collectively exhaustive for the retained objects. Where
+  hybrid behavior could occur in principle, I used the dominant architectural pattern
+  to preserve one-to-one mapping and avoid unnecessary proliferation of hybrid categories.
+  This yields a coherent, traceable, and practically useful synthesis of both input
+  taxonomies rather than a simple preference for one over the other.'

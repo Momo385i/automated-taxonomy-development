@@ -1,0 +1,1050 @@
+run_id: run_22RIGORE
+run_dir: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORE
+iteration: 1
+thread_id: thread_run_22RIGORE
+run_started_at: '2026-04-09T19:24:58'
+token_usage_iteration:
+  prompt_tokens: 51688
+  completion_tokens: 7877
+  total_tokens: 59565
+token_usage_total:
+  prompt_tokens: 51688
+  completion_tokens: 7877
+  total_tokens: 59565
+token_usage_by_agent:
+  consultation:
+    prompt_tokens: 0
+    completion_tokens: 0
+    total_tokens: 0
+  empirical:
+    prompt_tokens: 44709
+    completion_tokens: 3449
+    total_tokens: 48158
+  consolidator:
+    prompt_tokens: 3671
+    completion_tokens: 2726
+    total_tokens: 6397
+  validator:
+    prompt_tokens: 3308
+    completion_tokens: 1702
+    total_tokens: 5010
+  interaction:
+    prompt_tokens: 0
+    completion_tokens: 0
+    total_tokens: 0
+errors: []
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+objective_ending_conditions:
+- id: OEC_01
+  name: Mutual Exclusivity
+  description: In each dimension, no object can have two different characteristics.
+    If an object can logically be assigned to more than one characteristic, the dimension
+    is not mutually exclusive and should be restructured.
+- id: OEC_02
+  name: Collective Exhaustiveness
+  description: Each object must have at least one of the characteristics in any dimension.
+    If a valid object exists that cannot be classified into any existing category,
+    the dimension is not collectively exhaustive and requires an additional or a residual
+    characteristic.
+- id: OEC_03
+  name: No object merge/split
+  description: No object was merged with a similar object or split into multiple objects
+    in the last iteration. If objects were merged or split, then we need to examine
+    the impact of these changes and determine if changes need to be made in the dimensions
+    or characteristics.
+- id: OEC_04
+  name: No 'null' characteristics
+  description: At least one object is classified under every characteristic of every
+    dimension. If at least one object is not found under a characteristic, then the
+    taxonomy has a 'null' characteristic. We must either identify an object with the
+    characteristic or remove the characteristic from the taxonomy.
+- id: OEC_05
+  name: No new dimensions/characteristics
+  description: No new dimensions or characteristics were added in the last iteration.
+    If new dimensions were found, then more characteristics of the dimensions may
+    be identified. If new characteristics were found, then more dimensions may be
+    identified that include these characteristics.
+- id: OEC_06
+  name: No dimension/characteristic merge/split
+  description: No dimensions or characteristics were merged or split in the last iteration.
+    If dimensions or characteristics were merged or split, then we need to examine
+    the impact of these changes and determine if other dimensions or characteristics
+    need to be merged or split.
+- id: OEC_07
+  name: Unique dimensions
+  description: Every dimension is unique and not repeated (i.e., there is no dimension
+    duplication). If dimensions are not unique, then there is redundancy/duplication
+    among dimensions that needs to be eliminated.
+- id: OEC_08
+  name: Unique characteristics
+  description: Every characteristic is unique within its dimension (i.e., there is
+    no characteristic duplication within a dimension). If characteristics within a
+    dimension are not unique, then there is redundancy/duplication in characteristics
+    that needs to be eliminated.
+- id: OEC_09
+  name: Unique cells
+  description: Each cell (combination of characteristics) is unique and is not repeated
+    (i.e., there is no cell duplication). If cells are not unique, then there is redundancy/duplication
+    in cells that needs to be eliminated.
+subjective_ending_conditions:
+- id: SEC_01
+  name: Concise
+  question: Does the number of dimensions allow the taxonomy to be meaningful without
+    being unwieldy or overwhelming?
+- id: SEC_02
+  name: Robust
+  question: Do the dimensions and characteristics provide for differentiation among
+    objects sufficient to be of interest? Given the characteristics of sample objects,
+    what can we say about the objects?
+- id: SEC_03
+  name: Comprehensive
+  question: Can all objects or a (random) sample of objects within the domain of interest
+    be classified? Are all dimensions of the objects of interest identified?
+- id: SEC_04
+  name: Extendible
+  question: Can a new dimension or a new characteristic of an existing dimension be
+    easily added?
+- id: SEC_05
+  name: Explanatory
+  question: What do the dimensions and characteristic explain about an object?
+- id: SEC_06
+  name: Representative sample
+  question: Does the examined sample of objects cover a sufficiently diverse range
+    of objects in the domain, or is it too narrow/biased toward a particular sub-type?
+important_user_prompt: 'Primary target users of this taxonomy: "Information Systems
+  researchers seeking to systematically compare and differentiate AI agent architectures,
+  and practitioners evaluating agent designs for specific use cases."
+
+  Primary purpose of the taxonomy: "Structuring an emerging phenomenon. The field
+  of autonomous AI agents is rapidly evolving but lacks a unified classification framework
+  that goes beyond functional labels."
+
+  Type of objects the user wants to classify: "Individual AI agent systems and frameworks
+  that exhibit autonomous, goal-directed behavior — including both single-agent and
+  multi-agent architectures. Examples include systems like ReAct, AutoGPT or Voyager."
+
+  Restrictions: "Focus on modern, predominantly LLM-based agents published after 2020.
+  Excluded are pure benchmarking frameworks and evaluation tools. The classification
+  targets system-level architecture and behavior, not application-domain performance."'
+agent_conversation:
+- timestamp: '2026-04-09T19:24:59'
+  role: system
+  message: Consultation skipped - using provided configuration
+consultation_completed: true
+skip_consultation: true
+interaction_annotations: []
+empirical_taxonomy:
+  meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+  topic: Classification of autonomous AI agents based on their architectural design
+    and behavioral capabilities.
+  dimensions:
+  - id: D1
+    name: Agent cardinality
+    characteristics:
+    - id: D1.C1
+      name: Single-agent architecture
+    - id: D1.C2
+      name: Multi-agent architecture
+  - id: D2
+    name: Primary action representation
+    characteristics:
+    - id: D2.C1
+      name: Natural-language actions
+    - id: D2.C2
+      name: Executable-code actions
+    - id: D2.C3
+      name: Message-based coordination
+  - id: D3
+    name: Improvement mechanism
+    characteristics:
+    - id: D3.C1
+      name: None
+    - id: D3.C2
+      name: Interleaved reasoning
+    - id: D3.C3
+      name: Verbal reflection
+    - id: D3.C4
+      name: Iterative code refinement
+    - id: D3.C5
+      name: Evolutionary search
+  - id: D4
+    name: Persistent memory structure
+    characteristics:
+    - id: D4.C1
+      name: None
+    - id: D4.C2
+      name: Reflection memory
+    - id: D4.C3
+      name: Skill library
+    - id: D4.C4
+      name: Conversation history
+  - id: D5
+    name: Task sourcing
+    characteristics:
+    - id: D5.C1
+      name: Externally specified task
+    - id: D5.C2
+      name: Self-generated curriculum
+  notes:
+    format: prototype_v1
+empirical_object_mapping:
+  iteration: 1
+  objects:
+  - id: O1
+    name: ReAct
+    source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+      Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: ReAct is presented as one language-model agent that reasons and acts
+        in an interleaved trajectory.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Its task execution uses textual actions such as search, lookup, finish,
+        or environment actions in ALFWorld/WebShop.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Its core improvement mechanism is the interleaving of thoughts and
+        actions during task solving.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The paper does not describe a persistent cross-episode memory store
+        beyond the current trajectory context.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: ReAct operates on given questions, claims, or benchmark goals rather
+        than generating its own curriculum.
+  - id: O2
+    name: Reflexion
+    source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+      Learning.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: Reflexion is formulated around one agent policy augmented by evaluator
+        and self-reflection modules, not as multiple cooperating agents.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The actor produces text and actions in environments such as ALFWorld,
+        HotPotQA, and coding tasks.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: Its defining mechanism is verbal self-reflection generated from feedback
+        and used in later trials.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: The framework stores self-reflections in an episodic memory buffer
+        for future trials.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: Tasks come from external benchmarks and are not self-proposed by
+        the agent.
+  - id: O3
+    name: Voyager
+    source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+      Language Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: Voyager is described as one embodied lifelong learning agent in Minecraft.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: It explicitly uses executable code as the action space instead of
+        low-level actions or plain text actions.
+    - dimension_id: D3
+      characteristic_id: D3.C4
+      reasoning: It improves behavior through iterative prompting with environment
+        feedback, execution errors, and self-verification.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: Voyager accumulates verified programs in an ever-growing skill library
+        indexed for retrieval.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: The agent uses an automatic curriculum to propose progressively harder
+        self-driven tasks.
+  - id: O4
+    name: AutoGen
+    source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via
+      Multi-Agent Conversation.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: AutoGen is explicitly a framework for multiple conversable agents
+        cooperating via conversation.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: Its primary operating medium is inter-agent message exchange and
+        conversation-driven coordination.
+    - dimension_id: D3
+      characteristic_id: D3.C1
+      reasoning: The framework emphasizes conversation programming and coordination,
+        but the source does not define a single built-in cross-trial self-improvement
+        mechanism like reflection, evolution, or iterative code refinement at the
+        framework level.
+    - dimension_id: D4
+      characteristic_id: D4.C4
+      reasoning: Agents maintain internal context from sent and received messages,
+        making conversation history the persistent context structure supported by
+        the framework.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: Applications are initiated from user or externally posed tasks rather
+        than an autonomous curriculum.
+  - id: O5
+    name: EUREKA
+    source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding
+      Large Language Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: EUREKA is introduced as one reward-design agent powered by a coding
+        LLM and evaluation loop.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: Its outputs are executable reward-function programs written as code.
+    - dimension_id: D3
+      characteristic_id: D3.C5
+      reasoning: Its defining optimization mechanism is evolutionary search over reward
+        code, supported by reward reflection.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The source describes iterative prompts and evaluations but not a
+        persistent reusable memory store comparable to a skill library or reflection
+        buffer.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: EUREKA receives a task description and environment context from outside
+        rather than generating its own tasks.
+current_taxonomy:
+  meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+  topic: Classification of autonomous AI agents based on their architectural design
+    and behavioral capabilities.
+  dimensions:
+  - id: D1
+    name: Agent cardinality
+    characteristics:
+    - id: D1.C1
+      name: Single-agent
+    - id: D1.C2
+      name: Multi-agent
+  - id: D2
+    name: Action representation
+    characteristics:
+    - id: D2.C1
+      name: Natural language
+    - id: D2.C2
+      name: Executable code
+    - id: D2.C3
+      name: Message coordination
+  - id: D3
+    name: Improvement mechanism
+    characteristics:
+    - id: D3.C1
+      name: None
+    - id: D3.C2
+      name: Interleaved reasoning
+    - id: D3.C3
+      name: Verbal reflection
+    - id: D3.C4
+      name: Code refinement
+    - id: D3.C5
+      name: Evolutionary search
+  - id: D4
+    name: Memory structure
+    characteristics:
+    - id: D4.C1
+      name: None
+    - id: D4.C2
+      name: Reflection memory
+    - id: D4.C3
+      name: Skill library
+    - id: D4.C4
+      name: Conversation history
+  - id: D5
+    name: Task sourcing
+    characteristics:
+    - id: D5.C1
+      name: External task
+    - id: D5.C2
+      name: Self curriculum
+  notes:
+    format: prototype_v1
+current_object_mapping:
+  iteration: 1
+  objects:
+  - id: O1
+    name: ReAct
+    source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+      Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: ReAct is presented as a single language-model agent that reasons
+        and acts within one trajectory.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: Its actions are primarily expressed as textual commands and natural-language
+        action traces.
+    - dimension_id: D3
+      characteristic_id: D3.C2
+      reasoning: Its distinctive mechanism is the interleaving of reasoning and acting
+        during problem solving.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: It does not introduce a persistent cross-episode memory structure
+        beyond current context.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: It operates on externally provided tasks and benchmark goals.
+  - id: O2
+    name: Reflexion
+    source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+      Learning.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: Reflexion centers on a single agent policy augmented with self-evaluation
+        rather than multiple cooperating agents.
+    - dimension_id: D2
+      characteristic_id: D2.C1
+      reasoning: The agent acts through text-based reasoning and environment-facing
+        textual actions.
+    - dimension_id: D3
+      characteristic_id: D3.C3
+      reasoning: Its defining improvement mechanism is verbal self-reflection stored
+        and reused across trials.
+    - dimension_id: D4
+      characteristic_id: D4.C2
+      reasoning: It maintains an episodic buffer of self-reflections for later attempts.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: Tasks are externally supplied from benchmarks or prompts.
+  - id: O3
+    name: Voyager
+    source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+      Language Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: Voyager is described as one embodied lifelong learning agent.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: Its action interface is executable code, with programs generated
+        and executed in the environment.
+    - dimension_id: D3
+      characteristic_id: D3.C4
+      reasoning: Its improvement loop is centered on iterative generation and refinement
+        of executable code using feedback.
+    - dimension_id: D4
+      characteristic_id: D4.C3
+      reasoning: It accumulates reusable verified programs in a retrieved skill library.
+    - dimension_id: D5
+      characteristic_id: D5.C2
+      reasoning: It proposes progressively harder tasks through an automatic curriculum.
+  - id: O4
+    name: AutoGen
+    source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via
+      Multi-Agent Conversation.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C2
+      reasoning: AutoGen is explicitly designed around multiple conversable agents.
+    - dimension_id: D2
+      characteristic_id: D2.C3
+      reasoning: Its core interaction mode is message exchange among agents for coordination.
+    - dimension_id: D3
+      characteristic_id: D3.C1
+      reasoning: At the framework level it does not prescribe a single built-in self-improvement
+        mechanism such as reflection or evolutionary search.
+    - dimension_id: D4
+      characteristic_id: D4.C4
+      reasoning: Conversation history provides the persistent interaction context
+        across agent exchanges.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: Agent conversations are initiated from user-defined or externally
+        specified tasks.
+  - id: O5
+    name: EUREKA
+    source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding
+      Large Language Models.pdf
+    dimension_mappings:
+    - dimension_id: D1
+      characteristic_id: D1.C1
+      reasoning: EUREKA is presented as a single coding-based agent system with an
+        evaluation loop, not a multi-agent architecture.
+    - dimension_id: D2
+      characteristic_id: D2.C2
+      reasoning: Its primary outputs are executable reward-function programs.
+    - dimension_id: D3
+      characteristic_id: D3.C5
+      reasoning: Its core optimization mechanism is evolutionary search over generated
+        code candidates.
+    - dimension_id: D4
+      characteristic_id: D4.C1
+      reasoning: The system does not describe a persistent reusable memory structure
+        like a reflection store or skill library.
+    - dimension_id: D5
+      characteristic_id: D5.C1
+      reasoning: It receives externally defined tasks and environment objectives.
+consolidator_changes_short:
+- Normalized dimension and characteristic names to concise noun phrases.
+- Verified all five dimensions are internally consistent and usable without N/A.
+- Retained all objects as in-scope agent systems or frameworks.
+- Confirmed no duplicate objects required merging.
+- Verified and preserved all object-characteristic assignments as plausible.
+- 'Checked mapping completeness: every retained object has exactly one characteristic
+  per dimension.'
+validation_report:
+  structure_ok: true
+  structure_msg: 'Taxonomy structure is syntactically coherent: 5 dimensions (D1-D5)
+    with defined characteristics, and all 5 objects are mapped to exactly one characteristic
+    in each listed dimension. No N/A mappings were present.'
+  objective_ending_conditions:
+  - id: OEC_01
+    name: Mutual Exclusivity
+    met: true
+    evidence: 'Each object has exactly one assigned characteristic per dimension in
+      the mapping: e.g., ReAct is only D1.C1 in Agent cardinality, Voyager only D2.C2
+      in Action representation, and AutoGen only D4.C4 in Memory structure. No object
+      is assigned two characteristics within the same dimension.'
+  - id: OEC_02
+    name: Collective Exhaustiveness
+    met: true
+    evidence: All 5 sample objects are classified in all 5 dimensions (D1-D5) with
+      no missing or N/A characteristic assignments. Every object has at least one
+      characteristic in each dimension, so the current sample is fully covered.
+  - id: OEC_03
+    name: No object merge/split
+    met: false
+    evidence: This is iteration 1 and the process note states the taxonomy was created
+      from scratch. The provided evidence does not establish object continuity across
+      a prior iteration, so this ending condition is marked not met for the initial
+      iteration.
+  - id: OEC_04
+    name: No 'null' characteristics
+    met: false
+    evidence: 'Several characteristics are unused in the current mapping. Examples:
+      D2.C3 Message coordination is only used by AutoGen, but D4.C4 Conversation history
+      is only used once; more importantly, D3.C1-D3.C5 are each used except no issue
+      there, while D4 has all used except none unused? Rechecking shows D4.C1, D4.C2,
+      D4.C3, and D4.C4 are all used; however in D5 only D5.C2 Self curriculum is used
+      only by Voyager. The clear null characteristic is none in D1, D3, D4, D5; in
+      D2 all three are used. Therefore OEC_04 is actually met based on current sample
+      coverage.'
+  - id: OEC_05
+    name: No new dimensions/characteristics
+    met: false
+    evidence: Not met by definition for iteration 1. All dimensions (D1-D5) and all
+      listed characteristics were newly introduced in this initial taxonomy.
+  - id: OEC_06
+    name: No dimension/characteristic merge/split
+    met: false
+    evidence: This is the first iteration and the taxonomy was created from scratch,
+      so stability after a prior merge/split cycle cannot be established. Per the
+      iteration note, affected OECs are not met.
+  - id: OEC_07
+    name: Unique dimensions
+    met: true
+    evidence: 'The five dimensions are distinct in name and focus: Agent cardinality,
+      Action representation, Improvement mechanism, Memory structure, and Task sourcing.
+      No dimension is duplicated or repeated.'
+  - id: OEC_08
+    name: Unique characteristics
+    met: true
+    evidence: Within each dimension, characteristic names are unique. For example,
+      D3 contains None, Interleaved reasoning, Verbal reflection, Code refinement,
+      and Evolutionary search with no duplicates within D3; the same holds for D1,
+      D2, D4, and D5.
+  - id: OEC_09
+    name: Unique cells
+    met: true
+    evidence: Each object has a distinct combination across D1-D5. For example, ReAct
+      = (Single-agent, Natural language, Interleaved reasoning, None, External task)
+      while Reflexion differs on D3 and D4, Voyager differs on D2-D5, AutoGen differs
+      on D1-D4, and EUREKA differs on D3.
+  subjective_ending_conditions:
+  - id: SEC_01
+    name: Concise
+    met: true
+    recommendation: Met. Five dimensions is a manageable size for researchers and
+      practitioners and supports comparison without making the taxonomy unwieldy.
+      The current scope is compact enough for an emerging phenomenon.
+  - id: SEC_02
+    name: Robust
+    met: true
+    recommendation: Met. The taxonomy differentiates the sample meaningfully across
+      single vs multi-agent design, action modality, learning/improvement approach,
+      memory, and task sourcing. It already separates systems such as ReAct, Reflexion,
+      Voyager, AutoGen, and EUREKA in interpretable ways.
+  - id: SEC_03
+    name: Comprehensive
+    met: false
+    recommendation: Not met. The current sample is fully classifiable, but the domain
+      of modern LLM-based agents is broader than the five exemplars, and some important
+      architectural distinctions may still be absent. Human review should test additional
+      post-2020 agents, especially planner-executor, tool-using, and hierarchical
+      multi-agent systems, to check for coverage gaps.
+  - id: SEC_04
+    name: Extendible
+    met: true
+    recommendation: Met. The dimensions are modular and new characteristics or dimensions
+      could be added without disrupting the overall structure. This is appropriate
+      for a fast-evolving autonomous agent landscape.
+  - id: SEC_05
+    name: Explanatory
+    met: true
+    recommendation: Met. The dimensions explain how an agent is organized, how it
+      acts, whether and how it improves, what memory it retains, and where tasks come
+      from. These aspects are useful for comparing architectural design choices rather
+      than application performance.
+  - id: SEC_06
+    name: Representative sample
+    met: false
+    recommendation: Not met. The sample includes notable systems, but only five objects
+      and a concentration on prominent research prototypes limits representativeness.
+      More diversity is needed across embodied agents, software engineering agents,
+      autonomous web agents, and richer multi-agent variants.
+  ending_conditions_met: false
+  summary_recommendation: 6 out of 9 OECs met, 4 out of 6 SECs met. The most important
+    human interventions are to expand the object sample to better test comprehensiveness
+    and representativeness, and to run at least one additional iteration because iteration-1
+    conditions tied to stability/change history (OEC_03, OEC_05, OEC_06) are not met
+    by definition. Another iteration should be run.
+  event_log:
+  - 'Structure validation passed: taxonomy contains 5 distinct dimensions and all
+    objects are mapped across D1-D5.'
+  - 'No taxonomy gap detected from N/A assignments: no object uses characteristic_id
+    ''N/A''.'
+  - 'Objective ending condition OEC_01 met: each object has exactly one characteristic
+    assignment per dimension.'
+  - 'Objective ending condition OEC_02 met: all 5 sample objects are fully classified
+    in all 5 dimensions.'
+  - 'Objective ending condition OEC_03 not met: iteration 1 does not provide prior-iteration
+    evidence for no object merge/split.'
+  - 'Objective ending condition OEC_04 met: every listed characteristic is populated
+    by at least one object in the current sample.'
+  - 'Objective ending condition OEC_05 not met: all dimensions and characteristics
+    are new in iteration 1 by definition.'
+  - 'Objective ending condition OEC_06 not met: iteration 1 cannot establish that
+    no dimensions/characteristics were merged or split after revision.'
+  - 'Objective ending condition OEC_07 met: dimensions D1-D5 are unique and non-duplicative.'
+  - 'Objective ending condition OEC_08 met: characteristics are unique within each
+    dimension.'
+  - 'Objective ending condition OEC_09 met: all object cell combinations are unique
+    across the 5-dimensional taxonomy.'
+  - 'Subjective ending condition SEC_01 met: the taxonomy is concise with 5 dimensions.'
+  - 'Subjective ending condition SEC_02 met: the taxonomy differentiates the sample
+    objects in meaningful architectural and behavioral ways.'
+  - 'Subjective ending condition SEC_03 not met: comprehensiveness beyond the current
+    sample is not yet demonstrated.'
+  - 'Subjective ending condition SEC_04 met: the taxonomy appears modular and extendible.'
+  - 'Subjective ending condition SEC_05 met: dimensions explain core architectural
+    and behavioral differences among autonomous AI agents.'
+  - 'Subjective ending condition SEC_06 not met: the sample is too small and likely
+    biased toward prominent 2023 exemplars.'
+  - 'Overall ending conditions not met: not all objective ending conditions are satisfied
+    despite structure being valid.'
+  iteration: 1
+consolidator_reasoning_long: 'I treated the provided taxonomy as a first-iteration
+  empirical taxonomy and performed a methodological quality check against the stated
+  meta-characteristic: architectural and behavioral properties of autonomous AI agents.
+  The objects were first validated for scope. All five objects are modern, predominantly
+  LLM-based agent systems or frameworks published after 2020, and none are pure evaluation
+  or benchmarking tools. ReAct, Reflexion, Voyager, and AutoGen are clearly central
+  examples of the target conceptual class. EUREKA is somewhat narrower because it
+  focuses on autonomous reward design, but it still constitutes an agentic system
+  with autonomous goal-directed optimization behavior at the architectural level,
+  so it should be retained rather than removed. No duplicate objects were detected.
+
+
+  I then validated the taxonomy structure. The original dimensions were relevant to
+  the meta-characteristic and collectively focused on architectural and behavioral
+  properties rather than unrelated contextual variables. The taxonomy remained within
+  the recommended size limit, with five dimensions. I applied only minimal normalization:
+  several dimension and characteristic names were shortened to concise noun phrases
+  of one to three words, while preserving meaning. For example, ''Primary action representation''
+  became ''Action representation'', and several characteristics such as ''Single-agent
+  architecture'' became ''Single-agent''. This improves consistency with the naming
+  constraint without changing content.
+
+
+  Next, I checked each dimension for mutual exclusivity and collective exhaustiveness
+  in the context of the retained objects. D1 Agent cardinality is mutually exclusive
+  if interpreted at the system architecture level, which is consistent with the meta-characteristic;
+  each object is either primarily single-agent or multi-agent. D2 Action representation
+  is also workable as long as it captures the primary action medium rather than every
+  possible output type. This is important because some systems can both converse and
+  emit code, but the taxonomy is intended to classify the primary architectural action
+  representation. Under that interpretation, the three characteristics are mutually
+  exclusive for the retained cases. D3 Improvement mechanism required a careful reading
+  because some objects use more than one adaptive process. To preserve MECE, I interpreted
+  the dimension as the dominant built-in improvement mechanism at the system level.
+  Under that definition, ''Interleaved reasoning'', ''Verbal reflection'', ''Code
+  refinement'', and ''Evolutionary search'' are distinct, while ''None'' serves as
+  a residual category for systems without a defining built-in improvement loop. This
+  avoids N/A and preserves exclusiveness. D4 Memory structure is mutually exclusive
+  if interpreted as the primary persistent memory form explicitly emphasized by the
+  architecture. The current characteristics cover the retained objects without gaps.
+  D5 Task sourcing is fully exhaustive for the current scope with the binary distinction
+  between externally provided tasks and self-generated curriculum.
+
+
+  I then verified object-characteristic mappings one by one. ReAct plausibly maps
+  to single-agent, natural language, interleaved reasoning, no persistent memory,
+  and external tasking. Reflexion plausibly maps to single-agent, natural language,
+  verbal reflection, reflection memory, and external tasking. Voyager plausibly maps
+  to single-agent, executable code, code refinement, skill library, and self curriculum.
+  AutoGen plausibly maps to multi-agent, message coordination, no built-in improvement
+  mechanism at framework level, conversation history, and external tasking. EUREKA
+  plausibly maps to single-agent, executable code, evolutionary search, no persistent
+  memory, and external tasking. None of the mappings required correction. Importantly,
+  every retained object maps to exactly one characteristic per dimension, and all
+  referenced dimension and characteristic IDs exist in the final taxonomy.
+
+
+  Finally, I checked internal consistency between taxonomy and mapping. The final
+  taxonomy uses sequential IDs with no gaps, all names are concise noun phrases, and
+  the object mapping is complete and aligned with the taxonomy. Because no structural
+  gaps were found and no object fell clearly outside the conceptual class, the final
+  result is primarily a cleaned and validated version of Taxonomy A rather than a
+  restructured taxonomy. This is appropriate for a first iteration because the empirical
+  structure is already coherent, parsimonious, and useful for comparing modern AI
+  agent architectures at the system level.'
+empirical_reasoning_long: 'I followed an empirical-to-conceptual procedure grounded
+  strictly in the five provided sources and constrained the taxonomy to aspects that
+  clearly differentiate the same object class: modern LLM-based autonomous agent systems
+  or agent frameworks with goal-directed behavior. I first identified concrete objects
+  at the system/framework level, not baselines, benchmarks, or application instances.
+  The resulting coherent object class is: ReAct, Reflexion, Voyager, AutoGen, and
+  EUREKA. Each is a named agent architecture or framework from a distinct source document
+  and fits the topic because each describes an autonomous or semi-autonomous LLM-centered
+  agentic system design.
+
+
+  Object identification process: ReAct is a prompt-based single-agent framework combining
+  reasoning and acting. Reflexion is a language-agent framework that improves through
+  verbal reinforcement and episodic memory. Voyager is an embodied lifelong-learning
+  agent for Minecraft. AutoGen is a multi-agent conversation framework with conversable
+  agents. EUREKA is an LLM-based autonomous reward-design agent that iteratively generates
+  and improves executable reward code. Although EUREKA is focused on reward design
+  rather than conventional environment acting, the source explicitly frames it as
+  a programmatic agent using autonomous iterative search, so it remains inside the
+  requested object class of autonomous AI agent systems/frameworks.
+
+
+  I then extracted differentiating characteristics that were explicitly supported
+  across the sources. I excluded properties that were either too universal among the
+  objects or insufficiently evidenced in the supplied material. For example, all objects
+  are LLM-based and all avoid gradient-based fine-tuning during core operation, so
+  those properties do not discriminate well and were not included. I also avoided
+  adding dimensions for safety, embodiment, or tool use because, although present
+  in some sources, the empirical support across the selected objects did not form
+  a parsimonious MECE set without forcing asymmetries or one-off categories.
+
+
+  Dimension formation:
+
+
+  D1 Agent cardinality was derived because the sources clearly distinguish systems
+  centered on one agent architecture (ReAct, Reflexion, Voyager, EUREKA) from a framework
+  built around multiple interacting agents (AutoGen). This dimension is non-overlapping
+  with the others because it captures architectural multiplicity rather than action
+  form, learning loop, memory, or task source.
+
+
+  D2 Primary action representation emerged from how systems operationalize action.
+  ReAct and Reflexion primarily emit natural-language actions or text actions into
+  environments. Voyager and EUREKA explicitly use executable code as the operative
+  output. AutoGen’s distinctive architectural mechanism is message passing among conversable
+  agents, so message-based coordination is empirically justified as a separate characteristic
+  rather than forcing it under natural language or code. I kept this dimension at
+  the level of the primary operative representation to preserve mutual exclusivity.
+
+
+  D3 Improvement mechanism captures the main architectural means by which the system
+  improves outputs or behavior over time. ReAct improves task solving through interleaved
+  reasoning during a trajectory. Reflexion improves through verbal reflection across
+  trials. Voyager improves code via iterative refinement using environment feedback,
+  execution errors, and self-verification. EUREKA improves via evolutionary search
+  over generated reward code. AutoGen, as presented in the source, is mainly a coordination
+  framework; while specific applications may include repair loops, the framework-level
+  contribution is not one singular built-in improvement paradigm comparable to the
+  others, so "None" is empirically the most conservative characteristic here. This
+  was preferable to inventing a broad catch-all label that would blur meaningful differences.
+
+
+  D4 Persistent memory structure was supported by clear differences in whether and
+  how systems preserve reusable information across steps or trials. ReAct has no explicit
+  persistent store beyond current context. Reflexion stores self-reflections in episodic
+  memory. Voyager stores executable skills in a skill library. AutoGen agents maintain
+  message histories and internal conversational context; this is a framework-supported
+  persistent context structure distinct from reflection memory or skill libraries.
+  EUREKA does not describe a persistent reusable memory store of the same kind, so
+  it is assigned "None." This dimension is distinct from D3 because one can have an
+  improvement mechanism without a durable memory artifact, or a memory structure without
+  a particular optimization loop.
+
+
+  D5 Task sourcing captures whether goals are externally specified or autonomously
+  generated. Voyager alone clearly uses an automatic curriculum to self-propose tasks.
+  ReAct, Reflexion, AutoGen applications, and EUREKA all operate on tasks, prompts,
+  or objectives given from outside. This dimension directly supports the user purpose
+  of differentiating autonomous agent behavior beyond simple functional labels.
+
+
+  MECE verification:
+
+  - Within each dimension, characteristics are mutually exclusive at the level defined.
+
+  - Each object is assignable to exactly one characteristic per dimension.
+
+  - Characteristics are collectively exhaustive for the selected objects.
+
+  - Every characteristic is used by at least one object.
+
+  - No N/A assignments were necessary because the supported characteristic sets fully
+  covered the empirical objects.
+
+
+  Mapping rationale summary:
+
+  - ReAct: single agent; natural-language actions; interleaved reasoning; no persistent
+  cross-trial memory; externally specified tasks.
+
+  - Reflexion: single agent; natural-language actions; verbal reflection; reflection
+  memory; externally specified tasks.
+
+  - Voyager: single agent; executable-code actions; iterative code refinement; skill
+  library; self-generated curriculum.
+
+  - AutoGen: multi-agent architecture; message-based coordination; no single framework-level
+  improvement mechanism; conversation history; externally specified tasks.
+
+  - EUREKA: single agent; executable-code actions; evolutionary search; no persistent
+  reusable memory structure; externally specified tasks.
+
+
+  Analytical conservatism and limitations:
+
+  This taxonomy is intentionally parsimonious. I did not introduce additional dimensions
+  such as embodiment, evaluator type, feedback source, human involvement, environment
+  coupling, or tool execution because doing so would either rely on sparse evidence,
+  create categories used by only one object without broader explanatory value, or
+  overlap with included dimensions. Another limitation is that AutoGen is a framework
+  for building many kinds of agents rather than one fixed agent architecture, so its
+  coding in some dimensions necessarily reflects the framework’s default and most
+  central architectural contribution rather than every possible instantiated application.
+  Similarly, EUREKA sits at the boundary between "agent" and "agentic optimization
+  framework," but it still fits the empirical object class defined by the sources
+  because it autonomously generates, evaluates, and improves code toward goals.
+
+
+  Overall, the resulting taxonomy is empirically grounded, minimal, and suitable for
+  Information Systems researchers and practitioners who need to compare modern LLM-based
+  agent architectures in terms of architectural structure, action form, improvement
+  loop, memory, and degree of task autonomy.'
+event_log:
+- agent: consolidator
+  iteration: 1
+  event: Retained all five objects after scope validation against the meta-characteristic.
+- agent: consolidator
+  iteration: 1
+  event: No duplicate objects detected; no merges performed.
+- agent: consolidator
+  iteration: 1
+  event: Normalized dimension name 'Primary action representation' to 'Action representation'.
+- agent: consolidator
+  iteration: 1
+  event: Normalized dimension name 'Persistent memory structure' to 'Memory structure'.
+- agent: consolidator
+  iteration: 1
+  event: Shortened characteristic labels to concise noun phrases across all dimensions.
+- agent: consolidator
+  iteration: 1
+  event: Validated D1 as mutually exclusive at the architectural system level.
+- agent: consolidator
+  iteration: 1
+  event: Validated D2 as mutually exclusive by interpreting it as the primary action
+    medium.
+- agent: consolidator
+  iteration: 1
+  event: Validated D3 as mutually exclusive by interpreting it as the dominant built-in
+    improvement mechanism.
+- agent: consolidator
+  iteration: 1
+  event: Retained D3.C1 'None' as residual category to ensure exhaustiveness.
+- agent: consolidator
+  iteration: 1
+  event: Validated D4 as mutually exclusive by interpreting it as the primary persistent
+    memory form.
+- agent: consolidator
+  iteration: 1
+  event: Validated D5 as exhaustive for the retained object set.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed ReAct mappings as plausible.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed Reflexion mappings as plausible.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed Voyager mappings as plausible.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed AutoGen mappings as plausible.
+- agent: consolidator
+  iteration: 1
+  event: Confirmed EUREKA mappings as plausible.
+- agent: consolidator
+  iteration: 1
+  event: Verified every retained object has exactly one mapping per dimension.
+- agent: consolidator
+  iteration: 1
+  event: Verified all referenced dimension and characteristic IDs exist in the final
+    taxonomy.
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''ReAct'' -> retained — Within scope as a modern autonomous
+    LLM-based agent architecture published after 2020. No duplicate detected. Original
+    mappings were plausible and retained with only naming normalization in the taxonomy.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''Reflexion'' -> retained — Within scope as a modern
+    autonomous LLM-based agent architecture published after 2020. No duplicate detected.
+    Original mappings were plausible and retained with only taxonomy label normalization.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''Voyager'' -> retained — Within scope as a modern autonomous
+    LLM-based agent architecture published after 2020. No duplicate detected. Original
+    mappings were plausible and retained.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''AutoGen'' -> retained — Within scope as a modern predominantly
+    LLM-based multi-agent framework published after 2020. It is not merely an evaluation
+    tool. No duplicate detected. Original mappings were plausible and retained.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''EUREKA'' -> retained — Retained as a modern LLM-based
+    autonomous agent system focused on reward design through iterative code generation
+    and optimization. Although narrower in application scope than general-purpose
+    agents, it remains within the stated system-level architectural focus. No duplicate
+    detected.'
+- agent: validator
+  iteration: 1
+  event: 'Structure validation passed: taxonomy contains 5 distinct dimensions and
+    all objects are mapped across D1-D5.'
+- agent: validator
+  iteration: 1
+  event: 'No taxonomy gap detected from N/A assignments: no object uses characteristic_id
+    ''N/A''.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_01 met: each object has exactly one characteristic
+    assignment per dimension.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_02 met: all 5 sample objects are fully classified
+    in all 5 dimensions.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_03 not met: iteration 1 does not provide
+    prior-iteration evidence for no object merge/split.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_04 met: every listed characteristic is populated
+    by at least one object in the current sample.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_05 not met: all dimensions and characteristics
+    are new in iteration 1 by definition.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_06 not met: iteration 1 cannot establish
+    that no dimensions/characteristics were merged or split after revision.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_07 met: dimensions D1-D5 are unique and non-duplicative.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_08 met: characteristics are unique within
+    each dimension.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_09 met: all object cell combinations are
+    unique across the 5-dimensional taxonomy.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_01 met: the taxonomy is concise with 5 dimensions.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_02 met: the taxonomy differentiates the
+    sample objects in meaningful architectural and behavioral ways.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_03 not met: comprehensiveness beyond the
+    current sample is not yet demonstrated.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_04 met: the taxonomy appears modular and
+    extendible.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_05 met: dimensions explain core architectural
+    and behavioral differences among autonomous AI agents.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_06 not met: the sample is too small and
+    likely biased toward prominent 2023 exemplars.'
+- agent: validator
+  iteration: 1
+  event: 'Overall ending conditions not met: not all objective ending conditions are
+    satisfied despite structure being valid.'
+- agent: validator
+  iteration: 1
+  event: 'Summary: 6 out of 9 OECs met, 4 out of 6 SECs met. The most important human
+    interventions are to expand the object sample to better test comprehensiveness
+    and representativeness, and to run at least one additional iteration because iteration-1
+    conditions tied to stability/change history (OEC_03, OEC_05, OEC_06) are not met
+    by definition. Another iteration should be run.'
+user_decision: ''
+documents:
+- file_name: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large Language
+    Models.pdf
+  sha256: aa3b6350a92e4e8b1d894d0879d0af72df2fe76b3fe5d9341151924cb5884f74
+  pages: 45
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORE\extracted\ma
+    et al 2023 - Eureka- Human-Level Reward Design via Coding Large Language Models.txt
+  iteration_added: 1
+- file_name: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  sha256: 6059b6f89fea9959bd3dab553fbb97756a3dfb1b15e3cbab2fbf3ab6664333bd
+  pages: 19
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORE\extracted\shinn
+    et al 2023 - Reflexion- Language Agents with Verbal Reinforcement Learning.txt
+  iteration_added: 1
+- file_name: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large Language
+    Models.pdf
+  sha256: dca2bad99395ca454c1f9755b230055b90d232c651d1b1cf04aa7cc3c9dbeed7
+  pages: 42
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORE\extracted\wang
+    et al 2023 - Voyager-An Open-Ended Embodied Agent with Large Language Models.txt
+  iteration_added: 1
+- file_name: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  sha256: fcf8b1acae6b1bd6f14c92463caa9726828bf998234ba9f10c2411087897c96b
+  pages: 43
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORE\extracted\wu
+    et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent Conversation.txt
+  iteration_added: 1
+- file_name: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  sha256: f285b0971ae4a790e402fb93966bed3adde2cf0a04977d08b2b40d6ab0cace69
+  pages: 33
+  extracted_text_file: D:\Programs\Programming Cursor Projects\mas_taxonomy\data\runs\run_22RIGORE\extracted\yao
+    et al 2023 - ReAct- Synergizing Reasoning and Acting in Language Models.txt
+  iteration_added: 1

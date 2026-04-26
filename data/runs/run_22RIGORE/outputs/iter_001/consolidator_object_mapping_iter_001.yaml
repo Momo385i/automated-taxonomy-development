@@ -1,0 +1,117 @@
+iteration: 1
+objects:
+- id: O1
+  name: ReAct
+  source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ReAct is presented as a single language-model agent that reasons and
+      acts within one trajectory.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its actions are primarily expressed as textual commands and natural-language
+      action traces.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Its distinctive mechanism is the interleaving of reasoning and acting
+      during problem solving.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: It does not introduce a persistent cross-episode memory structure beyond
+      current context.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It operates on externally provided tasks and benchmark goals.
+- id: O2
+  name: Reflexion
+  source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Reflexion centers on a single agent policy augmented with self-evaluation
+      rather than multiple cooperating agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The agent acts through text-based reasoning and environment-facing
+      textual actions.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Its defining improvement mechanism is verbal self-reflection stored
+      and reused across trials.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: It maintains an episodic buffer of self-reflections for later attempts.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Tasks are externally supplied from benchmarks or prompts.
+- id: O3
+  name: Voyager
+  source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Voyager is described as one embodied lifelong learning agent.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its action interface is executable code, with programs generated and
+      executed in the environment.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: Its improvement loop is centered on iterative generation and refinement
+      of executable code using feedback.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: It accumulates reusable verified programs in a retrieved skill library.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: It proposes progressively harder tasks through an automatic curriculum.
+- id: O4
+  name: AutoGen
+  source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: AutoGen is explicitly designed around multiple conversable agents.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Its core interaction mode is message exchange among agents for coordination.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: At the framework level it does not prescribe a single built-in self-improvement
+      mechanism such as reflection or evolutionary search.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: Conversation history provides the persistent interaction context across
+      agent exchanges.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Agent conversations are initiated from user-defined or externally specified
+      tasks.
+- id: O5
+  name: EUREKA
+  source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: EUREKA is presented as a single coding-based agent system with an evaluation
+      loop, not a multi-agent architecture.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its primary outputs are executable reward-function programs.
+  - dimension_id: D3
+    characteristic_id: D3.C5
+    reasoning: Its core optimization mechanism is evolutionary search over generated
+      code candidates.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The system does not describe a persistent reusable memory structure
+      like a reflection store or skill library.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: It receives externally defined tasks and environment objectives.

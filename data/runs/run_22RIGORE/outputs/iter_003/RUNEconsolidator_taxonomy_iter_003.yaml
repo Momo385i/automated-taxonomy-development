@@ -1,0 +1,105 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent multiplicity
+  characteristics:
+  - id: D1.C1
+    name: Single-agent
+  - id: D1.C2
+    name: Multi-agent
+- id: D2
+  name: Actuation domain
+  characteristics:
+  - id: D2.C1
+    name: Digital
+  - id: D2.C2
+    name: Physical
+  - id: D2.C3
+    name: Hybrid
+- id: D3
+  name: Control loop
+  characteristics:
+  - id: D3.C1
+    name: Open-loop
+  - id: D3.C2
+    name: Closed-loop
+- id: D4
+  name: Planning organization
+  characteristics:
+  - id: D4.C1
+    name: Reactive
+  - id: D4.C2
+    name: Task-driven
+  - id: D4.C3
+    name: Hierarchical
+  - id: D4.C4
+    name: Conversational
+  - id: D4.C5
+    name: Self-reflective
+  - id: D4.C6
+    name: DEPS
+- id: D5
+  name: Memory architecture
+  characteristics:
+  - id: D5.C1
+    name: None
+  - id: D5.C2
+    name: Contextual
+  - id: D5.C3
+    name: Task-state
+  - id: D5.C4
+    name: Reflection
+  - id: D5.C5
+    name: Skill library
+  - id: D5.C6
+    name: Memory stream
+  - id: D5.C7
+    name: Hierarchical
+  - id: D5.C8
+    name: Phase-segmented
+- id: D6
+  name: Feedback source
+  characteristics:
+  - id: D6.C1
+    name: None
+  - id: D6.C2
+    name: Environment
+  - id: D6.C3
+    name: Inter-agent
+  - id: D6.C4
+    name: External model
+  - id: D6.C5
+    name: Human
+  - id: D6.C6
+    name: Mixed
+- id: D7
+  name: Adaptation mechanism
+  characteristics:
+  - id: D7.C1
+    name: None
+  - id: D7.C2
+    name: Reasoning-action
+  - id: D7.C3
+    name: Verbal reflection
+  - id: D7.C4
+    name: Code refinement
+  - id: D7.C5
+    name: Evolutionary search
+- id: D8
+  name: Task sourcing
+  characteristics:
+  - id: D8.C1
+    name: External task
+  - id: D8.C2
+    name: Self curriculum
+- id: D9
+  name: Human involvement
+  characteristics:
+  - id: D9.C1
+    name: Initial-only
+  - id: D9.C2
+    name: Interactive
+notes:
+  format: prototype_v1

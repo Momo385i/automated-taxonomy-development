@@ -1,0 +1,208 @@
+iteration: 2
+empirical_reasoning: 'I applied an empirical-to-conceptual procedure constrained to
+  the five provided sources and the requested object class: modern, predominantly
+  LLM-based autonomous agent systems or frameworks with system-level architectural
+  and behavioral properties. I first identified concrete candidate objects appearing
+  as named systems in the sources: ReAct, Reflexion, VOYAGER, AutoGen, and EUREKA.
+  All five are sufficiently distinct and all belong to the same conceptual class at
+  the level supported by the topic: autonomous AI agent systems/frameworks that pursue
+  goals through iterative interaction, planning, improvement, or coordination. I excluded
+  benchmarks, baselines, and evaluation-only artifacts such as ALFWorld, HumanEval,
+  L2R, sparse/human reward baselines, and specific application instances built with
+  AutoGen, because they are not themselves the target object class or are subordinate
+  instantiations rather than primary systems.
+
+
+  I then derived differentiating characteristics only where the sources provided clear
+  contrasts. I avoided adding dimensions that would be weakly supported, universal,
+  or merely implementation detail. For example, all objects are LLM-based and all
+  use feedback of some form, so those would not discriminate sufficiently. The resulting
+  dimensions capture empirically recurring architectural distinctions.
+
+
+  D1 Agent cardinality emerged directly from the contrast between AutoGen, which is
+  explicitly built from multiple conversable agents, and the remaining systems, which
+  are each presented as a single agentic system with internal modules rather than
+  multiple peer agents. This dimension is non-overlapping with the others because
+  it concerns the number and organization of agents, not their action form or learning
+  loop.
+
+
+  D2 Primary action representation was supported by repeated explicit claims in the
+  sources about what the agent mainly emits to affect progress. ReAct and Reflexion
+  primarily operate through textual thoughts/actions or textual outputs. VOYAGER and
+  EUREKA centrally generate executable code. AutoGen’s core abstraction is inter-agent
+  conversation, so conversational messages are its primary action representation at
+  the framework level. I treated this as the primary externally operative representation
+  rather than every possible secondary capability. This keeps the dimension MECE for
+  the selected objects.
+
+
+  D3 Improvement mechanism was derived because each source centers a different dominant
+  way the system improves behavior over time. ReAct improves through interleaving
+  reasoning with action. Reflexion improves through verbal reflection stored for subsequent
+  attempts. VOYAGER improves through iterative prompting grounded in execution feedback,
+  environment feedback, and self-verification. EUREKA improves via evolutionary search
+  over reward code candidates. AutoGen improves task performance through conversation-driven
+  coordination among specialized agents. These mechanisms are distinct in the sources
+  and explain a central behavioral difference. I kept one primary mechanism per object
+  to satisfy mutual exclusivity.
+
+
+  D4 Persistent knowledge store was supported by only three empirically present conditions.
+  Reflexion has an episodic reflective memory buffer. VOYAGER has an explicit skill
+  library indexed and reused across tasks. ReAct, EUREKA, and AutoGen do not describe
+  a comparable persistent memory artifact as a core architectural component in the
+  provided text, so they are assigned None. I did not invent finer memory subtypes
+  for systems where the source discussed only prompt context or transient history.
+
+
+  D5 Task generation mode was strongly supported by VOYAGER’s automatic curriculum
+  for self-generated tasks versus the externally provided tasks in the other systems.
+  Although AutoGen can support many workflows and VOYAGER can also be tested on externally
+  given tasks, the base architecture described in the source clearly differentiates
+  whether the system itself generates tasks as a curriculum component.
+
+
+  D6 Human involvement mode was included because the sources show meaningful variation.
+  ReAct and Reflexion are presented as autonomous in their main loop. AutoGen explicitly
+  supports configurable optional human participation through user proxy agents and
+  human input modes. VOYAGER and EUREKA each include explicit human-feedback augmentation
+  variants layered onto the base architecture: VOYAGER with humans as critic or curriculum,
+  EUREKA with human reward initialization and textual feedback. I used the broadest
+  architecture-level involvement mode supported by each source. This dimension is
+  distinct from improvement mechanism because it concerns whether and how humans may
+  participate, not how the system algorithmically updates behavior.
+
+
+  For the object-characteristic mapping, I assigned exactly one characteristic per
+  dimension for every object. I avoided N/A because each dimension could classify
+  all five objects without stretching the evidence. I also verified that every characteristic
+  is instantiated by at least one object: Single-agent by ReAct/Reflexion/VOYAGER/EUREKA,
+  Multi-agent by AutoGen; Text action traces by ReAct/Reflexion, Executable code by
+  VOYAGER/EUREKA, Conversational messages by AutoGen; Interleaved reasoning by ReAct,
+  Verbal reflection by Reflexion, Execution-grounded iteration by VOYAGER, Evolutionary
+  search by EUREKA, Conversation-driven coordination by AutoGen; None by ReAct/AutoGen/EUREKA,
+  Reflective memory by Reflexion, Skill library by VOYAGER; Externally specified tasks
+  by ReAct/Reflexion/AutoGen/EUREKA, Self-generated curriculum by VOYAGER; No human-in-the-loop
+  by ReAct/Reflexion, Optional human-in-the-loop by AutoGen, Human feedback augmentation
+  by VOYAGER/EUREKA.
+
+
+  Analytically, I remained conservative in two ways. First, I did not introduce dimensions
+  such as environment type, embodiment, evaluator type, or model-access mode, because
+  the evidence across the five sources was either uneven, potentially overlapping
+  with existing dimensions, or not necessary for parsimonious differentiation. Second,
+  I did not split dimensions further for symmetry. For example, execution-grounded
+  iteration could have been split into environment feedback, execution errors, and
+  self-verification, but only VOYAGER clearly bundles these as a named integrated
+  mechanism in the supplied corpus; further splitting would reduce parsimony without
+  improving classification value for the present object set.
+
+
+  The main limitation is that the taxonomy is intentionally bounded by the provided
+  sources, which heavily emphasize a small but influential set of post-2020 LLM-agent
+  designs. As a result, the taxonomy is parsimonious rather than comprehensive for
+  the entire agent landscape. It structures salient architectural differences supported
+  by these papers, especially around single versus multi-agent organization, text
+  versus code versus conversation as operational medium, the main self-improvement
+  loop, the presence of persistent memory artifacts, task sourcing, and human participation.
+  This makes it suitable for systematic comparison of the supplied agent systems while
+  remaining extensible for future empirical additions.'
+consolidator_reasoning: 'I first validated Taxonomy A structurally. Its IDs were already
+  consistent, and its dimensions were relevant to the meta-characteristic because
+  they described architectural and behavioral properties of autonomous AI agents.
+  However, several labels were longer than necessary and some dimensions mixed adjacent
+  concepts. In particular, Taxonomy A''s ''Primary action representation'' captured
+  one important architectural aspect, while ''Improvement mechanism'' captured adaptation
+  behavior; both were useful and empirically grounded. ''Persistent knowledge store,''
+  ''Task generation mode,'' and ''Human involvement mode'' were also relevant and
+  largely MECE. The main issue was not invalidity but incompleteness relative to Taxonomy
+  B: A lacked a direct dimension for control organization and a more explicit representation
+  of feedback source and memory subtypes.
+
+
+  I then compared Taxonomy B side by side with A. B contributed useful distinctions
+  in ''Execution organization,'' ''Primary feedback source,'' and a more nuanced ''Memory
+  form.'' These dimensions increase usefulness for IS researchers comparing architectures,
+  because they separate how an agent is organized, what kind of signals drive adaptation,
+  and what persistent structures it uses. However, some B dimensions were less useful
+  or overlapped strongly with others. ''Feedback closure'' was too coarse: once adaptation
+  mechanism and feedback source are represented, the open-loop/closed-loop distinction
+  becomes largely derivative and adds little discrimination. It was therefore excluded.
+  ''Revision mechanism'' overlapped substantially with Taxonomy A''s ''Improvement
+  mechanism''; rather than keeping both, I synthesized them into a single broader
+  and clearer dimension, ''Adaptation mechanism.'' ''Action grounding'' mixed representation
+  and execution substrate distinctions; its useful categories were absorbed into ''Primary
+  action form'' so that text, code, skills, and messages are compared directly at
+  the system level.
+
+
+  The resulting synthesis keeps dimensions that best explain architectural and behavioral
+  variation while avoiding redundancy. The final dimensions are: Agent cardinality,
+  Control pattern, Primary action form, Adaptation mechanism, Feedback source, Memory
+  form, Task origin, and Human involvement. This stays within the dimension limit
+  and improves explanatory power. Each dimension is designed to be MECE for the focal
+  objects: cardinality distinguishes single from multi-agent systems; control pattern
+  chooses the dominant execution organization; action form classifies the primary
+  operational output; adaptation mechanism identifies the principal way the system
+  improves or revises behavior; feedback source captures the dominant runtime signal;
+  memory form captures the main persistent or semi-persistent memory architecture;
+  task origin distinguishes externally assigned from self-generated tasks; and human
+  involvement distinguishes no human involvement, optional involvement, and augmentation.
+
+
+  I also verified collective exhaustiveness against the retained objects. To avoid
+  N/A, I included residual but meaningful categories where needed, such as ''None''
+  under feedback and memory. Although none of the retained objects required D5.C1
+  ''None'' in the final mapping, it remains useful for future extension and preserves
+  exhaustiveness. For memory, Taxonomy B''s granular categories were retained where
+  they described distinct architectural stores, while A''s ''Reflective memory'' and
+  ''Skill library'' were preserved because they are especially salient in modern LLM
+  agents. This produced a richer but still coherent memory dimension.
+
+
+  Object validation was then applied to all objects from both taxonomies. All objects
+  were retained because each is a modern, predominantly LLM-based autonomous agent
+  system or framework rather than a pure benchmark or evaluation tool. I kept doubtful
+  but plausible cases, per instruction. No exact duplicates appeared across A and
+  B. The only near-duplicate possibility was AutoGPT versus ''Auto-GPT styled agent
+  with Additional Opinions.'' I did not merge them because the latter is described
+  as a distinct architectural variant augmented with additional opinion sources and
+  retrieval memory, which changes the system design enough to justify separate retention.
+  I normalized names where helpful, such as ''VOYAGER'' to ''Voyager'' and shortening
+  the Auto-GPT variant name.
+
+
+  All object-characteristic assignments were re-evaluated against the merged taxonomy
+  rather than copied mechanically. When A and B conflicted or used different conceptual
+  schemes, I used the stronger architectural interpretation. For example, Voyager
+  was mapped to ''Plan-execute loop'' instead of a generic code-based control category
+  because the final taxonomy separates control pattern from action form; its code
+  generation is represented in action form, while its iterative planning/execution
+  is captured in control pattern. AutoGen and ChatDev were mapped to ''Chat-chain''
+  and ''Message actions'' because communication is their central organizational and
+  operational substrate. BabyAGI was mapped to ''Task-cycle loop'' and ''Self-generated
+  tasks'' because those are defining elements of its architecture. ReAct and Reflexion
+  were both mapped to ''Reason-act loop,'' but distinguished by adaptation mechanism:
+  interleaved reasoning for ReAct versus verbal reflection for Reflexion.
+
+
+  A few assignments required judgment because the original dimensions did not align
+  perfectly. Reflexion''s dominant feedback source can be interpreted as environment
+  plus evaluator feedback; within the final MECE scheme, ''Expert'' best captures
+  the evaluative signal transformed into reflections. Inner Monologue includes human
+  response signals in some settings, so ''Augmented'' human involvement was chosen
+  over ''None'' to preserve the architecture''s explicit capacity to incorporate such
+  signals. Auto-GPT with Additional Opinions was kept under ''Expert'' feedback source
+  because external advisory opinions are its salient differentiator.
+
+
+  Finally, I verified consistency. Every referenced dimension and characteristic exists
+  in the final taxonomy. Every object has exactly one mapping per dimension. The dimensions
+  were checked for mutual exclusivity; where co-occurrence was possible in reality,
+  I defined the dimension around the primary or dominant architectural attribute to
+  maintain exactly one assignment. The final synthesis therefore preserves the strongest
+  elements from both input taxonomies, removes dimensions with low added value, and
+  produces a coherent, traceable taxonomy suited to systematically comparing modern
+  autonomous AI agent architectures.'

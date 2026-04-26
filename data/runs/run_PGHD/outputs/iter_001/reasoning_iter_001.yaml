@@ -1,0 +1,237 @@
+iteration: 1
+empirical_reasoning: 'Object identification followed the user’s required object class:
+  individual PGHD integration projects or systems described in the literature, excluding
+  purely clinical outcome evaluations. I therefore treated each concrete implemented
+  or specified integration effort as one object, provided it involved PGHD or patient-contributed
+  data being connected to a clinical system, clinical platform, or organizational
+  workflow. All 12 selected objects are coherent members of the same conceptual class:
+  they are literature-described PGHD integration projects/systems that bridge patient-generated
+  data and clinical use.
+
+
+  I excluded purely outcome-only interventions where the integration mechanism itself
+  was not described as a system/project. I included protocol papers when they described
+  a concrete architecture and workflow for integration (e.g., Alcoceba-Herrero), because
+  the task is to classify integration approaches rather than only completed deployments.
+
+
+  The taxonomy was derived empirically and conservatively from recurring differences
+  visible across the sources. I first compared the objects on concrete, repeatedly
+  reported design choices: where data are collected, what clinical system they connect
+  to, how data are acquired, what kinds of patient-generated data are involved, whether
+  collection is continuous or episodic, how clinicians are prompted to act, how data
+  move into the receiving environment, and whether formal interoperability standards
+  are explicitly used. Only distinctions supported by multiple sources or by a clearly
+  described unique but relevant pattern were retained.
+
+
+  Dimension D1 (Care setting) emerged because the sources clearly differ in whether
+  PGHD are generated for home monitoring (e.g., HDP app, COPD platform, COVID home
+  quarantine), hospital monitoring (e.g., MobiCardio, Xu ward system), or span both
+  the hospital/unit and outside setting (e.g., CDPMS, NMPRO where completion can occur
+  at home and in clinic, Plastiras model spanning personal and provider contexts).
+  This dimension is important for healthcare IT researchers because the setting shapes
+  workflow, staffing, and infrastructure. The characteristics are mutually exclusive
+  by project emphasis and collectively exhaustive for the observed objects.
+
+
+  Dimension D2 (Clinical system integration target) captures what receiving clinical
+  environment the PGHD integration primarily targets. Empirically, some projects explicitly
+  write into or embed within the EHR (Dullabh, Nolla, Prahalad, Plastiras), some integrate
+  with a broader HIS environment (Li, Xu), and others rely on standalone clinical
+  platforms, dashboards, or web systems used by clinicians without being described
+  as core EHR/HIS integration (BREATHE, Hammett, Alcoceba-Herrero, MyWear, CDPMS,
+  Wu). This dimension separates the organizational endpoint of integration from the
+  transfer mechanism itself. I did not merge EHR and HIS because several sources explicitly
+  distinguished hospital-wide HIS integration from EHR-specific write-back or embedding.
+
+
+  Dimension D3 (PGHD acquisition mode) arose directly from differences in whether
+  data entered the system through manual self-report only, device-generated sensing
+  only, or a combination. This was one of the strongest empirical differentiators:
+  Dullabh and Nolla are dominated by patient-entered questionnaires; Hammett, MyWear,
+  MobiCardio, and Xu are sensor-driven; Alcoceba-Herrero, BREATHE, Prahalad, Tsakiridis,
+  Wu, and Plastiras include both self-report and sensing. This dimension is non-overlapping
+  with D4 because D3 concerns acquisition mode, whereas D4 concerns the scope/type
+  of data integrated.
+
+
+  Dimension D4 (Connected data scope) captures whether the connected PGHD primarily
+  consist of physiological data, patient-reported data, or multimodal patient data.
+  Some systems focus on physiological streams only (Hammett, MobiCardio, MyWear, Xu).
+  Others focus on patient-reported data such as PROs (Nolla). Many combine multiple
+  patient-generated data categories such as symptoms plus BP, or physiologic plus
+  environmental plus questionnaire data (Alcoceba-Herrero, BREATHE, Dullabh, Prahalad,
+  Tsakiridis, Wu, Plastiras). I retained this dimension because primary users need
+  to understand whether an integration project is limited to one data family or deliberately
+  bridges technical, clinical, and behavioral inputs.
+
+
+  Dimension D5 (Data capture temporality) distinguishes scheduled episodic capture,
+  continuous capture, and mixed continuous plus episodic capture. This difference
+  appeared repeatedly and matters for workload and signal interpretation. PROMIS CAT
+  collection and HDPM questionnaires are scheduled episodic. Smart garments and ward
+  monitoring systems are continuous. Several systems deliberately combine streaming
+  sensor data with questionnaires or scheduled prompts, such as BREATHE, COVID home
+  monitoring, Prahalad’s 4T system, Tsakiridis, and Wu. This is not redundant with
+  D3: a project can use sensors only and still be continuous, or use self-report only
+  and be episodic.
+
+
+  Dimension D6 (Clinical response mechanism) differentiates passive review, rule-based
+  alerting, and algorithmic decision support. Plastiras is primarily an exchange model
+  with no operational response logic; that is passive review. Dullabh, Hammett, Tsakiridis,
+  and Nolla use thresholding, highlighting, or notification rules that trigger clinician
+  attention. Alcoceba-Herrero, BREATHE, MobiCardio, Prahalad, MyWear, Wu, and Xu go
+  further by using AI/ML models, predictive algorithms, context-sensitive triggering,
+  or analytic applications to support clinical judgment. I separated rule-based alerting
+  from algorithmic decision support because the sources themselves distinguish simple
+  threshold/icon logic from machine learning or more advanced analytics.
+
+
+  Dimension D7 (Data transfer pathway) captures how PGHD traverse into the clinical
+  environment. The empirical patterns were: direct EHR write-back (most clearly Dullabh),
+  middleware transformation (Plastiras and Nolla), and platform-mediated exchange
+  through a cloud/server/dashboard/application layer (most other systems). This dimension
+  is distinct from D2 because two projects may both target the EHR but differ in transfer
+  pathway; for example, direct write-back versus middleware-mediated integration.
+
+
+  Dimension D8 (Interoperability basis) was retained because some sources explicitly
+  foreground standards. Dullabh is clearly FHIR-based, Plastiras is clearly CDA-based,
+  and many other systems either use custom APIs/JSON/proprietary links or leave the
+  standard unspecified. I did not create more granular standard categories because
+  the empirical material only strongly supported FHIR, CDA, and a heterogeneous residual
+  group of custom/unspecified approaches. This dimension is particularly relevant
+  to the stated users and purpose, as standards adoption is a critical design choice
+  for PGHD integration.
+
+
+  For each object, I assigned exactly one characteristic per dimension. I avoided
+  N/A because each dimension was constructed from the observed variation and every
+  object could be classified. Before considering N/A, I checked whether the gap indicated
+  a missing characteristic; none required expansion beyond the listed characteristics.
+
+
+  A brief summary of mappings illustrates the logic. Dullabh’s HDPM is home-based,
+  EHR-integrated, manually self-reported, multimodal (BP plus symptoms), scheduled,
+  rule-based, direct write-back, and FHIR-based because the paper explicitly centers
+  SMART on FHIR and EHR flowsheets. Plastiras is best classified as hybrid setting,
+  EHR target, combined acquisition, multimodal scope, episodic transfer, passive review,
+  middleware transformation, and CDA-based because it is an interoperability model
+  rather than an alerting system. Nolla is hybrid because CATs can be completed through
+  the portal or in clinic, EHR-targeted, self-report based, patient-reported in scope,
+  episodic, rule-based in response due to alerts and CDS triggers, middleware-based,
+  and custom/API-based rather than FHIR/CDA. Li and Xu are both hospital/HIS-oriented,
+  sensor-driven, physiological, continuous, and algorithmic, but they remain distinct
+  objects because one is a private-cloud CVD management system and the other a ward
+  wireless monitoring system with different deployment context and applications.
+
+
+  The taxonomy is parsimonious relative to the source set. I did not introduce dimensions
+  such as patient population, disease domain, user group, AI model type, privacy method,
+  or mobile operating system, even though these appear in some sources, because they
+  either describe the clinical context rather than PGHD integration design, or they
+  did not provide sufficient cross-object discriminatory value for this object class.
+  I also avoided dimensions that would overlap conceptually, such as separate dimensions
+  for alert presence and analytics sophistication beyond the single response-mechanism
+  dimension.
+
+
+  MECE verification was conducted within each dimension. For D1, each object is assigned
+  to one care setting emphasis only. For D2, the target is the primary receiving clinical
+  system. For D3, acquisition mode categories do not overlap. For D4, scope categories
+  are differentiated by whether only physiologic, only patient-reported, or multiple
+  patient-generated data types are integrated. For D5, temporality categories are
+  exclusive by dominant capture pattern. For D6, passive review, rule-based alerting,
+  and algorithmic decision support are ordered but distinct. For D7, transfer pathways
+  are assigned by the principal pathway emphasized in the source. For D8, the standard
+  basis is unique per project as described.
+
+
+  There are limitations. First, the source set mixes implemented systems, pilots,
+  and protocols, so some mappings classify intended rather than fully operational
+  integration designs. Second, several papers use broad terms like platform or integration
+  without always specifying the exact clinical write-back behavior; in those cases
+  I mapped conservatively to standalone clinical platform or custom/unspecified integration.
+  Third, some objects could plausibly support multiple settings or pathways, but Nickerson-style
+  taxonomy use requires exactly one characteristic per dimension, so I assigned the
+  dominant architecture or usage pattern documented in the source. Fourth, this taxonomy
+  is intentionally scoped to design-relevant PGHD integration features and does not
+  attempt to classify outcomes, disease-specific clinical logic, or adoption success.
+
+
+  Overall, the resulting taxonomy is empirically grounded, parsimonious, and oriented
+  to the stated audience of healthcare IT researchers and system designers. It highlights
+  design choices bridging technical, clinical, and organizational domains: where PGHD
+  are captured, what clinical system they connect to, how data are acquired, what
+  data types are integrated, how often data are captured, how clinicians are prompted
+  to respond, how data technically move into the clinical environment, and whether
+  formal interoperability standards are used.'
+consolidator_reasoning: 'The submitted taxonomy was structurally strong and already
+  close to a valid first-iteration taxonomy for classifying individual PGHD integration
+  projects or systems. I therefore applied only minimal normalization and consistency
+  checks rather than substantive restructuring. The meta-characteristic was used as
+  the primary relevance filter: retained objects had to represent concrete PGHD integration
+  efforts within clinical systems broadly defined to include EHRs, HIS, and clinician-facing
+  clinical platforms, while excluding purely clinical outcome studies. All 12 objects
+  satisfy this criterion. Two cases were somewhat borderline: the wearable at-home
+  prototype and the CDA middleware information model. However, both still describe
+  clinician-facing integration approaches rather than outcome-only evaluations or
+  purely consumer wellness tools, so they were retained to preserve empirical breadth
+  in this first iteration.
+
+
+  At the taxonomy level, the eight dimensions are all relevant to the stated purpose
+  of helping healthcare IT researchers and system designers evaluate integration approaches
+  across technical, clinical, and organizational domains. They remain below the recommended
+  upper bound of nine dimensions. I normalized labels to concise noun phrases of one
+  to three words, as required. For example, ''Clinical system integration target''
+  became ''Integration target'', ''PGHD acquisition mode'' became ''Acquisition mode'',
+  and the characteristics were shortened from phrases such as ''Manual self-report''
+  to ''Self-report''. These edits do not alter meaning; they improve terminological
+  economy and consistency.
+
+
+  I checked each dimension for mutual exclusivity and collective exhaustiveness against
+  the current object set and the intended feature space. D1 Care setting is mutually
+  exclusive if interpreted as the primary operational setting of PGHD collection and
+  use: home, hospital, or hybrid. D2 Integration target separates projects whose primary
+  target is the EHR, the HIS, or a standalone clinician-facing platform; because some
+  systems interact with more than one institutional system, assignments were interpreted
+  by primary integration target, which preserves exclusivity. D3 Acquisition mode
+  distinguishes self-report, sensing, and combined acquisition. D4 Data scope distinguishes
+  physiological-only, reported-only, and multimodal data; here ''multimodal'' serves
+  as the intentional residual for combinations, preserving exhaustiveness without
+  introducing N/A. D5 Capture temporality similarly distinguishes episodic, continuous,
+  and mixed temporal patterns. D6 Response mechanism is ordered around the highest
+  implemented level of clinical response sophistication: passive review, rule-based
+  alerting, or algorithmic support. This interpretation is important because many
+  systems with algorithmic support also contain alerts; assigning by the most advanced
+  primary mechanism preserves mutual exclusivity. D7 Transfer pathway separates direct
+  write-back, middleware-mediated transformation, and broader platform exchange. D8
+  Interoperability basis distinguishes FHIR, CDA, and custom approaches; ''Custom''
+  appropriately covers bespoke or unspecified standards.
+
+
+  I then verified the object mappings dimension by dimension. Every retained object
+  has exactly one mapping per dimension, and every referenced dimension and characteristic
+  exists in the final taxonomy. No N/A values were present, and no gaps required adding
+  residual categories beyond those already embedded in the structures such as Combined,
+  Multimodal, Mixed, and Custom. Most original assignments were plausible and were
+  retained. A few rationales were lightly rewritten for consistency with the normalized
+  labels or to make the primary classification logic more explicit. For example, some
+  objects mention both HIS and EHR, but were kept under HIS where the hospital information
+  system is the main operational integration target. Likewise, several systems contain
+  both alerting and analytics, but were retained under Algorithmic support when predictive
+  or AI-based processing is central.
+
+
+  No duplicate objects were detected. Although some inpatient monitoring systems share
+  architectural similarities, they are distinct projects from different source documents.
+  Object IDs and dimension IDs were already sequential and valid, so no renumbering
+  changes were required. The result is an internally consistent first-iteration taxonomy
+  that is methodologically coherent, empirically grounded, and directly usable for
+  comparing PGHD integration design choices across care setting, technical destination,
+  data acquisition, data scope, temporality, clinical response, transfer pathway,
+  and interoperability basis.'

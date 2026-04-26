@@ -1,0 +1,18 @@
+iteration: 3
+changes_short:
+- Validated Taxonomy A structure and normalized all names to concise noun phrases.
+- Synthesized both taxonomies into 9 dimensions with sequential IDs and MECE-oriented
+  characteristics.
+- Merged overlapping dimensions by combining Taxonomy A's control/planning structure
+  with Taxonomy B's capability, task, and environment dimensions.
+- Dropped Taxonomy A dimension 'Decision augmentation' as a standalone dimension and
+  absorbed its content into 'Improvement mechanism'.
+- Dropped Taxonomy A dimension 'Planning update mechanism' as redundant with synthesized
+  control loop and coordination structure.
+- Dropped Taxonomy B dimension 'Control organization' as a standalone dimension and
+  merged its content into synthesized coordination structure.
+- Replaced Taxonomy B memory characteristic 'Skill library' as a memory form within
+  synthesized memory organization.
+- Re-mapped all objects so each has exactly one characteristic per final dimension.
+- No duplicate objects across A and B were found; all retained objects were renumbered
+  sequentially O1-O16.

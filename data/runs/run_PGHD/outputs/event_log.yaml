@@ -1,0 +1,1013 @@
+events:
+- agent: consolidator
+  iteration: 1
+  event: Normalized taxonomy labels to concise noun phrases.
+- agent: consolidator
+  iteration: 1
+  event: Kept D1 because care setting is distinct from integration target and transfer
+    pathway.
+- agent: consolidator
+  iteration: 1
+  event: Kept D2 because primary clinical system target is a core integration design
+    choice.
+- agent: consolidator
+  iteration: 1
+  event: Kept D3 because acquisition mode differentiates self-reported and sensor-generated
+    PGHD.
+- agent: consolidator
+  iteration: 1
+  event: Kept D4 because data scope distinguishes physiological, reported, and mixed
+    payloads.
+- agent: consolidator
+  iteration: 1
+  event: Kept D5 because capture temporality is distinct from acquisition mode.
+- agent: consolidator
+  iteration: 1
+  event: Kept D6 with primary-mechanism interpretation to preserve mutual exclusivity.
+- agent: consolidator
+  iteration: 1
+  event: Kept D7 because transfer pathway captures architectural mediation differences
+    not covered by interoperability basis.
+- agent: consolidator
+  iteration: 1
+  event: Kept D8 because interoperability basis is a distinct technical design choice.
+- agent: consolidator
+  iteration: 1
+  event: No duplicate dimensions detected.
+- agent: consolidator
+  iteration: 1
+  event: No duplicate characteristics detected within dimensions.
+- agent: consolidator
+  iteration: 1
+  event: Object COVID-19 home quarantine clinical decision support system retained
+    — in scope as clinician-facing PGHD platform.
+- agent: consolidator
+  iteration: 1
+  event: Object BREATHE mHealth informatics platform retained — in scope as clinician-facing
+    PGHD platform.
+- agent: consolidator
+  iteration: 1
+  event: Object EHR-integrated postpartum HDP monitoring app retained — in scope as
+    PGHD-to-EHR integration.
+- agent: consolidator
+  iteration: 1
+  event: Object Wearable at-home vital sign monitoring prototype retained — borderline
+    but still in scope as clinician-facing integration prototype.
+- agent: consolidator
+  iteration: 1
+  event: Object MobiCardio clinical-grade CVD management system retained — in scope
+    as PGHD-HIS integration.
+- agent: consolidator
+  iteration: 1
+  event: Object PROMIS CAT middleware integration into Epic retained — in scope as
+    PGHD middleware integration into EHR.
+- agent: consolidator
+  iteration: 1
+  event: Object HL7 CDA middleware information model for PGHD and ODL exchange retained
+    — borderline but in scope as concrete exchange approach.
+- agent: consolidator
+  iteration: 1
+  event: Object 4T CGM-to-EHR integration for pediatric type 1 diabetes retained —
+    in scope as PGHD-to-EHR integration.
+- agent: consolidator
+  iteration: 1
+  event: Object MyWear smart garment monitoring system retained — in scope as clinician-accessible
+    PGHD platform.
+- agent: consolidator
+  iteration: 1
+  event: Object CDPMS hemodialysis integrated monitoring system retained — in scope
+    as hybrid-setting PGHD clinical system.
+- agent: consolidator
+  iteration: 1
+  event: Object AECOPD prediction system with wearable, app, and home sensors retained
+    — in scope as clinician-facing PGHD prediction platform.
+- agent: consolidator
+  iteration: 1
+  event: Object Medical-grade wireless ward monitoring system retained — in scope
+    as PGHD-HIS integration.
+- agent: consolidator
+  iteration: 1
+  event: No duplicate objects detected.
+- agent: consolidator
+  iteration: 1
+  event: Verified every object has exactly one mapping for each of the eight dimensions.
+- agent: consolidator
+  iteration: 1
+  event: Verified all referenced dimension IDs and characteristic IDs exist in the
+    final taxonomy.
+- agent: consolidator
+  iteration: 1
+  event: No N/A mappings remained; existing residual categories Combined, Multimodal,
+    Mixed, and Custom were sufficient.
+- agent: consolidator
+  iteration: 1
+  event: Refined mapping rationales for consistency with normalized labels.
+- agent: consolidator
+  iteration: 1
+  event: Kept iteration numbering and object IDs because they were already sequential
+    and valid.
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''COVID-19 home quarantine clinical decision support
+    system'' -> retained — Within scope because it is an individual PGHD integration
+    system used by clinicians through a clinical platform. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''BREATHE mHealth informatics platform'' -> retained
+    — Within scope because it integrates PGHD into a clinician-facing platform connected
+    to care processes. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''EHR-integrated postpartum HDP monitoring app'' -> retained
+    — Within scope because it is a concrete PGHD-to-EHR integration project. No duplicate
+    detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''Wearable at-home vital sign monitoring prototype''
+    -> retained — Retained as a borderline but in-scope clinician-facing integration
+    prototype; it includes PGHD flow into a clinical web application rather than only
+    consumer monitoring. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''MobiCardio clinical-grade CVD management system'' ->
+    retained — Within scope because it integrates wearable PGHD with hospital information
+    infrastructure. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''PROMIS CAT middleware integration into Epic'' -> retained
+    — Within scope because it is a concrete PGHD middleware integration into an EHR.
+    No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''HL7 CDA middleware information model for PGHD and ODL
+    exchange'' -> retained — Retained as a borderline but in-scope integration artifact
+    because it describes a concrete middleware-based exchange approach for PGHD into
+    EHRs, not merely a generic standard. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''4T CGM-to-EHR integration for pediatric type 1 diabetes''
+    -> retained — Within scope because it is a concrete PGHD-to-EHR integration effort.
+    No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''MyWear smart garment monitoring system'' -> retained
+    — Within scope because it is a clinician-accessible PGHD monitoring system integrated
+    into a clinical platform. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''CDPMS hemodialysis integrated monitoring system'' ->
+    retained — Within scope because it connects PGHD across home and dialysis-unit
+    clinical workflows using a dedicated clinical system. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''AECOPD prediction system with wearable, app, and home
+    sensors'' -> retained — Within scope because it integrates PGHD into a clinician-facing
+    risk prediction platform. No duplicate detected.'
+- agent: consolidator
+  iteration: 1
+  event: 'Object validation: ''Medical-grade wireless ward monitoring system'' ->
+    retained — Within scope because it integrates patient-generated sensor data with
+    hospital information infrastructure. No duplicate detected.'
+- agent: validator
+  iteration: 1
+  event: 'Structure check passed: taxonomy has 8 dimensions and each object is mapped
+    across D1-D8.'
+- agent: validator
+  iteration: 1
+  event: No N/A assignments detected in any object mapping.
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_01 not met: D2 Integration target is not
+    fully mutually exclusive because EHR is defined broadly while HIS and Clinical
+    platform are separate categories; O12 references both HIS and EHR.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_01 not met: D7 Transfer pathway has conceptual
+    overlap between Middleware and Platform exchange for platform-mediated architectures
+    such as O2, O10, and O11.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_02 not met: current categories do not clearly
+    accommodate plausible multi-target PGHD integrations across EHR/HIS/platform combinations.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_03 not met: iteration 1 created from scratch,
+    so prior-iteration stability condition cannot be satisfied.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_04 reviewed: no explicit null characteristic
+    was clearly evidenced from the sample mapping, but condition marked not met conservatively
+    given prototype status in iteration 1.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_05 not met: all dimensions and characteristics
+    are new in iteration 1 by user instruction.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_06 not met: iteration 1 affected change-history
+    condition is not met by definition per user instruction.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_07 met: all dimensions are uniquely named
+    and non-duplicative.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_08 met: characteristics are unique within
+    each dimension.'
+- agent: validator
+  iteration: 1
+  event: 'Objective ending condition OEC_09 not met: O5 and O12 have identical full
+    characteristic combinations, producing a duplicate cell.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_01 met: 8 dimensions is manageable for intended
+    users.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_02 met: taxonomy differentiates objects
+    across multiple technical and clinical aspects despite one duplicate cell.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_03 not met: broader domain coverage remains
+    uncertain due to overlapping and potentially missing categories.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_04 met: taxonomy can accept new dimensions
+    or characteristics with limited disruption.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_05 met: taxonomy explains key PGHD integration
+    design choices.'
+- agent: validator
+  iteration: 1
+  event: 'Subjective ending condition SEC_06 met: sample includes diverse settings,
+    targets, acquisition modes, and standards bases.'
+- agent: validator
+  iteration: 1
+  event: 'Overall ending conditions not met: not all objective ending conditions are
+    satisfied, although structure is acceptable.'
+- agent: validator
+  iteration: 1
+  event: 'Summary: 4 out of 9 OECs met, 5 out of 6 SECs met. Human review is most
+    needed for objective issues: clarify overlapping dimensions/characteristics (especially
+    D2 and D7), address non-exhaustive cases in the broader PGHD integration domain,
+    and resolve duplicate cells such as O5/O12. Another iteration should be run; because
+    this is iteration 1, the newness-related OECs are expected failures, but conceptual
+    refinement is also needed before stopping.'
+- agent: consolidator
+  iteration: 2
+  event: Validated Taxonomy A schema — dimensions and mappings were structurally complete.
+- agent: consolidator
+  iteration: 2
+  event: Normalized several labels into shorter noun phrases for synthesis consistency.
+- agent: consolidator
+  iteration: 2
+  event: Compared Taxonomy A and B dimensions side by side using the meta-characteristic
+    as relevance filter.
+- agent: consolidator
+  iteration: 2
+  event: Retained Care setting from Taxonomy B — adds organizational context important
+    for integration evaluation.
+- agent: consolidator
+  iteration: 2
+  event: Retained Integration target from Taxonomy B — distinguishes EHR, HIS, and
+    clinical platform destinations.
+- agent: consolidator
+  iteration: 2
+  event: Merged Taxonomy A PGHD source with Taxonomy B Acquisition mode into synthesized
+    PGHD source dimension.
+- agent: consolidator
+  iteration: 2
+  event: Retained Clinical system role from Taxonomy A and shortened label to Clinical
+    role.
+- agent: consolidator
+  iteration: 2
+  event: Merged Taxonomy A Integration architecture with Taxonomy B Transfer pathway
+    into Transfer pathway.
+- agent: consolidator
+  iteration: 2
+  event: Added characteristic CDA to Interoperability basis to preserve empirically
+    grounded standard from Taxonomy B.
+- agent: consolidator
+  iteration: 2
+  event: Dropped Taxonomy A Primary reviewing actor — less central to integration
+    design and harder to keep MECE.
+- agent: consolidator
+  iteration: 2
+  event: Dropped Taxonomy B Data scope — content-oriented and redundant with more
+    useful integration dimensions.
+- agent: consolidator
+  iteration: 2
+  event: Dropped Taxonomy B Capture temporality — overlap with workflow timing and
+    poor exclusivity in mixed systems.
+- agent: consolidator
+  iteration: 2
+  event: Dropped standalone Response mechanism from Taxonomy B — decomposed into Data
+    processing and Workflow trigger.
+- agent: consolidator
+  iteration: 2
+  event: Removed object BREATHE mHealth informatics platform — not clearly integrated
+    into a clinical system.
+- agent: consolidator
+  iteration: 2
+  event: Removed object Wearable at-home vital sign monitoring prototype — caregiver
+    web app without clear clinical system integration.
+- agent: consolidator
+  iteration: 2
+  event: Removed object MyWear smart garment monitoring system — clinician access
+    platform without clear clinical system integration.
+- agent: consolidator
+  iteration: 2
+  event: Removed object CDPMS hemodialysis integrated monitoring system — standalone
+    platform not clearly integrated into EHR/HIS.
+- agent: consolidator
+  iteration: 2
+  event: Removed object AECOPD prediction system with wearable, app, and home sensors
+    — no clear clinical system integration.
+- agent: consolidator
+  iteration: 2
+  event: Retained HL7 CDA middleware information model — design-focused PGHD-to-EHR
+    integration object within scope.
+- agent: consolidator
+  iteration: 2
+  event: Retained DH-Convener framework — architecture explicitly targets EHR interoperability.
+- agent: consolidator
+  iteration: 2
+  event: No duplicate objects were detected across Taxonomy A and B mappings.
+- agent: consolidator
+  iteration: 2
+  event: Reclassified COVID-19 Tracker integrated into Epic workflow from decision
+    support to monitoring in Clinical role.
+- agent: consolidator
+  iteration: 2
+  event: Reclassified postpartum HDP monitoring app to direct link pathway because
+    SMART on FHIR enables direct EHR write-back.
+- agent: consolidator
+  iteration: 2
+  event: Classified PROMIS CAT middleware as decision support due to threshold-triggered
+    notifications and CDS rules.
+- agent: consolidator
+  iteration: 2
+  event: Re-evaluated exchange direction assignments under stricter final definitions
+    and corrected several to unidirectional.
+- agent: consolidator
+  iteration: 2
+  event: Renumbered final dimensions sequentially D1-D9.
+- agent: consolidator
+  iteration: 2
+  event: Renumbered retained objects sequentially O1-O18.
+- agent: consolidator
+  iteration: 2
+  event: Verified final mapping completeness — every retained object has exactly one
+    characteristic per dimension.
+- agent: consolidator
+  iteration: 2
+  event: Verified final taxonomy-reference consistency — all mapping IDs exist in
+    the taxonomy.
+- agent: consolidator
+  iteration: 2
+  event: Verified no N/A mappings remained after synthesis.
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Smartwatch anomaly dashboard prototype'' -> retained
+    — Within scope as an individual PGHD integration prototype linked to clinical
+    use; mappings were normalized to the synthesized dimensions.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''OpenEDC next-generation study database with PROM integration''
+    -> retained — Retained because it describes an EHR-integrated PGHD capture and
+    exchange arrangement, not merely a clinical outcome evaluation.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Xemio Research to OntoCR standardized extract integration''
+    -> retained — Clearly within scope as a concrete PGHD-to-EHR integration using
+    EN/ISO 13606.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Asthma Health to Epic via HealthKit and MyChart'' ->
+    retained — Clearly within scope as a mobile-app-to-EHR PGHD integration project.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''DH-Convener MPI-based PGHD interoperability framework''
+    -> retained — Retained because it proposes a concrete PGHD interoperability architecture
+    aimed at EHR integration; conceptual but still an integration object.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Dexcom CGM to Epic integration via HealthKit and MyChart''
+    -> retained — Clearly within scope as a consumer-technology-mediated PGHD-to-EHR
+    integration.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''COVID-19 Tracker integrated into Epic workflow'' ->
+    retained — Within scope as a patient engagement app integrated into an Epic-enabled
+    clinical workflow.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Smart bed wireless biomonitoring architecture'' ->
+    retained — Retained because the architecture integrates patient-generated sensor
+    data into a HIS during care delivery.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Wearable-based automated NEWS2 calculation'' -> retained
+    — Within scope as a wearable-to-clinical-system integration with automated processing.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Sensi-steps post-stroke fall prevention application''
+    -> retained — Within scope as an integration concept linking PGHD, portal functions,
+    and EHR use for fall prevention.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Tidepool-TIDE diabetes population management platform''
+    -> retained — Retained because it is a clinical platform integrating PGHD and
+    interfacing with EHR workflows.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''P2E2T diabetes coaching with EHR-integrated PGHD''
+    -> retained — Within scope as an EHR-integrated PGHD intervention; not excluded
+    despite clinical trial context because integration design is described.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''COVID-19 home quarantine clinical decision support
+    system'' -> retained — Retained because it is a clinician-facing PGHD integration
+    platform supporting clinical response, even though not embedded in an EHR or HIS.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''BREATHE mHealth informatics platform'' -> removed —
+    Removed for scope purity because the described object is primarily a cloud research/monitoring
+    platform and not clearly integrated into a clinical system such as EHR, HIS, CDSS,
+    or equivalent clinical platform used in care workflows.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''EHR-integrated postpartum HDP monitoring app'' -> retained
+    — Clearly within scope as an EHR-integrated postpartum PGHD monitoring system.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Wearable at-home vital sign monitoring prototype''
+    -> removed — Removed because it is a remote monitoring web application for nurses/caregivers
+    without clear integration into a clinical system as defined by the meta-characteristic.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''MobiCardio clinical-grade CVD management system'' ->
+    retained — Clearly within scope as a wearable-based PGHD integration into a HIS.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''PROMIS CAT middleware integration into Epic'' -> retained
+    — Clearly within scope as middleware-based PROM integration into the Epic EHR.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''HL7 CDA middleware information model for PGHD and ODL
+    exchange'' -> retained — Retained despite model-oriented emphasis because it presents
+    a concrete PGHD exchange approach targeting EHR integration and contributes design-relevant
+    architectural knowledge.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''4T CGM-to-EHR integration for pediatric type 1 diabetes''
+    -> retained — Clearly within scope as CGM-to-EHR integration.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''MyWear smart garment monitoring system'' -> removed
+    — Removed because it is a remote monitoring/cloud system with clinician access
+    but no clear integration into a clinical system matching the meta-characteristic.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''CDPMS hemodialysis integrated monitoring system'' ->
+    removed — Removed because the object is mainly a standalone dialysis management
+    platform with cloud interfaces rather than clearly integrated into EHR/HIS or
+    an equivalent institutional clinical system.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''AECOPD prediction system with wearable, app, and home
+    sensors'' -> removed — Removed for scope purity because it centers on a lifestyle
+    observation platform and app, with no clear integration into a clinical system
+    as required by the meta-characteristic.'
+- agent: consolidator
+  iteration: 2
+  event: 'Object validation: ''Medical-grade wireless ward monitoring system'' ->
+    retained — Retained because it is explicitly integrated with HIS and EHR-related
+    hospital infrastructure.'
+- agent: validator
+  iteration: 2
+  event: 'Structure check passed: taxonomy has 9 dimensions and all 18 objects are
+    mapped across D1-D9.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_01 met: each object has exactly one characteristic
+    per dimension in the provided mapping.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_02 met: no object contains characteristic_id
+    ''N/A'' and all objects are classifiable in all dimensions.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_03 not met: iteration notes indicate object
+    set changes, removals, and renumbering.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_04 requires careful review: all listed characteristics
+    appear populated at least once in the current sample, despite sparse coverage
+    in some characteristics.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_05 not met: 9 synthesized dimensions and
+    new characteristic CDA were added in this iteration.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_06 not met: dimensions/characteristics were
+    merged and dropped during synthesis of Taxonomy A and B.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_07 met: no duplicate dimensions identified
+    among D1-D9.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_08 met: no duplicate characteristics identified
+    within any dimension.'
+- agent: validator
+  iteration: 2
+  event: 'Objective ending condition OEC_09 not met conservatively: exact unique-cell
+    verification is not demonstrated and should be checked programmatically.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_01 met: taxonomy remains manageable for
+    intended healthcare IT users.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_02 met: dimensions provide meaningful differentiation
+    among PGHD integration approaches.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_03 not met: broader domain comprehensiveness
+    remains uncertain beyond the retained sample.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_04 met: modular dimensions make extension
+    straightforward.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_05 met: taxonomy explains technical, clinical,
+    and workflow design choices well.'
+- agent: validator
+  iteration: 2
+  event: 'Subjective ending condition SEC_06 not met: sample is somewhat biased toward
+    EHR-centered remote monitoring cases.'
+- agent: validator
+  iteration: 2
+  event: 'Summary: 6 out of 9 OECs met, 4 out of 6 SECs met. Most important human
+    actions: verify OEC_04 and OEC_09 programmatically against the full mapping history,
+    review the impact of this iteration’s object-set changes and taxonomy synthesis/merges,
+    and broaden the sample beyond EHR/monitoring-heavy cases to test comprehensiveness
+    and representativeness for PGHD integration research. Another iteration should
+    be run because several objective ending conditions tied to iteration stability
+    are not yet met.'
+- agent: consolidator
+  iteration: 3
+  event: Validated Taxonomy A structure — IDs were consistent but names required normalization.
+- agent: consolidator
+  iteration: 3
+  event: Compared all dimensions from Taxonomy A and Taxonomy B side by side.
+- agent: consolidator
+  iteration: 3
+  event: Retained A dimension PGHD source composition in normalized form as Source
+    composition.
+- agent: consolidator
+  iteration: 3
+  event: Retained A dimension Clinical system coupling in normalized form as System
+    coupling.
+- agent: consolidator
+  iteration: 3
+  event: Retained A dimension Data transfer mode in normalized form as Transfer mode.
+- agent: consolidator
+  iteration: 3
+  event: Retained A dimension Primary integration purpose in normalized form as Integration
+    purpose.
+- agent: consolidator
+  iteration: 3
+  event: Retained A dimension Standards basis in normalized form as Standards basis.
+- agent: consolidator
+  iteration: 3
+  event: Retained A dimension Clinician-facing presentation in normalized form as
+    Presentation form.
+- agent: consolidator
+  iteration: 3
+  event: Rejected B dimension Care setting — context of care is less central than
+    integration design choices.
+- agent: consolidator
+  iteration: 3
+  event: Rejected B dimension Integration target — broad user definition of EHR/HIS
+    made this distinction less useful.
+- agent: consolidator
+  iteration: 3
+  event: Merged B Transfer pathway content into System coupling — overlap was too
+    strong for separate retention.
+- agent: consolidator
+  iteration: 3
+  event: Retained B dimension Exchange direction in normalized form.
+- agent: consolidator
+  iteration: 3
+  event: Retained B dimension Data processing in normalized form as Processing level.
+- agent: consolidator
+  iteration: 3
+  event: Retained B dimension Workflow trigger in normalized form.
+- agent: consolidator
+  iteration: 3
+  event: Merged A and B standards categories into FHIR, EN/ISO 13606, CDA/V2, openEHR,
+    Vendor framework, and Custom.
+- agent: consolidator
+  iteration: 3
+  event: Redefined presentation dimension as dominant clinician-facing form to satisfy
+    MECE.
+- agent: consolidator
+  iteration: 3
+  event: Redefined purpose dimension using Documentation, Monitoring, Decision support,
+    Record unification, and Secondary use.
+- agent: consolidator
+  iteration: 3
+  event: Checked all objects for scope against the meta-characteristic.
+- agent: consolidator
+  iteration: 3
+  event: Retained OpenEDC object despite borderline research-database orientation
+    — EHR-integrated PROM exchange is explicit.
+- agent: consolidator
+  iteration: 3
+  event: Retained Smart bed object — HIS integration is in scope under the user’s
+    broad EHR definition.
+- agent: consolidator
+  iteration: 3
+  event: Retained MobiCardio object — HIS-based wearable integration fits the scope.
+- agent: consolidator
+  iteration: 3
+  event: Retained dashboard and platform objects because clinician-facing clinical
+    platforms are relevant integration targets.
+- agent: consolidator
+  iteration: 3
+  event: No duplicate objects detected across Taxonomy A and Taxonomy B.
+- agent: consolidator
+  iteration: 3
+  event: Reassigned several objects from consultation-oriented purpose to Monitoring
+    for better fit with synthesized purpose dimension.
+- agent: consolidator
+  iteration: 3
+  event: Reclassified HealthKit/MyChart cases under Vendor framework rather than Custom.
+- agent: consolidator
+  iteration: 3
+  event: Renumbered final object IDs sequentially from O1 to O29.
+- agent: consolidator
+  iteration: 3
+  event: Verified every object has exactly one mapping per final dimension.
+- agent: consolidator
+  iteration: 3
+  event: Verified all mapping references correspond to existing final dimensions and
+    characteristics.
+- agent: consolidator
+  iteration: 3
+  event: No residual characteristic was needed because all objects were classifiable
+    without N/A.
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''REMORA smartphone-to-EHR rheumatoid arthritis integration''
+    -> retained — In-scope PGHD integration project with plausible mappings; presentation
+    and purpose were normalized to the synthesized dimensions.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''PatientDataChain blockchain PHR integration platform''
+    -> retained — In-scope platform integrating PGHD with clinical systems; retained
+    despite broad record-unification emphasis because integration into clinical use
+    is explicit.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''eCoach tethered PHR-EHR interoperability prototype''
+    -> retained — Clearly in scope as a PGHD-PHR-EHR interoperability prototype.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''SafeHeart multimodal ICD prediction platform'' -> retained
+    — Retained because it integrates PGHD into a clinician-facing clinical platform,
+    which is included under the broadened clinical systems scope.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''MyHealthKeeper EHR-tethered PHR with wearable integration''
+    -> retained — Clearly in scope as EHR-tethered PGHD integration.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''DM-TNG MyChart and Apple HealthKit blood glucose integration''
+    -> retained — Clearly in scope as blood glucose PGHD integration into Epic-linked
+    workflows.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''HeartMapp CHF mobile telemedicine and web monitoring
+    system'' -> retained — Retained as a clinician-facing PGHD integration system,
+    though not directly EHR-embedded.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''ROAMM-EHR smartwatch-to-Epic postoperative monitoring
+    platform'' -> retained — Clearly in scope as postoperative PGHD integration into
+    Epic via intermediary infrastructure.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''PD_Manager mHealth clinical decision support system
+    for Parkinson’s disease'' -> retained — Retained because it is a clinical PGHD
+    integration system with clinician-facing decision support, not merely a clinical
+    outcome evaluation.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''iT2DM diabetes PGHD-integrated phenotyping framework''
+    -> retained — Retained as an integration framework with PGHD and clinical-system
+    data; secondary-use orientation is still within the integration focus.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''SMART on FHIR PRO integration architecture'' -> retained
+    — Clearly in scope as a standards-based PRO integration architecture across EHRs.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Smartwatch anomaly dashboard prototype'' -> retained
+    — Retained as a clinician-facing PGHD integration prototype; scope acceptable
+    because it bridges PGHD into clinical review workflows.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''OpenEDC next-generation study database with PROM integration''
+    -> retained — Retained as borderline but in-scope because EHR-integrated PROM
+    exchange is explicit; not removed since doubtful cases should be kept.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Xemio Research to OntoCR standardized extract integration''
+    -> retained — Clearly in scope as standardized PGHD integration into an EHR-linked
+    repository.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Asthma Health to Epic via HealthKit and MyChart'' ->
+    retained — Clearly in scope as smartphone PGHD integration into Epic.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''DH-Convener MPI-based PGHD interoperability framework''
+    -> retained — Clearly in scope as a PGHD interoperability framework targeting
+    EHR integration.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Dexcom CGM to Epic integration via HealthKit and MyChart''
+    -> retained — Clearly in scope as automated CGM integration into Epic.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''COVID-19 Tracker integrated into Epic workflow'' ->
+    retained — Clearly in scope as FHIR-based app-to-EHR workflow integration.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Smart bed wireless biomonitoring architecture'' ->
+    retained — Retained because the user defined EHR broadly to include HIS; this
+    is HIS integration of patient-generated monitoring data.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Wearable-based automated NEWS2 calculation'' -> retained
+    — Retained as an inpatient clinical-system integration of wearable PGHD; decision-support
+    processing is explicit.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Sensi-steps post-stroke fall prevention application''
+    -> retained — Retained as an EHR/portal-connected PGHD integration system with
+    risk outputs.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''Tidepool-TIDE diabetes population management platform''
+    -> retained — Retained because it is a clinical platform integrating PGHD into
+    operational diabetes management workflows.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''P2E2T diabetes coaching with EHR-integrated PGHD''
+    -> retained — Retained because the project includes explicit EHR-integrated PGHD
+    use, not just clinical outcomes.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''COVID-19 home quarantine clinical decision support
+    system'' -> retained — Retained as a clinician-facing PGHD integration platform
+    with explicit clinical use.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''EHR-integrated postpartum HDP monitoring app'' -> retained
+    — Clearly in scope as SMART on FHIR-based EHR integration.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''MobiCardio clinical-grade CVD management system'' ->
+    retained — Retained because it integrates wearable PGHD into a HIS, which is in
+    scope per user instruction.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''PROMIS CAT middleware integration into Epic'' -> retained
+    — Clearly in scope as middleware-based PRO integration into Epic.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''HL7 CDA middleware information model for PGHD and ODL
+    exchange'' -> retained — Retained as an information-model-based PGHD exchange
+    artifact targeted at EHR integration.'
+- agent: consolidator
+  iteration: 3
+  event: 'Object validation: ''4T CGM-to-EHR integration for pediatric type 1 diabetes''
+    -> retained — Clearly in scope as CGM and PRO integration into EHR-supported diabetes
+    care.'
+- agent: validator
+  iteration: 3
+  event: 'Structure check passed: taxonomy contains 9 dimensions with explicit characteristics
+    and all 29 objects are mapped across D1-D9.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_01 not met: D4 Integration purpose and D9
+    Presentation form contain logically overlapping single-choice characteristics.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_02 not met: no N/A mappings found, but exhaustiveness
+    concerns remain for multi-purpose, multi-view, and multi-standard systems.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_03 not met: iteration notes show synthesis
+    and renumbering, so stable object identity across iterations is not fully demonstrated.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_04 met: every characteristic across D1-D9
+    has at least one mapped object; no null characteristics detected.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_05 not met: iteration notes explicitly state
+    new dimensions/characteristics emerged through synthesis of Taxonomy A and B.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_06 not met: dimensions/characteristics were
+    merged, dropped, and synthesized this iteration.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_07 met: all dimensions are uniquely named
+    and conceptually distinct.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_08 met: characteristics are unique within
+    each dimension.'
+- agent: validator
+  iteration: 3
+  event: 'Objective ending condition OEC_09 not met: duplicated full cell detected
+    for O24 and O26.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_01 met: 9 dimensions are manageable for
+    the intended healthcare IT evaluation purpose.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_02 met: taxonomy provides strong differentiation
+    across technical, clinical, and workflow design choices.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_03 not met: coverage is good but not fully
+    comprehensive because some domain-relevant combinations are not cleanly represented.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_04 met: modular dimension structure supports
+    future additions.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_05 met: taxonomy explains critical PGHD
+    integration design choices for researchers and system designers.'
+- agent: validator
+  iteration: 3
+  event: 'Subjective ending condition SEC_06 met: object sample spans varied architectures,
+    purposes, and standards, though monitoring-heavy.'
+- agent: validator
+  iteration: 3
+  event: 'Summary: 5 out of 9 OECs met, 5 out of 6 SECs met. Most important human
+    actions: resolve overlap in Integration purpose and Presentation form, verify
+    object lineage after synthesis/renumbering, and decide whether repeated full cells
+    are acceptable or require additional differentiating dimensions/characteristics.
+    Another iteration should be run because several objective ending conditions are
+    not met, especially those tied to taxonomy stability and exclusivity.'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Removed dimension D4'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Removed all D4 mappings from object mapping'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Re-numbered dimensions: D5→D4, D6→D5, D7→D6, D8→D7, D9→D8.
+    Object mappings updated accordingly.'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Added dimension D9 ''Stakeholder Role'''
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Added N/A mapping entries for 29 object(s) in D9 — assign
+    characteristics via apply_mapping_edit'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Added characteristic D9.C1 ''Patient-initiated'' to D9'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Note: 29 object(s) have N/A in D9 — consider reassigning
+    them'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Added characteristic D9.C2 ''Clinician-initiated'' to D9'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Note: 29 object(s) have N/A in D9 — consider reassigning
+    them'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Added characteristic D9.C3 ''Administrator-initiated'' to
+    D9'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Note: 29 object(s) have N/A in D9 — consider reassigning
+    them'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Added characteristic D9.C4 ''Multi-stakeholder'' to D9'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Note: 29 object(s) have N/A in D9 — consider reassigning
+    them'
+- agent: interaction
+  iteration: 3
+  event: '[taxonomy_edit] Added characteristic D4.C7 ''Multiple standards'' to D4'
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O1 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O2 in D9: ''N/A'' → ''D9.C1'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O3 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O4 in D9: ''N/A'' → ''D9.C2'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O5 in D9: ''N/A'' → ''D9.C1'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O6 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O7 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O8 in D9: ''N/A'' → ''D9.C2'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O9 in D9: ''N/A'' → ''D9.C2'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O10 in D9: ''N/A'' → ''D9.C3'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O11 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O12 in D9: ''N/A'' → ''D9.C2'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O13 in D9: ''N/A'' → ''D9.C3'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O14 in D9: ''N/A'' → ''D9.C3'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O15 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O16 in D9: ''N/A'' → ''D9.C3'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O17 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O18 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O19 in D9: ''N/A'' → ''D9.C3'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O20 in D9: ''N/A'' → ''D9.C2'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O21 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O22 in D9: ''N/A'' → ''D9.C2'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O23 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O24 in D9: ''N/A'' → ''D9.C2'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O25 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O26 in D9: ''N/A'' → ''D9.C3'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O27 in D9: ''N/A'' → ''D9.C4'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O28 in D9: ''N/A'' → ''D9.C3'''
+- agent: interaction
+  iteration: 3
+  event: '[mapping_edit] Updated O29 in D9: ''N/A'' → ''D9.C4'''
+total_events: 250
+last_updated_iteration: 3

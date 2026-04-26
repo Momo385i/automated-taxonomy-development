@@ -1,0 +1,101 @@
+meta_characteristic: The integration of PGHD within clinical systems
+topic: The integration of Patient-Generated Health Data (PGHD) into clinical systems
+  like Electronic Health Records (EHRs) or Hospital Information Systems (HIS)
+dimensions:
+- id: D1
+  name: Source composition
+  characteristics:
+  - id: D1.C1
+    name: Self-report
+  - id: D1.C2
+    name: Sensor
+  - id: D1.C3
+    name: Hybrid
+  - id: D1.C4
+    name: Multimodal
+- id: D2
+  name: System coupling
+  characteristics:
+  - id: D2.C1
+    name: Direct embedding
+  - id: D2.C2
+    name: Tethered PHR
+  - id: D2.C3
+    name: Middleware
+  - id: D2.C4
+    name: External platform
+- id: D3
+  name: Transfer mode
+  characteristics:
+  - id: D3.C1
+    name: Manual
+  - id: D3.C2
+    name: Automatic
+  - id: D3.C3
+    name: Hybrid
+- id: D4
+  name: Standards basis
+  characteristics:
+  - id: D4.C1
+    name: FHIR
+  - id: D4.C2
+    name: EN/ISO 13606
+  - id: D4.C3
+    name: CDA/V2
+  - id: D4.C4
+    name: openEHR
+  - id: D4.C5
+    name: Vendor framework
+  - id: D4.C6
+    name: Custom
+  - id: D4.C7
+    name: Multiple standards
+- id: D5
+  name: Exchange direction
+  characteristics:
+  - id: D5.C1
+    name: Unidirectional
+  - id: D5.C2
+    name: Bidirectional
+- id: D6
+  name: Processing level
+  characteristics:
+  - id: D6.C1
+    name: Raw transfer
+  - id: D6.C2
+    name: Summarization
+  - id: D6.C3
+    name: Analytics
+- id: D7
+  name: Workflow trigger
+  characteristics:
+  - id: D7.C1
+    name: Clinician review
+  - id: D7.C2
+    name: Scheduled review
+  - id: D7.C3
+    name: Event trigger
+- id: D8
+  name: Presentation form
+  characteristics:
+  - id: D8.C1
+    name: Graph view
+  - id: D8.C2
+    name: Flowsheet view
+  - id: D8.C3
+    name: Dashboard view
+  - id: D8.C4
+    name: Notification view
+- id: D9
+  name: Stakeholder Role
+  characteristics:
+  - id: D9.C1
+    name: Patient-initiated
+  - id: D9.C2
+    name: Clinician-initiated
+  - id: D9.C3
+    name: Administrator-initiated
+  - id: D9.C4
+    name: Multi-stakeholder
+notes:
+  format: prototype_v1

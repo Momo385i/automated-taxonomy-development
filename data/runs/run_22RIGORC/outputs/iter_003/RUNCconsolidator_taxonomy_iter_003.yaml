@@ -1,0 +1,107 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent
+  - id: D1.C2
+    name: Multi-agent
+- id: D2
+  name: Control loop
+  characteristics:
+  - id: D2.C1
+    name: Open-loop
+  - id: D2.C2
+    name: Closed-loop
+- id: D3
+  name: Coordination structure
+  characteristics:
+  - id: D3.C1
+    name: Centralized
+  - id: D3.C2
+    name: Peer dialogue
+  - id: D3.C3
+    name: Task queue
+  - id: D3.C4
+    name: Self-prompting
+  - id: D3.C5
+    name: Skill planning
+- id: D4
+  name: Capability grounding
+  characteristics:
+  - id: D4.C1
+    name: Language-only
+  - id: D4.C2
+    name: Tool use
+  - id: D4.C3
+    name: Embodied skills
+  - id: D4.C4
+    name: Code generation
+- id: D5
+  name: Feedback source
+  characteristics:
+  - id: D5.C1
+    name: None
+  - id: D5.C2
+    name: Environment
+  - id: D5.C3
+    name: Human
+  - id: D5.C4
+    name: Hybrid
+- id: D6
+  name: Memory organization
+  characteristics:
+  - id: D6.C1
+    name: None
+  - id: D6.C2
+    name: Context memory
+  - id: D6.C3
+    name: Task memory
+  - id: D6.C4
+    name: Reflective memory
+  - id: D6.C5
+    name: Phase memory
+  - id: D6.C6
+    name: Retrieval memory
+  - id: D6.C7
+    name: State memory
+  - id: D6.C8
+    name: Skill library
+- id: D7
+  name: Improvement mechanism
+  characteristics:
+  - id: D7.C1
+    name: None
+  - id: D7.C2
+    name: Execution refinement
+  - id: D7.C3
+    name: Verbal reflection
+  - id: D7.C4
+    name: Goal selection
+  - id: D7.C5
+    name: External opinions
+  - id: D7.C6
+    name: Dehallucination
+  - id: D7.C7
+    name: Evolutionary search
+- id: D8
+  name: Task sourcing
+  characteristics:
+  - id: D8.C1
+    name: External tasks
+  - id: D8.C2
+    name: Self curriculum
+- id: D9
+  name: Operating environment
+  characteristics:
+  - id: D9.C1
+    name: Digital
+  - id: D9.C2
+    name: Social simulation
+  - id: D9.C3
+    name: Physical
+notes:
+  format: prototype_v1

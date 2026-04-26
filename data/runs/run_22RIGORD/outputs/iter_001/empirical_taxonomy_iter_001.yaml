@@ -1,0 +1,77 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent architecture
+  - id: D1.C2
+    name: Multi-agent architecture
+- id: D2
+  name: Execution organization
+  characteristics:
+  - id: D2.C1
+    name: Self-prompting loop
+  - id: D2.C2
+    name: Task-list cycle
+  - id: D2.C3
+    name: Chat-chain workflow
+  - id: D2.C4
+    name: Plan-and-execute loop
+- id: D3
+  name: Feedback closure
+  characteristics:
+  - id: D3.C1
+    name: Open-loop execution
+  - id: D3.C2
+    name: Closed-loop execution
+- id: D4
+  name: Primary feedback source
+  characteristics:
+  - id: D4.C1
+    name: No runtime feedback
+  - id: D4.C2
+    name: Environment feedback
+  - id: D4.C3
+    name: Inter-agent feedback
+  - id: D4.C4
+    name: Expert-opinion feedback
+- id: D5
+  name: Memory form
+  characteristics:
+  - id: D5.C1
+    name: Token-context memory
+  - id: D5.C2
+    name: Task-state store
+  - id: D5.C3
+    name: Phase-segmented memory
+  - id: D5.C4
+    name: Long-term retrieval memory
+  - id: D5.C5
+    name: Unspecified memory
+- id: D6
+  name: Planning revision mechanism
+  characteristics:
+  - id: D6.C1
+    name: No explicit revision
+  - id: D6.C2
+    name: Reflection-based revision
+  - id: D6.C3
+    name: Feedback-driven replanning
+  - id: D6.C4
+    name: Clarification-driven revision
+- id: D7
+  name: Action grounding
+  characteristics:
+  - id: D7.C1
+    name: Command actions
+  - id: D7.C2
+    name: Task execution actions
+  - id: D7.C3
+    name: Skill-library actions
+  - id: D7.C4
+    name: Tool actions
+notes:
+  format: prototype_v1

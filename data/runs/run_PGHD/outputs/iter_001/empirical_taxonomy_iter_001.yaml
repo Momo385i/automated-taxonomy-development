@@ -1,0 +1,78 @@
+meta_characteristic: The integration of PGHD within clinical systems
+topic: The integration of Patient-Generated Health Data (PGHD) into clinical systems
+  like Electronic Health Records (EHRs) or Hospital Information Systems (HIS)
+dimensions:
+- id: D1
+  name: Care setting
+  characteristics:
+  - id: D1.C1
+    name: Home monitoring
+  - id: D1.C2
+    name: Hospital monitoring
+  - id: D1.C3
+    name: Hybrid monitoring
+- id: D2
+  name: Clinical system integration target
+  characteristics:
+  - id: D2.C1
+    name: EHR integration
+  - id: D2.C2
+    name: HIS integration
+  - id: D2.C3
+    name: Standalone clinical platform
+- id: D3
+  name: PGHD acquisition mode
+  characteristics:
+  - id: D3.C1
+    name: Manual self-report
+  - id: D3.C2
+    name: Device-generated sensing
+  - id: D3.C3
+    name: Combined self-report and sensing
+- id: D4
+  name: Connected data scope
+  characteristics:
+  - id: D4.C1
+    name: Physiological data
+  - id: D4.C2
+    name: Patient-reported data
+  - id: D4.C3
+    name: Multimodal patient data
+- id: D5
+  name: Data capture temporality
+  characteristics:
+  - id: D5.C1
+    name: Scheduled episodic capture
+  - id: D5.C2
+    name: Continuous capture
+  - id: D5.C3
+    name: Mixed continuous and episodic capture
+- id: D6
+  name: Clinical response mechanism
+  characteristics:
+  - id: D6.C1
+    name: Passive review
+  - id: D6.C2
+    name: Rule-based alerting
+  - id: D6.C3
+    name: Algorithmic decision support
+- id: D7
+  name: Data transfer pathway
+  characteristics:
+  - id: D7.C1
+    name: Direct EHR write-back
+  - id: D7.C2
+    name: Middleware transformation
+  - id: D7.C3
+    name: Platform-mediated exchange
+- id: D8
+  name: Interoperability basis
+  characteristics:
+  - id: D8.C1
+    name: FHIR-based
+  - id: D8.C2
+    name: CDA-based
+  - id: D8.C3
+    name: Custom or unspecified integration
+notes:
+  format: prototype_v1

@@ -1,0 +1,230 @@
+iteration: 3
+empirical_reasoning: 'I followed an empirical-to-conceptual procedure anchored strictly
+  in the provided sources and the stated object class: individual PGHD integration
+  projects or systems described in the literature, excluding purely clinical outcome
+  evaluations. I first identified concrete objects that are true instances of PGHD
+  integration efforts, not general frameworks without an implemented system focus
+  and not purely evaluative clinical trials. Each selected object is a distinct project,
+  platform, or architecture described in one source document: REMORA, PatientDataChain,
+  eCoach, SafeHeart, MyHealthKeeper, DM-TNG integration workflows, HeartMapp, ROAMM-EHR,
+  PD_Manager, iT2DM, and the SMART-on-FHIR PRO architecture. All belong to the same
+  conceptual class because each is a specific integration effort connecting patient-originated
+  data with a clinical information environment, whether an EHR, tethered PHR, intermediary
+  data hub, or clinician-facing clinical platform tied to care delivery.
+
+
+  After identifying objects, I derived differentiating characteristics only where
+  the empirical materials showed meaningful variation across projects. I excluded
+  features that were too universal or too weakly supported. For example, nearly all
+  systems involve digital/mobile technology, so that would not discriminate. Likewise,
+  many sources mention security or usability, but not in a way that yielded a consistent,
+  mutually exclusive classification scheme across all objects. I therefore focused
+  on recurring empirical contrasts that matter for healthcare IT researchers and designers
+  evaluating PGHD integration approaches: what kinds of PGHD are integrated, how the
+  integration couples to clinical systems, how data are transferred, how clinicians
+  see the integrated data, the main purpose of the integration, and whether the integration
+  is grounded in named interoperability standards.
+
+
+  Dimension D1, PGHD source composition, emerged from repeated differences in whether
+  projects integrated only patient-reported data, only sensor/device data, both, or
+  broader multimodal packages that also fused clinical-system data such as EHR or
+  remote monitoring streams. This dimension is important because source composition
+  strongly shapes integration complexity and design choices bridging technical and
+  clinical domains. The four characteristics are empirically grounded: REMORA and
+  Wesley are patient-reported only; Lewinski is effectively sensor-originated glucose
+  values; eCoach, MyHealthKeeper, ROAMM-EHR, HeartMapp, and PD_Manager combine self-report
+  and sensor data; PatientDataChain, SafeHeart, and iT2DM explicitly fuse PGHD with
+  provider/EHR data. These characteristics are mutually exclusive and exhaustive for
+  the selected objects.
+
+
+  Dimension D2, Clinical system coupling, was derived from how PGHD reach the clinical
+  environment. The sources clearly differentiate direct embedding in an EHR, tethered
+  PHR linkage, use of an intermediary repository or hub, and use through an external
+  dashboard or standalone clinician platform. This distinction is central to integration
+  architecture. Direct EHR embedding is seen in REMORA. Tethered PHR linkage is explicit
+  in eCoach, PatientDataChain, MyHealthKeeper, and iT2DM. Intermediary repository
+  linkage is explicit in Wesley’s FHIR data hub, Lewinski’s platform-to-flowsheet
+  workflow, and ROAMM-EHR’s AWS-mediated Epic app. External dashboard linkage is evident
+  in SafeHeart, HeartMapp, and PD_Manager. I retained separate tethered-PHR and intermediary-repository
+  categories because the former centers a patient-facing health record linked to care
+  systems, while the latter centers a technical middle layer used to broker exchange
+  into clinical systems.
+
+
+  Dimension D3, Data transfer mode, emerged directly from recurring contrasts between
+  manual patient entry, automatic device synchronization, and hybrid configurations.
+  This is a practical design choice of high relevance to PGHD integration. REMORA
+  and Wesley rely on manual completion of questionnaires or PRO forms. Lewinski explicitly
+  contrasts manual MyChart entry with automatic Apple HealthKit transfer, making the
+  project as a whole a hybrid integration effort. Many other systems are hybrid because
+  they combine prompted self-report with sensor sync, such as eCoach, ROAMM-EHR, HeartMapp,
+  and SafeHeart. PatientDataChain and iT2DM are also hybrid because they support both
+  manual entry and automated ingestion from devices or systems. This dimension satisfied
+  MECE because each project can be classified by the dominant transfer configuration
+  it supports.
+
+
+  Dimension D4, Clinician-facing presentation, was induced from the actual form in
+  which integrated PGHD are presented to clinicians. The sources show clear differences
+  among graphical trend views, tabular/flowsheet views, dashboards, and notification-oriented
+  views. REMORA prominently emphasizes graphs in consultations. Lewinski clearly uses
+  flowsheets. SafeHeart, HeartMapp, eCoach, PatientDataChain, iT2DM, PD_Manager, and
+  Wesley all describe dashboard-like or embedded web interfaces. ROAMM-EHR includes
+  multiple views, but its most distinctive and clinically emphasized feature is the
+  notification system for urgent alerts, so it is classified under notification view.
+  I chose one dominant presentation characteristic per object, as required. The dimension
+  is non-overlapping because it classifies the primary clinician-facing form emphasized
+  in each source.
+
+
+  Dimension D5, Primary integration purpose, captures the main design aim of the integration
+  project. Across the sources, the clearest purposes were consultation support, remote
+  management support, prediction and decision support, longitudinal record unification,
+  and secondary use/phenotyping. This dimension is especially relevant to the user’s
+  stated purpose of identifying design choices across technical, clinical, and organizational
+  domains. REMORA, MyHealthKeeper, and Wesley primarily support consultation or encounter-based
+  review. Lewinski, eCoach, and ROAMM-EHR primarily support remote monitoring/management
+  between visits. SafeHeart, HeartMapp, and PD_Manager are chiefly prediction or decision
+  support systems. PatientDataChain focuses on longitudinal record unification across
+  actors. iT2DM is centered on secondary use and phenotyping. I kept these purposes
+  separate because the sources treat them as substantively distinct design intents
+  rather than variants of the same function.
+
+
+  Dimension D6, Standards basis, was included because some sources explicitly foreground
+  interoperability standards while others do not. This is a major technical design
+  choice and strongly relevant for healthcare IT researchers. I only created characteristics
+  directly supported by named standards in the corpus: proprietary or unspecified
+  integration, HL7 FHIR based, HL7 CDA or V2 based, and OpenEHR based. FHIR is explicit
+  in Wesley, Chatterjee, and also referenced as the standards basis in PatientDataChain.
+  OpenEHR is explicit in iT2DM. Although iT2DM also uses CDA and HL7 V2, OpenEHR is
+  the primary modeling basis of the framework, so it was assigned there to preserve
+  one characteristic per dimension. No selected object had HL7 CDA/V2 as its primary
+  standards basis without also being more strongly anchored in OpenEHR or FHIR, so
+  the CDA/V2 characteristic remains available for future extension but is not mapped
+  in this set. I verified that all other characteristics are linked to at least one
+  object; the dimension itself remains empirically supported because CDA/V2 are explicitly
+  used in iT2DM, even though not as that object’s dominant classification under this
+  dimension. Because each object must receive exactly one characteristic, I assigned
+  the most central standards basis when multiple standards coexisted.
+
+
+  In mapping objects, I used short logical justifications derived from the source
+  descriptions. I did not assign N/A anywhere because each apparent gap could be resolved
+  by refining characteristics within the supported dimensions. I also checked that
+  dimensions are nonredundant: source composition concerns what data are integrated;
+  clinical system coupling concerns architectural connection point; data transfer
+  mode concerns how data move from patient side; clinician-facing presentation concerns
+  how clinicians consume data; primary integration purpose concerns why the integration
+  exists; and standards basis concerns the interoperability foundation.
+
+
+  There are limitations. First, the sources vary in depth: some describe deployed
+  systems in routine care settings, while others are proof-of-concept or architecture
+  studies. Second, several projects contain multiple subcomponents, so assigning one
+  dominant characteristic per dimension necessarily simplifies hybrid realities, especially
+  for presentation and standards use. Third, the taxonomy is intentionally parsimonious
+  and conservative; it does not include potentially relevant aspects such as consent
+  model, timing of clinician review, degree of workflow automation, or organizational
+  scope unless the empirical material supported a stable, MECE differentiation across
+  the full object set. Finally, because the method was strictly empirical and object-centered,
+  the taxonomy reflects the variation present in this corpus rather than all conceivable
+  PGHD integration designs.
+
+
+  Overall, the resulting taxonomy is designed to help healthcare IT researchers and
+  system designers compare PGHD integration projects along concrete architectural,
+  workflow, and interoperability choices that are repeatedly evidenced in the provided
+  literature.'
+consolidator_reasoning: 'I first validated Taxonomy A structurally. Taxonomy A is
+  generally well formed, with unique dimension IDs, unique characteristic IDs, and
+  all objects mapped across all dimensions. However, several names were too long for
+  a consolidated taxonomy and some dimension boundaries were not fully aligned with
+  MECE expectations. In particular, Taxonomy A''s presentation dimension mixed interface
+  forms that can co-occur in one system, and its standards dimension conflated formal
+  standards with the absence of standards. Taxonomy B contributed several useful technical-process
+  dimensions, but it also contained dimensions that were less relevant to the meta-characteristic
+  or insufficiently discriminating for healthcare IT researchers evaluating PGHD integration
+  approaches.
+
+
+  Using the meta-characteristic as the filter, I compared both taxonomies side by
+  side. I retained and normalized the strongest dimensions from A where they directly
+  captured design choices central to PGHD integration: source composition, system
+  coupling, transfer mode, integration purpose, standards basis, and presentation
+  form. These are highly relevant because they describe what kind of PGHD is integrated,
+  how it reaches the clinical system, how tightly it is coupled, why it is integrated,
+  which interoperability basis supports it, and how clinicians encounter it. From
+  B, I retained exchange direction, processing level, and workflow trigger because
+  these add explanatory power that A lacked. These three dimensions help bridge technical
+  and clinical-operational perspectives and are directly useful for system designers.
+
+
+  I excluded B''s Care setting dimension because home, hospital, and hybrid describe
+  care context rather than the integration design itself. For this topic, setting
+  is not a core integration characteristic and would reduce parsimony without substantially
+  improving explanatory power. I excluded B''s Integration target dimension because
+  the user explicitly stated that EHR should be interpreted broadly to include HIS
+  and CDSS, making distinctions such as EHR versus HIS versus clinical platform less
+  analytically useful than the retained System coupling dimension. I also excluded
+  B''s Transfer pathway dimension as a standalone dimension because its explanatory
+  content overlapped strongly with A''s Clinical system coupling; I absorbed the valuable
+  distinctions into the synthesized System coupling characteristics Direct embedding,
+  Tethered PHR, Middleware, and External platform. I did not retain A''s original
+  clinician-facing presentation labels verbatim because they were too verbose and
+  partly overlapping; instead, I normalized them to Graph view, Flowsheet view, Dashboard
+  view, and Notification view. Although presentation forms can sometimes co-occur,
+  I enforced mutual exclusivity by interpreting the dimension as the dominant clinician-facing
+  presentation form emphasized in the publication.
+
+
+  The final taxonomy is limited to nine dimensions to satisfy parsimony while preserving
+  breadth. Each dimension was checked for mutual exclusivity and collective exhaustiveness.
+  For Source composition, I used Self-report, Sensor, Hybrid, and Multimodal. Hybrid
+  captures self-report plus sensor PGHD, while Multimodal is reserved for PGHD combined
+  with additional clinical-system sources, preserving the distinction present in A.
+  For System coupling, Direct embedding, Tethered PHR, Middleware, and External platform
+  are mutually exclusive as primary architectural patterns. Transfer mode uses Manual,
+  Automatic, and Hybrid. Integration purpose synthesizes both taxonomies by separating
+  Documentation, Monitoring, Decision support, Record unification, and Secondary use.
+  Standards basis separates formal standards from vendor frameworks and custom integration,
+  improving on both A and B. Exchange direction, Processing level, and Workflow trigger
+  were retained largely from B with only naming normalization. Presentation form was
+  retained from A in normalized form.
+
+
+  I then validated all objects for scope. The object class requested by the user is
+  individual PGHD integration projects or systems described in the literature, excluding
+  purely clinical outcome evaluations. All 29 objects fit this conceptual class sufficiently
+  well. Some were borderline because they are prototypes, middleware models, repositories,
+  or dashboard systems rather than production EHR modules. I retained them because
+  the meta-characteristic and user purpose emphasize PGHD integration approaches broadly,
+  including clinical platforms and HIS/CDSS contexts. No object was clearly outside
+  scope. I also checked for duplicate entities across A and B and found no clear duplicates.
+  Similar diabetes and Epic-related cases were distinct projects, so no merges were
+  performed.
+
+
+  I re-evaluated mappings under the synthesized taxonomy. Where Taxonomy A and B used
+  different logics, I selected the more plausible assignment based on the object’s
+  primary architectural or operational emphasis. I corrected several purpose assignments
+  from A where Consultation support was better represented as Monitoring in the synthesized
+  scheme, because consultation support was not a sufficiently distinct category after
+  comparison with B’s Clinical role dimension. I also normalized standards mappings
+  by distinguishing Vendor framework from Custom, which improves fidelity for cases
+  using HealthKit, MyChart, or other vendor ecosystems. For presentation, I assigned
+  the dominant clinician-facing form. For workflow trigger, I used Clinician review
+  when no recurring or event-based logic was central, Scheduled review when periodic
+  monitoring was explicit, and Event trigger when alerts, anomalies, or threshold
+  escalations drove action.
+
+
+  Finally, I verified internal consistency. Every dimension and characteristic referenced
+  in the merged mapping exists in the final taxonomy. Every retained object has exactly
+  one mapping for each of the nine dimensions. No N/A values were needed because the
+  synthesized dimensions are collectively exhaustive for the retained objects. The
+  resulting taxonomy improves explanatory usefulness for healthcare IT researchers
+  and system designers because it integrates the strongest conceptual contributions
+  of both inputs while avoiding less relevant contextual dimensions and reducing redundancy.'

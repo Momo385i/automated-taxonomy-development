@@ -1,0 +1,88 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent architecture
+  - id: D1.C2
+    name: Multi-agent architecture
+- id: D2
+  name: Operational control loop
+  characteristics:
+  - id: D2.C1
+    name: Open-loop execution
+  - id: D2.C2
+    name: Closed-loop execution
+- id: D3
+  name: Planning update mechanism
+  characteristics:
+  - id: D3.C1
+    name: Static initial planning
+  - id: D3.C2
+    name: Feedback-driven replanning
+  - id: D3.C3
+    name: Dynamic task-cycle planning
+- id: D4
+  name: Primary coordination structure
+  characteristics:
+  - id: D4.C1
+    name: Self-prompting recursion
+  - id: D4.C2
+    name: Task queue cycle
+  - id: D4.C3
+    name: Dialogue workflow
+  - id: D4.C4
+    name: Skill-sequence planning
+- id: D5
+  name: Feedback source
+  characteristics:
+  - id: D5.C1
+    name: None
+  - id: D5.C2
+    name: Environment feedback
+  - id: D5.C3
+    name: Human feedback
+  - id: D5.C4
+    name: Hybrid feedback
+- id: D6
+  name: Memory organization
+  characteristics:
+  - id: D6.C1
+    name: Token-context memory
+  - id: D6.C2
+    name: Task-state memory
+  - id: D6.C3
+    name: Phase-segmented memory
+  - id: D6.C4
+    name: Long-term memory retrieval
+  - id: D6.C5
+    name: State-description memory
+- id: D7
+  name: Action grounding
+  characteristics:
+  - id: D7.C1
+    name: Command execution
+  - id: D7.C2
+    name: Skill library execution
+  - id: D7.C3
+    name: Tool invocation
+  - id: D7.C4
+    name: Code artifact generation
+- id: D8
+  name: Decision augmentation
+  characteristics:
+  - id: D8.C1
+    name: None
+  - id: D8.C2
+    name: Affordance grounding
+  - id: D8.C3
+    name: Learned goal selection
+  - id: D8.C4
+    name: External opinion injection
+  - id: D8.C5
+    name: Communicative dehallucination
+notes:
+  format: prototype_v1

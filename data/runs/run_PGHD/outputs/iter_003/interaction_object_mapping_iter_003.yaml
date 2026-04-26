@@ -1,0 +1,979 @@
+iteration: 3
+objects:
+- id: O1
+  name: REMORA smartphone-to-EHR rheumatoid arthritis integration
+  source_document: austin et al 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The integrated PGHD are patient-reported symptom and impact measures
+      without sensor input.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The app data are embedded in the hospital EHR for consultation use.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Patients manually complete questionnaires.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: No named interoperability standard or vendor framework is foregrounded.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The described flow is from patient app into clinician system.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Clinicians review graphical summaries rather than only raw observations.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Use is centered on clinician review during consultation.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: The clinician-facing presentation is graphical trend display.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: REMORA depends on patient data entry and clinician consultation use,
+      so initiation is shared across patient and clinical actors.
+- id: O2
+  name: PatientDataChain blockchain PHR integration platform
+  source_document: cernian et al 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C4
+    reasoning: The platform combines patient-entered, wearable, and clinical-system
+      data.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The architecture centers on a patient-controlled health wallet linked
+      to provider systems.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It combines manual entry with automatic ingestion from Fitbit and EHR
+      APIs.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: FHIR is explicitly referenced among its interoperability standards.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The wallet architecture supports exchange across patient and provider
+      sides.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The platform consolidates and presents integrated information rather
+      than only passing raw data.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: No scheduled alerting logic is central; the platform supports general
+      review.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: The clinician-facing component is a web dashboard/platform.
+  - dimension_id: D9
+    characteristic_id: D9.C1
+    reasoning: PatientDataChain is centered on a patient-controlled health wallet,
+      making the integration primarily patient-initiated.
+- id: O3
+  name: eCoach tethered PHR-EHR interoperability prototype
+  source_document: chatterjee et al 2022
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: It combines questionnaire-based self-report and sensor-derived data.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: It is explicitly a tethered PHR with bidirectional EHR exchange.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The system captures both manually entered and device-derived data.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The prototype is explicitly built on HL7 FHIR.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Bidirectional communication with the EHR is explicit.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Dashboard and PHR views summarize data for users and professionals.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: The system supports ongoing routine management rather than single clinician
+      review.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: The interface is dashboard-oriented for professionals.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: eCoach couples patient PHR participation with provider-side EHR exchange,
+      so initiation is multi-stakeholder.
+- id: O4
+  name: SafeHeart multimodal ICD prediction platform
+  source_document: frodi et al 2021
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C4
+    reasoning: It combines PROs, wearables, remote monitoring, and EHR data.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: The output is a standalone clinician platform rather than embedded
+      EHR functionality.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The platform combines automatic sensing with patient questionnaires.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: No specific healthcare interoperability standard is described.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The described flow is toward the clinician platform.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Risk prediction and feature-importance outputs indicate analytics.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Risk events and prediction outputs are intended to trigger review.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Clinicians use a dashboard view.
+  - dimension_id: D9
+    characteristic_id: D9.C2
+    reasoning: SafeHeart is framed around clinician risk review and decision support,
+      so the integration is primarily clinician-initiated.
+- id: O5
+  name: MyHealthKeeper EHR-tethered PHR with wearable integration
+  source_document: JW Kim et al 2019
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: It combines patient-entered lifestyle logs with wearable/mobile step
+      data.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The app is an EHR-tethered PHR.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Some data are manually logged and others synced from devices.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: No named formal standard or vendor framework is emphasized.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Tethered PHR arrangements imply exchange between patient app and EHR.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The EHR-linked view presents summarized lifelog information.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Use centers on clinician review during care.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: The clinician-facing view is visualized summary/trend-oriented.
+  - dimension_id: D9
+    characteristic_id: D9.C1
+    reasoning: MyHealthKeeper is organized around patient-managed PHR and wearable
+      contribution, so initiation is primarily patient-initiated.
+- id: O6
+  name: DM-TNG MyChart and Apple HealthKit blood glucose integration
+  source_document: lewinski et al 2019
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The integrated PGHD are glucose meter readings from a sensor device.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Patient-facing platforms and project-specific structures mediate transfer
+      into the EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The project compares manual entry and automatic transfer.
+  - dimension_id: D4
+    characteristic_id: D4.C5
+    reasoning: The integration relies on Apple HealthKit and Epic/MyChart vendor frameworks.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The workflow involves patient-side platform use and clinician-side
+      review.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Flowsheet and report views summarize readings for clinicians.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: The diabetes workflow relies on recurring remote review.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: Clinicians access the data through EHR flowsheets.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: DM-TNG involves patient-side HealthKit/MyChart participation and clinician
+      diabetes review workflows, indicating multi-stakeholder initiation.
+- id: O7
+  name: HeartMapp CHF mobile telemedicine and web monitoring system
+  source_document: sano et al 2015
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: It combines patient-entered assessments with wearable physiological
+      monitoring.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: The clinical team accesses a web interface rather than an EHR-embedded
+      module.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Questionnaires are manual and sensors stream automatically.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: No formal interoperability standard is specified.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The described flow goes from patient tools to server and clinician
+      view.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The system supports interpreted plots and decision-support outputs.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Prompt intervention logic makes event-based review central.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: The clinician access point is a web dashboard/interface.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: HeartMapp combines patient self-management inputs with clinician monitoring
+      and intervention, so initiation is multi-stakeholder.
+- id: O8
+  name: ROAMM-EHR smartwatch-to-Epic postoperative monitoring platform
+  source_document: sun et al 2024
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: It combines smartwatch sensor streams with patient-reported assessments.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: An AWS server acts as an intermediary repository before Epic exposure.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The platform combines automatic sensing and prompted self-report.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: The article emphasizes architecture and APIs but not a named standard
+      basis.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The main flow is patient-side data toward clinician system.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Urgency logic and severe-condition detection indicate analytics.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Severe-condition notifications trigger review.
+  - dimension_id: D8
+    characteristic_id: D8.C4
+    reasoning: Notification functionality is the defining clinician-facing feature.
+  - dimension_id: D9
+    characteristic_id: D9.C2
+    reasoning: ROAMM-EHR is structured around postoperative clinical monitoring and
+      escalation, making clinician initiation primary.
+- id: O9
+  name: PD_Manager mHealth clinical decision support system for Parkinson’s disease
+  source_document: timotijevic et al 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: It combines self-reported and wearable symptom data.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: The solution is a cloud-connected mHealth CDSS rather than embedded
+      EHR functionality.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It includes self-report and device-generated information.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: No named interoperability standard is foregrounded.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The described exchange is toward clinician use.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The CDSS processes symptom data into decision-support information.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: The description emphasizes clinician use rather than explicit scheduled
+      or event-triggered workflow.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: The clinician-facing component is a decision-support dashboard/interface.
+  - dimension_id: D9
+    characteristic_id: D9.C2
+    reasoning: PD_Manager is a clinician-facing decision support system, so the integration
+      is primarily clinician-initiated.
+- id: O10
+  name: iT2DM diabetes PGHD-integrated phenotyping framework
+  source_document: wei et al 2017
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C4
+    reasoning: It integrates PGHD with EHR, lab, imaging, and gene data.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The result is framed as a personal health record shared across systems.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Data enter through manual upload, file upload, and automated exchange.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: The framework is explicitly based on openEHR.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The PHR is intended for transfer and sharing across systems.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Phenotyping and grouping modules reflect analytics.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: The article centers on query and researcher/clinician review rather
+      than event triggers.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: The system provides a web dashboard-style visualization environment.
+  - dimension_id: D9
+    characteristic_id: D9.C3
+    reasoning: iT2DM is a framework-oriented integration effort aimed at organizational
+      data integration and phenotyping infrastructure, best fitting administrator-initiated.
+- id: O11
+  name: SMART on FHIR PRO integration architecture
+  source_document: wesley et al 2021
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The integrated data are patient-reported outcomes only.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: A cloud-based FHIR hub intermediates between app and multiple EHRs.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Patients manually complete PRO instruments.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The architecture is explicitly SMART on FHIR based.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The architecture supports app-EHR interaction across both sides.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Providers view scored PRO summaries.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: Use is centered on clinician review in visits.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Providers view PROs through an embedded web interface/dashboard.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: SMART on FHIR PRO integration requires both patient questionnaire completion
+      and provider workflow use across systems, so initiation is multi-stakeholder.
+- id: O12
+  name: Smartwatch anomaly dashboard prototype
+  source_document: bajaj et al 2023 - Co-Design, Development, and Evaluation of a
+    Health Monitoring Tool Using Smartwatch Data
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The PGHD source is smartwatch sensor data.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: The article centers on a separate dashboard prototype for clinical
+      use.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Smartwatch sensing is automatic.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: No formal standard is specified.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The flow sends analyzed data toward clinical users.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Machine-learning anomaly detection is applied.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Anomalies are intended to trigger review.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: The system is a dashboard prototype.
+  - dimension_id: D9
+    characteristic_id: D9.C2
+    reasoning: The anomaly dashboard is designed for clinician monitoring and response,
+      making clinician initiation primary.
+- id: O13
+  name: OpenEDC next-generation study database with PROM integration
+  source_document: dugas et al 2024 - Next-generation study databases require FAIR,
+    EHR-integrated, and scalable Electronic Data Capture
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The key PGHD are patient-entered PROMs.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Portal and database components act as middleware between patient input
+      and the EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: PROM capture is manual patient entry.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The implementation uses HL7 v2 among other mechanisms.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The article describes import from and export to the EHR.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The system generates summaries and chart views.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Collection and review occur at visits and follow-up intervals.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Chart and portal-style review are best captured as dashboard view.
+  - dimension_id: D9
+    characteristic_id: D9.C3
+    reasoning: OpenEDC is principally a database and institutional integration architecture,
+      best classified as administrator-initiated.
+- id: O14
+  name: Xemio Research to OntoCR standardized extract integration
+  source_document: frid et al 2022 - Successful Integration of EN/ISO 13606-Standardized
+    Extracts From a Patient Mobile App Into an Electronic Health Record
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The app contributes self-entered side effects and app-collected activity
+      data.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: A conversion module and repository mediate between app and institutional
+      systems.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The source mix includes manual self-entry and automatic activity capture.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The core interoperability approach is EN/ISO 13606.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Communication is app to repository/EHR side only.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The focus is standardized transmission and storage rather than summarization.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Daily extract transfer indicates scheduled handling.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: Repository/EHR storage is closest to structured tabular/flowsheet presentation.
+  - dimension_id: D9
+    characteristic_id: D9.C3
+    reasoning: Xemio-to-OntoCR emphasizes standardized institutional integration infrastructure,
+      so administrator initiation is primary.
+- id: O15
+  name: Asthma Health to Epic via HealthKit and MyChart
+  source_document: 'genes et al 2018 - From smartphone to EHR: a case report on integrating
+    patient generated health data'
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The app relies on manual patient entry of asthma data.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: HealthKit and MyChart bridge the app and Epic.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The data are manually entered by patients.
+  - dimension_id: D4
+    characteristic_id: D4.C5
+    reasoning: The exchange is based on HealthKit/ResearchKit and Epic MyChart vendor
+      frameworks.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Provider orders and patient data return create bidirectional exchange.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Values are transferred into flowsheets without major analytic transformation.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Provider-set thresholds trigger alerts on low PEFR.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: The data are integrated into Epic flowsheets.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: Asthma Health to Epic depends on patient reporting plus provider ordering
+      and threshold setup, indicating multi-stakeholder initiation.
+- id: O16
+  name: DH-Convener MPI-based PGHD interoperability framework
+  source_document: 'jayathissa et al 2023 - Patient-Generated Health Data Interoperability
+    Through Master Patient Index: The DH-Convener Approach'
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The framework centers on wearable-device data.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: PHR, MPI, FHIR server, and DH-Convener form a middleware architecture.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Wearable ingestion is treated as automatic data transfer.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The framework is explicitly based on FHIR.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Only flow toward EHR infrastructure is described.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The framework mainly defines standardized exchange of a minimum dataset.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: It supports ongoing routine exchange rather than one-off review.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: The output is record-oriented structured integration rather than a
+      dashboard.
+  - dimension_id: D9
+    characteristic_id: D9.C3
+    reasoning: DH-Convener is an interoperability framework driven by institutional
+      architecture and governance choices, best fitting administrator-initiated.
+- id: O17
+  name: Dexcom CGM to Epic integration via HealthKit and MyChart
+  source_document: kumar et al 2016 - Automated integration of continuous glucose
+    monitor data in the electronic health record using consumer technology
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The PGHD source is continuous glucose monitoring sensor data.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: HealthKit and MyChart bridge the device/app and Epic.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: CGM data are transferred automatically.
+  - dimension_id: D4
+    characteristic_id: D4.C5
+    reasoning: The integration depends on HealthKit and Epic MyChart vendor frameworks.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Provider ordering and patient acceptance indicate bidirectional workflow.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Reports and modal day visualizations summarize the data.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Providers reviewed reports every two weeks.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: Report visualization is best captured as graph view.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: Dexcom-to-Epic requires provider ordering/acceptance and patient-side
+      device-platform participation, so initiation is multi-stakeholder.
+- id: O18
+  name: COVID-19 Tracker integrated into Epic workflow
+  source_document: lobach et al 2022 - Integrating a Patient Engagement App into an
+    Electronic Health Record-Enabled Workflow Using Interoperability Standards
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The app relies on patient-entered symptoms and vital-sign information.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The app is directly integrated with Epic workflow through APIs.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Patients enter symptoms and vitals manually.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: FHIR APIs and related standards are explicit.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The application retrieves EHR data and writes PGHD back.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: Responses are filed as observations without major transformation.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Patients received daily reminders and coordinators monitored routinely.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: The workflow is embedded in EHR-oriented structured review views.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: COVID-19 Tracker combines provider enrollment/workflow design with
+      patient symptom submission, indicating multi-stakeholder initiation.
+- id: O19
+  name: Smart bed wireless biomonitoring architecture
+  source_document: nunes et al 2024 - Deployment and validation of a smart bed architecture
+    for untethered patients with wireless biomonitoring stickers
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The PGHD come from wireless biomonitoring sensors.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Bed-level smart boxes and a gateway mediate before data reach the HIS.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Sensor data are captured and transferred automatically.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The gateway converts to HL7 FHIR.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Only sensor-to-HIS flow is described.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The system focuses on transfer and display of vital signs.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Monitoring is continuous and routine during hospitalization.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: Vital-sign display in the HIS is closest to structured flowsheet-style
+      presentation.
+  - dimension_id: D9
+    characteristic_id: D9.C3
+    reasoning: The smart bed architecture is a hospital infrastructure deployment
+      decision, best classified as administrator-initiated.
+- id: O20
+  name: Wearable-based automated NEWS2 calculation
+  source_document: reichl et al 2024 - Pilot study for the development of an automatically
+    generated and wearable-based early warning system
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The source data are wearable measurements.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Wearable data pass through gateways and a Device Hub before use.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Wearable sensing and transfer are automatic.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: No named standard underpins the implemented interface.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Data flow toward the clinical system only.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Wearable signals are processed into automated NEWS2 scores.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: The wearable captures data continuously as routine monitoring.
+  - dimension_id: D8
+    characteristic_id: D8.C4
+    reasoning: Early warning score outputs function as notification-oriented presentation.
+  - dimension_id: D9
+    characteristic_id: D9.C2
+    reasoning: Automated NEWS2 calculation is designed for clinician surveillance
+      and escalation, so clinician initiation is primary.
+- id: O21
+  name: Sensi-steps post-stroke fall prevention application
+  source_document: 'smith et al 2017 - Sensi-steps: Using patient-generated data to
+    prevent post-stroke falls'
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The solution combines sensing with patient actions/inputs.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: A tablet-based application bundle mediates among sensors, portal, and
+      EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The solution mixes sensed data and patient-mediated inputs.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: No formal interoperability standard is named.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The design includes flow into the EHR and communication back through
+      the portal.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The app computes fall risk from multiple inputs.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: High-risk scores generate notifications.
+  - dimension_id: D8
+    characteristic_id: D8.C4
+    reasoning: High-risk outputs are notification-oriented.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: Sensi-steps combines patient participation, portal/EHR communication,
+      and clinician response to fall-risk outputs, so initiation is multi-stakeholder.
+- id: O22
+  name: Tidepool-TIDE diabetes population management platform
+  source_document: Y K Kim et al 2024 - The adaptation of a single institution diabetes
+    care platform into a nationally available turnkey solution
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The system primarily relies on CGM and related device data.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: TIDE is a clinical platform interfacing with EHR workflows rather than
+      the EHR itself.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Device data ingestion is primarily automatic.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: The article emphasizes platform APIs and interoperability generally,
+      not a named standard.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The platform imports device data and exports reports into workflow.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: It algorithmically ranks patients and identifies higher-risk cases.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Patients are reviewed in recurring population-management cycles.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: TIDE is a clinical dashboard/platform.
+  - dimension_id: D9
+    characteristic_id: D9.C2
+    reasoning: TIDE is a clinician-facing population management platform, making clinician
+      initiation primary.
+- id: O23
+  name: P2E2T diabetes coaching with EHR-integrated PGHD
+  source_document: young et al 2020 - Nurse Coaching and Mobile Health Compared With
+    Usual Care to Improve Diabetes Self-Efficacy
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The intervention uses wearable tracker data and optional patient-entered
+      nutrition data.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Data move through Apple HealthKit and MyChart into the EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It combines automatic tracker data and optional manual nutrition entries.
+  - dimension_id: D4
+    characteristic_id: D4.C5
+    reasoning: The integration relied on HealthKit and Epic/MyChart vendor frameworks.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Only transmission into the EHR is described.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: PGHD were displayed as trends in provider synopsis views.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: The intervention involved regular synchronization and biweekly coaching
+      review.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: PGHD were displayed as trend views.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: P2E2T combines nurse coaching workflows with patient-generated tracker
+      and nutrition data, indicating multi-stakeholder initiation.
+- id: O24
+  name: COVID-19 home quarantine clinical decision support system
+  source_document: Alcoceba-Herrero et al. 2023
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: It combines self-reported symptoms with wearable vital-sign data.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: Data are sent to an online clinician-facing platform rather than an
+      EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The system mixes manual self-report and automatic wearable data.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: No formal standard is specified.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The described flow goes from patient-side tools to the clinical platform.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: AI-based severity processing is applied.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Severity alerts create event-driven review.
+  - dimension_id: D8
+    characteristic_id: D8.C4
+    reasoning: Severity alerts are notification-oriented.
+  - dimension_id: D9
+    characteristic_id: D9.C2
+    reasoning: The COVID-19 home quarantine CDSS is organized around clinician surveillance
+      and response workflows, so clinician initiation is primary.
+- id: O25
+  name: EHR-integrated postpartum HDP monitoring app
+  source_document: Dullabh et al. 2023
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Patients manually enter blood pressure readings and symptoms.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: A cloud service writes patient-contributed data directly into the EHR
+      via APIs.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The data are manually entered by patients.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The system is explicitly SMART on FHIR using FHIR APIs.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: Patients receive messages and submit data back through the workflow.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Built-in logic evaluates out-of-range values and escalates them.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Out-of-range data trigger escalation.
+  - dimension_id: D8
+    characteristic_id: D8.C4
+    reasoning: Escalation and alerts are notification-oriented.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: The postpartum HDP monitoring app combines patient reporting with clinician
+      follow-up in EHR workflows, indicating multi-stakeholder initiation.
+- id: O26
+  name: MobiCardio clinical-grade CVD management system
+  source_document: Li et al. 2019
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: PGHD are acquired from a smart vest and connected physiological devices.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: A private-cloud architecture and application server mediate integration
+      with the HIS.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Device-generated data are primarily transferred automatically.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: Integration relies on custom RESTful APIs and architecture.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The described flow is from wearables into hospital systems.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The system includes threshold warnings and AI-based analytics.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Warnings and arrhythmia detection create event-triggered review.
+  - dimension_id: D8
+    characteristic_id: D8.C4
+    reasoning: Warnings are notification-oriented outputs.
+  - dimension_id: D9
+    characteristic_id: D9.C3
+    reasoning: MobiCardio is framed as a HIS-oriented management system deployment,
+      best classified as administrator-initiated.
+- id: O27
+  name: PROMIS CAT middleware integration into Epic
+  source_document: Nolla et al. 2024
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Data are patient-entered questionnaire responses.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Custom middleware manages the connection between Epic and Assessment
+      Center API.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Patients manually complete PRO instruments.
+  - dimension_id: D4
+    characteristic_id: D4.C6
+    reasoning: The integration is based on custom middleware and API linkage.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: PROMIS CAT administration and result return operate across both directions.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: CAT scoring yields summarized instrument results.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Assessments are ordered or triggered at defined intervals.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: Results are tightly integrated into structured Epic review views.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: PROMIS CAT middleware integration depends on patient questionnaire
+      completion and provider review in Epic, so initiation is multi-stakeholder.
+- id: O28
+  name: HL7 CDA middleware information model for PGHD and ODL exchange
+  source_document: Plastiras and O'Sullivan 2018
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The examples include both device-generated and user-entered app data.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: A middleware information model and mapping rules transform app data
+      for exchange.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The examples include both manually entered and device-generated data.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The information model is explicitly based on HL7 CDA.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The demonstrated exchange is export toward EHRs.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The focus is standardized representation and exchange, not analytics.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: The exchange model assumes clinician-side review.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: The target is structured EHR documentation rather than dashboards.
+  - dimension_id: D9
+    characteristic_id: D9.C3
+    reasoning: The HL7 CDA middleware information model is an institutional interoperability
+      artifact, best classified as administrator-initiated.
+- id: O29
+  name: 4T CGM-to-EHR integration for pediatric type 1 diabetes
+  source_document: Prahalad et al. 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The program includes CGM data and patient-reported outcomes.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Data are transmitted from CGM through Apple HealthKit into the EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It combines automatic CGM data with patient-reported inputs.
+  - dimension_id: D4
+    characteristic_id: D4.C5
+    reasoning: The integration uses Apple HealthKit and related vendor tooling.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The emphasis is data transmission into the EHR.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Automated analysis and population-management support are provided.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Population-management review occurs in recurring care processes.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Population-management tools are best captured as dashboard view.
+  - dimension_id: D9
+    characteristic_id: D9.C4
+    reasoning: 4T CGM-to-EHR integration requires patient-side PGHD capture and clinician-supported
+      diabetes workflow use, indicating multi-stakeholder initiation.

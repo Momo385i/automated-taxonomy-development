@@ -1,0 +1,46 @@
+iteration: 2
+object_validation:
+- object_name: SayCan
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based agent architecture with
+    embodied goal-directed behavior. Original mappings from Taxonomy A were plausible
+    and retained with normalization only.
+- object_name: ChemCrow
+  action: retained
+  reasoning: Within scope as an LLM-based autonomous tool-using agent. Mapping retained
+    and extended to synthesized dimensions.
+- object_name: CAMEL role-playing framework
+  action: retained
+  reasoning: Within scope because it is a multi-agent autonomous framework rather
+    than a pure benchmark. Action interface remapped from generic language interaction
+    to message exchange for better fit.
+- object_name: MemGPT
+  action: retained
+  reasoning: Within scope as a single-agent architecture emphasizing autonomous memory
+    management. Mapping retained with synthesized dimensions.
+- object_name: Generative Agents
+  action: retained
+  reasoning: Within scope as a multi-agent autonomous simulation architecture. Adaptation
+    mechanism refined to verbal reflection based on explicit reflection process.
+- object_name: ReAct
+  action: retained
+  reasoning: Within scope as a foundational modern LLM-based agent pattern. Mapping
+    from Taxonomy B remained plausible after synthesis.
+- object_name: Reflexion
+  action: retained
+  reasoning: Within scope as an autonomous LLM agent architecture with explicit reflective
+    adaptation. Mapping retained and extended to synthesized dimensions.
+- object_name: Voyager
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based embodied agent. Actuation
+    domain corrected from physical implication to digital because Minecraft is a simulated
+    environment.
+- object_name: AutoGen
+  action: retained
+  reasoning: Within scope as a multi-agent framework for autonomous agent conversation
+    and coordination. Mapping retained with conversational planning emphasis.
+- object_name: EUREKA
+  action: retained
+  reasoning: Kept as a doubtful-but-plausible in-scope case because it is a goal-directed
+    LLM-based agentic optimization system, not merely an evaluation tool. Mapping
+    retained with synthesized dimensions.

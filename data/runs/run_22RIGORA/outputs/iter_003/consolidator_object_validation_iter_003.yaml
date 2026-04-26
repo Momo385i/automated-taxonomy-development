@@ -1,0 +1,62 @@
+iteration: 3
+object_validation:
+- object_name: AutoGPT
+  action: retained
+  reasoning: Within scope as a modern autonomous LLM-based agent framework focused
+    on architectural and behavioral properties.
+- object_name: BabyAGI
+  action: retained
+  reasoning: Within scope as a post-2020 autonomous agent architecture centered on
+    task creation and execution.
+- object_name: Inner Monologue
+  action: retained
+  reasoning: Within scope as a post-2020 embodied autonomous agent architecture with
+    closed-loop planning.
+- object_name: ChatDev
+  action: retained
+  reasoning: Within scope as a modern multi-agent software-development architecture
+    exhibiting autonomous role-based behavior.
+- object_name: DEPS
+  action: retained
+  reasoning: Within scope as an LLM-based autonomous planning agent architecture.
+- object_name: Auto-GPT styled agent with Additional Opinions
+  action: retained
+  reasoning: Retained as an in-scope architectural variant of autonomous Auto-GPT-style
+    agents rather than a pure benchmark or evaluation tool.
+- object_name: SayCan
+  action: retained
+  reasoning: Within scope as a post-2020 autonomous embodied agent architecture grounded
+    in robotic affordances.
+- object_name: ChemCrow
+  action: retained
+  reasoning: Within scope as a modern tool-using autonomous LLM agent system.
+- object_name: CAMEL role-playing framework
+  action: retained
+  reasoning: Within scope as a modern multi-agent framework with autonomous role-based
+    interaction.
+- object_name: Generative Agents
+  action: retained
+  reasoning: Within scope as a modern multi-agent architecture with autonomous planning,
+    memory, and behavior.
+- object_name: HuggingGPT
+  action: retained
+  reasoning: Within scope as a modern autonomous orchestration agent over external
+    models.
+- object_name: ReAct
+  action: retained
+  reasoning: Within scope as a foundational post-2020 LLM-based autonomous agent pattern.
+- object_name: Reflexion
+  action: retained
+  reasoning: Within scope as a modern autonomous agent architecture with reflective
+    improvement.
+- object_name: Voyager
+  action: retained
+  reasoning: Within scope as a modern embodied autonomous agent with self-generated
+    curriculum and skill acquisition.
+- object_name: AutoGen
+  action: retained
+  reasoning: Within scope as a modern multi-agent conversational architecture.
+- object_name: EUREKA
+  action: retained
+  reasoning: Retained as a post-2020 autonomous coding agent architecture rather than
+    an evaluation-only framework.

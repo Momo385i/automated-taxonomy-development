@@ -1,0 +1,72 @@
+meta_characteristic: The integration of PGHD within clinical systems
+topic: The integration of Patient-Generated Health Data (PGHD) into clinical systems
+  like Electronic Health Records (EHRs) or Hospital Information Systems (HIS)
+dimensions:
+- id: D1
+  name: PGHD source composition
+  characteristics:
+  - id: D1.C1
+    name: Single patient-reported source
+  - id: D1.C2
+    name: Single sensor source
+  - id: D1.C3
+    name: Patient-reported and sensor sources
+  - id: D1.C4
+    name: Multimodal with clinical-system sources
+- id: D2
+  name: Clinical system coupling
+  characteristics:
+  - id: D2.C1
+    name: Direct EHR embedding
+  - id: D2.C2
+    name: Tethered PHR linkage
+  - id: D2.C3
+    name: Intermediary repository linkage
+  - id: D2.C4
+    name: External dashboard linkage
+- id: D3
+  name: Data transfer mode
+  characteristics:
+  - id: D3.C1
+    name: Manual entry
+  - id: D3.C2
+    name: Automatic device sync
+  - id: D3.C3
+    name: Hybrid transfer
+- id: D4
+  name: Clinician-facing presentation
+  characteristics:
+  - id: D4.C1
+    name: Graphical trend view
+  - id: D4.C2
+    name: Tabular or flowsheet view
+  - id: D4.C3
+    name: Dashboard view
+  - id: D4.C4
+    name: Notification view
+- id: D5
+  name: Primary integration purpose
+  characteristics:
+  - id: D5.C1
+    name: Consultation support
+  - id: D5.C2
+    name: Remote management support
+  - id: D5.C3
+    name: Prediction and decision support
+  - id: D5.C4
+    name: Longitudinal record unification
+  - id: D5.C5
+    name: Secondary use and phenotyping
+- id: D6
+  name: Standards basis
+  characteristics:
+  - id: D6.C1
+    name: Proprietary or unspecified integration
+  - id: D6.C2
+    name: HL7 FHIR based
+  - id: D6.C3
+    name: HL7 CDA or V2 based
+  - id: D6.C4
+    name: OpenEHR based
+notes:
+  format: prototype_v1

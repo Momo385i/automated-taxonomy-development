@@ -1,0 +1,128 @@
+iteration: 3
+objects:
+- id: O1
+  name: SayCan
+  source_document: Ahn et al 2022 - Do As I Can, Not As I Say Grounding Language in
+    Robotic Affordances.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The system is described as one robot agent that plans and executes
+      skills for a user instruction.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its external capabilities are a fixed repertoire of pretrained low-level
+      robotic skills with affordance/value functions.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The next action is chosen by scoring candidate skills with LLM likelihood
+      and affordance probability, then selecting the maximum.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The paper describes iterative skill selection using the current instruction
+      context and state, but not an explicit long-term memory store for accumulated
+      experiences.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The selected skills are executed by a mobile manipulator robot in kitchen
+      environments.
+- id: O2
+  name: ChemCrow
+  source_document: bran et al 2023 - ChemCrow - Augmenting large-language models with
+    chemistry tools.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ChemCrow is presented as one LLM-based chemistry agent using many tools,
+      not as multiple cooperating agents.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its core architecture augments the LLM with 18 chemistry-specific and
+      general software tools.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: It follows an iterative Thought, Action, Action Input, Observation
+      loop until a final answer is reached.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The paper emphasizes iterative reasoning with tool observations, but
+      does not describe an explicit persistent long-term memory architecture.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: The agent can execute syntheses through the cloud-connected RoboRXN
+      robotic chemistry platform.
+- id: O3
+  name: CAMEL role-playing framework
+  source_document: Li et al 2023 - CAMEL- Communicative Agents for Mind Exploration
+    of Large Language Model Society.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The framework centers on autonomous cooperation between at least an
+      AI user and an AI assistant, with optional task specifier and critic.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: The described core framework relies on communicative agents and prompting
+      rather than external task-specific tools or model hubs.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: Task solving occurs through structured role-play dialogue between agents
+      with instruction-following turns.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The agents operate over the evolving message history and system prompts,
+      i.e., conversation history is the operative memory structure.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The framework studies conversational cooperation and dataset generation,
+      not physical execution in robots or labs.
+- id: O4
+  name: Generative Agents
+  source_document: Park et al 2023 - Generative Agents Interactive Simulacra of Human
+    Behavior.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The system instantiates a society of 25 agents that interact with one
+      another in a shared environment.
+  - dimension_id: D2
+    characteristic_id: D2.C4
+    reasoning: The architecture extends an LLM with memory, reflection, and planning,
+      but not with external tools or expert model collections.
+  - dimension_id: D3
+    characteristic_id: D3.C5
+    reasoning: Behavior is generated from retrieved memories, reflections, and plans,
+      i.e., generation is conditioned on an explicit memory architecture.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: The architecture includes a memory stream plus higher-level reflections
+      and plans stored back into memory.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The agents act in a simulated sandbox world rather than controlling
+      physical robots or lab equipment.
+- id: O5
+  name: HuggingGPT
+  source_document: shen et al 2023 -HuggingGPT Solving AI Tasks with ChatGPT and its
+    Friends in Hugging Face.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: HuggingGPT is presented as one LLM-powered controller that coordinates
+      model execution.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Its architecture explicitly connects the LLM to expert models from
+      the Hugging Face model hub.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It decomposes requests into structured tasks with ids and dependencies,
+      then orchestrates execution as a task graph.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The workflow maintains structured task ids, dependencies, and resource
+      references such as <resource>-task_id.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The system executes AI models and returns multimodal outputs, but not
+      through direct physical-world actuation.

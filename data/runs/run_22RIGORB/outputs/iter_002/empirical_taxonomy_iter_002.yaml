@@ -1,0 +1,68 @@
+meta_characteristic: Architectural and behavioral properties of autonomous AI agents.
+topic: Classification of autonomous AI agents based on their architectural design
+  and behavioral capabilities.
+dimensions:
+- id: D1
+  name: Agent cardinality
+  characteristics:
+  - id: D1.C1
+    name: Single-agent
+  - id: D1.C2
+    name: Multi-agent
+- id: D2
+  name: Action grounding
+  characteristics:
+  - id: D2.C1
+    name: Ungrounded language interaction
+  - id: D2.C2
+    name: Tool grounding
+  - id: D2.C3
+    name: Skill or model grounding
+  - id: D2.C4
+    name: Memory grounding
+- id: D3
+  name: Primary execution environment
+  characteristics:
+  - id: D3.C1
+    name: Physical environment
+  - id: D3.C2
+    name: Digital tool environment
+  - id: D3.C3
+    name: Simulated social environment
+  - id: D3.C4
+    name: Hybrid digital-physical environment
+- id: D4
+  name: Planning structure
+  characteristics:
+  - id: D4.C1
+    name: Iterative next-step planning
+  - id: D4.C2
+    name: Role-based conversational planning
+  - id: D4.C3
+    name: Hierarchical long-horizon planning
+- id: D5
+  name: External capability source
+  characteristics:
+  - id: D5.C1
+    name: None beyond base model
+  - id: D5.C2
+    name: Specialized tools
+  - id: D5.C3
+    name: Expert models
+  - id: D5.C4
+    name: Pretrained embodied skills
+  - id: D5.C5
+    name: Internal memory mechanisms
+- id: D6
+  name: Interaction topology
+  characteristics:
+  - id: D6.C1
+    name: User-agent
+  - id: D6.C2
+    name: Agent-tool loop
+  - id: D6.C3
+    name: Agent-environment social interaction
+  - id: D6.C4
+    name: Inter-agent conversation
+notes:
+  format: prototype_v1

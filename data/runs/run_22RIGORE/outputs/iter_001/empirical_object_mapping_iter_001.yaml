@@ -1,0 +1,127 @@
+iteration: 1
+objects:
+- id: O1
+  name: ReAct
+  source_document: yao et al 2023 - ReAct- Synergizing Reasoning and Acting in Language
+    Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: ReAct is presented as one language-model agent that reasons and acts
+      in an interleaved trajectory.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Its task execution uses textual actions such as search, lookup, finish,
+      or environment actions in ALFWorld/WebShop.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Its core improvement mechanism is the interleaving of thoughts and
+      actions during task solving.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The paper does not describe a persistent cross-episode memory store
+      beyond the current trajectory context.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: ReAct operates on given questions, claims, or benchmark goals rather
+      than generating its own curriculum.
+- id: O2
+  name: Reflexion
+  source_document: shinn et al 2023 - Reflexion- Language Agents with Verbal Reinforcement
+    Learning.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Reflexion is formulated around one agent policy augmented by evaluator
+      and self-reflection modules, not as multiple cooperating agents.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The actor produces text and actions in environments such as ALFWorld,
+      HotPotQA, and coding tasks.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Its defining mechanism is verbal self-reflection generated from feedback
+      and used in later trials.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The framework stores self-reflections in an episodic memory buffer
+      for future trials.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Tasks come from external benchmarks and are not self-proposed by the
+      agent.
+- id: O3
+  name: Voyager
+  source_document: wang et al 2023 - Voyager-An Open-Ended Embodied Agent with Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: Voyager is described as one embodied lifelong learning agent in Minecraft.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: It explicitly uses executable code as the action space instead of low-level
+      actions or plain text actions.
+  - dimension_id: D3
+    characteristic_id: D3.C4
+    reasoning: It improves behavior through iterative prompting with environment feedback,
+      execution errors, and self-verification.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: Voyager accumulates verified programs in an ever-growing skill library
+      indexed for retrieval.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The agent uses an automatic curriculum to propose progressively harder
+      self-driven tasks.
+- id: O4
+  name: AutoGen
+  source_document: wu et al 2023- AutoGen-Enabling Next-Gen LLM Applications via Multi-Agent
+    Conversation.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: AutoGen is explicitly a framework for multiple conversable agents cooperating
+      via conversation.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Its primary operating medium is inter-agent message exchange and conversation-driven
+      coordination.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: The framework emphasizes conversation programming and coordination,
+      but the source does not define a single built-in cross-trial self-improvement
+      mechanism like reflection, evolution, or iterative code refinement at the framework
+      level.
+  - dimension_id: D4
+    characteristic_id: D4.C4
+    reasoning: Agents maintain internal context from sent and received messages, making
+      conversation history the persistent context structure supported by the framework.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Applications are initiated from user or externally posed tasks rather
+      than an autonomous curriculum.
+- id: O5
+  name: EUREKA
+  source_document: ma et al 2023 - Eureka- Human-Level Reward Design via Coding Large
+    Language Models.pdf
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: EUREKA is introduced as one reward-design agent powered by a coding
+      LLM and evaluation loop.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: Its outputs are executable reward-function programs written as code.
+  - dimension_id: D3
+    characteristic_id: D3.C5
+    reasoning: Its defining optimization mechanism is evolutionary search over reward
+      code, supported by reward reflection.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The source describes iterative prompts and evaluations but not a persistent
+      reusable memory store comparable to a skill library or reflection buffer.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: EUREKA receives a task description and environment context from outside
+      rather than generating its own tasks.

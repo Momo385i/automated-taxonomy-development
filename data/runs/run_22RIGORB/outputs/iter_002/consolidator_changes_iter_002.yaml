@@ -1,0 +1,14 @@
+iteration: 2
+changes_short:
+- Validated both source taxonomies and retained all in-scope objects.
+- Synthesized overlapping dimensions from both taxonomies into 8 non-redundant dimensions.
+- Removed Taxonomy A dimensions 'Action grounding', 'External capability source',
+  and 'Interaction topology' as separate dimensions and absorbed their explanatory
+  content into 'Capability source', 'Action format', and 'Planning structure'.
+- Removed Taxonomy B dimensions 'Improvement mechanism' and 'Capability store' as
+  originally named and retained their content in renamed dimensions 'Adaptation mechanism'
+  and 'Capability source'.
+- Renamed several dimensions and characteristics to concise noun phrases and renumbered
+  all IDs sequentially.
+- Re-mapped every object so each has exactly one characteristic per final dimension.
+- Normalized object naming by renaming 'VOYAGER' to 'Voyager'.

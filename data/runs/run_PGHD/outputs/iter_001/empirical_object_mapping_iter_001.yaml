@@ -1,0 +1,419 @@
+iteration: 1
+objects:
+- id: O1
+  name: COVID-19 home quarantine clinical decision support system
+  source_document: Alcoceba-Herrero et al. 2023
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The system monitors patients in home quarantine after diagnosis.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Data are sent to an online platform used by primary care and emergency
+      professionals rather than described as written into an EHR/HIS.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: Patients report symptoms in the app and wearable devices contribute
+      vital-sign data.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The system combines symptoms and multiple vital signs from devices.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Symptoms and some oximetry values are reported three times daily while
+      smartwatch data are monitored in real time.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: AI processing generates moderate or severe alerts that support clinician
+      action.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Data flow through the app to a server and online platform used by clinicians.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: No FHIR or CDA standard is specified; integration is described as platform/server
+      based.
+- id: O2
+  name: BREATHE mHealth informatics platform
+  source_document: Bui et al. 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The platform follows pediatric asthma patients in daily living environments
+      outside the clinic.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: BREATHE is a cloud platform with researcher dashboards and customized
+      provider reports rather than an embedded EHR module.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It combines EMA self-reports with sensor-based measurements.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The platform integrates physiologic, environmental, behavioral, geospatial,
+      and EHR-linked information.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Sensor streams are continuous while EMAs are scheduled, random, or
+      triggered.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Sensor-informed triggers and server-side analysis generate context-sensitive
+      EMA actions and monitoring support.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: A smartwatch/smartphone hub transmits to cloud servers and dashboards,
+      mediating the exchange with EHR data.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: The platform uses a standardized JSON model and APIs, but not FHIR
+      or CDA as the central integration basis.
+- id: O3
+  name: EHR-integrated postpartum HDP monitoring app
+  source_document: Dullabh et al. 2023
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The app supports postpartum monitoring after discharge in the home
+      setting.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: Patient-contributed data are integrated into the EHR flowsheet and
+      clinician dashboard.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Patients manually enter blood pressure readings and symptoms through
+      a questionnaire.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The app captures symptom responses and BP readings together.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: Patients receive daily messages and submit questionnaire responses
+      at scheduled intervals.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Built-in logic highlights out-of-range data and triggers escalation
+      messages and icons.
+  - dimension_id: D7
+    characteristic_id: D7.C1
+    reasoning: The cloud service writes patient-contributed data directly into the
+      EHR flowsheet via APIs.
+  - dimension_id: D8
+    characteristic_id: D8.C1
+    reasoning: The system is explicitly implemented as SMART on FHIR using FHIR APIs.
+- id: O4
+  name: Wearable at-home vital sign monitoring prototype
+  source_document: Hammett et al. 2022
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The prototype is intended for independent living and at-home monitoring.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: It uses a web application and database for nurses and caregivers, not
+      an EHR/HIS integration.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Vital signs are acquired from the pulse oximeter sensor without patient
+      self-entry.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The integrated PGHD are heart rate, oxygen saturation, and temperature
+      measurements.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The sensor is designed for continual transmission and the system checks
+      values every 5 minutes.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Threshold logic in the web application raises alerts and emails caregivers.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Data move from sensor to server/database to web dashboard, with platform
+      mediation.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: No formal interoperability standard is described.
+- id: O5
+  name: MobiCardio clinical-grade CVD management system
+  source_document: Li et al. 2019
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The system is deployed inside the hospital for clinical scenarios and
+      ward use.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The paper explicitly states integration with the existing HIS and synchronization
+      of EHRs from the HIS.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: PGHD are acquired from the smart vest and connected devices rather
+      than manual questionnaires.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The patient-generated data are physiological and activity measurements
+      from wearables.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The vest supports continuous monitoring and streaming of ECG, respiration,
+      and related signals.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: The system includes threshold warnings and AI-based applications such
+      as sleep analytics and arrhythmia detection.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Wearables feed a private-cloud architecture and application server
+      that mediates integration with HIS/EHR data.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Integration relies on RESTful APIs and custom architecture rather than
+      FHIR or CDA.
+- id: O6
+  name: PROMIS CAT middleware integration into Epic
+  source_document: Nolla et al. 2024
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: Patients can complete PROs through the portal before visits, in waiting
+      areas, or in clinic workflows.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The project tightly integrates computer-adaptive PROs into the Epic
+      EHR.
+  - dimension_id: D3
+    characteristic_id: D3.C1
+    reasoning: Data are entered by patients as questionnaire responses.
+  - dimension_id: D4
+    characteristic_id: D4.C2
+    reasoning: The PGHD consist of patient-reported outcome measures rather than physiologic
+      sensor data.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: PROMIS CATs are administered when ordered or triggered at defined clinical
+      intervals.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: Results can trigger notifications and clinical decision support rules
+      based on score thresholds.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: Custom middleware manages the connection and state mapping between
+      Epic and the Assessment Center API.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: The integration is based on custom middleware and API linkage, not
+      FHIR or CDA.
+- id: O7
+  name: HL7 CDA middleware information model for PGHD and ODL exchange
+  source_document: Plastiras and O'Sullivan 2018
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The model supports exchange of data generated in personal settings
+      into provider EHRs across contexts rather than one single care setting.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The purpose is explicit exchange of PGHD and ODL data with EHR systems.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The examples include both device-generated data and user-entered app
+      data.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The model covers sleep, nutrition, reproductive health, and goals across
+      multiple app sources.
+  - dimension_id: D5
+    characteristic_id: D5.C1
+    reasoning: The demonstrated exchange uses exported app data transformed for transfer,
+      not continuous streaming.
+  - dimension_id: D6
+    characteristic_id: D6.C1
+    reasoning: The model focuses on standardized exchange and representation, not
+      operational alerting or decision support.
+  - dimension_id: D7
+    characteristic_id: D7.C2
+    reasoning: A middleware information model and mapping rules transform app data
+      into exchange documents.
+  - dimension_id: D8
+    characteristic_id: D8.C2
+    reasoning: The information model and evaluation are explicitly based on HL7 CDA.
+- id: O8
+  name: 4T CGM-to-EHR integration for pediatric type 1 diabetes
+  source_document: Prahalad et al. 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: CGM data are collected remotely after diagnosis and reviewed between
+      visits in home management.
+  - dimension_id: D2
+    characteristic_id: D2.C1
+    reasoning: The team developed a system transmitting CGM data into the electronic
+      health record.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: The program includes device-generated CGM data and patient-reported
+      outcomes collected at visits.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: Integrated data include continuous glucose data plus PROs and clinical
+      education interactions.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: CGM is continuous, while PROs and telehealth touchpoints occur at scheduled
+      intervals.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Clinical decision support tools are described as necessary to automate
+      data analysis and support population management.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Data are transmitted from CGM through Apple HealthKit into the EHR,
+      implying a platform-mediated pathway.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: The integration uses Apple HealthKit and EHR messaging, with no FHIR
+      or CDA basis stated.
+- id: O9
+  name: MyWear smart garment monitoring system
+  source_document: Sethuraman et al. 2021
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The garment is designed for remote and mobile monitoring outside institutional
+      settings.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: Data go to cloud and mobile applications with medical official access,
+      not to a described EHR/HIS module.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: The smart garment automatically senses ECG, EMG, temperature, and orientation
+      data.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The PGHD consist of physiological and movement measurements from the
+      garment.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The design emphasizes automatic continuous monitoring and streaming
+      of vitals.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Cloud-based deep learning classifies heartbeat abnormalities and supports
+      emergency alerting.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Data are sent from garment to mobile app and cloud infrastructure for
+      clinician access.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: No formal exchange standard is specified for integration.
+- id: O10
+  name: CDPMS hemodialysis integrated monitoring system
+  source_document: Tsakiridis et al. 2023
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C3
+    reasoning: The system captures data both during dialysis sessions in the unit
+      and between sessions at home.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: CDPMS is the main dialysis unit system with its own cloud database
+      and web/mobile interfaces rather than an external EHR write-back focus.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It combines device-fed measurements with patient-submitted measurements
+      through the mobile app.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The system integrates treatment parameters, vital signs, and patient-entered
+      measurements from outside the unit.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Dialysis machine data are captured during sessions while home BP and
+      weight are entered at regular intervals.
+  - dimension_id: D6
+    characteristic_id: D6.C2
+    reasoning: The system notifies doctors when patient measurements exceed normal
+      ranges.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: REST APIs connect devices, mobile app, and cloud storage in a platform-mediated
+      architecture.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Although HL7/CDA are discussed in the background, the implemented system
+      is described mainly through REST APIs and custom cloud architecture.
+- id: O11
+  name: AECOPD prediction system with wearable, app, and home sensors
+  source_document: Wu et al. 2021
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C1
+    reasoning: The system observes COPD patients after discharge in their living environment.
+  - dimension_id: D2
+    characteristic_id: D2.C3
+    reasoning: The architecture centers on a lifestyle observation platform and personal
+      health app, not direct EHR/HIS embedding.
+  - dimension_id: D3
+    characteristic_id: D3.C3
+    reasoning: It combines wearable and air-sensor data with questionnaire data from
+      the app.
+  - dimension_id: D4
+    characteristic_id: D4.C3
+    reasoning: The system integrates physiological, environmental, and questionnaire
+      data.
+  - dimension_id: D5
+    characteristic_id: D5.C3
+    reasoning: Wearable and environmental data are synchronized every 15 minutes while
+      questionnaires are collected monthly and at enrollment.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: Machine learning and deep learning predict exacerbation risk and display
+      warning icons for intervention.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Data flow from devices and app into a lifestyle observation platform
+      via APIs and OAuth.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Integration uses APIs, OAuth, and platform architecture rather than
+      FHIR or CDA.
+- id: O12
+  name: Medical-grade wireless ward monitoring system
+  source_document: Xu et al. 2020
+  dimension_mappings:
+  - dimension_id: D1
+    characteristic_id: D1.C2
+    reasoning: The system is deployed in general wards for inpatient monitoring.
+  - dimension_id: D2
+    characteristic_id: D2.C2
+    reasoning: The paper states high integration with the existing HIS and combination
+      with EHRs.
+  - dimension_id: D3
+    characteristic_id: D3.C2
+    reasoning: Patient data are generated by the smart vest and connected devices
+      rather than manually entered by patients.
+  - dimension_id: D4
+    characteristic_id: D4.C1
+    reasoning: The integrated patient-generated inputs are physiological signals and
+      vital signs.
+  - dimension_id: D5
+    characteristic_id: D5.C2
+    reasoning: The system continuously monitors ECG, respiration, acceleration, and
+      related vitals.
+  - dimension_id: D6
+    characteristic_id: D6.C3
+    reasoning: It includes AI-based applications such as sleep stage classification
+      and arrhythmia detection in addition to real-time warnings.
+  - dimension_id: D7
+    characteristic_id: D7.C3
+    reasoning: Wearable sensors send data to servers and user interfaces, mediating
+      combination with HIS/EHR data.
+  - dimension_id: D8
+    characteristic_id: D8.C3
+    reasoning: Integration is described through RESTful APIs and mixed databases,
+      not FHIR or CDA.

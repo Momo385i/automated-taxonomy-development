@@ -1,0 +1,17 @@
+iteration: 3
+changes_short:
+- Normalized dimension and characteristic names to concise noun phrases.
+- Synthesized A and B into 9 dimensions, keeping both shared and uniquely useful aspects.
+- Merged A's physical-world actuation as final dimension D9 because it adds architectural
+  discrimination missing in B.
+- Kept B's task origin and human involvement because they contribute behavioral differentiation
+  relevant to autonomous agents.
+- Merged overlapping action-generation and control dimensions into a single MECE control-pattern
+  dimension.
+- Merged memory architecture and memory form into a unified memory-form dimension.
+- Retained adaptation mechanism and feedback source from B as distinct dimensions
+  because they explain different aspects.
+- Dropped B's primary action form as redundant with control pattern and external integration.
+- Reassigned all objects to exactly one characteristic per dimension and filled coverage
+  gaps without N/A.
+- Renumbered final taxonomy and object IDs sequentially.

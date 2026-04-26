@@ -1,0 +1,154 @@
+iteration: 3
+annotations:
+- type: dimension_renamed
+  id: D4
+  old_name: Integration purpose
+  name: Standards basis
+- type: characteristic_modified
+  dimension_id: D4
+  id: D4.C1
+  name: FHIR
+  old_name: Documentation
+- type: characteristic_modified
+  dimension_id: D4
+  id: D4.C2
+  name: EN/ISO 13606
+  old_name: Monitoring
+- type: characteristic_modified
+  dimension_id: D4
+  id: D4.C3
+  name: CDA/V2
+  old_name: Decision support
+- type: characteristic_modified
+  dimension_id: D4
+  id: D4.C4
+  name: openEHR
+  old_name: Record unification
+- type: characteristic_modified
+  dimension_id: D4
+  id: D4.C5
+  name: Vendor framework
+  old_name: Secondary use
+- type: characteristic_added
+  dimension_id: D4
+  id: D4.C6
+  name: Custom
+- type: characteristic_added
+  dimension_id: D4
+  id: D4.C7
+  name: Multiple standards
+- type: dimension_renamed
+  id: D5
+  old_name: Standards basis
+  name: Exchange direction
+- type: characteristic_modified
+  dimension_id: D5
+  id: D5.C1
+  name: Unidirectional
+  old_name: FHIR
+- type: characteristic_modified
+  dimension_id: D5
+  id: D5.C2
+  name: Bidirectional
+  old_name: EN/ISO 13606
+- type: characteristic_removed
+  dimension_id: D5
+  id: D5.C3
+  name: CDA/V2
+- type: characteristic_removed
+  dimension_id: D5
+  id: D5.C4
+  name: openEHR
+- type: characteristic_removed
+  dimension_id: D5
+  id: D5.C5
+  name: Vendor framework
+- type: characteristic_removed
+  dimension_id: D5
+  id: D5.C6
+  name: Custom
+- type: dimension_renamed
+  id: D6
+  old_name: Exchange direction
+  name: Processing level
+- type: characteristic_modified
+  dimension_id: D6
+  id: D6.C1
+  name: Raw transfer
+  old_name: Unidirectional
+- type: characteristic_modified
+  dimension_id: D6
+  id: D6.C2
+  name: Summarization
+  old_name: Bidirectional
+- type: characteristic_added
+  dimension_id: D6
+  id: D6.C3
+  name: Analytics
+- type: dimension_renamed
+  id: D7
+  old_name: Processing level
+  name: Workflow trigger
+- type: characteristic_modified
+  dimension_id: D7
+  id: D7.C1
+  name: Clinician review
+  old_name: Raw transfer
+- type: characteristic_modified
+  dimension_id: D7
+  id: D7.C2
+  name: Scheduled review
+  old_name: Summarization
+- type: characteristic_modified
+  dimension_id: D7
+  id: D7.C3
+  name: Event trigger
+  old_name: Analytics
+- type: dimension_renamed
+  id: D8
+  old_name: Workflow trigger
+  name: Presentation form
+- type: characteristic_modified
+  dimension_id: D8
+  id: D8.C1
+  name: Graph view
+  old_name: Clinician review
+- type: characteristic_modified
+  dimension_id: D8
+  id: D8.C2
+  name: Flowsheet view
+  old_name: Scheduled review
+- type: characteristic_modified
+  dimension_id: D8
+  id: D8.C3
+  name: Dashboard view
+  old_name: Event trigger
+- type: characteristic_added
+  dimension_id: D8
+  id: D8.C4
+  name: Notification view
+- type: dimension_renamed
+  id: D9
+  old_name: Presentation form
+  name: Stakeholder Role
+- type: characteristic_modified
+  dimension_id: D9
+  id: D9.C1
+  name: Patient-initiated
+  old_name: Graph view
+- type: characteristic_modified
+  dimension_id: D9
+  id: D9.C2
+  name: Clinician-initiated
+  old_name: Flowsheet view
+- type: characteristic_modified
+  dimension_id: D9
+  id: D9.C3
+  name: Administrator-initiated
+  old_name: Dashboard view
+- type: characteristic_modified
+  dimension_id: D9
+  id: D9.C4
+  name: Multi-stakeholder
+  old_name: Notification view
+annotation_count: 33
