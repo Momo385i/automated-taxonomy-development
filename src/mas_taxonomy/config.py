@@ -32,11 +32,25 @@ class Settings(BaseSettings):
         validation_alias="LLM_PROVIDER_PRIORITY",
     )
 
-    # Default models per provider
-    default_model_openai: str = "gpt-5.4-2026-03-05"
-    default_model_anthropic: str = "claude-haiku-4-5"
-    default_model_gemini: str = "gemini-2.5-pro"
-    default_model_vertexai: str = "gemini-2.5-flash"
+    # Default models per provider — overridable via env (e.g. set
+    # ``DEFAULT_MODEL_OPENAI=gpt-5-mini`` in your .env to switch the OpenAI
+    # model used for this run).
+    default_model_openai: str = Field(
+        default="gpt-5.4-2026-03-05",
+        validation_alias="DEFAULT_MODEL_OPENAI",
+    )
+    default_model_anthropic: str = Field(
+        default="claude-haiku-4-5",
+        validation_alias="DEFAULT_MODEL_ANTHROPIC",
+    )
+    default_model_gemini: str = Field(
+        default="gemini-2.5-pro",
+        validation_alias="DEFAULT_MODEL_GEMINI",
+    )
+    default_model_vertexai: str = Field(
+        default="gemini-2.5-flash",
+        validation_alias="DEFAULT_MODEL_VERTEXAI",
+    )
 
     max_chars_per_doc: int = Field(default=100000, description="Maximum characters per document to send to LLM")
     debug_mode: bool = Field(default=False, description="Enable debug file dumps (prompt, tool schema) per LLM call", validation_alias="DEBUG_MODE")

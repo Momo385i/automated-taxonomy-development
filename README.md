@@ -132,6 +132,25 @@ The project loads its configuration from a `.env` file in the project root
    preferred when multiple keys are set. The first provider in the list with a
    non-empty key wins.
 
+4. (Optional) **Change the model** for the chosen provider. Uncomment and set
+   any of the `DEFAULT_MODEL_*` variables in your `.env`:
+
+   ```dotenv
+   # Override the OpenAI model (default: gpt-5.4-2026-03-05)
+   DEFAULT_MODEL_OPENAI=gpt-5-mini
+   # Override the Anthropic model (default: claude-haiku-4-5)
+   DEFAULT_MODEL_ANTHROPIC=claude-sonnet-4-5
+   # Override the Google Gemini model (default: gemini-2.5-pro)
+   DEFAULT_MODEL_GEMINI=gemini-2.5-flash
+   # Override the Vertex AI model (default: gemini-2.5-flash)
+   DEFAULT_MODEL_VERTEXAI=gemini-2.5-pro
+   ```
+
+   Pick a model that is available on your account/region and that supports
+   tool use / structured output — the agents rely on it. If the variable is
+   unset, the default shown above is used. (See
+   `src/mas_taxonomy/config.py` for the full list of fields.)
+
 The `.env` file and any Vertex AI service-account JSON (matched by the
 `gen-lang-*` pattern) are **git-ignored** and will never be pushed.
 
